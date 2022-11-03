@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F2EBE9;
+    min-height: 100vh;
+}
+
+#blog {
+    margin-left: 15%;
+    padding: 50px;
+
+}
+
+.post { 
+    height: auto;
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: justify;
+    box-shadow: 1px 1px 5px 1px rgb(100, 100, 100);
+}
+
+.post ul, ol{
+    padding: 25px 50px ;
+    
+}
+
+.post img {
+    display: flex;
+    margin: 15px auto;
+    width: 80%;
+    height: 80%;
+}
+
+.code {
+    height: auto;
+    width: 80%;
+    margin: 25px auto;
+    padding: 25px;
+    text-align: justify;
+    color:#F2EBE9 ;
+    background-color: #000;
+}
+
+.indent {
+    text-indent: 25px;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #7C3E66;
+    text-align: center;
+    padding: 10px;
+    }
+
+
+header a{
+    color: #F2EBE9;
+    font-size: 20px;  
+    margin: 50px;  
+}
+
+.sidebar{
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    background-color: #A5BECC;
+}
+
+.sidebar a {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    color: #243A73;
+    transition: all 1s;
+}
+
+.sidebar a:hover{
+    background-color: #F2EBE9;
+}
+
+.mainblog {
+    margin-left: 15%;
+}
+
+
+#jmo {
+    width: 500px;
+    height: 480px;
+    position: static;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+
+    border-bottom: 40px solid #7C3E66;
+    background: linear-gradient(#F2EBE9, #F2EBE9 50%, #7C3E66 50%, #7C3E66);
+    background-size: 100% 200%;
+    
+    cursor: pointer;
+    transition: background 2s, border-radius 2s;
+}
+
+#jmo:hover{
+    background-position: 100% 99.9%;
+}
+
+
+
+/* HEROBANNER */
+table {
+    height: 680px;
+    width: 100%;
+    background-color: #F2EBE9;
+    align-items:center;
+    text-align: center;
+}
+td {
+    width: 50%;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+
+/* DESCRIPTION */
+#info{
+    margin: 200px auto;
+    width: 400px;
+}
+
+#info h3{
+    text-align: center;
+}
+
+
+#description{
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0 auto;
+
+}
+
+.links {
+    margin: 30px auto;
+    text-align: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+/* BUTTONS */
+button {
+    background-color: #7C3E66;
+    color: #F2EBE9;
+    padding: 10px  30px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid black;
+    transition: all 1s;
+}
+button:hover {
+    border:2px solid #7C3E66;
+    background-color: #F2EBE9;
+    color: #7C3E66;
+}
+
+/* FORM */
+
+#contactForm {
+    height: auto;
+    width: 500px;
+    display: block;
+    margin: 25px auto;
+    padding: 25px;
+    color: #F2EBE9;
+    background-color: #243A73;
+    box-shadow: 0px 4px 10px #000;
+}
+
+#contactForm h1 {
+    text-align: center;
+    margin: 15px;
+    color: #F2EBE9;
+}
+#contactForm div {
+    margin: 15px 0;
+}
+
+#contactForm label {
+    font-size: 20px;
+}
+
+#contactForm input {
+    font-size: 15px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 3px solid #F2EBE9;
+    transition: border .5s;
+    outline: none;
+
+}
+#contactForm textarea {
+    font-size: 15px;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 3px solid #F2EBE9;
+    transition: border .5s;
+    resize: none;
+    outline: none;
+}
+#contactForm textarea:focus,#contactForm input:focus{
+    border: 3px solid #7C3E66;
+
+}
+#contactForm button {
+    margin: 10px auto;
+    display: flex;
+}
+
+.error{
+    color: red;
+    display: none;
+}
+
+footer {
+    position:relative;
+    height: 50px;
+    margin-top: 200px;
+    padding: 100px 0;
+    bottom: 0;
+    background-color: #243A73;
+    color:#F2EBE9;
+    text-align: center;
+}
+footer h5 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+footer a {
+    width: 100%;
+    font-size: 25px;
+    color: #F2EBE9;
+    margin: 50px;
+    transition: .5s;
+    border-bottom: 0px solid #7C3E66;
+
+}
+
+footer a:hover {
+    border-bottom: 5px solid #7C3E66;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}   

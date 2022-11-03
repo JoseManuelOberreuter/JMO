@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Python</title>
+    <link rel="stylesheet" href="/jmo/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="/jmo/html/index.html">JMO</a>
+        <a href="/jmo/html/index.html">Home</a>
+        <a href="/jmo/html/contact.html">Contact</a>
+        <a href="/jmo/html/blog.html">Blog</a>
+        <a href="/jmo/html/portfolio.html">Portfolio</a>
+    </header>
+
+    <div class="sidebar">
+        <a href="Html">Html</a>
+        <a href="Css">Css</a>
+        <a href="Js">JavaScript</a>
+        <a href="/jmo/html/blogpython.html">Python</a>
+        <a href="Linux">Linux</a>
+        <a href="Windows">Windows</a>
+    </div>
+
+    <div class="mainblog">
+
+        <div class="post">
+            <h1>Blog Phyton</h1>
+            <br><br>
+            <h3>Index:</h3>
+            <ol>
+                <li><a href="#intro">Introduccion</li>
+                <li><a href="#install">Instalación</a></li>
+                <li><a href="#inirap">Inicio rápido</a></li>
+                <li><a href="#comando">Líneas de comando de Python</a></li>
+                <li><a href="#sintaxis">Sintaxis de Python</a></li>
+                <li><a href="#indenta">Indentación de python</a></li>
+
+                
+            </ol>
+
+        </div>
+
+
+        <div id="intro"  class="post">
+            <h2 >1. Introduccion</h2>
+            <br><br>
+            <p>¿Que es python?</p>
+            <p>Python es un lenguaje de programación popular. Este fue creado por Guido van Rossum y lanzado en 1991. Funciona en diferentes plataformas como: Windows, Mac, Linux, Raspberry, Pi, etc. La sintaxis de Python permite a nosotros los desarrolladores escribir programas con menos líneas en comparación con otros lenguajes a la hora de programar.</p>
+            <br><br>
+            <p>¿Qué puede hacer Python?</p>
+            <p>Python es un lenguaje de programación versátil capaz de adaptarse a múltiples usos, algunos ejemplos de sus usos más comunes son:</p>
+            <ul>
+                <li>Desarrollo web (servidor)</li>
+                <li>Creación de aplicaciones web</li>
+                <li>Manejo de archivos</li>
+                <li>Manejo Base de datos (MySql/MongoDB)</li>
+                <li>Ciencia de datos</li>
+                <li>Inteligencia artificial (AI)</li>
+            </ul>
+        </div>
+
+        <div id="install" class="post">
+            <h2 >2. Instalación de Python</h2>
+            <br><br>
+            <p>Primero comprobaremos que no tengamos instalado Python en nuestro PC. En Windows ejecutaremos el siguiente comando en la aplicación “Símbolo del sistema” (cmd.exe):</p>
+        
+        
+            <div class="code">&lt; C:\Usuario\Tu nombre>C:\Usuario\Tu nombre>py –version &gt;</div>
+
+            <p>Para comprobar en Linux o Mac, abrimos la terminal y escribiremos:</p>
+
+            <div class="code">&lt; C:\Usuario\Tu nombre>C:\Usuario\Tu nombre>python –version &gt;</div>
+        
+        </div>
+
+        <div id="inirap" class="post">
+
+            <h2 >3. Inicio rápido </h2>
+            <p>
+                Python es un lenguaje de programación interpretado, esto significa que, nosotros como desarrolladores, escribiremos archivos de Python (.py) en un editor de texto y luego introducimos los archivos en el intérprete de Python para que se ejecuten.
+            </p>
+            <br>
+            <p>
+                Para iniciar rapidamente, crearemos un nuevo archivo “holamundo.py” en nuestro editor de texto favorito, para continuar escribiendo las primeras líneas de código: 
+            </p>
+            <div class="code">&lt; C:\Usuario\Tu nombre>print(“¡Hola Mundo!”) &gt;</div>
+            <b>*print: permite imprimir por pantalla la variable o las variables entre paréntesis.</b>
+            <br><br>
+            <p>
+                Debemos guardar el archivo antes de hacer que sea interpretado. Abriremos la consola, debemos estar en la ruta correcta de la ubicación del archivo para que este ejecute bien, escribiremos en la consola de nuestro sistema windows:
+            </p>
+            <div class="code">&lt; C:\Usuario\Tu nombre>py holamundo.py &gt;</div>
+            <p>Consola Linux o Mac:</p>
+            <div class="code">&lt; C:\Usuario\Tu nombre>python holamundo.py &gt;</div>
+            <p>Ejemplo:</p>
+            <br>
+            <img src="/jmo/img/pythonimg1.1.png" alt="Visual Studio Code">
+            <img src="/jmo/img/pythonimg1.2.png" alt="Símbolo del sistema(cmd.exe)">
+            <small>Visual Studio Code / Símbolo del sistema(cmd.exe)</small>
+        </div>
+
+        <div id="comando" class="post">
+            <h2>4. Líneas de comando de Python</h2>
+            <p>
+                Para probar una pequeña cantidad de código en python, a veces es más rápido y más fácil no escribir el código en un archivo. Esto es posible porque Python se puede ejecutar como una línea de comando. Para esto en la la consola del sistema ejecutaremos la siguiente línea de comando:
+            </p>
+            <div class="code">&lt; C:\Usuario\Tu nombre>python &gt;</div>
+            <p>Si el comando "python" no funcionó, probaremos con "py":</p>
+            <div class="code">&lt; C:\Usuario\Tu nombre>py &gt;</div>
+            <p>
+                Desde acá, podemos escribir cualquier comando de python, incluido el ejemplo de “¡hola mundo!” que acabamos de aprender.
+            </p>
+            <br>
+            <small>Windows, Símbolo del sistema(cmd.exe)</small>
+            <p>
+                Cuando queramos salir de la línea de comandos de python, simplemente escribimos lo siguiente para salir de la interfaz de línea de comandos de python:
+            </p>
+            <br>
+            <p>Ejemplo:</p>
+            <img src="/jmo/img/pythonimg2.png" alt="Windows, Símbolo del sistema(cmd.exe)">
+        </div>
+
+        <div id="sintaxis" class="post">
+            <h2>Sintaxis de Python</h2>
+            <p>
+                Como aprendimos anteriormente, Python se puede ejecutar en la consola de comandos o creando un archivo Python con la extensión .py y ejecutarlo en la consola de comandos.
+            </p>
+            <div class="code">
+                <p>if 5 > 2</p> 
+                <p class="indent">print(“Cinco es más mayor que dos”)</p>
+                    
+            </div>
+
+            <div id="indenta" class="post">
+
+                <h3>5.1 Indentación de python</h3>
+
+                <p>
+                    La indentación se refiere a los espacios o sangría al principio de una línea de código. Mientras que en otros lenguajes de programación la sangría en el código es solo para facilitar la lectura, la sangría en Python es muy importante. Python usa la indentación para indicar un bloque de código, por ejemplo: 
+                </p>
+
+
+
+
+            </div>
+        </div>
+        
+    </div>
+
+<footer>
+    <h5>Follo me on social media: </h5>
+    <a href="https://www.instagram.com/jmo.developer/">Instagram</a>
+    <a href="https://www.facebook.com/JMO-developer-106306118797399">Facebook</a>
+    <a href="https://github.com/JoseManuelOberreuter">GitHub</a>
+</footer>
+
+
+</body>
+</html>

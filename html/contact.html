@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/jmo/style.css">
+
+</head>
+<body>
+
+  <header>
+    <a href="/jmo/html/index.html">JMO</a>
+    <a href="/jmo/html/index.html">Home</a>
+    <a href="/jmo/html/contact.html">Contact</a>
+    <a href="/jmo/html/blog.html">Blog</a>
+    <a href="/jmo/html/portfolio.html">Portfolio</a>
+</header>
+
+<form id="contactForm">
+  <h1>Contact me</h1>
+  <div>
+    <label for="name" >Nombre: </label>
+    <input autofocus required type="text" id="name" maxlength="100" placeholder="Ingrese el nombre acá..." onkeyup="checkName()">
+    <small class="error" id="errorName"><b>Escribe tu nombre...</b></small>
+  </div>
+  <div>
+    <label for="email" class="text-dark">Email: </label>
+    <input required type="email" id="email"  placeholder="Ingrese el email acá..." onkeyup="checkEmail()">
+    <small class="error" id="errorEmail"><b>Escribe tu mail...</b></small>
+  </div>
+  <div>
+    <label for="message" class="text-dark">Message: </label>
+    <textarea required id="message" placeholder="Escriba acá el motivo de consulta..." onkeyup="checkMessage()"></textarea>
+    <small class="error" id="errorMessage"><b>Escribe tu mensaje...</b></small>
+  </div>
+  <div>
+    <button id="buttonSend" type="submit" value="submit">Enviar formulario</button>         
+  </div>   
+</form>
+
+  
+<footer>
+  <h5>Follo me on social media: </h5>
+  <a href="https://www.instagram.com/jmo.developer/">Instagram</a>
+  <a href="https://www.facebook.com/JMO-developer-106306118797399">Facebook</a>
+  <a href="https://github.com/JoseManuelOberreuter">GitHub</a>
+</footer>
+
+</body>
+</html>
