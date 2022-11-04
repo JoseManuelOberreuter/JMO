@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JMO developer</title>
-    <!-- agregar logo favicon -->
-    <link rel="icon" type="image/x-icon" href="#">
-    <link rel="stylesheet" href="/jmo/style.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fades -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <a href="/jmo/html/index.html">JMO</a>
-        <a href="/jmo/html/index.html">Home</a>
-        <a href="/jmo/html/contact.html">Contact</a>
-        <a href="/jmo/html/blog.html">Blog</a>
-        <a href="/jmo/html/portfolio.html">Portfolio</a>
+        <a href="index.html">JMO</a>
+        <a href="index.html">Inicio</a>
+        <a href="contact.html">Contacto</a>
+        <a href="blog.html">Blog</a>
     </header>
 
     <main>
@@ -25,7 +25,7 @@
             <tr>
                 <td>
                     <!-- agregar imagen -->
-                    <img src="/jmo/img/jmo.png" alt="jmo" id="jmo">                        
+                    <a href="contact.html"><img src="/img/jmo.png" alt="jmo" id="jmo"></a>                        
                 </td>
                 <td>
                     <h1>José Manuel Oberreuter (JMO)</h1>
@@ -39,32 +39,52 @@
     
         
         <!-- Descripción -->
-        <div id="info">
-            <h3>¡Bienvenidos a mi pagina web personal!</h3>
-            <br>
-            <p id="description">
-                Gracias por llegar hasta aqui. 
-            </p>
-            <!-- agregar links -->
-            <div class="links">
-                <a href="/jmo/html/contact.html"><button>Contacto</button></a>
-                <a href="/jmo/html/blog.html"><button>Blog</button></a>
-                <a href="/jmo/html/portafolio"><button>Portafolio</button></a>
+        <div data-aos="fade-down" data-aos-duration="2000">
+            <div class="info">
+                <div class="post">
+                    <h2>Bienvenidos a mi pagina web</h2>
+                    <br>
+                    <p class="description">
+                        Mi nombre es José Manuel Oberreuter, soy estudiante de ingeniería informática y actualmente trabajo de manera remota como desarrollador web FreeLancer para pequeñas o medianas empresas.
+                        Si quieres saber sobre las tecnologías que uso y conozco te invito a pasar por mi <a href="blog.html"><b>Blog personal</b></a> donde subo contenido cada semana. No dudes en <a href="contact.html"><b>contactar conmigo</b></a> si tienes cualquier duda o interés. 
+                    </p>
+                </div>
             </div>
         </div>
 
 
+        <div data-aos="fade-down" data-aos-duration="2000">
+            <div class="info">
+                <div class="post">
+    
+                    <h2>Blog personal</h2>
+                    <p class="description">
+                        Blog 100% dedicado a mis estudios e investigaciones como programador, actualizado semana a semana con post nuevos sobre programación, tecnologías y lenguajes. 
+                        <br><br>    
+                        <b>Ultima actualizacion:</b>  
+                        <br><br>
+
+                    </p>
+                </div>    
+            </div>    
+        </div>
+
     </main>
 
     <footer>
-        <h5>Sigueme en mis redes sociales: </h5>
+        <h2>Sigueme en mis redes sociales: </h2>
         <a href="https://www.instagram.com/jmo.developer/">Instagram</a>
         <a href="https://www.facebook.com/JMO-developer-106306118797399">Facebook</a>
-        <a href="#">Youtube</a>
-        <a href="#">Twitch</a>
-        <a href="#">Linkedin</a>
+        <a href="https://www.twitch.tv/programacion_jmo">Twitch</a>
+        <a href="https://twitter.com/0321PPMN">Twitter</a>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">Linkedin</a>
         <a href="https://github.com/JoseManuelOberreuter">GitHub</a>
     </footer>
     
+    <!-- Script Fades -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

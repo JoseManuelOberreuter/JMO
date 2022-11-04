@@ -5,48 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link rel="stylesheet" href="/jmo/style.css">
+  <!-- All styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Contact style -->
+  <link rel="stylesheet" href="contact.css">
+  <!-- Fades -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
 
   <header>
-    <a href="/jmo/html/index.html">JMO</a>
-    <a href="/jmo/html/index.html">Home</a>
-    <a href="/jmo/html/contact.html">Contact</a>
-    <a href="/jmo/html/blog.html">Blog</a>
-    <a href="/jmo/html/portfolio.html">Portfolio</a>
-</header>
+    <a href="index.html">JMO</a>
+    <a href="index.html">Inicio</a>
+    <a href="contact.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+  </header>
 
-<form id="contactForm">
-  <h1>Contact me</h1>
-  <div>
-    <label for="name" >Nombre: </label>
-    <input autofocus required type="text" id="name" maxlength="100" placeholder="Ingrese el nombre acá..." onkeyup="checkName()">
-    <small class="error" id="errorName"><b>Escribe tu nombre...</b></small>
-  </div>
-  <div>
-    <label for="email" class="text-dark">Email: </label>
-    <input required type="email" id="email"  placeholder="Ingrese el email acá..." onkeyup="checkEmail()">
-    <small class="error" id="errorEmail"><b>Escribe tu mail...</b></small>
-  </div>
-  <div>
-    <label for="message" class="text-dark">Message: </label>
-    <textarea required id="message" placeholder="Escriba acá el motivo de consulta..." onkeyup="checkMessage()"></textarea>
-    <small class="error" id="errorMessage"><b>Escribe tu mensaje...</b></small>
-  </div>
-  <div>
-    <button id="buttonSend" type="submit" value="submit">Enviar formulario</button>         
-  </div>   
+<form id="contactForm" action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
+  <h1>Formulario de contacto:</h1>
+  
+  <label for="name" >Nombre: </label>
+  <input type="text" name="Nombre" id="name" maxlength="100" placeholder="Escriba acá su nombre...." autofocus required onkeyup="checkName()">
+  <small class="error" id="errorName"><b>Tienes que escribir un nombre</b></small>
+  
+  <label for="email" class="text-dark">Email: </label>
+  <input type="email" name="Email" id="email"  placeholder="Escriba acá su email..." required onkeyup="checkEmail()">
+  <small class="error" id="errorEmail"><b>Tienes que escribir un email</b></small>
+
+  <label for="message" class="text-dark">Message: </label>
+  <textarea id="message" name="Mensaje" placeholder="Escriba acá el motivo de consulta..." required onkeyup="checkMessage()"></textarea>
+  <small class="error" id="errorMessage"><b>Tienes que escribir un mensaje</b></small>
+
+  <button id="buttonSend" type="submit" value="submit">Enviar formulario</button>
 </form>
+
+<div data-aos="flip-up">
+  <div class="infoform">
+    <div class="post">
+      <h2>ATENCIÓN</h2>
+      <p>
+        Al hacer clic en el botón “Enviar formulario" se le enviará a una página externa de confirmación. <b>Debe hacer clic en “No soy un robot” </b> finalizar el envío del formulario.
+      </p>
+      <img src="img/formimg.png" alt="Autentificacion de robot">
+    </div>
+  </div>
+</div>
 
   
 <footer>
-  <h5>Follo me on social media: </h5>
+  <h2>Sigueme en mis redes sociales: </h2>
   <a href="https://www.instagram.com/jmo.developer/">Instagram</a>
   <a href="https://www.facebook.com/JMO-developer-106306118797399">Facebook</a>
+  <a href="https://www.twitch.tv/programacion_jmo">Twitch</a>
+  <a href="https://twitter.com/0321PPMN">Twitter</a>
+  <a href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">Linkedin</a>
   <a href="https://github.com/JoseManuelOberreuter">GitHub</a>
 </footer>
+
+  <!-- Script Fades -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+
+
 
 </body>
 </html>
