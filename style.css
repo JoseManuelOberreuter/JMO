@@ -9,17 +9,14 @@ body {
 
 
 
-
-
-
-
 /* HEADER */
 header {
-     position: sticky;
+    position: sticky;
     top: 0;
     background-color: #153462;
     text-align: center;
     padding: 10px;
+    z-index: 1;
     }
 
 
@@ -28,48 +25,6 @@ header a{
     font-size: 30px;  
     margin: 50px;  
 }
-
-
-
-
-/* SIDE BAR */
-.sidebar{
-    height: 100%;
-    width: 15%;
-    position: fixed;
-    background-color: #A5BECC;
-}
-
-.sidebar a {
-    font-size: 20px;
-    display: block;
-    width: 100%;
-    padding: 25px 0;
-    text-align: center;
-    color: #243A73;
-    transition: all 1s;
-}
-
-.sidebar a:hover{
-    background-color: #F9F7F7;
-}
-
-
-
-
-
-
-/* BLOG */
-#blog {
-    margin-left: 15%;
-    padding: 50px;
-
-}
-
-.mainblog {
-    margin-left: 15%;
-}
-
 
 
 
@@ -169,6 +124,7 @@ td h2 {
 }
 
 .info h2{
+    margin-bottom: 20px;
     color: #112D4E;
     font-size: 35px;
     text-align: center;
@@ -185,20 +141,25 @@ td h2 {
     border-bottom: 0px solid #3F72AF;
     transition: border-bottom .5s;
     text-decoration: none;
-}
-.description a:hover{
-    border-bottom: 2px solid #3F72AF;
 
 }
+
+.description a:hover{
+    border-bottom: 2px solid #3F72AF;
+}
+
+
+
+
 
 
 /* LINKS */
-a {
+header a, footer a, .description a {
     border-bottom: 0px solid #DBE2EF;
     transition: border-bottom .5s;
     text-decoration: none;
 }
-a:hover {
+header a:hover, footer a:hover, .post a:hover {
     border-bottom: 3px solid #DBE2EF;
 }
 
@@ -216,11 +177,23 @@ button {
     transition: border 1s, background-color 1s;
     cursor: pointer;
 }
+
 button:hover {
     border:2px solid #F9F7F7;
     background-color: #3F72AF;
     color: #F9F7F7;
-    
+}
+
+.postButtons button{
+    display: block;
+    width: 40%;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.postButtons a {
+    text-decoration: none;
+
 }
 
 
@@ -257,21 +230,111 @@ footer a {
 
 
 
+@media all and (max-width: 600px){
+    head title {
+        display: none;
+    }
 
+    *{
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        position:relative;
+    }
+    table, td, tr{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #jmo {
+        margin: 50px auto;
+    }
+    .post, .info {
+        width: auto;
+    }
 
+    .post a, .post b {
+        display:contents;
+        width: auto;
+    }
 
+    .description a{
+        color: #3F72AF;
+        border-bottom: 0px solid #3F72AF;
+        transition: border-bottom .5s;
+        text-decoration: none;
+    
+    } 
+    .description a:hover{
+        border-bottom: 2px solid #3F72AF;
+    }
 
-/* RESPONSIVE */
+    footer {
+        width: 100%;
+    }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+    footer a {
+        margin: 25px auto;
+        width: 200px;
+    }
+
+    script {
+        display: none;
+    }
 }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-}
+@media all and (max-width: 800px){
+    head title {
+        display: none;
+    }
 
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-}   
+    *{
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        position:relative;
+    }
+    header a{
+        margin: 25px auto;
+        width: 200px;
+    }
+    table, td, tr{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #jmo {
+        margin: 50px auto;
+    }
+    .post, .info {
+        width: auto;
+    }
+
+    .post a, .post b {
+        display:contents;
+        width: auto;
+    }
+    .description a{
+        color: #3F72AF;
+        border-bottom: 0px solid #3F72AF;
+        transition: border-bottom .5s;
+        text-decoration: none;
+    
+    } 
+    .description a:hover{
+        border-bottom: 2px solid #3F72AF;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer a {
+        margin: 25px auto;
+        width: 200px;
+    }
+
+    script {
+        display: none;
+    }
+}

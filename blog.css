@@ -1,0 +1,50 @@
+/* BLOG */
+#blog {
+    margin-left: 15%;
+    padding: 50px;
+
+}
+
+.mainblog {
+    margin-left: 15%;
+}
+
+
+/* SIDE BAR */
+.sidebar{
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    background-color: #A5BECC;
+}
+
+.sidebar a:hover, .active{
+    background-color: #F9F7F7;
+}
+
+
+.sidebar a {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #243A73;
+    transition: background-color 1s;
+    
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 800px){
+    .sidebar{
+        position:absolute;
+    }
+}
