@@ -1,12 +1,14 @@
 /* BLOG */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+
 #blog {
     margin-left: 15%;
     padding: 50px;
-
-}
-
-.mainblog {
-    margin-left: 15%;
 }
 
 
@@ -15,28 +17,115 @@
     height: 100%;
     width: 15%;
     position: fixed;
+    overflow: auto;
+
     background-color: #A5BECC;
 }
 
-.sidebar a:hover, .active{
-    background-color: #F9F7F7;
-}
 
-
-.sidebar a {
-    font-size: 20px;
+.sidebar a, .buttonDrop{
+    font-size: 30px;
     display: block;
     width: 100%;
     padding: 25px 0;
+
     text-align: center;
     text-decoration: none;
-    color: #243A73;
     transition: background-color 1s;
     
 }
 
+.sidebar a:hover{
+    background-color: #F9F7F7;
+}
 
 
+.headera {
+    color: #F9F7F7;
+    background-color:#243A73;
+}
+
+.headera:hover {
+    color: #243A73;
+}
+
+
+.buttonDrop{
+    border: 0px solid #243A73;
+    border-radius: 0%;
+}
+
+.buttonDrop:hover {
+    border  : 0px solid #243A73;
+
+    color: #243A73;
+    background-color: #F9F7F7;
+
+}
+
+.dropdowncontent a{
+    color: #243A73;
+}
+
+#iconExpanMore1, #iconExpanMore2  {
+    display: none;
+    font-size: 40px;
+    color: #243A73;
+    transition: transform 330ms ease-in-out;
+}
+
+#dropdown{
+    position: relative;
+    transition: position 1s;
+}
+
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #F1F1F1 ; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } 
+
+
+
+
+
+
+
+
+
+.show{
+    display: block;
+    transition: display 1s;
+}
+.hide{
+    display: none;
+}
+.active {
+    color: #243A73;
+    background-color: #F9F7F7;
+}
+.active:hover {
+    color: #243A73;
+    background-color: #F9F7F7;
+}
 
 
 
@@ -44,7 +133,26 @@
 
 
 @media all and (max-width: 800px){
-    .sidebar{
-        position:absolute;
+
+
+    #blog {
+        margin-left: 0%;
+        margin: 25px;
+        padding: 0px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    #iconExpanMore1, #iconExpanMore2{
+        display:inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        color: #243A73;
+        transition: display 1s;
     }
 }

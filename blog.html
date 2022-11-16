@@ -5,31 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jmo Blog</title>
+
     <!-- All styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="blog.css">
-    <!-- Fades -->
+
+    <!-- DROPDOWN JS -->
+    <script src="dropdown.js"></script>
+
+    <!-- FADES -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- ACTIVE LINKS JS -->
 
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet">        
+
+    <!-- GOOGLE ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body id="bodyBlog" onload="media()">
 
-  <header>
-    <a href="index.html">JMO</a>
-    <a href="contact.html">Contacto</a>
-    <a href="blog.html">Blog</a>
-  </header>
 
-    <div class="sidebar" id="sidebar">
-        <a href="blog.html" class="active"><b>Blog JMO</b></a>
-        <a href="blog/bloghtml.html" >Html</a>
-        <a href="blog/blogcss.html" >Css</a>
-        <a href="blog/blogjavascript.html" >JavaScript</a>
-        <a href="blog/blogpython.html">Python</a>
-        <a href="bloglinux.html" >Linux</a>
-        <a href="blog/blogwindows.html" >Windows</a>
-        <a href="blog/blogrocketbot.html">RocketBot</a>
+
+    <div class="sidebar">
+        <a href="index.html" class="headera">JMO</a>
+        <a href="contact.html" class="headera">Contacto</a>            
+        <button class="buttonDrop headera active" onclick="dropdown()" >
+            <i id="iconExpanMore1" class="material-symbols-outlined">expand_more</i>
+            Blog
+            <i id="iconExpanMore2" class="material-symbols-outlined">expand_more</i>
+        </button> 
+
+        <div id="dropdown" class="dropdowncontent">
+            <a href="blog/bloghtml.html" >Html</a>
+            <a href="blog/blogcss.html" >Css</a>
+            <a href="blog/blogjavascript.html" >JavaScript</a>
+            <a href="blog/blogpython.html">Python</a>
+            <a href="bloglinux.html" >Linux</a>
+            <a href="blog/blogwindows.html" >Windows</a>
+            <a href="blog/blogwindows.html" >Windows</a>
+            <a href="blog/blogwindows.html" >Windows</a>
+            <a href="blog/blogwindows.html" >Windows</a>
+            <a href="blog/blogwindows.html" >Windows</a>
+        </div>
+
     </div>
 
     <main id="blog">
@@ -47,6 +69,9 @@
 
     </main>
 
+    <div style="margin-bottom: 1000px ;">
+
+    </div>
 
     <footer>
         <h2>Sigueme en mis redes sociales: </h2>

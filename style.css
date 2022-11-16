@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Slab', serif;
 }
 body {
     background-color: #F9F7F7;
@@ -14,6 +15,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #153462;
+    
     text-align: center;
     padding: 10px;
     z-index: 1;
@@ -21,12 +23,17 @@ header {
 
 
 header a{
+    text-decoration: none;
+    padding: 20px ;
+    margin: 30px;
     color: #F9F7F7;
     font-size: 30px;  
-    margin: 50px;  
+    transition: color .5s;
 }
 
-
+header a:hover{
+    color: #3F72AF;
+}
 
 
 
@@ -50,6 +57,16 @@ header a{
     margin: 15px auto;
     width: 80%;
     height: 80%;
+}
+
+#mailcheckimg{
+    height: 200px;
+    width: 250px;
+}
+
+.center{
+    text-align: center;
+    margin: 0 auto;
 }
 
 .code {
@@ -116,6 +133,19 @@ td h2 {
 }
 
 
+.frontIcons img {
+    height: 50px;
+    width: 50px;
+    margin: 0 20px;
+    border-radius: 100%;
+    transition: background-color 0.5s;
+}
+
+.frontIcons img:hover {
+    background-color: #3F72AF;
+}
+
+
 /* INDEX DESCRIPTION */
 .info{
     margin: 150px auto;
@@ -148,18 +178,21 @@ td h2 {
     border-bottom: 2px solid #3F72AF;
 }
 
-
+.description{
+    text-align: center;
+}
 
 
 
 
 /* LINKS */
-header a, footer a, .description a {
+footer a, .description a {
     border-bottom: 0px solid #DBE2EF;
     transition: border-bottom .5s;
     text-decoration: none;
+    border-bottom: 3px solid #153462;
 }
-header a:hover, footer a:hover, .post a:hover {
+footer a:hover{
     border-bottom: 3px solid #DBE2EF;
 }
 
@@ -184,18 +217,26 @@ button:hover {
     color: #F9F7F7;
 }
 
+
+.postButtons {
+    margin: 0 auto;
+    text-align: center;
+
+}
 .postButtons button{
-    display: block;
-    width: 40%;
-    margin: 25px auto;
+    display:inline;
+    width: 200px;
+    margin: 25px 50px;
     padding: 20px;
+    font-size: 20px;
 }
 
 .postButtons a {
+    width: auto;
+    
     text-decoration: none;
 
 }
-
 
 
 
@@ -230,8 +271,32 @@ footer a {
 
 
 
-@media all and (max-width: 600px){
-    head title {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+
+
+
+
+@media all and (max-width: 800px){
+    head{
         display: none;
     }
 
@@ -239,9 +304,8 @@ footer a {
         display: block;
         margin: 0 auto;
     }
-    header {
-        position:relative;
-    }
+
+
     table, td, tr{
         width: 100%;
         margin: 0 auto;
@@ -249,9 +313,7 @@ footer a {
     #jmo {
         margin: 50px auto;
     }
-    .post, .info {
-        width: auto;
-    }
+
 
     .post a, .post b {
         display:contents;
@@ -281,9 +343,6 @@ footer a {
     script {
         display: none;
     }
-}
-
-@media all and (max-width: 800px){
     head title {
         display: none;
     }
@@ -292,22 +351,71 @@ footer a {
         display: block;
         margin: 0 auto;
     }
+
+
+
+
+
+
     header {
-        position:relative;
+    display: block;
+    position: relative;
+    margin:0;
+    padding: 0;
     }
+    
+    
     header a{
-        margin: 25px auto;
-        width: 200px;
+        text-decoration: none;
+        margin: 0;
+        padding: 30px;
+        transition: .5s;
     }
+    
+    header a:hover{
+    
+        color:#153462;
+        background-color: #F9F7F7;
+
+    }
+
+
+    .herobanner {
+        margin-bottom: 300px;
+    }
+
+
     table, td, tr{
         width: 100%;
         margin: 0 auto;
     }
+
+
+
     #jmo {
         margin: 50px auto;
     }
-    .post, .info {
+
+
+    .frontIcons a {
+        display:inline-flex;
         width: auto;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    .post, .info {
+        width: 90%;
     }
 
     .post a, .post b {

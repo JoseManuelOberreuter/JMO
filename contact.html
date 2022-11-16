@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +17,20 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- ERROR JS FORM -->
   <script src="contactForm.js"></script>
+  <!-- GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet">        
+
+
+
+
+
 </head>
 <body>
+
+
+
 
   <header>
     <a href="index.html">JMO</a>
@@ -22,46 +38,48 @@
     <a href="blog.html">Blog</a>
   </header>
 
-<form id="contactForm" action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
-  <h1>Formulario de contacto:</h1>
-  
-  <label for="name" >Nombre: </label>
-  <input type="text" name="Nombre" id="inputname" maxlength="100" placeholder="Escriba acá su nombre...." autofocus required onkeyup="checkInputName()">
-  <p class="error" id="errorName"><b>Tienes que escribir un nombre</b></p>
-  
-  <label for="email" class="text-dark">Email: </label>
-  <input type="email" name="Email" id="inputemail"  placeholder="Escriba acá su email..." required onkeyup="checkInputEmail()">
-  <p class="error" id="errorEmail"><b>Tienes que escribir un email</b></p>
+  <form id="contactForm" action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
+    <h1>Formulario de contacto:</h1>
 
-  <label for="message" class="text-dark">Message: </label>
-  <textarea name="Mensaje"id="inputmessage" placeholder="Escriba acá el motivo de consulta..." required onkeyup="checkInputMessage()"></textarea>
-  <p class="error" id="errorMessage"><b>Tienes que escribir un mensaje</b></p>
+    <input type="hidden" name="_next" value="/gracias.html">
+    
+    <label for="name" >Nombre: </label>
+    <input type="text" name="Nombre" id="inputname" maxlength="100" placeholder="Escriba acá su nombre...." autofocus required onkeyup="checkInputName()">
+    <p class="error" id="errorName"><b>Tienes que escribir un nombre</b></p>
+    
+    <label for="email" class="text-dark">Email: </label>
+    <input type="email" name="Email" id="inputemail"  placeholder="Escriba acá su email..." required onkeyup="checkInputEmail()">
+    <p class="error" id="errorEmail"><b>Tienes que escribir un email</b></p>
 
-  <button id="buttonSend" type="submit" value="submit">Enviar formulario</button>
-</form>
+    <label for="message" class="text-dark">Message: </label>
+    <textarea name="Mensaje"id="inputmessage" placeholder="Escriba acá el motivo de consulta..." required onkeyup="checkInputMessage()"></textarea>
+    <p class="error" id="errorMessage"><b>Tienes que escribir un mensaje</b></p>
 
-<div data-aos="flip-up">
-  <div class="infoform">
-    <div class="post">
-      <h2>ATENCIÓN</h2>
-      <p id="atencion">
-        Al hacer clic en el botón “Enviar formulario" se le enviará a una página externa de confirmación. Debes hacer clic en <b>“No soy un robot”</b> para finalizar el envío del formulario.
-      </p>
-      <img src="img/formimg.png" alt="Autentificacion de robot">
+    <button id="buttonSend" type="submit" value="submit">Enviar formulario</button>
+  </form>
+
+  <div data-aos="flip-up">
+    <div class="infoform">
+      <div class="post">
+        <h2>ATENCIÓN</h2>
+        <p id="atencion">
+          Al hacer clic en el botón “Enviar formulario" se le enviará a una página externa de confirmación. Debes hacer clic en <b>“No soy un robot”</b> para finalizar el envío del formulario.
+        </p>
+        <img src="img/formimg.png" alt="Autentificacion de robot">
+      </div>
     </div>
   </div>
-</div>
 
   
-<footer>
-  <h2>Sigueme en mis redes sociales: </h2>
-  <a href="https://www.instagram.com/jmo.developer/">Instagram</a>
-  <a href="https://www.facebook.com/JMO-developer-106306118797399">Facebook</a>
-  <a href="https://www.twitch.tv/programacion_jmo">Twitch</a>
-  <a href="https://twitter.com/0321PPMN">Twitter</a>
-  <a href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">Linkedin</a>
-  <a href="https://github.com/JoseManuelOberreuter">GitHub</a>
-</footer>
+  <footer>
+    <h2>Sigueme en mis redes sociales: </h2>
+    <a href="https://www.instagram.com/jmo.developer/">Instagram</a>
+    <a href="https://www.facebook.com/JMO-developer-106306118797399">Facebook</a>
+    <a href="https://www.twitch.tv/programacion_jmo">Twitch</a>
+    <a href="https://twitter.com/0321PPMN">Twitter</a>
+    <a href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">Linkedin</a>
+    <a href="https://github.com/JoseManuelOberreuter">GitHub</a>
+  </footer>
 
 
 
