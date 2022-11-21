@@ -112,8 +112,8 @@ td h2 {
 
 /* HEROBANNER IMG */
 #jmo {
-    width: 500px;
-    height: 480px;
+    width: auto;
+    height: auto;
     position: static;
     padding-left: 1.5rem;
     padding-top: 1rem;
@@ -308,14 +308,39 @@ footer a {
         width: 100%;
         margin: 0 auto;
     }
-    #jmo {
-        margin: 50px auto;
-    }
 
+    td a {
+        height: auto;
+        width: auto;
+    }
+    #jmo {
+        width: 350px;
+        height: auto;
+        position: static;
+        margin: 15px auto;
+    
+        
+        }
+
+    .herobanner {
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+    
 
     .post a, .post b {
         display:contents;
         width: auto;
+    }
+
+    .post, .info {
+        width: 90%;
+    }
+
+    
+    .info {
+        margin-bottom: 0;
+        margin-top: 0px;
     }
 
     .description a{
@@ -352,9 +377,6 @@ footer a {
 
 
 
-
-
-
     header {
     display: block;
     position: relative;
@@ -366,8 +388,13 @@ footer a {
     header a{
         text-decoration: none;
         margin: 0;
-        padding: 30px;
+        padding: 20px;
         transition: .5s;
+    }
+
+    #contact{
+        border-top: 2px solid #F9F7F7;
+        border-bottom: 2px solid #F9F7F7;
     }
     
     header a:hover{
@@ -378,9 +405,6 @@ footer a {
     }
 
 
-    .herobanner {
-        margin-bottom: 300px;
-    }
 
 
     table, td, tr{
@@ -390,36 +414,16 @@ footer a {
 
 
 
-    #jmo {
-        margin: 50px auto;
-    }
-
-
     .frontIcons a {
         display:inline-flex;
         width: auto;
     }
     
-    
 
 
 
 
 
-
-
-
-
-
-
-    .post, .info {
-        width: 90%;
-    }
-
-    .post a, .post b {
-        display:contents;
-        width: auto;
-    }
     .description a{
         color: #3F72AF;
         border-bottom: 0px solid #3F72AF;

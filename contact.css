@@ -89,3 +89,52 @@
     display: block;
     opacity: 0%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 800px){
+
+    #contactForm {
+        height: auto;
+        width: auto;
+        margin: 50px auto;
+        padding: 25px;
+    }
+    
+    .infoform {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+
+    .post {
+        width: auto;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
