@@ -184,15 +184,13 @@ td h2 {
 
 
 /* LINKS */
-footer a, .description a {
+ .description a {
     border-bottom: 0px solid #DBE2EF;
     transition: border-bottom .5s;
     text-decoration: none;
     border-bottom: 3px solid #153462;
 }
-footer a:hover{
-    border-bottom: 3px solid #DBE2EF;
-}
+
 
 
 
@@ -235,37 +233,6 @@ button:hover {
     text-decoration: none;
 
 }
-
-
-
-footer {
-    position:relative;
-    height: auto;
-    margin-top: 200px;
-    padding: 75px 0;
-    bottom: 0;
-    background-color: #3F72AF;
-    color:#F9F7F7;
-    text-align: center;
-}
-footer h2 {
-    color: #F9F7F7;
-    margin-bottom: 50px;
-}
-
-footer a {
-    width: 100%;
-    font-size: 25px;
-    color: #F9F7F7;
-    margin: 50px;
-    transition: .5s;
-    border-bottom: 0px solid #DBE2EF;
-
-}
-
-
-
-
 
 
 
@@ -354,26 +321,6 @@ footer a {
         border-bottom: 2px solid #3F72AF;
     }
 
-    footer {
-        width: 100%;
-    }
-
-    footer a {
-        margin: 25px auto;
-        width: 200px;
-    }
-
-    script {
-        display: none;
-    }
-    head title {
-        display: none;
-    }
-
-    *{
-        display: block;
-        margin: 0 auto;
-    }
 
 
 
@@ -433,15 +380,6 @@ footer a {
     } 
     .description a:hover{
         border-bottom: 2px solid #3F72AF;
-    }
-
-    footer {
-        width: 100%;
-    }
-
-    footer a {
-        margin: 25px auto;
-        width: 200px;
     }
 
     script {
