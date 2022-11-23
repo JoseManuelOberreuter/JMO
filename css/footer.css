@@ -68,7 +68,8 @@ footer h2 {
 
 @media all and (max-width: 800px){
     .icolinks   {
-        display:contents;
+        display: flex;
+
     }
 }
 /* MEDIA */

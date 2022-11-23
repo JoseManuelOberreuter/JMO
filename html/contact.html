@@ -51,7 +51,7 @@
 
 
   <header>
-    <a href="index.html">JMO</a>
+    <a href="/index.html">JMO</a>
     <a id="contact" href="/html/contact.html">Contacto</a>
     <a href="/html/blog.html">Blog</a>
   </header>
@@ -59,6 +59,8 @@
   <form id="contactForm" action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
     <h1>Formulario de contacto:</h1>
     
+    <input type="hidden" name="_next" value="https:/josemanueloberreuter.co/html/thanks.html">
+
     <label for="name" >Nombre: </label>
     <input type="text" name="Nombre" id="inputname" maxlength="100" placeholder="Escriba acá su nombre...." autofocus required onkeyup="checkInputName()">
     <p class="error" id="errorName"><b>Tienes que escribir un nombre</b></p>
