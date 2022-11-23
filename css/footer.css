@@ -5,7 +5,7 @@
 }
 .rss h2 {
     margin-bottom: 20px;
-    color: #000;
+    color:#F9F7F7;
 }
 
 .icolinks   {
@@ -36,13 +36,6 @@
     background-position: 100% 99.9%;
 }
 
-.icolinks p {
-    color: #000;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-
-}
 
 .contador{ 
     margin-bottom: 50px;
@@ -52,7 +45,7 @@
 .contador h2{
 
     margin-bottom: 20px;    
-    color: #000;
+    color: #F9F7F7;
 }
 
 footer {
