@@ -12,8 +12,8 @@
     display: flex;
 }
 .icolinks img {
-    height: auto;
-    width: auto;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
     background: linear-gradient(#3F72AF, #3F72AF 50%, #F9F7F7 50%, #F9F7F7);
     background-size: 100% 200%;
@@ -22,6 +22,7 @@
 .icolinks a {
     height: auto;
     width: auto;
+    margin: 0 auto;
     text-align: center;
     border-bottom : 2px solid #3F72AF;
     transition: all 2s;
