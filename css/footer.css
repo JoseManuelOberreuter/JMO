@@ -10,6 +10,7 @@
 
 .icolinks   {
     display: flex;
+    margin: 0 auto;
 }
 .icolinks img {
     height: auto;
