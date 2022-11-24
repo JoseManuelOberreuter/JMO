@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/hamburger.css">
 
 
     <!-- Favicon -->
@@ -41,17 +40,17 @@
 
     <!-- BARRA LATERAL --> 
     <div class="sidebar">
-
-        <!-- BUTTON DROPDOWN -->
-        <button class="buttonDrop headera hamburger__toggle" onclick="dropdown()" >
-            <span class="hamburger__icon"></span>
+        <!-- LINKS PRINCIPALES -->
+        <a href="/index.html" class="headera">JMO</a>
+        <a id="contact" href="/html/contact.html" class="headera">Contacto</a>            
+        <button class="buttonDrop headera" onclick="dropdown()" >
+            <i id="iconExpanMore1" class="material-symbols-outlined">expand_more</i>
+            Blog
+            <i id="iconExpanMore2" class="material-symbols-outlined">expand_more</i>
         </button> 
 
         <!-- LINKS DROPDOWN -->
         <div id="dropdown" class="dropdowncontent">
-            <a href="/index.html" class="headera">JMO</a>
-            <a id="contact" href="/html/contact.html" class="headera">Contacto</a>            
-    
             <a href="/html/blog/bloghtml.html" >Html</a>
             <a href="/html/blog/blogcss.html" >Css</a>
             <a href="/html/blog/blogjavascript.html" >JavaScript</a>
