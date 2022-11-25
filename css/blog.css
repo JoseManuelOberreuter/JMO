@@ -17,9 +17,7 @@
     height: 100%;
     width: 15%;
     position: fixed;
-    left: 0;
-    overflow: hidden;
-
+    overflow: auto;
     background-color: #A5BECC;
 }
 
