@@ -9,7 +9,7 @@
 }
 
 .icolinks   {
-    display: flex;
+    display: block;
     margin: 0 auto;
 }
 .icolinks img {
@@ -23,6 +23,7 @@
 .icolinks a {
     height: auto;
     width: auto;
+    margin: 0px 20px;
     text-align: center;
     border-bottom : 2px solid #3F72AF;
     transition: all 2s;
