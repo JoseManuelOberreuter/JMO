@@ -13,20 +13,14 @@
     margin: 0 auto;
 }
 .icolinks img {
-    height: auto;
-    width: auto;
     border-radius: 100%;
     background: linear-gradient(#3F72AF, #3F72AF 50%, #F9F7F7 50%, #F9F7F7);
     background-size: 100% 200%;
-    transition: background 2s
 }
 .icolinks a {
-    height: auto;
-    width: auto;
-    margin: 0px 20px;
+    margin: 0px 20px    ;
     text-align: center;
     border-bottom : 2px solid #3F72AF;
-    transition: all 2s;
 }
 .icolinks img:hover {
     background-position: 100% 99.9%;
@@ -58,16 +52,11 @@ footer h2 {
 }
 
 
-
-
-
-
 @media all and (max-width: 800px){
-    .icolinks   {
-        display: flex;
-
+    .icolinks {
+        display: block;
     }
 }
-/* MEDIA */
+
 
 
