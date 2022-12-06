@@ -59,6 +59,10 @@ header a:hover{
     height: 80%;
 }
 
+.indice {
+    display: block;
+}
+
 #mailcheckimg{
     height: 200px;
     width: 250px;
