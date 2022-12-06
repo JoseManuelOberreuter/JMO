@@ -133,7 +133,6 @@
 
 @media all and (max-width: 800px){
 
-
     #blog {
         margin-left: 0%;
         margin: 25px;
@@ -144,6 +143,10 @@
         position: relative;
         width: 100%;
         z-index: 1;
+    }
+
+    #btn_blog{
+        display: none;
     }
     
     #iconExpanMore1, #iconExpanMore2{
