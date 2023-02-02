@@ -50,14 +50,3 @@ function checkInputMessage() {
 }
 
 
-// SEND FORM
-form = document.getElementById('contactForm');
-buttonSend = document.getElementById('buttonSend');
-
-form.addEventListener('submit', e => {
-    checkInputName();
-    checkInputEmail();
-    checkInputMessage();
-
-    console.log('Enviando formulario')
-})
