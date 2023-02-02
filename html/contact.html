@@ -56,10 +56,12 @@
     <a href="/html/blog.html">Blog</a>
   </header>
 
-  <form id="contactForm" action="http://josemanueloberreuter.com/html/thanks.html" method="POST">
+  <form id="contactForm" action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
     <h1>Formulario de contacto:</h1>
     
     <input type="hidden" name="_next" value="https:/josemanueloberreuter.co/html/thanks.html">
+    <input type="hidden" name="_subject" value="NUEVO FORM JMO!">
+    <input type="hidden" name="_captcha" value="false">
 
     <label for="name" >Nombre: </label>
     <input type="text" name="Nombre" id="inputname" maxlength="100" placeholder="Escriba acá su nombre...." autofocus required onkeyup="checkInputName()">
@@ -76,17 +78,6 @@
     <button id="buttonSend" type="submit" value="submit">Enviar formulario</button>
   </form>
 
-  <div data-aos="fade-down" data-aos-duration="2000">
-    <div class="infoform">
-      <div class="post">
-        <h2>ATENCIÓN</h2>
-        <p id="atencion">
-          Al hacer clic en el botón “Enviar formulario" se le enviará a una página externa de confirmación. Debes hacer clic en <b>“No soy un robot”</b> para finalizar el envío del formulario.
-        </p>
-        <img src="/img/formimg.png" alt="Autentificacion de robot">
-      </div>
-    </div>
-  </div>
 
   
     <!-- BARRA INFERIOR -->
