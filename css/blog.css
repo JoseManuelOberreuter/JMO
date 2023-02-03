@@ -7,7 +7,7 @@
 
 
 #blog {
-    margin-left: 15%;
+    margin-left: 10%;
     padding: 50px;
 }
 
@@ -15,7 +15,7 @@
 /* SIDE BAR */
 .sidebar{
     height: 100%;
-    width: 15%;
+    width: 10%;
     position: fixed;
     overflow: auto;
     background-color: #5F9DF7;
@@ -23,7 +23,7 @@
 
 
 .sidebar a, .buttonDrop{
-    font-size: 30px;
+    font-size: 20px;
     display: block;
     width: 100%;
     padding: 25px 0;
