@@ -1,0 +1,161 @@
+.menu-button{
+    display: block;
+    z-index: 999;
+    position: fixed;
+
+    bottom: 40px;
+    right: 40px;
+
+
+    padding: 10px;
+    border: none;
+    border-radius: 100%;
+
+
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background-color: aliceblue;
+
+    transition: 2s;
+}
+
+#hamburger-btn {
+    display: none;
+}
+
+/* Estilos para las líneas del botón */
+.menu-button span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+}
+
+#spn1{
+    margin-top: 5px;
+}
+#spn2{
+    margin-top: 15px;
+
+}
+#spn3{
+    margin-top: 25px;
+}
+
+/* ANIMATION */
+#hamburger-btn:checked ~ #spn1{
+    transform: rotate(140deg);
+    margin-top: 15px;
+
+}
+#hamburger-btn:checked ~ #spn2{
+    opacity: 0;
+}
+#hamburger-btn:checked ~ #spn3{
+    transform: rotate(-140deg);
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+/* MENU OCULTO */
+#hidden-hamburger{
+
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 998;
+    position: fixed;
+
+    bottom: -100%;
+    opacity: 0;
+
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+    background-color: aliceblue;
+
+}
+
+
+
+
+#hidden-hamburger h1{
+    text-align: center;
+}
+
+/* LINKS MENU OCULTO */
+.hamburger-links{
+    display: block;
+    color: #fff;
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* Standard syntax */
+
+
+}
+
+.hamburger-links a{
+    display: block;
+    cursor: pointer;
+
+    width: 60%;
+    margin: 5% auto;
+    padding: 20px 0;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+
+    color: #000;
+    background-color: rgb(188, 188, 188);
+
+    transition: all 0.5s;
+
+
+
+
+}
+
+.hamburger-links a:hover{
+    background-color: rgba(188, 188, 188, 0.498);
+}
+
+/* ICONOS MENU OCULTO */
+.hamburger-icon{
+    display: block;
+    margin: 5%; 
+}
+
+
+
+
+  @media screen and (max-width: 600px) {
+
+    
+    .menu-button {
+        display:block;
+
+    }
+  }
+  

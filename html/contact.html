@@ -9,9 +9,10 @@
 
   
   <!-- styles -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/contact.css">
-  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/style.css">
+  <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/contact.css">
+  <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/footer.css">
+  <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/hamburger.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/img/jmoicooo.png">
@@ -48,13 +49,35 @@
 <body>
 
 
+  <!-- BOTOTN HAMBURGESA -->
+  <label for="hamburger-btn" class="lbl-hamburger">
+    <div class="menu-button">
+        <input type="checkbox" id="hamburger-btn">
+        <span id="spn1" ></span>
+        <span id="spn2"></span>
+        <span id="spn3"></span>
+    </div>
+  </label>
+  
+  
+  <!-- MENU HAMBURGESA ESCONDIDO -->
+  <div id="hidden-hamburger">
 
+      <h1>MENU</h1>
 
-  <header>
-    <a href="/index.html">JMO</a>
-    <a id="contact" href="/html/contact.html">Contacto</a>
-    <a href="/html/blog.html">Blog</a>
-  </header>
+      <div class="hamburger-links">
+          <a href="/Pagina Web Personal/jmo/index.html" >Inicio</a>
+          <a href="/Pagina Web Personal/jmo/html/contact.html">Presupuesto</a>
+          <a href="/Pagina Web Personal/jmo/html/blog.html" >Blog</a>
+      </div> 
+
+      <div class="hamburger-icon">
+          <a href="https://wa.me/+56968323132" target="_blank"><img src="ico/whatsapp.ico" alt=""></a> 
+          <a href="https://www.instagram.com/masking.arquitectos/" target="_blank"><img src="ico/instagram.ico" alt=""></a> 
+          <a href="#" target="_blank"><img src="ico/pinterest.png" alt=""></a> 
+      </div>
+  </div>
+
 
   <form id="contactForm" action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
     <h1>Formulario de contacto:</h1>
@@ -112,6 +135,8 @@
 
 
 
+  <!-- JAVASCRIPT -->
+  <script src="/Pagina Web Personal/jmo/js/hamburger.js"></script>
 
 
   <!-- ERROR JS FORM -->

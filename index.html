@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/dropdown.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
 
     <!-- Icono Favicon -->
     <link rel="icon" type="image/x-icon" href="/img/jmoicooo.png">
@@ -36,19 +37,37 @@
 
 <body>
 
-    <!-- BARRA SUPERIOR -->
-    <header>
-        <!-- HAMBURGESA ESCONDIDA -->
-        <button class="hamburger__toggle">
-            <span class="hamburger__icon"></span>
-        </button>
-        
-        <a href="/index.html">JMO</a>
-        <a id="contact" href="/html/contact.html">Contacto</a>
-        <a href="/html/blog.html">Blog</a>
-    </header>
-
     <main>
+
+        <!-- BOTOTN HAMBURGESA -->
+        <label for="hamburger-btn" class="lbl-hamburger">
+            <div class="menu-button">
+                <input type="checkbox" id="hamburger-btn">
+                <span id="spn1" ></span>
+                <span id="spn2"></span>
+                <span id="spn3"></span>
+            </div>
+        </label>
+
+
+        <!-- MENU HAMBURGESA ESCONDIDO -->
+        <div id="hidden-hamburger">
+            <h1>MENU</h1>
+
+            <div class="hamburger-links">
+                <a href="index.html" >Inicio</a>
+                <a href="/html/contact.html">Presupuesto</a>
+                <a href="/html/blog.html" >Blog</a>
+            </div> 
+
+            <div class="hamburger-icon">
+                <a href="#" target="_blank"><img src="ico/whatsapp.ico" alt=""></a> 
+                <a href="#" target="_blank"><img src="ico/instagram.ico" alt=""></a> 
+                <a href="#" target="_blank"><img src="ico/pinterest.png" alt=""></a> 
+            </div>
+        </div>
+
+
         <!-- HeroBanner -->
         <table class="herobanner">
             <tr>
@@ -86,12 +105,10 @@
                     <h2>Bienvenidos a mi pagina web</h2>
                     <br>
                     <p class="description">
-                        Mi nombre es José Manuel Oberreuter (JMO), soy estudiante de Ingienería Informatica y actualmente trabajo de manera remota como Desarrollador Web FreeLancer para pequeñas o medianas empresas.
-                        Si quieres saber sobre las tecnologías que uso y conozco te invito a pasar por mi <a href="blog.html"><b>Blog Personal</b></a> donde subo contenido cada semana. No dudes en <a href="contact.html"><b>Contactar Conmigo</b></a> si deseas preguntar o comentar, todos los mensajes son bienvenidos. 
-                    </p>
-                </div>
-            </div>
-        </div>
+                        Bienvenidos a mi blog personal donde podrán conocer más sobre mi trabajo y pasiones en el mundo de la tecnología y el desarrollo web. Mi nombre es José Manuel Oberreuter (JMO), soy estudiante de Ingeniería Informática y también trabajo como Desarrollador Web FreeLancer. En mi blog, comparto conocimientos y experiencias actualizados sobre tecnologías y herramientas en el desarrollo web, proyectos interesantes en los que he trabajado, y mis opiniones sobre tecnologías emergentes.
+                        <br><br>
+                        Estoy abierto a recibir preguntas y comentarios, no duden en contactarme a través de mi blog o por cualquier otro medio conveniente. Mi objetivo es ayudar y responder a sus dudas. ¡Gracias por visitar!        
+                    </div>
 
 
         <!-- POST2 -->
@@ -100,17 +117,10 @@
                 <div class="post">
                     <h2>Contactar Conmigo</h2>
                     <p class="description descriptionP">
-                        ¿Deseas contratar mis servicios? 
-                        <br>
-                        ¿Tienes alguna duda o consulta?
-                        <br>
-                        ¿Quieres hacer una retroalimentación?
-                    </p>
-                    <br><br>
-                    <p class="description">
-                        Si la respuesta es SÍ, no dudes en contactarme. Responderé lo más pronto posible, dentro de mi horario hábil (Lunes a Viernes de 9AM a 6PM).
-                    </p>
-                    <div class="postButtons">  
+                        Si estás interesado en mis servicios de desarrollo web o tienes alguna duda o consulta sobre el mismo, estoy aquí para ayudarte. No dudes en contactarme y haré todo lo posible por responder a tus preguntas y atender tus necesidades. Mi objetivo es brindar un excelente servicio y asegurarme de que estés satisfecho con mi trabajo.
+                        <br><br>
+                        Te garantizo una respuesta rápida y eficiente dentro de mi horario hábil de Lunes a Viernes de 9AM a 6PM. Si tienes alguna retroalimentación o sugerencia sobre mi blog o mi trabajo, también estoy abierto a escuchar y aprender de ella. ¡No dudes en contactarme! Estoy a tus disposición.                    
+                    </p>                    <div class="postButtons">  
                         <a href="/contact.html"><button><b>Contacto</b></button></a>
                     </div>
 
@@ -125,7 +135,9 @@
                 <div class="post">
                     <h2>Blog personal</h2>
                     <p class="description">
-                        Blog 100% dedicado a mis estudios e investigaciones como programador, actualizado semana a semana con post nuevos sobre programación, tecnologías y lenguajes. 
+                        Visita mi blog personal, un espacio 100% dedicado a mis estudios e investigaciones como programador. Aquí, compartiré con ustedes mis conocimientos y experiencias sobre programación, tecnologías y lenguajes. Si estás interesado en el mundo de la programación y las tecnologías, este es el lugar perfecto para ti.
+                        <br><br>
+                        Mi objetivo es ofrecer información de calidad y actualizada sobre las últimas tendencias y desarrollos en el campo de la programación y las tecnologías. Además, estaré encantado de responder a sus preguntas y comentarios, por lo que no dudes en interactuar conmigo y con la comunidad a través de mi blog. ¡Gracias por visitar!
                     </p>
                     <div class="postButtons">  
                         <a href="/blog.html"><button><b>Blog</b></button></a>
@@ -170,7 +182,8 @@
 
 
 
-
+    <!-- JAVASCRIPT -->
+    <script src="/js/hamburger.js"></script>
 
 
     <!-- Script Fades -->

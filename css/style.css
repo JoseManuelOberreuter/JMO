@@ -250,7 +250,17 @@ button:hover {
 }
 
 
+.encabezado{
+    display: flex;
 
+}
+.encabezado img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #112D4E;
+    border-radius: 100%;
+    right: 0;
+}
 
 
 

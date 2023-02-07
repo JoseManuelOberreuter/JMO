@@ -7,9 +7,11 @@
     <title>JMO Blog: JavaScript</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/style.css">
+    <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/blog.css">
+    <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/footer.css">
+    <link rel="stylesheet" href="/Pagina Web Personal/jmo/css/hamburger.css">
+
 
 
     <!-- Favicon -->
@@ -25,37 +27,46 @@
 
 </head>
 <body>
+
+        <!-- BOTOTN HAMBURGESA -->
+        <label for="hamburger-btn" class="lbl-hamburger">
+            <div class="menu-button">
+                <input type="checkbox" id="hamburger-btn">
+                <span id="spn1" ></span>
+                <span id="spn2"></span>
+                <span id="spn3"></span>
+            </div>
+        </label>
+    
+    
+        <!-- MENU HAMBURGESA ESCONDIDO -->
+        <div id="hidden-hamburger">
+    
+            <h1>MENU</h1>
+    
+            <div class="hamburger-links">
+                <a href="/Pagina Web Personal/jmo/index.html" >Inicio</a>
+                <a href="/Pagina Web Personal/jmo/html/contact.html">Presupuesto</a>
+                <a href="/Pagina Web Personal/jmo/html/blog.html" >Blog</a>
+            </div> 
+    
+            <div class="hamburger-icon">
+                <a href="#" target="_blank"><img src="ico/whatsapp.ico" alt="whatsapp"></a> 
+                <a href="#" target="_blank"><img src="ico/instagram.ico" alt="instagram"></a> 
+                <a href="#" target="_blank"><img src="ico/pinterest.png" alt="pinterest"></a> 
+            </div>
+    
+    
+        </div>
+    
     <!-- BARRA LATERAL --> 
     <div class="sidebar">
-        <!-- LINKS PRINCIPALES -->
-        <a href="/index.html" class="headera">JMO</a>
-        <a id="contact" href="/html/contact.html" class="headera">Contacto</a>
-        <a href="/html/blog.html" id="btn_blog" style="margin: 0; padding: 0;">         
-            
-            <button class="buttonDrop headera" onclick="dropdown()" >
-                <i id="iconExpanMore1" class="material-symbols-outlined">expand_more</i>
-                Blog
-                <i id="iconExpanMore2" class="material-symbols-outlined">expand_more</i>
-            </button> 
-        
-        </a>
 
         <!-- LINKS DROPDOWN -->
         <div id="dropdown" class="dropdowncontent">
-            <a href="/html/blog/blogjavascript.html" class="active">JavaScript</a>
-
-            <!-- 
-
-                LINKS ESCONDIDOS
-
-                <a href="/html/blog/bloghtml.html" >Html</a>
-                <a href="/html/blog/blogcss.html" >Css</a>
-                <a href="/html/blog/blogwindows.html" >React Js</a>
-                <a href="/html/blog/blogpython.html">Python</a>
-                <a href="/html/bloglinux.html" >Linux</a>
-                <a href="/html/blog/blogwindows.html" >Windows</a>
-                <a href="/html/blog/blogwindows.html" >RocketBot</a> 
-            -->
+            <a href="/html/blog/bloghtml.html" >Html</a>
+            <a href="/html/blog/blogcss.html" >Css</a>
+            <a href="/Pagina Web Personal/jmo/html/blog/blogjavascript.html" class="active">JavaScript</a>
         </div>
 
     </div>
@@ -64,21 +75,29 @@
         
 
 
-        <div class="post">
-                
+        <div class="post">                
             <h1>Index JavaScript:</h1>
 
             <br>
                         
             <a href="#intro"> <p>1. Introducción a JavaScript </p> </a>
+            <br>
             <a href="#variables"> <p>2. Variables y tipos de datos </p> </a>
+            <br>
             <a href="#operadores"> <p>3. Operadores y expresiones </p> </a>
+            <br>
             <a href="#flujo"> <p>4. Control de flujo </p> </a>
+            <br>
             <a href="#funciones"> <p>5. Funciones </p> </a>
+            <br>
             <a href="#objetos"> <p>6. Objetos y Arreglos </p> </a>
+            <br>
             <a href="#DOM"> <p>7. DOM y manipulación del Documento </p> </a>
+            <br>
             <a href="#eventos"> <p>8. Eventos y formularios </p> </a>
+            <br>
             <a href="#promesas"> <p>9. Programación Asíncrona y Promesas </p> </a>
+            <br>
             <a href="#avanzadas"> <p>10. Aplicaciones avanzadas con JavaScript </p> </a>
 
         </div>
@@ -87,6 +106,11 @@
 
         <div class="margin" id="intro"></div>
         <div class="post">
+
+            <div class="encabezado">
+                <img src="/Pagina Web Personal/jmo/img/jmo.png" alt="">
+            </div>
+
 
             <h1>1. Introducción a JavaScript</h1>
 
@@ -386,6 +410,10 @@
         </div>
 
     </footer>
+
+        <!-- JAVASCRIPT -->
+        <script src="/Pagina Web Personal/jmo/js/hamburger.js"></script>
+
     
 </body>
 </html>
