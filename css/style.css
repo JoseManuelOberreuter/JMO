@@ -1,10 +1,16 @@
+:root{
+    --color0:#fff;
+    --color1:#000;
+    --color2:#153462;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto Slab', serif;
 }
 body {
-    background-color: aliceblue;
+    background-color: var(--color0);
     min-height: 100vh;
 }
 
@@ -13,26 +19,13 @@ body {
 /* HEADER */
 header {
     top: 0;
-    background-color: #153462;
+    background-color: var(--color2);
     
     text-align: center;
     padding: 10px;
     z-index: 1;
     }
 
-
-header a{
-    text-decoration: none;
-    padding: 20px ;
-    margin: 30px;
-    color: #F9F7F7;
-    font-size: 30px;  
-    transition: color .5s;
-}
-
-header a:hover{
-    color: #3F72AF;
-}
 
 
 
@@ -43,7 +36,7 @@ header a:hover{
     margin: 50px auto;
     padding: 5%;
     text-align: justify;
-    box-shadow: 1px 1px 5px 1px rgb(100, 100, 100);
+    box-shadow: 1px 1px 5px 1px var(--color1);
 }
 
 .post ul, ol{
@@ -78,7 +71,7 @@ header a:hover{
     margin: 25px auto;
     padding: 25px;
     text-align: justify;
-    color:#F9F7F7 ;
+    color: var(--color0) ;
     background-color: #000;
 }
 
@@ -94,7 +87,7 @@ header a:hover{
 table {
     height: 680px;
     width: 100%;
-    background-color: #F9F7F7;
+    background-color: var(--color0);
     align-items:center;
     text-align: center;
 }
@@ -103,7 +96,7 @@ td {
 }
 
 td h1, h2 {
-    color: #153462;
+    color: var(--color2);
 }
 
 td h1 {
@@ -121,8 +114,8 @@ td h2 {
     padding-left: 1.5rem;
     padding-top: 1rem;
 
-    border-bottom: 40px solid #3F72AF;
-    background: linear-gradient(#F9F7F7, #F9F7F7 50%, #3F72AF 50%, #3F72AF);
+    border-bottom: 40px solid var(--color2);
+    background: linear-gradient(#F9F7F7, #F9F7F7 50%, var(--color2) 50%, var(--color2));
     background-size: 100% 200%;
     
     cursor: pointer;
@@ -139,11 +132,13 @@ td h2 {
     width: 50px;
     margin: 0 20px;
     border-radius: 100%;
-    transition: background-color 0.5s;
+    opacity: .5;
+    transition: opacity 1s;
+
 }
 
 .frontIcons img:hover {
-    background-color: #3F72AF;
+    opacity: 1;
 }
 
 
@@ -156,42 +151,26 @@ td h2 {
 
 .info h2{
     margin-bottom: 20px;
-    color: #112D4E;
+    color: var(--color1);
     font-size: 35px;
     text-align: center;
 }
 
 .description{
     font-size: 25px;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
     margin: 0 auto;
 }
-.description a{
-    color: #3F72AF;
-    border-bottom: 0px solid #3F72AF;
-    transition: border-bottom .5s;
-    text-decoration: none;
-
-}
-
-.description a:hover{
-    border-bottom: 2px solid #3F72AF;
-}
-
-.description{
-    text-align: center;
-}
-
 
 
 
 /* LINKS */
  .description a {
-    border-bottom: 0px solid #DBE2EF;
+    border-bottom: 0px solid var(--color0);
     transition: border-bottom .5s;
     text-decoration: none;
-    border-bottom: 3px solid #153462;
+    border-bottom: 3px solid var(--color2);
 }
 
 
@@ -409,4 +388,6 @@ button:hover {
     script {
         display: none;
     }
+
+
 }

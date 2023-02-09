@@ -1,3 +1,11 @@
+:root{
+    --color0:#fff;
+    --color1:#000;
+    --color2:#153462;
+    --color3:#DDDDDD;
+}
+
+
 .menu-button{
     display: block;
     z-index: 999;
@@ -18,7 +26,7 @@
     justify-content: center;
     cursor: pointer;
 
-    background-color: #3F72AF;
+    background-color: var(--color2);
 
     transition: 2s;
 }
@@ -33,7 +41,7 @@
     display: block;
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: var(--color0);
     margin: 5px auto;
     transition: all 0.5s ease-in-out;
 }
@@ -89,7 +97,7 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease-in-out;
-    background-color: aliceblue;
+    background-color: var(--color2);
 
 }
 
@@ -98,6 +106,7 @@
 
 #hidden-hamburger h1{
     text-align: center;
+    color: var(--color0);
 }
 
 /* LINKS MENU OCULTO */
@@ -127,8 +136,8 @@
     text-align: center;
     text-decoration: none;
 
-    color: #000;
-    background-color: rgb(188, 188, 188);
+    color: var(--color1);
+    background-color: var(--color0);
 
     transition: all 0.5s;
 
@@ -138,7 +147,9 @@
 }
 
 .hamburger-links a:hover{
-    background-color: rgba(188, 188, 188, 0.498);
+    color: var(--color0);
+    background-color: var(--color1);
+
 }
 
 /* ICONOS MENU OCULTO */
