@@ -1,0 +1,12 @@
+#text {
+    animation: typing 5s steps(28, end);
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }

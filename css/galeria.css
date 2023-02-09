@@ -1,0 +1,44 @@
+
+.galeria{
+    margin: 150px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.img-galeria {
+    margin: 50px auto;
+    filter: brightness(100%);
+    transition:  filter .5s;
+    cursor: pointer;
+}
+
+
+.grayscale {
+    filter: grayscale(100%);
+    transition: all 1s;
+  }
+
+
+@media screen and (max-width: 600px) {
+
+    .galeria{
+        display: block;
+        margin: 0 auto;
+
+    }
+
+
+    .img-galeria img{
+
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .grayscale {
+        filter: grayscale(0%);
+      }
+    
+}

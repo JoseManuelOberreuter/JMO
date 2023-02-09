@@ -12,6 +12,8 @@
 }
 
 
+
+
 /* SIDE BAR */
 .sidebar{
     height: 100%;
@@ -61,6 +63,10 @@
     background-color: #F9F7F7;
 }
 
+.dropdowncontent {
+    position: relative;
+    transition: position 1s;
+}
 .dropdowncontent a{
     color: #243A73;
 }
@@ -73,11 +79,16 @@
 }
 
 
-#dropdown{
-    position: relative;
-    transition: position 1s;
-}
 
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
 
 .active{
     background-color: #F9F7F7;
