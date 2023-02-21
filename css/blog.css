@@ -1,4 +1,11 @@
 /* BLOG */
+
+:root{
+    --color0:#fff;
+    --color1:#000;
+    --color2:#153462;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +27,7 @@
     width: 10%;
     position: fixed;
     overflow: auto;
-    background-color: #5F9DF7;
+    background-color: var(--color2);
 }
 
 
@@ -37,30 +44,30 @@
 }
 
 .sidebar a:hover{
-    background-color: #F9F7F7;
+    background-color: var(--color0);
 }
 
 
 .headera {
     color: #F9F7F7;
-    background-color:#243A73;
+    background-color:var(--color2);
 }
 
 .headera:hover {
-    color: #243A73;
+    color: var(--color2);
 }
 
 
 .buttonDrop{
-    border: 0px solid #243A73;
-    color: #F9F7F7;
+    border: 0px solid var(--color2);
+    color: var(--color0);
     border-radius: 0%;
 }
 
 .buttonDrop:hover {
-    border  : 0px solid #243A73;
-    color: #243A73;
-    background-color: #F9F7F7;
+    border  : 0px solid var(--color2);
+    color: var(--color2);
+    background-color: var(--color0);
 }
 
 .dropdowncontent {
@@ -68,13 +75,13 @@
     transition: position 1s;
 }
 .dropdowncontent a{
-    color: #243A73;
+    color: var(--color2);
 }
 
 #iconExpanMore1, #iconExpanMore2  {
     display: none;
     font-size: 40px;
-    color: #243A73;
+    color: var(--color2);
     transition: transform 330ms ease-in-out;
 }
 

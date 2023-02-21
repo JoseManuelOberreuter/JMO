@@ -176,24 +176,7 @@ td h2 {
 
 
 
-/* BUTTONS */
-button {
-    background-color: #F9F7F7;
-    color: #153462;
-    padding: 10px 30px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 2px solid #153462;
-    transition: border 1s, background-color 1s;
-    cursor: pointer;
-}
 
-button:hover {
-    border:2px solid #F9F7F7;
-    background-color: #3F72AF;
-    color: #F9F7F7;
-}
 
 
 .postButtons {
@@ -201,13 +184,7 @@ button:hover {
     text-align: center;
 
 }
-.postButtons button{
-    display:inline;
-    width: 200px;
-    margin: 25px 50px;
-    padding: 20px;
-    font-size: 20px;
-}
+
 
 .postButtons a {
     width: auto;

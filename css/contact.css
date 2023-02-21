@@ -2,13 +2,19 @@
     font-family: 'Roboto Slab', serif;
 }
 
+/* GRID */
+.contacto{
+    display: flex;
+}
+
 /* FORM */
 #contactForm {
+
     height: auto;
-    width: 500px;
+    width: 30%;
     display: block;
-    margin: 50px auto;
-    padding: 25px;
+    margin: 20px 25px;
+    padding: 20px;
     color: #F9F7F7;
     background-color: #3F72AF;
     box-shadow: 0px 2px 4px #000;
@@ -27,18 +33,7 @@
     font-size: 20px;
 }
 
-#contactForm input {
-    font-size: 15px;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 10px 0 0 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 3px solid #F9F7F7;
-    transition: border .5s;
-    outline: none;
 
-}
 #contactForm textarea {
     font-size: 15px;
     width: 100%;
@@ -93,12 +88,124 @@
 
 
 
+.flex-item{
+    display: flex;
+    width: 100%;
+}
+
+.flex-item input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.input-contact [type="checkbox"]{
+    width: 25px
+}
+.input-contact [type="text"], .input-contact [type="email"],.input-contact [type="tel"] {
+    width: 100%;
+
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+.tabs-container {
+    margin: 20px auto;
+    height: 90vh;
+    width: 60%;
+    border: 1px solid black;
+  }
+  
+  .tabs-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    background-color: #eee;
+  }
+  
+  .new-tab-button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tabs-list {
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .tab-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  .tab-close-button {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .tabs-content {
+    height: 95%;
+  }
+  
+  iframe {
+    display: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  iframe.active {
+    display: block;
+  }
+ 
+
+  .tab-close-button {
+    cursor: pointer;
+  }
+
+  .tab.active {
+    background-color: #3F72AF; 
+  }
+
+  .tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    margin-bottom: -1px; /* para ocultar la separación entre el contenedor de pestañas y los iframes */
+    z-index: 1; /* para que se superponga sobre los iframes */
+  }
 
 
 
