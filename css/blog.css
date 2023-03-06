@@ -4,6 +4,7 @@
     --color0:#fff;
     --color1:#000;
     --color2:#153462;
+    --color3: #F9F7F7;
 }
 
 *{
@@ -12,6 +13,11 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.active{
+    color: var(--color2);
+    background-color: #F9F7F7;
+
+}
 
 #blog {
     margin-left: 10%;
@@ -49,7 +55,7 @@
 
 
 .headera {
-    color: #F9F7F7;
+    color: var(--color0);
     background-color:var(--color2);
 }
 
@@ -65,7 +71,7 @@
 }
 
 .buttonDrop:hover {
-    border  : 0px solid var(--color2);
+    border  :    solid var(--color1);
     color: var(--color2);
     background-color: var(--color0);
 }
@@ -74,7 +80,13 @@
     position: relative;
     transition: position 1s;
 }
+
 .dropdowncontent a{
+    color: var(--color0);
+    transition: .5s;
+}
+
+.dropdowncontent a:hover{
     color: var(--color2);
 }
 
@@ -97,10 +109,7 @@
     'opsz' 48
 }
 
-.active{
-    background-color: #F9F7F7;
 
-}
 
 /* SCROLL BAR */
 
@@ -140,13 +149,13 @@
 .hide{
     display: none;
 }
-.active {
-    color: #243A73;
-    background-color: #F9F7F7;
+#active {
+    color: var(--color2);
+    background-color: var(--color0);
 }
-.active:hover {
-    color: #243A73;
-    background-color: #F9F7F7;
+#active:hover {
+    color: var(--color2);
+    background-color: var(--color0);
 }
 
 
