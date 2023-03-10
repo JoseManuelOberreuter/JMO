@@ -83,63 +83,6 @@ header {
 
 
 
-/* HEROBANNER */
-table {
-    height: 680px;
-    width: 100%;
-    background-color: var(--color0);
-    align-items:center;
-    text-align: center;
-}
-td {
-    width: 50%;
-}
-
-td h1, h2 {
-    color: var(--color2);
-}
-
-td h1 {
-    font-size: 40px;
-}
-td h2 {
-    font-size: 30px;
-}
-
-/* HEROBANNER IMG */
-#jmo {
-    width: auto;
-    height: auto;
-    position: static;
-    padding-left: 1.5rem;
-    padding-top: 1rem;
-
-    border-bottom: 40px solid var(--color2);
-    background: linear-gradient(#F9F7F7, #F9F7F7 50%, var(--color2) 50%, var(--color2));
-    background-size: 100% 200%;
-    
-    cursor: pointer;
-    transition: background 2s, border-radius 2s;
-}
-
-#jmo:hover{
-    background-position: 100% 99.9%;
-}
-
-
-.frontIcons img {
-    height: 50px;
-    width: 50px;
-    margin: 0 20px;
-    border-radius: 100%;
-    opacity: .5;
-    transition: opacity 1s;
-
-}
-
-.frontIcons img:hover {
-    opacity: 1;
-}
 
 
 /* INDEX DESCRIPTION */
