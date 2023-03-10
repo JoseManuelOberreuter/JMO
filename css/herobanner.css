@@ -3,6 +3,10 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
+
   }
   
   #fondohero {
@@ -11,7 +15,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(3px) brightness(60%);
+    filter: blur(2px) brightness(100%);
+    max-width: 100%;
   }
   
   .hero-text {
@@ -35,6 +40,9 @@
     margin-top: 20px;
   }
   
+  .frontIcons {
+    display: flex;
+  }
   .frontIcons img {
     width: 50px;
     height: 50px;
