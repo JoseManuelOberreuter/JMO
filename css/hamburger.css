@@ -1,7 +1,7 @@
 :root{
     --color0:#fff;
-    --color1:#000;
-    --color2:#153462;
+    --color1:#333333;
+    --color2:#1F1F1F;
     --color3:#DDDDDD;
 }
 
@@ -140,9 +140,6 @@
     background-color: var(--color0);
 
     transition: all 0.5s;
-
-
-
 
 }
 
