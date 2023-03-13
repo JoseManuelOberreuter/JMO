@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
+
 
 
     <!-- Favicon -->
@@ -33,32 +35,55 @@
 
 <body>
 
+    <!-- BOTOTN HAMBURGESA -->
+    <label for="hamburger-btn" class="lbl-hamburger">
+        <div class="menu-button">
+            <input type="checkbox" id="hamburger-btn">
+            <span id="spn1" ></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+        </div>
+    </label>
+
+    
+    <!-- MENU HAMBURGESA ESCONDIDO -->
+    <div id="hidden-hamburger">
+
+        <h1>MENU</h1>
+
+        <div class="hamburger-links">
+            <a href="/index.html" >Inicio</a>
+            <a href="/html/contact.html">Presupuesto</a>
+            <a href="/html/blog.html" >Blog</a>
+        </div> 
+
+        <div class="hamburger-icon">
+            <a href="#" target="_blank"><img src="ico/whatsapp.ico" alt="whatsapp"></a> 
+            <a href="#" target="_blank"><img src="ico/instagram.ico" alt="instagram"></a> 
+            <a href="#" target="_blank"><img src="ico/pinterest.png" alt="pinterest"></a> 
+        </div>
+
+
+    </div>
+    
     <!-- BARRA LATERAL --> 
     <div class="sidebar">
-        <!-- LINKS PRINCIPALES -->
-        <a href="/index.html" class="headera">JMO</a>
-        <a id="contact" href="/html/contact.html" class="headera">Contacto</a>            
-        <button class="buttonDrop headera" onclick="dropdown()" >
-            <i id="iconExpanMore1" class="material-symbols-outlined"></i>
-            Blog
-            <i id="iconExpanMore2" class="material-symbols-outlined"></i>
-        </button> 
 
         <!-- LINKS DROPDOWN -->
         <div id="dropdown" class="dropdowncontent">
-            <a href="/html/blog/bloghtml.html " >Html</a>
-            <a href="/html/blog/blogcss.html" class="active">Css</a>
+            <a href="/html/blog/bloghtml.html" >Html</a>
+            <a href="/html/blog/blogcss.html" id="active">Css</a>
             <a href="/html/blog/blogjavascript.html" >JavaScript</a>
-            <a href="/html/blog/blogpython.html">Python</a>
-            <a href="/html/bloglinux.html" >Linux</a>
-            <a href="/html/blog/blogwindows.html"  >Windows</a>
-            <a href="/html/blog/RocketBot.html" >RocketBot</a>
         </div>
 
     </div>
 
 
     <main id="blog">
+
+
+
+        
         <div class="post">
             <h1>PROXIMAMENTE HABRÁ CONTENIDO</h1>
             <h2>Estamos estudiando para usted</h2>
