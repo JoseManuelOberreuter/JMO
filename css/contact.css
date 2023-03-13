@@ -1,247 +1,63 @@
-*{
-    font-family: 'Roboto Slab', serif;
+.block-item{
+    margin: 20px auto;
 }
 
-/* GRID */
-.contacto{
-    display: flex;
-}
-
-/* FORM */
-#contactForm {
-
-    height: auto;
-    width: 30%;
+.block-item label, .block-item input{
     display: block;
-    margin: 20px 25px;
-    padding: 20px;
-    color: #F9F7F7;
-    background-color: #3F72AF;
-    box-shadow: 0px 2px 4px #000;
-}
-
-#contactForm h1 {
-    text-align: center;
-    margin: 15px;
-    color: #F9F7F7;
-}
-#contactForm div {
-    margin: 15px 0;
-}
-
-#contactForm label {
-    font-size: 20px;
 }
 
 
-#contactForm textarea {
-    font-size: 15px;
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    margin: 10px 0 0 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 3px solid #F9F7F7;
-    transition: border .5s;
-    resize: none;
-    outline: none;
-}
-#contactForm textarea:focus,#contactForm input:focus{
-    border: 3px solid #153462;
-
-}
-#contactForm button {
-    margin: 10px auto;
-    display: flex;
-}
-
-.infoform {
-    width: 700px;
-    height: auto;
+.item6 {
+    align-self: center;
     margin: 0 auto;
-    margin-top: 150px;
-}
-
-.infoform h2 {
-    margin: 20px auto;
-    text-align: center;
-}
-
-.infoform img {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-}
-
-#atencion {
-    font-size: 20px;
-}
-
-.error{
-    color: rgb(255, 0, 0);
-    display: block;
-    opacity: 0%;
-}
-
-
-
-
-.flex-item{
-    display: flex;
-    width: 100%;
-}
-
-.flex-item input[type="checkbox"]{
-    height: 20px;
-    width: 20px;
-    margin-top: 0px;
-    margin-right: 10px;
-}
-
-.input-contact [type="checkbox"]{
-    width: 25px
-}
-.input-contact [type="text"], .input-contact [type="email"],.input-contact [type="tel"] {
-    width: 100%;
 
 }
 
 
+.item6 input, .item6 textarea{
+    width: 500px;
+}
+
+.item6 label{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.item6 input{
+    padding: 5px;
+    border: 2px solid  var(--color0);
+    border-bottom: 2px solid black;
+    font-size: 25px;
 
 
+}
+.item6 input:focus{
+    border: 2px solid black;
+}
 
+.item6 textarea{
+    padding: 5px;
+  height: 100px;
+  border: 2px solid black;
+  font-size: 25px;
 
+}
 
+.button-item{
+ text-align: center;
+}
 
-
-
-
-
-
-
-
-
-.tabs-container {
-    margin: 20px auto;
-    height: 90vh;
-    width: 60%;
-    border: 1px solid black;
-  }
-  
-  .tabs-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 30px;
-    background-color: #eee;
-  }
-  
-  .new-tab-button {
-    margin: 5px;
-    padding: 5px 10px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
+.item6 button{
+    padding: 5px;
+    width: 200px;
+    border: 2px solid  var(--color1);
+    background-color: var(--color0);
+    font-size: 25px;
     cursor: pointer;
-  }
-  
-  .tabs-list {
-    display: flex;
-    flex-wrap: no-wrap;
-    overflow-x: auto;
-  }
-  
-  .tab {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-  }
-  
-  .tab-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 5px;
-  }
-  
-  .tab-close-button {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 5px;
-    color: red;
-    cursor: pointer;
-  }
-  
-  .tabs-content {
-    height: 95%;
-  }
-  
-  iframe {
-    display: none;
-    height: 100%;
-    width: 100%;
-    border: none;
-  }
-  
-  iframe.active {
-    display: block;
-  }
- 
+    transition: background-color 0.5s;
+}
 
-  .tab-close-button {
-    cursor: pointer;
-  }
-
-  .tab.active {
-    background-color: #3F72AF; 
-  }
-
-  .tab-container {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    margin-bottom: -1px; /* para ocultar la separación entre el contenedor de pestañas y los iframes */
-    z-index: 1; /* para que se superponga sobre los iframes */
-  }
-
-
-
-
-
-
-@media all and (max-width: 800px){
-
-    #contactForm {
-        height: auto;
-        width: auto;
-        margin: 50px auto;
-        padding: 25px;
-    }
-    
-    .infoform {
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 150px;
-    }
-
-    .post {
-        width: auto;
-    }
-    
-
-
-
-
-
-
-
-
-
-
-
+.item6 button:hover{
+    background-color: #3333;
 
 }

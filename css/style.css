@@ -89,17 +89,17 @@ header {
 .info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 50px auto;
+    margin: 200px auto;
     width: 100%;
     height: auto;
 }
 
-.item1, .item2 {
+.item1, .item2, .item3, .item4 {
     justify-self: center;
     align-self: center;
 }
 
-.item1 p{
+.item1 p, .item4 p, .item5 p{
 
     margin: 0 50px;
     text-align: justify;
