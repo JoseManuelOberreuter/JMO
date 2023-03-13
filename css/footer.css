@@ -15,25 +15,7 @@
     color:var(--color1);
 }
 
-.icolinks   {
-    display: block;
-    margin: 0 auto;
-}
-.icolinks img {
-    border-radius: 100%;
-    opacity: .5;
-    background-size: 100% 200%;
-    transition: opacity 1s;
-}
 
-
-.icolinks a {
-    margin: 0px 20px    ;
-    text-align: center;
-}
-.icolinks img:hover {
-    opacity: 1;
-}
 
 
 .contador{ 
