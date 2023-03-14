@@ -1,4 +1,4 @@
-const words = ['Full Stack developer','Desarrollador Web FreeLancer','Estudiante de Ingienería Informatica', ''];
+const words = ['Software Developer','Full Stack developer','Desarrollador Web FreeLancer','Estudiante de Ingienería Informatica'];
   let i = 0;
   let j = 0;
   let isDeleting = false;
