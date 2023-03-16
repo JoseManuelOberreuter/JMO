@@ -35,6 +35,7 @@ header {
     width: 90%;
     margin: 50px auto;
     padding: 5%;
+    background-color: #fff;
     text-align: justify;
     box-shadow: 1px 1px 5px 1px var(--color1);
 }

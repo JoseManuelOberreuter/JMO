@@ -16,7 +16,6 @@
 #blog {
     margin-left: 10%;
     padding: 50px;
-    background-image: url(/jmo/img/fondoblog0.jpg);
 }
 
 
@@ -152,6 +151,31 @@
     color: var(--color2);
     background-color: var(--color0);
 }
+
+
+
+
+
+.codemargin{
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
