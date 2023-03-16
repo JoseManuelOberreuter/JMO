@@ -152,12 +152,29 @@
     background-color: var(--color0);
 }
 
+.code {
+    height: auto;
+    width: 80%;
+    margin: 0px auto;
+    padding: 25px;
+    text-align: justify;
+    color: var(--color0) ;
+    background-color: #000;
+}
 
 
 
+
+.textcenter{
+    display: block;
+    text-align: center;
+}
 
 .codemargin{
     margin-left: 25px;
+}
+.codemargin1{
+    margin-left: 50px;
 }
 
 

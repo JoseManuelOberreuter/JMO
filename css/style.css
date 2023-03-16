@@ -66,15 +66,6 @@ header {
     margin: 0 auto;
 }
 
-.code {
-    height: auto;
-    width: 80%;
-    margin: 25px auto;
-    padding: 25px;
-    text-align: justify;
-    color: var(--color0) ;
-    background-color: #000;
-}
 
 .indent {
     text-indent: 25px;
