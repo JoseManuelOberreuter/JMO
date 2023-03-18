@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracias!</title>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/jmo/css/style.css">
+    <link rel="stylesheet" href="/jmo/css/dropdown.css">
+    <link rel="stylesheet" href="/jmo/css/footer.css">
+    <link rel="stylesheet" href="/jmo/css/hamburger.css">
+    <link rel="stylesheet" href="/jmo/css/palabras.css">
+    <link rel="stylesheet" href="/jmo/css/herobanner.css">
+    <link rel="stylesheet" href="/jmo/css/contact.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/img/jmoicooo.png">
@@ -26,28 +31,60 @@
     
 </head>
 <body>
-    <!-- BARRA SUPERIOR -->
-    <header>
-        <a href="/index.html">JMO</a>
-        <a id="contact" href="/html/contact.html">Contacto</a>
-        <a href="/html/blog.html">Blog</a>
-    </header>
 
-    <div class="post" style="text-align:center"> 
-        <h1> GRACIAS POR COMUNICARSE CONMIGO </h1>
-        <br><br>
-        <h2>Responderé lo más pronto posible dentro de mi horario hábil.</h2>
-        <h2>Horario: Lunes a Viernes de 9AM a 6PM</h2>
-        <br><br>
-        <a href="/html/blog.html"><h3>¡Recuerda visitar mi Blog!</h3></a>
-        <h3>Tambien puedes seguirme en mis redes sociales...</h3>
-        <div class="icolinks" id="icothanks">
-            <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/gitico.ico" alt="GitHub Icon"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkico.ico" alt="Linkedin Icon"></a>
-            <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaico.ico" alt="Instagram Icon"></a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbico.ico" alt="Facebook Icon"></a>
-            <a target="_blank" href="https://twitter.com/0321PPMN"><img src="/ico/twitterico.ico" alt="Twitter Icon"></a>
-            <a target="_blank" href="https://www.twitch.tv/programacion_jmo"><img src="/ico/twitchico.ico" alt="Twitch Icon"></a>
+
+    <!-- BOTOTN HAMBURGESA -->
+    <label for="hamburger-btn" class="lbl-hamburger">
+        <div class="menu-button">
+            <input type="checkbox" id="hamburger-btn">
+            <span id="spn1" ></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+        </div>
+    </label>
+
+
+    <!-- MENU HAMBURGESA ESCONDIDO -->
+    <div id="hidden-hamburger">
+        <h1>MENU</h1>
+
+        <div class="hamburger-links">
+            <a href="index.html" >Inicio</a>
+            <a href="/html/blog.html" >Blog</a>
+        </div> 
+
+        <div class="rss">
+
+            <div class="frontIcons">
+                <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+                <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+                <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+            </div>
+        </div>        
+    </div>
+
+    
+    <div class="container">
+
+        <h1>¡Muchas Gracias!</h1>
+
+
+        <div id="thanks">
+
+            <p class="description"> 
+            
+                Le agradezco por comunicarse conmigo. Estoy a su disposición para atender su consulta o solicitud. Le informo que responderé a la brevedad posible dentro de mi horario hábil de Lunes a Viernes de 9AM a 6PM.
+                
+                Además, le invito a visitar mi blog en el siguiente enlace: <a href="/html/blog.html">Blog JMO</a> donde podrá encontrar información adicional de interés. También puede seguirme en mis redes sociales para estar al tanto de mis novedades.
+                
+                Gracias por su atención y quedo a la espera de poder colaborar con usted.
+                <br><br>
+                Atentamente,José Manuel Oberreuter 
+            </p>
+    
+    
         </div>
 
     </div>
@@ -55,28 +92,33 @@
 
 
 
+
+
+
     <!-- BARRA INFERIOR -->
     <footer>
-        <div class="contador">
-            <h2>Eres el visitante numero:</h2>
-            <div id="sfcr9a7xkkanepuka7hqdz8sp6yzjg39x8d"></div><script type="text/javascript" src="https://counter5.optistats.ovh/private/counter.js?c=r9a7xkkanepuka7hqdz8sp6yzjg39x8d&down=async" async></script><noscript><img src="https://counter5.optistats.ovh/private/contadorvisitasgratis.php?c=r9a7xkkanepuka7hqdz8sp6yzjg39x8d" border="0" title="contador de visitas para mi blog" alt="contador de visitas para mi blog"></noscript>
-        </div>
+
 
         <div class="rss">
-            
-            <h2>Sigueme en mis redes sociales: </h2>
-            <div class="icolinks">
-                <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/gitico.ico" alt="GitHub Icon"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkico.ico" alt="Linkedin Icon"></a>
-                <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaico.ico" alt="Instagram Icon"></a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbico.ico" alt="Facebook Icon"></a>
-                <a target="_blank" href="https://twitter.com/0321PPMN"><img src="/ico/twitterico.ico" alt="Twitter Icon"></a>
-                <a target="_blank" href="https://www.twitch.tv/programacion_jmo"><img src="/ico/twitchico.ico" alt="Twitch Icon"></a>
+
+            <h2>Sígueme en mis redes sociales: </h2>
+            <div class="frontIcons">
+                <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+                <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+                <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
             </div>
 
         </div>
 
     </footer>
+    
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/hamburger.js"></script>
+
+
 
 </body>
 </html>

@@ -192,10 +192,31 @@ header {
 
 
 
-
-
-
-
+.container {
+    height: 90vh;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12.5%;
+    width: 50%;
+  }
+  
+  .container h1 {
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  #thanks {
+    text-justify: inter-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #thanks p {
+    text-align: justify;
+  }
+  
 
 
 
