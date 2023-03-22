@@ -89,6 +89,7 @@ header {
 .item1, .item2, .item3, .item4 {
     justify-self: center;
     align-self: center;
+    text-align: center;
 }
 
 .item1 p, .item4 p, .item5 p{
@@ -96,6 +97,10 @@ header {
     margin: 0 50px;
     text-align: justify;
 
+}
+
+.item2 img {
+    width: 100%;
 }
 
 .info h2{
@@ -202,7 +207,7 @@ header {
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-top: 12.5%;
+    margin-top: 5%;
     width: 50%;
   }
   
@@ -263,7 +268,6 @@ header {
 
     *{
         display: block;
-        margin: 0 auto;
     }
 
 
