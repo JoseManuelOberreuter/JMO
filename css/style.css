@@ -16,16 +16,6 @@ body {
 
 
 
-/* HEADER */
-header {
-    top: 0;
-    background-color: var(--color2);
-    
-    text-align: center;
-    padding: 10px;
-    z-index: 1;
-    }
-
 
 
 
@@ -101,6 +91,21 @@ header {
 
 .item2 img {
     width: 100%;
+}
+
+
+.item6 button, .item4 button{
+    padding: 5px;
+    border: 2px solid  var(--color1);
+    background-color: var(--color0);
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.item6 button:hover, .item4 button:hover{
+    background-color: #3333;
+
 }
 
 .info h2{
