@@ -7,13 +7,13 @@
     <title>José Manuel Oberreuter</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/dropdown.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/hamburger.css">
-    <link rel="stylesheet" href="/css/palabras.css">
-    <link rel="stylesheet" href="/css/herobanner.css">
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/jmo/css/style.css">
+    <link rel="stylesheet" href="/jmo/css/dropdown.css">
+    <link rel="stylesheet" href="/jmo/css/footer.css">
+    <link rel="stylesheet" href="/jmo/css/hamburger.css">
+    <link rel="stylesheet" href="/jmo/css/palabras.css">
+    <link rel="stylesheet" href="/jmo/css/herobanner.css">
+    <link rel="stylesheet" href="/jmo/css/contact.css">
 
     <!-- Icono Favicon -->
     <link rel="icon" type="image/x-icon" href="/img/logos/logo6.png">  
@@ -77,7 +77,13 @@
 
 
         <div id="herobanner">
-            <img src="/img/fondojmo0.jpg" alt="fondo" id="fondohero">
+            <picture id="fondohero">
+                <source srcset="/jmo/img/fondojmo0.jpg" media="(min-width:900px)">
+                <source srcset="/jmo/img/fondojmo1.jpg" media="(min-width:600px)">
+                <img src="/jmo/img/fondojmo2.jpg" alt="fondo" >
+            </picture>
+
+
             <div class="hero-text">
               <h1>José Manuel Oberreuter (JMO)</h1>
               <h2 id="text"></h2>

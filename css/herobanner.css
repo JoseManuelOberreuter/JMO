@@ -17,7 +17,15 @@
     width: 100vw;
     filter: blur(2px) brightness(65%);
     max-width: 100%;
+
   }
+
+  #fondohero source,
+  #fondohero img{
+    height: 100vh;
+    width: 100vw;
+
+  } 
   
   .hero-text {
     position: absolute;
