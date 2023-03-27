@@ -31,9 +31,10 @@ footer {
 
 
 @media all and (max-width: 800px){
-    .icolinks {
-        display: block;
+
+    footer {
     }
+
 }
 
 

@@ -89,7 +89,7 @@ body {
 
 }
 
-.item2 img {
+.item2 img, .item3 img  {
     width: 100%;
 }
 
@@ -267,113 +267,11 @@ body {
 
 
 @media all and (max-width: 800px){
-    head{
-        display: none;
-    }
 
-    *{
+    .info{
         display: block;
     }
-
-
-    table, td, tr{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    td a {
-        height: auto;
-        width: auto;
-    }
-    #jmo {
-        width: 350px;
-        height: auto;
-        position: static;
-        margin: 15px auto;
     
-        
-        }
-
-    .herobanner {
-        margin-top: 50px;
-        margin-bottom: 200px;
-    }
-    
-
-    .post a, .post b {
-        display:contents;
-        width: auto;
-    }
-
-    .post {
-        width: 90%;
-    }
-
-    
-
-    .description a{
-        color: #3F72AF;
-        border-bottom: 0px solid #3F72AF;
-        transition: border-bottom .5s;
-        text-decoration: none;
-    
-    } 
-    .description a:hover{
-        border-bottom: 2px solid #3F72AF;
-    }
-
-
-
-
-    header {
-    display: block;
-    position: relative;
-    margin:0;
-    padding: 0;
-    }
-    
-    
-    header a{
-        text-decoration: none;
-        margin: 0;
-        padding: 20px;
-        transition: .5s;
-    }
-
-    #contact{
-        border-top: 2px solid #F9F7F7;
-        border-bottom: 2px solid #F9F7F7;
-    }
-    
-    header a:hover{
-    
-        color:#153462;
-        background-color: #F9F7F7;
-
-    }
-
-
-
-
-    table, td, tr{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
-    
-
-
-    .description a{
-        color: #3F72AF;
-        border-bottom: 0px solid #3F72AF;
-        transition: border-bottom .5s;
-        text-decoration: none;
-    
-    } 
-    .description a:hover{
-        border-bottom: 2px solid #3F72AF;
-    }
 
     script {
         display: none;

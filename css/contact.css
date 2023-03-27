@@ -14,7 +14,8 @@
 }
 
 
-.item6 input, .item6 textarea{
+.item6 input,
+.item6 textarea{
     width: 500px;
 }
 
@@ -28,9 +29,8 @@
     border: 2px solid  var(--color0);
     border-bottom: 2px solid black;
     font-size: 25px;
-
-
 }
+
 .item6 input:focus{
     border: 2px solid black;
 }
@@ -47,3 +47,35 @@
  text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 800px){
+
+
+
+    .block-item label {
+        display: block;
+      }
+      
+    .block-item input,
+    .block-item textarea {
+    width: 90%;
+
+    }
+
+
+
+}
