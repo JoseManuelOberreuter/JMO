@@ -111,10 +111,10 @@
 
 /* LINKS MENU OCULTO */
 .hamburger-links{
+    width: 40%;
     display: block;
     color: #fff;
     height: auto;
-    width: 40%;
     margin: 0 auto;
 
     -webkit-user-select: none; /* Safari */
@@ -129,7 +129,6 @@
     display: block;
     cursor: pointer;
 
-    width: 50%;
     margin: 5% auto;
     padding: 20px 0;
     align-items: center;
@@ -163,9 +162,21 @@
 
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
 
-    
+    .hamburger-links{
+        width: 80%;
+    }
+
+
+    .frontIcons{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
     .menu-button {
         display:block;
 

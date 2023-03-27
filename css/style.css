@@ -76,6 +76,13 @@ body {
     height: auto;
 }
 
+.info h2{
+    margin-bottom: 20px;
+    color: var(--color1);
+    font-size: 35px;
+    text-align: center;
+}
+
 .item1, .item2, .item3, .item4 {
     justify-self: center;
     align-self: center;
@@ -108,12 +115,7 @@ body {
 
 }
 
-.info h2{
-    margin-bottom: 20px;
-    color: var(--color1);
-    font-size: 35px;
-    text-align: center;
-}
+
 
 .description{
     font-size: 25px;
@@ -182,6 +184,11 @@ body {
     right: 0;
 }
 
+
+.frontIcons {
+    margin: 10px auto;
+    display:block;
+}
 
 .frontIcons a {
     display:inline-flex;
@@ -266,11 +273,21 @@ body {
 
 
 
-@media all and (max-width: 800px){
+@media all and (max-width: 900px){
 
     .info{
+        top: 0;
         display: block;
     }
+
+    .info h2
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+
     
 
     script {
