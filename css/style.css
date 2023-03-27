@@ -289,10 +289,12 @@ body {
 
 
     #text{
-        height: 50px;
+        height: 100px;
     }
 
-    
+    #frontIcons{
+        margin: 15px auto   ;
+    }
 
     script {
         display: none;
