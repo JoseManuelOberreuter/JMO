@@ -77,15 +77,156 @@
         
 
 
-        <div class="post">
-            <h1>PROXIMAMENTE HABRÁ CONTENIDO</h1>
-            <p>Gracias por la comprención</p>
+        <!-- INDEX -->
+        <div class="post">                
+            <h1>Index JavaScript:</h1>
+
+            <br>
+                        
+            <a href="#intro"> <p>1. Introducción a HTML </p> </a>
+            <br>
+            <a href="#etiquetas"> <p>2. Etiquetas HTML </p> </a>
+            <br>
+            <a href="#diseñoweb"> <p>3. Diseño web con HTML </p> </a>
+            <br>
+            <a href="#form"> <p>4. Formularios en HTML </p> </a>
+            <br>
+            <a href="#multimedia"> <p>5. Multimedia en HTML </p> </a>
+            <br>
+            <a href="#tablas"> <p>6. Tablas en HTML </p> </a>
+            <br>
+            <a href="#estructura"> <p>7. Estructura de documentos HTML </p> </a>
+            <br>
+            <a href="#enlazado"> <p>8. Enlazando páginas HTML </p> </a>
+            <br>
+            <a href="#accesibilidad"> <p>9. Accesibilidad en HTML </p> </a>
+            <br>
+            <a href="#optimizacion "> <p>10. Optimización de rendimiento en HTML </p> </a>
 
         </div>
 
 
-        <!-- MARGEN PARA QUE NO SE ME SUBA LA BARRA INFERIOR -->
-        <div style="margin-bottom: 1000px ;">
+
+
+        <div class="margin" id="intro"></div>
+        <div class="post">
+
+
+
+
+            <h1>1. Introducción a HTML</h1>
+
+            <br>
+
+            <p>
+                HTML es el acrónimo de HyperText Markup Language (Lenguaje de Marcado de Hipertexto), y se utiliza para crear y diseñar páginas web. Es un lenguaje de marcado que permite la creación de estructuras de contenido en línea y es la base fundamental de cualquier página web.
+                <br><br>
+                En este texto, vamos a explorar algunos de los conceptos fundamentales de HTML y explicar cómo se utiliza para crear páginas web.
+                <br><br>
+                Para empezar, es importante comprender que HTML es un lenguaje de marcado de texto plano. Esto significa que todas las etiquetas de HTML están escritas en texto plano, sin gráficos ni otros elementos visuales.
+                <br><br>
+                Una etiqueta de HTML se compone de dos partes principales: el elemento y su contenido. El elemento es el nombre de la etiqueta, como por ejemplo "p" para párrafo o "h1" para el encabezado de nivel 1. El contenido es lo que se encuentra dentro de la etiqueta, como texto, imágenes, enlaces y otros elementos.
+                <br><br>
+                Las etiquetas de HTML se escriben entre corchetes angulares ("<" y ">"). Por ejemplo, la etiqueta de párrafo se escribiría de la siguiente manera:
+
+            </p>
+
+            
+
+            <div class="code">
+                &lt;p&gt;Este es un párrafo de ejemplo&lt;p&gt;
+            </div>
+
+            
+
+            <p>
+                En este ejemplo, "p" es el elemento y "Este es un párrafo de ejemplo" es el contenido.
+                <br><br>
+                Ahora que hemos visto cómo se escriben las etiquetas de HTML, es importante entender cómo se utiliza para crear una página web completa. Una página web típica se compone de varias secciones diferentes, incluyendo la cabecera, el cuerpo y el pie de página.
+                <br><br>    
+                La cabecera de una página web suele contener información importante, como el título de la página, la descripción y las palabras clave. Estos elementos se utilizan para mejorar la optimización de motores de búsqueda (SEO) y ayudar a los usuarios a encontrar su sitio web en línea.
+                <br><br>
+                El cuerpo de la página es donde se coloca todo el contenido, como texto, imágenes y enlaces. También se pueden utilizar elementos como tablas, listas y formularios para organizar el contenido y mejorar la usabilidad.
+                <br><br>
+                El pie de página es donde se colocan elementos como el copyright, la información de contacto y otros elementos que no son necesarios para el contenido principal de la página.
+                <br><br>
+                En HTML, se utilizan etiquetas específicas para cada una de estas secciones. La etiqueta "&lt;head&gt;" se utiliza para la cabecera de la página, la etiqueta "&lt;body&gt;" se utiliza para el cuerpo y la etiqueta "&lt;footer&gt;" se utiliza para el pie de página.
+                <br><br>
+                Por ejemplo, aquí está el código HTML para una página web simple:
+            </p>
+
+            
+
+            <div class="code">
+
+                <!-- CODIGO HTML PARA USUARIO -->
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt; <br>
+                <div class="codemargin">&lt;head&gt;</div>
+                    <div class="codemargin1">&lt;meta name="description" content="Descripción de la página"&gt;</div>
+                    <div class="codemargin1">&lt;meta name="keywords" content="Palabras clave de la página"&gt;</div>
+                <div class="codemargin">&lt;/head &gt;</div>
+                <div class="codemargin">&lt;body &gt;</div>
+                    <div class="codemargin1">&lt;h1&gt;Encabezado de nivel 1 &lt;/h1&gt;</div> 
+                    <div class="codemargin1">&lt;p&gt;Este es un párrafo de ejemplo. &lt;/p&gt;</div>
+                    <div class="codemargin1">&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</div>
+                    <div class="codemargin1">&lt;a href="https://www.ejemplo.com">Enlace de ejemplo&lt;/a&gt;</div>
+                <div class="codemargin">&lt;/body&gt;</div>
+                <div class="codemargin">&lt;footer&gt;</div>
+                    <div class="codemargin1">&lt;p&gt;Derechos de autor © 2023 Ejemplo&lt;/p&gt;</div>
+                    <div class="codemargin1">&lt;p&gt;Contáctanos en info@ejemplo.com&lt;/p&gt; </div>
+                <div class="codemargin">&lt;/footer&gt;</div> 
+                &lt;/html&gt; 
+
+
+            </div>
+
+            <p>
+                En este ejemplo, la etiqueta &lt;head&gt; contiene el título de la página, la descripción y las palabras clave. 
+                <br><br>
+                La etiqueta &lt;body&gt; contiene todo el contenido principal de la página, como el encabezado de nivel 1, el párrafo de ejemplo, la imagen y el enlace. Y la etiqueta &lt;footer&gt; contiene información sobre los derechos de autor y cómo contactar con el propietario del sitio web.
+                <br><br>
+                Además de las etiquetas de sección, existen muchas otras etiquetas de HTML que se pueden utilizar para agregar elementos específicos a una página web. Algunas de las etiquetas más comunes incluyen:
+            </p>
+
+        
+            <ul>
+                <li>&lt;h1&gt; a &lt;h6&gt;: estas etiquetas se utilizan para crear encabezados de diferentes niveles. &lt;h1&gt; es el encabezado de nivel más alto y &lt;h6&gt; es el encabezado de nivel más bajo.</li>
+                <li>&lt;p&gt;: esta etiqueta se utiliza para crear párrafos de texto.</li>
+                <li>&lt;a&gt;: esta etiqueta se utiliza para crear enlaces a otras páginas web.</li>
+                <li>&lt;img&gt;: esta etiqueta se utiliza para insertar imágenes en una página web.</li>
+                <li>&lt;ul&gt; y &lt;li&gt;: estas etiquetas se utilizan para crear listas con viñetas.</li>
+                <li>&lt;ol&gt; y &lt;li&gt;: estas etiquetas se utilizan para crear listas numeradas.</li>
+                <li>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;: estas etiquetas se utilizan para crear tablas.</li>
+                <li>&lt;form&gt;, &lt;input&gt; y &lt;button&gt;: estas etiquetas se utilizan para crear formularios en línea.</li>
+            </ul>
+
+
+
+            <p>
+                Al escribir HTML, es importante tener en cuenta la estructura y la jerarquía de la página. Las etiquetas deben anidarse correctamente y los elementos deben estar colocados en el lugar correcto dentro de la estructura de la página. Esto ayuda a asegurar que la página sea legible y fácil de entender para los usuarios.
+                <br><br>
+                Además de HTML, hay otros lenguajes de marcado que se utilizan junto con HTML para crear páginas web. Uno de los más comunes es CSS (Cascading Style Sheets), que se utiliza para diseñar y dar estilo a una página web. JavaScript es otro lenguaje que se utiliza para agregar interactividad y dinamismo a una página web.
+                <br><br>
+                En conclusión, HTML es el lenguaje fundamental para la creación de páginas web. Con una comprensión básica de las etiquetas de HTML y la estructura de una página web, puedes crear páginas web simples y efectivas. Si quieres llevar tus habilidades de desarrollo web al siguiente nivel, es importante aprender también CSS y JavaScript. Con estas herramientas, puedes crear páginas web dinámicas y con estilo que cautiven a los usuarios y los mantengan interesados en tu sitio web.
+            </p>
+
+
+        </div>
+
+
+
+        <div class="margin" id="etiquetas"></div>
+        <div class="post">
+
+            <h1>2. Etiquetas HTML </h1>
+
+
+
+
+        </div>
+
+
 
         </div>
 

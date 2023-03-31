@@ -191,7 +191,6 @@ body {
 }
 
 .frontIcons a {
-    display:inline-flex;
     width: auto;
 }
 
@@ -292,9 +291,23 @@ body {
         height: 100px;
     }
 
-    #frontIcons{
-        margin: 15px auto   ;
+    #jmoh1{
+        font-size: 15px;
     }
+
+
+    #frontIcons {
+        margin: 0px auto;
+        margin-top: 100px;
+        display:flex;
+    }
+    
+
+    
+    
+    
+
+    
 
     script {
         display: none;

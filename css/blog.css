@@ -155,7 +155,7 @@
 .code {
     height: auto;
     width: 80%;
-    margin: 0px auto;
+    margin: 10px auto;
     padding: 25px;
     text-align: justify;
     color: var(--color0) ;
