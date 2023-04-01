@@ -14,7 +14,7 @@
 }
 
 #blog {
-    margin-left: 10%;
+    margin-left: 130px;
     padding: 50px;
 }
 
@@ -24,7 +24,7 @@
 /* SIDE BAR */
 .sidebar{
     height: 100%;
-    width: 10%;
+    width: 130px;
     position: fixed;
     overflow: auto;
     background-color: var(--color2);
@@ -175,6 +175,9 @@
 }
 .codemargin1{
     margin-left: 50px;
+}
+.codemargin2{
+    margin-left: 75px;
 }
 
 
