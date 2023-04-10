@@ -68,13 +68,26 @@
 
     .block-item label {
         display: block;
+        margin-left: 15px;
       }
       
     .block-item input,
     .block-item textarea {
-    width: 90%;
+        width: 90%;
+        margin-left: 15px;
 
     }
+
+    .item1 p, .item4 p, .item5 p {
+        margin: 0 15px
+    }
+
+    
+    .item2 img, .item3 img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
 
 
 

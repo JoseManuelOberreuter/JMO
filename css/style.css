@@ -240,6 +240,31 @@ body {
   
 
 
+/* SCROLL BAR */
+
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #F1F1F1 ; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } 
+
+
 
 
 
