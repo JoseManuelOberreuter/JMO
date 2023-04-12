@@ -155,7 +155,8 @@
 .code {
     height: auto;
     width: 80%;
-    margin: 10px auto;
+    margin: 0 auto;
+    margin-bottom: 15px ;
     padding: 25px;
     text-align: justify;
     color: var(--color0) ;
@@ -163,6 +164,36 @@
 }
 
 
+
+
+.code_title{
+    color:#fff;
+    background-color: #153462;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 25px;
+}
+
+
+#a_ejemplo{
+    text-decoration: none;
+}
+
+.btn_ejemplo {
+    display: flex;
+    margin: 25px auto;
+    padding: 5px;
+    border: 2px solid #153462;
+    color: #fff;
+    background-color: #153462;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+.btn_ejemplo:hover {
+    color: #153462;
+    background-color:#fff;
+}
 
 
 .textcenter{
@@ -179,6 +210,13 @@
 .codemargin2{
     margin-left: 75px;
 }
+.codemargin3{
+    margin-left: 100px;
+}
+
+.codecoment{
+    color: #555;
+}
 
 
 
@@ -201,8 +239,7 @@
 
 
 
-
-@media all and (max-width: 800px){
+@media all and (max-width: 800px){  
 
     #blog {
         margin-left: 0%;
