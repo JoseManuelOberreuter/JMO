@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JMO Blog: JavaScript</title>
-
+    <title>JMO Blog: HTML</title>
+    
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/blog.css">
@@ -22,10 +22,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet">        
 
-    <!-- DROPDOWN JS -->
     <script src="/js/dropdown.js"></script>
+    <script src="/js/ejemplo.js"></script>
 
 </head>
+
+
+
+
+
+
+
+
+
 <body>
 
     <!-- BOTOTN HAMBURGESA -->
@@ -37,7 +46,7 @@
             <span id="spn3"></span>
         </div>
     </label>
-    
+
     
     <!-- MENU HAMBURGESA ESCONDIDO -->
     <div id="hidden-hamburger">
@@ -47,7 +56,7 @@
         <div class="hamburger-links">
             <a href="/index.html" >Inicio</a>
             <a href="/html/portafolios.html" >Portafolio</a>
-            <a href="/html/blog.html" >Blog</a>
+            <a href="/html/blog.html">Blog</a>
         </div> 
 
         <div class="frontIcons">
@@ -66,21 +75,21 @@
 
         <!-- LINKS DROPDOWN -->
         <div id="dropdown" class="dropdowncontent">
-            <a href="#" id="active">Html</a>
+            <a href="/html/blog/bloghtml.html" id="active">Html</a>
             <a href="/html/blog/blogcss.html" >Css</a>
-            <a href="/html/blog/blogjavascript.html">JavaScript</a>
+            <a href="/html/blog/blogjavascript.html" >JavaScript</a>
             <a href="/html/blog/blogpython.html">Python</a>
+
         </div>
 
     </div>
 
+
     <main id="blog">
-        
 
-
-        <!-- INDEX -->
+        <!-- Index -->
         <div class="post">                
-            <h1>Index JavaScript:</h1>
+            <h1>Index HTML:</h1>
 
             <br>
                         
@@ -102,28 +111,13 @@
             <br>
             <a href="#busqueda"> <p>9. Optimización para motores de busqueda </p> </a>
             <br>
-            <a href="#optimizacion "> <p>10. Optimización de rendimiento en HTML </p> </a>
-
+            <a href="#optimizacion"> <p>10. Optimización de rendimiento en HTML </p> </a>
+        
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- INTRODUCCION HTML -->
         <div class="margin" id="intro"></div>
         <div class="post">
-
-
 
 
             <h1>1. Introducción a HTML</h1>
@@ -144,7 +138,7 @@
             </p>
 
             
-
+            <div class="code_title"><p>HTML:</p></div>
             <div class="code">
                 &lt;p&gt;Este es un párrafo de ejemplo&lt;p&gt;
             </div>
@@ -168,7 +162,7 @@
             </p>
 
             
-
+            <div class="code_title"><p>HTML:</p></div>
             <div class="code">
 
                 <!-- CODIGO HTML PARA USUARIO -->
@@ -178,10 +172,10 @@
                     <div class="codemargin1">&lt;title&gt; Titulo de pagína &lt;/title&gt;</div>
                 <div class="codemargin">&lt;/head &gt;</div>
                 <div class="codemargin">&lt;body &gt;</div>
-                    <div class="codemargin1">&lt;h1&gt;Encabezado de nivel 1 &lt;/h1&gt;</div> 
-                    <div class="codemargin1">&lt;p&gt;Este es un párrafo de ejemplo. &lt;/p&gt;</div>
-                    <div class="codemargin1">&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</div>
-                    <div class="codemargin1">&lt;a href="https://www.ejemplo.com">Enlace de ejemplo&lt;/a&gt;</div>
+                    <div class="codemargin1">&lt;a href="www.linkejemplo.com"&gt; Enlace de ejemplo &lt;/a&gt;</div>
+                    <div class="codemargin1">&lt;h1&gt; Encabezado de nivel 1 &lt;/h1&gt;</div> 
+                    <div class="codemargin1">&lt;p&gt; Este es un párrafo de ejemplo. &lt;/p&gt;</div>
+                    <div class="codemargin1">&lt;img src="imagen_ejemplo.jpg" alt="Descripción de la imagen"&gt;</div>
                 <div class="codemargin">&lt;/body&gt;</div>
                 <div class="codemargin">&lt;footer&gt;</div>
                     <div class="codemargin1">&lt;p&gt;Derechos de autor © 2023 Ejemplo&lt;/p&gt;</div>
@@ -191,6 +185,8 @@
 
 
             </div>
+
+            <a href="/html/blog/ejemplos/ejemplo_html_1.html" id="a_ejemplo"><button id="btn_eje_1" class="btn_ejemplo">Prueba el codigo!</button></a> 
 
             <p>
                 En este ejemplo, la etiqueta &lt;head&gt; contiene el título de la página, la descripción y las palabras clave. 
@@ -226,16 +222,6 @@
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
         <!-- ETIQUETAS HTML -->
         <div class="margin" id="etiquetas"></div>
         <div class="post">
@@ -269,7 +255,7 @@
                 <br><br>
                 A Continuación un ejemplo de un HTML básico:
             </p>
-            <br><br>
+            <div class="code_title"><p>HTML:</p></div>
             <div class="code">
 
                 <!-- CODIGO HTML PARA USUARIO -->
@@ -350,22 +336,10 @@
                     
                 &lt;/footer&gt;<br> 
                 &lt;/html&gt; 
-
-
             </div>
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
 
         <!-- Diseño web con HTML -->
         <div class="margin" id="diseñoweb"></div>
@@ -432,13 +406,6 @@
 
 
 
-
-
-
-
-
-
-
         <!-- Formularios en HTML -->
         <div class="margin" id="form"></div>
         <div class="post">
@@ -477,14 +444,6 @@
 
 
         </div>
-
-
-
-
-
-
-
-
 
 
         <!-- 5. Multimedia en HTML -->
@@ -536,193 +495,194 @@
 
 
 
-        <!-- 7. Estructura de documentos HTML -->
-        <div class="margin" id="estructura"></div>
-        <div class="post">
-            <h1>7. Estructura de documentos HTML</h1>
-            <br>
-            <p>
-                La estructura adecuada de un documento HTML es esencial para garantizar que el contenido de una página web se muestre correctamente y se pueda acceder a él de manera efectiva. A continuación, describiré algunos conceptos clave relacionados con la estructura de documentos HTML.
-                <br><br>
-                La estructura básica de un documento HTML consta de tres partes: el encabezado (&lt;head&gt;), el cuerpo (&lt;body&gt;) y el pie de página (&lt;footer&gt;). El encabezado contiene información sobre la página web, como el título, las palabras clave y la descripción de la página. El cuerpo es donde se coloca el contenido principal de la página web, como texto, imágenes y otros elementos multimedia. El pie de página es el área en la parte inferior de la página donde se puede colocar información adicional, como enlaces a otras páginas del sitio web o información de contacto.
-                <br><br>
-                Además de estas tres secciones principales, también hay varias etiquetas HTML que se utilizan para estructurar el contenido de una página web. Estas etiquetas pueden ser útiles para mejorar la legibilidad y la accesibilidad del contenido de la página. A continuación, describiré algunas de las etiquetas más comunes utilizadas para estructurar documentos HTML.
-                <br><br>
-                La etiqueta &lt;header&gt; se utiliza para definir la parte superior de una sección, ya sea una página web completa o una sección específica de contenido en la página. El encabezado de una página web puede contener el logotipo de la empresa, un menú de navegación o una imagen de encabezado. Dentro de una sección de contenido, el encabezado puede contener un título o una breve introducción al contenido que se encuentra debajo.
-                <br><br>
-                La etiqueta &lt;nav&gt; se utiliza para definir una sección de navegación. Esta sección puede contener enlaces a otras páginas del sitio web o a secciones específicas de contenido en la página actual. Al utilizar la etiqueta &lt;nav&gt;, se le indica al navegador que esta sección es una sección de navegación, lo que puede ser útil para los lectores de pantalla y otros dispositivos de asistencia.
-                <br><br>
-                La etiqueta &lt;main&gt; se utiliza para definir el contenido principal de la página. Esta etiqueta debe contener todo el contenido principal de la página, como texto, imágenes y otros elementos multimedia. Al utilizar la etiqueta &lt;main&gt;, se indica al navegador que este es el contenido principal de la página, lo que puede ser útil para mejorar la accesibilidad del contenido.
-                <br><br>
-                La etiqueta &lt;section&gt; se utiliza para definir secciones de contenido en una página. Esta etiqueta se puede utilizar para dividir el contenido de una página en secciones lógicas, como una sección de introducción, una sección de características y una sección de precios. Al utilizar la etiqueta &lt;section&gt;, se puede mejorar la legibilidad del contenido y facilitar la navegación para los usuarios.
-                <br><br>
-                La etiqueta &lt;article&gt; se utiliza para definir contenido independiente en una página. Esta etiqueta se puede utilizar para separar contenido que es independiente del resto de la página, como un blog o un artículo de noticias. Al utilizar la etiqueta &lt;article&gt;, se indica al navegador que este contenido es independiente del resto de la página, lo que puede ser útil para mejorar la accesibilidad y la legibilidad del contenido.
-                <br><br>
-                La etiqueta &lt;aside&gt; se utiliza para definir contenido secundario en una página. Esta etiqueta se puede utilizar para colocar contenido que es secundario al contenido principal de la página, como un menú de navegación o un bloque de anuncios. Al utilizar la etiqueta &lt;aside&gt;, se indica al navegador que este contenido es secundario al contenido principal de la página, lo que puede mejorar la accesibilidad y la legibilidad del contenido.
-                <br><br>
-                La etiqueta &lt;footer&gt; se utiliza para definir el pie de página de una página web. Esta sección puede contener información adicional, como enlaces a otras páginas del sitio web, información de contacto o derechos de autor. Al utilizar la etiqueta &lt;footer&gt;, se indica al navegador que esta sección es el pie de página de la página web, lo que puede mejorar la accesibilidad y la legibilidad del contenido.
-                <br><br>
-                En resumen, la estructura de documentos HTML es esencial para garantizar que el contenido de una página web se muestre correctamente y se pueda acceder a él de manera efectiva. Las etiquetas HTML mencionadas anteriormente son útiles para estructurar el contenido de una página web y mejorar la legibilidad y la accesibilidad del contenido. Como programador senior, recomiendo encarecidamente utilizar estas etiquetas para estructurar documentos HTML de manera efectiva. Además, también es importante asegurarse de que los documentos HTML sean válidos y estén optimizados para los motores de búsqueda, lo que puede mejorar la visibilidad de la página web y la experiencia del usuario.
-            </p>
+    <!-- 7. Estructura de documentos HTML -->
+    <div class="margin" id="estructura"></div>
+    <div class="post">
+        <h1>7. Estructura de documentos HTML</h1>
+        <br>
+        <p>
+            La estructura adecuada de un documento HTML es esencial para garantizar que el contenido de una página web se muestre correctamente y se pueda acceder a él de manera efectiva. A continuación, describiré algunos conceptos clave relacionados con la estructura de documentos HTML.
+            <br><br>
+            La estructura básica de un documento HTML consta de tres partes: el encabezado (&lt;head&gt;), el cuerpo (&lt;body&gt;) y el pie de página (&lt;footer&gt;). El encabezado contiene información sobre la página web, como el título, las palabras clave y la descripción de la página. El cuerpo es donde se coloca el contenido principal de la página web, como texto, imágenes y otros elementos multimedia. El pie de página es el área en la parte inferior de la página donde se puede colocar información adicional, como enlaces a otras páginas del sitio web o información de contacto.
+            <br><br>
+            Además de estas tres secciones principales, también hay varias etiquetas HTML que se utilizan para estructurar el contenido de una página web. Estas etiquetas pueden ser útiles para mejorar la legibilidad y la accesibilidad del contenido de la página. A continuación, describiré algunas de las etiquetas más comunes utilizadas para estructurar documentos HTML.
+            <br><br>
+            La etiqueta &lt;header&gt; se utiliza para definir la parte superior de una sección, ya sea una página web completa o una sección específica de contenido en la página. El encabezado de una página web puede contener el logotipo de la empresa, un menú de navegación o una imagen de encabezado. Dentro de una sección de contenido, el encabezado puede contener un título o una breve introducción al contenido que se encuentra debajo.
+            <br><br>
+            La etiqueta &lt;nav&gt; se utiliza para definir una sección de navegación. Esta sección puede contener enlaces a otras páginas del sitio web o a secciones específicas de contenido en la página actual. Al utilizar la etiqueta &lt;nav&gt;, se le indica al navegador que esta sección es una sección de navegación, lo que puede ser útil para los lectores de pantalla y otros dispositivos de asistencia.
+            <br><br>
+            La etiqueta &lt;main&gt; se utiliza para definir el contenido principal de la página. Esta etiqueta debe contener todo el contenido principal de la página, como texto, imágenes y otros elementos multimedia. Al utilizar la etiqueta &lt;main&gt;, se indica al navegador que este es el contenido principal de la página, lo que puede ser útil para mejorar la accesibilidad del contenido.
+            <br><br>
+            La etiqueta &lt;section&gt; se utiliza para definir secciones de contenido en una página. Esta etiqueta se puede utilizar para dividir el contenido de una página en secciones lógicas, como una sección de introducción, una sección de características y una sección de precios. Al utilizar la etiqueta &lt;section&gt;, se puede mejorar la legibilidad del contenido y facilitar la navegación para los usuarios.
+            <br><br>
+            La etiqueta &lt;article&gt; se utiliza para definir contenido independiente en una página. Esta etiqueta se puede utilizar para separar contenido que es independiente del resto de la página, como un blog o un artículo de noticias. Al utilizar la etiqueta &lt;article&gt;, se indica al navegador que este contenido es independiente del resto de la página, lo que puede ser útil para mejorar la accesibilidad y la legibilidad del contenido.
+            <br><br>
+            La etiqueta &lt;aside&gt; se utiliza para definir contenido secundario en una página. Esta etiqueta se puede utilizar para colocar contenido que es secundario al contenido principal de la página, como un menú de navegación o un bloque de anuncios. Al utilizar la etiqueta &lt;aside&gt;, se indica al navegador que este contenido es secundario al contenido principal de la página, lo que puede mejorar la accesibilidad y la legibilidad del contenido.
+            <br><br>
+            La etiqueta &lt;footer&gt; se utiliza para definir el pie de página de una página web. Esta sección puede contener información adicional, como enlaces a otras páginas del sitio web, información de contacto o derechos de autor. Al utilizar la etiqueta &lt;footer&gt;, se indica al navegador que esta sección es el pie de página de la página web, lo que puede mejorar la accesibilidad y la legibilidad del contenido.
+            <br><br>
+            En resumen, la estructura de documentos HTML es esencial para garantizar que el contenido de una página web se muestre correctamente y se pueda acceder a él de manera efectiva. Las etiquetas HTML mencionadas anteriormente son útiles para estructurar el contenido de una página web y mejorar la legibilidad y la accesibilidad del contenido. Como programador senior, recomiendo encarecidamente utilizar estas etiquetas para estructurar documentos HTML de manera efectiva. Además, también es importante asegurarse de que los documentos HTML sean válidos y estén optimizados para los motores de búsqueda, lo que puede mejorar la visibilidad de la página web y la experiencia del usuario.
+        </p>
+    </div>
+
+
+    <!-- 8. Enlazando páginas HTML  -->
+    <div class="margin" id="enlazado"></div>
+    <div class="post">
+        <h1>8. Enlazando páginas HTML </h1>
+        <br>
+        <p>
+            Los enlaces permiten a los usuarios navegar por el sitio web y acceder a diferentes páginas. En este artículo, discutiremos cómo enlazar páginas HTML y las mejores prácticas para hacerlo de manera efectiva.
+            <br><br>
+            La sintaxis básica para enlazar páginas HTML es a través del uso de la etiqueta &lt;a&gt;. La etiqueta &lt;a&gt; se utiliza para crear un hipervínculo a otra página, imagen o archivo en la web. El atributo "href" de la etiqueta &lt;a&gt; se utiliza para especificar la URL de la página a la que se enlaza.
+            <br><br>
+            Por ejemplo, si desea enlazar una página HTML llamada "about.html": 
+        </p>
+        
+        <div class="code">
+            &lt;a href="about.html"&gt;Acerca de&lt;/a&gt;
         </div>
 
+        <p>
+            Este código creará un enlace de texto que dice "Acerca de" y que llevará al usuario a la página "about.html" cuando se haga clic en él.
+            <br><br>
+            Además de enlazar páginas HTML en su propio sitio web, también puede enlazar páginas en otros sitios web o enlaces a recursos externos, como imágenes, archivos PDF o videos.
+            <br><br>
+            Para enlazar a una página externa, simplemente necesita especificar la URL completa de la página en el atributo "href". Por ejemplo:
+        </p>
 
-        <!-- 8. Enlazando páginas HTML  -->
-        <div class="margin" id="enlazado"></div>
-        <div class="post">
-            <h1>8. Enlazando páginas HTML </h1>
-            <br>
-            <p>
-                Los enlaces permiten a los usuarios navegar por el sitio web y acceder a diferentes páginas. En este artículo, discutiremos cómo enlazar páginas HTML y las mejores prácticas para hacerlo de manera efectiva.
-                <br><br>
-                La sintaxis básica para enlazar páginas HTML es a través del uso de la etiqueta <a>. La etiqueta <a> se utiliza para crear un hipervínculo a otra página, imagen o archivo en la web. El atributo "href" de la etiqueta <a> se utiliza para especificar la URL de la página a la que se enlaza.
-                <br><br>
-                Por ejemplo, si desea enlazar una página HTML llamada "about.html": 
-            </p>
-            
-            <div class="code">
-                &lt;a href="about.html"&gt;Acerca de&lt;/a&gt;
-            </div>
-
-            <p>
-                Este código creará un enlace de texto que dice "Acerca de" y que llevará al usuario a la página "about.html" cuando se haga clic en él.
-                <br><br>
-                Además de enlazar páginas HTML en su propio sitio web, también puede enlazar páginas en otros sitios web o enlaces a recursos externos, como imágenes, archivos PDF o videos.
-                <br><br>
-                Para enlazar a una página externa, simplemente necesita especificar la URL completa de la página en el atributo "href". Por ejemplo:
-            </p>
-
-            <div class="code">
-                &lt;a href="https://www.google.com/"&gt;Ir a Google&lt;/a&gt;
-            </div>
-
-            <p>
-                Este código creará un enlace de texto que dice "Ir a Google" y que llevará al usuario al sitio web de Google cuando se haga clic en él.
-                <br><br>
-                También puede enlazar a un archivo descargable, como un archivo PDF o un archivo de imagen, utilizando la misma sintaxis. Por ejemplo:
-            </p>
-
-            <div class="code">
-                &lt;a href="path/to/image.jpg"&gt;Ver imagen&lt;a/a&gt; <br>
-                &lt;a href="path/to/document.pdf"&gt;Descargar documento&lt;aa&gt;
-            </div>
-
-            <p>
-
-                Esto creará enlaces de texto que permitirán a los usuarios ver o descargar la imagen o el documento especificado cuando se haga clic en ellos.
-
-                Además de la sintaxis básica, existen algunas mejores prácticas a tener en cuenta al enlazar páginas HTML. A continuación se presentan algunos consejos para crear enlaces efectivos en su sitio web:
-
-                Utilice un texto descriptivo: En lugar de simplemente utilizar "Haga clic aquí" como el texto de su enlace, utilice un texto descriptivo que indique a los usuarios a dónde los llevará el enlace. Por ejemplo, en lugar de "Haga clic aquí para obtener más información", utilice "Obtenga más información sobre nuestro producto".
- 
-                Especifique correctamente la URL: Asegúrese de especificar la URL completa y correcta de la página a la que está enlazando. Si la URL es incorrecta o está mal escrita, el enlace no funcionará correctamente.
-
-                Abra enlaces en una nueva ventana: Si su enlace lleva a los usuarios a una página externa, considere abrir la página en una nueva ventana para que los usuarios no pierdan su ubicación actual en su sitio web.
-
-                Pruebe los enlaces: Antes de publicar su sitio web, asegúrese de probar todos los enlaces para asegurarse de que funcionen correctamente.
-
-                Utilice enlaces internos: En lugar de enlazar a una página externa, considere enlazar a una página interna de su sitio web que ofrezca información adicional sobre el tema. Esto no solo mantendrá a los usuarios en su sitio web por más tiempo, sino que también aumentará el tiempo de permanencia y la navegación en su sitio web.
-
-                Utilice enlaces de imagen: Si desea agregar un enlace a una imagen, puede hacerlo utilizando la etiqueta <a> y la etiqueta <img>. Esto permite a los usuarios hacer clic en la imagen para acceder a otra página o recurso en la web.
-
-            </p>
-            
-            <div class="code">
-                &lt;a href="path/to/page.html"&gt; &lt;img src="path/to/image.jpg" alt="Descripción de la imagen"&gt;&lt;/a&gt;
-            </div>
-
-            <p>
-                Use un buen diseño de enlace: Los enlaces deben ser fácilmente identificables para los usuarios. Utilice colores de enlace que se destaquen y asegúrese de que los enlaces estén subrayados o resaltados para que los usuarios sepan que son enlaces.
-
-                En resumen, enlazar páginas HTML es una tarea esencial en el desarrollo de sitios web efectivos. Al utilizar la etiqueta <a> y el atributo "href", puede crear enlaces a páginas, imágenes, archivos y recursos externos en su sitio web. Al seguir las mejores prácticas mencionadas anteriormente, puede asegurarse de que sus enlaces sean efectivos y fáciles de usar para los usuarios de su sitio web. Además, utilizar enlaces internos y de imagen, junto con un buen diseño de enlace, puede aumentar la navegación y el tiempo de permanencia en su sitio web.
-            </p>
-            
+        <div class="code">
+            &lt;a href="https://www.google.com/"&gt;Ir a Google&lt;/a&gt;
         </div>
+
+        <p>
+            Este código creará un enlace de texto que dice "Ir a Google" y que llevará al usuario al sitio web de Google cuando se haga clic en él.
+            <br><br>
+            También puede enlazar a un archivo descargable, como un archivo PDF o un archivo de imagen, utilizando la misma sintaxis. Por ejemplo:
+        </p>
+
+        <div class="code">
+            &lt;a href="path/to/image.jpg"&gt;Ver imagen&lt;a/a&gt; <br>
+            &lt;a href="path/to/document.pdf"&gt;Descargar documento&lt;aa&gt;
+        </div>
+
+        <p>
+
+            Esto creará enlaces de texto que permitirán a los usuarios ver o descargar la imagen o el documento especificado cuando se haga clic en ellos.
+
+            Además de la sintaxis básica, existen algunas mejores prácticas a tener en cuenta al enlazar páginas HTML. A continuación se presentan algunos consejos para crear enlaces efectivos en su sitio web:
+
+            Utilice un texto descriptivo: En lugar de simplemente utilizar "Haga clic aquí" como el texto de su enlace, utilice un texto descriptivo que indique a los usuarios a dónde los llevará el enlace. Por ejemplo, en lugar de "Haga clic aquí para obtener más información", utilice "Obtenga más información sobre nuestro producto".
+
+            Especifique correctamente la URL: Asegúrese de especificar la URL completa y correcta de la página a la que está enlazando. Si la URL es incorrecta o está mal escrita, el enlace no funcionará correctamente.
+
+            Abra enlaces en una nueva ventana: Si su enlace lleva a los usuarios a una página externa, considere abrir la página en una nueva ventana para que los usuarios no pierdan su ubicación actual en su sitio web.
+
+            Pruebe los enlaces: Antes de publicar su sitio web, asegúrese de probar todos los enlaces para asegurarse de que funcionen correctamente.
+
+            Utilice enlaces internos: En lugar de enlazar a una página externa, considere enlazar a una página interna de su sitio web que ofrezca información adicional sobre el tema. Esto no solo mantendrá a los usuarios en su sitio web por más tiempo, sino que también aumentará el tiempo de permanencia y la navegación en su sitio web.
+
+            Utilice enlaces de imagen: Si desea agregar un enlace a una imagen, puede hacerlo utilizando la etiqueta &lt;a&gt; y la etiqueta &lt;img&gt;. Esto permite a los usuarios hacer clic en la imagen para acceder a otra página o recurso en la web.
+
+        </p>
+        
+        <div class="code">
+            &lt;a href="path/to/page.html"&gt; &lt;img src="path/to/image.jpg" alt="Descripción de la imagen"&gt;&lt;/a&gt;
+        </div>
+
+        <p>
+            Use un buen diseño de enlace: Los enlaces deben ser fácilmente identificables para los usuarios. Utilice colores de enlace que se destaquen y asegúrese de que los enlaces estén subrayados o resaltados para que los usuarios sepan que son enlaces.
+
+            En resumen, enlazar páginas HTML es una tarea esencial en el desarrollo de sitios web efectivos. Al utilizar la etiqueta &lt;a&gt; y el atributo "href", puede crear enlaces a páginas, imágenes, archivos y recursos externos en su sitio web. Al seguir las mejores prácticas mencionadas anteriormente, puede asegurarse de que sus enlaces sean efectivos y fáciles de usar para los usuarios de su sitio web. Además, utilizar enlaces internos y de imagen, junto con un buen diseño de enlace, puede aumentar la navegación y el tiempo de permanencia en su sitio web.
+        </p>
+        
+    </div>
 
         
 
 
-        <!-- 9. Optimización para motores de busqueda  -->
-        <div class="margin" id="busqueda"></div>
-        <div class="post">
-            <h1>9. Optimización para motores de busqueda </h1>
+    <!-- 9. Optimización para motores de busqueda  -->
+    <div class="margin" id="busqueda"></div>
+    <div class="post">
+        <h1>9. Optimización para motores de busqueda </h1>
+        <br>
+        <p>
+            Optimización para motores de busqueda es una parte importante de la estrategia de marketing digital de cualquier sitio web, ya que ayuda a aumentar la visibilidad del sitio en los motores de búsqueda y atraer más tráfico a su sitio.
+            <br><br>
+            Para optimizar su sitio web para motores de búsqueda, es esencial seguir las mejores prácticas de optimización en HTML. A continuación, se presentan algunos consejos y técnicas que debe considerar para asegurarse de que su sitio web esté completamente optimizado para los motores de búsqueda.
+            <br><br>
+            1. Títulos y meta descripciones relevantes
             <br>
-            <p>
-                Optimización para motores de busqueda es una parte importante de la estrategia de marketing digital de cualquier sitio web, ya que ayuda a aumentar la visibilidad del sitio en los motores de búsqueda y atraer más tráfico a su sitio.
-                <br><br>
-                Para optimizar su sitio web para motores de búsqueda, es esencial seguir las mejores prácticas de optimización en HTML. A continuación, se presentan algunos consejos y técnicas que debe considerar para asegurarse de que su sitio web esté completamente optimizado para los motores de búsqueda.
-                <br><br>
-                1. Títulos y meta descripciones relevantes
-                <br>
-                Los títulos y meta descripciones son elementos importantes en la optimización de motores de búsqueda de una página HTML. Estos elementos proporcionan información importante a los motores de búsqueda sobre el contenido de su sitio web. Asegúrese de que el título y la descripción sean precisos y relevantes al contenido de la página.
-                <br><br>
-                2. Palabras clave relevantes
-                <br>
-                Las palabras clave son un factor crucial en la optimización de motores de búsqueda en HTML. Al utilizar palabras clave relevantes en su contenido, etiquetas y descripciones, puede aumentar la visibilidad de su sitio web en los resultados de búsqueda de los motores de búsqueda. Sin embargo, es importante no sobrecargar su contenido con palabras clave ya que esto puede tener un efecto contrario y dañar su posicionamiento en los resultados de búsqueda.
-                <br><br>
-                3. Etiquetas de encabezado adecuadas
-                <br>
-                Las etiquetas de encabezado son una parte importante de la optimización de motores de búsqueda en HTML. Las etiquetas de encabezado (H1, H2, H3, etc.) ayudan a los motores de búsqueda a comprender la jerarquía y la estructura de su contenido. Asegúrese de utilizar las etiquetas de encabezado adecuadas para el contenido de la página y de incluir sus palabras clave en ellas.
-                <br><br>
-                4. Enlaces internos y externos
-                <br>
-                Los enlaces internos y externos son importantes para la optimización de motores de búsqueda en HTML. Los enlaces internos ayudan a los motores de búsqueda a navegar por su sitio web y comprender su estructura, mientras que los enlaces externos pueden aumentar la autoridad y el valor de su sitio web. Asegúrese de utilizar enlaces internos y externos relevantes y de alta calidad.
-                <br><br>
-                5. El contenido multimedia
-                <br>
-                El contenido multimedia, como las imágenes y los videos, también son importantes en la optimización de motores de búsqueda en HTML. Asegúrese de que todas las imágenes tengan etiquetas ALT adecuadas y que los videos estén correctamente etiquetados y descritos.
-                <br><br>
-                6. URL amigables
-                Las URL amigables son otra parte importante de la optimización de motores de búsqueda en HTML. Las URL amigables son más fáciles de entender para los usuarios y para los motores de búsqueda. Asegúrese de utilizar una estructura de URL clara y fácil de entender.
-                <br><br>
-                7. Sitio web actualizado
-                <br>
-                Mantener su sitio web actualizado es importante para la optimización de motores de búsqueda en HTML. Asegúrese de actualizar regularmente el contenido de su sitio web y de mantener su sitio web actualizado con las últimas tendencias y prácticas de la industria. Mantener su sitio web actualizado puede mejorar la calidad del contenido de su sitio web y aumentar la visibilidad de su sitio web en los resultados de búsqueda.
-                <br><br>
-                8. Asegúrese de que su sitio web sea móvil amigable
-                <br>
-                En la actualidad, la mayoría de los usuarios navegan por Internet desde sus dispositivos móviles, lo que significa que es importante asegurarse de que su sitio web sea móvil amigable. Si su sitio web no se ve bien en dispositivos móviles, es probable que los usuarios lo abandonen rápidamente, lo que puede afectar negativamente su posicionamiento en los resultados de búsqueda.
-                <br><br>
-                9. Monitoree y analice su tráfico de búsqueda
-                <br>
-                Es importante monitorear y analizar su tráfico de búsqueda para evaluar la efectividad de su estrategia de optimización de motores de búsqueda en HTML. Utilice herramientas de análisis como Google Analytics para rastrear el tráfico de búsqueda en su sitio web, y revise regularmente sus estadísticas para identificar áreas de mejora y ajustar su estrategia de optimización de motores de búsqueda en consecuencia.
-                <br><br>
-                10. Asegúrese de que su sitio web cargue rápido
-                <br>
-                La velocidad de carga del sitio web es un factor importante en la optimización de motores de búsqueda en HTML. Si su sitio web tarda mucho en cargarse, los usuarios pueden abandonarlo rápidamente, lo que puede afectar negativamente su posicionamiento en los resultados de búsqueda. Asegúrese de que su sitio web cargue rápidamente optimizando las imágenes, minimizando el código y utilizando un alojamiento web de alta calidad.
-                <br><br>
-                En conclusión, la optimización para motores de búsqueda en HTML es un aspecto clave del éxito de su sitio web. La aplicacion de estas estrategia puede aumentar la visibilidad de su sitio web en los resultados de búsqueda de los motores de búsqueda y atraer más tráfico a su sitio. Es importante tener en cuenta que la optimización para motores de búsqueda es un proceso continuo y que debe revisar y actualizar regularmente su sitio web para asegurarse de que esté completamente optimizado para los motores de búsqueda.
-
-            
-            </p>
-        </div>
-
-
-
-        <!-- 10. Optimización de rendimiento en HTML -->
-        <div class="margin" id="optimizacion"></div>
-        <div class="post">
-            <h1>10. Optimización de rendimiento en HTML</h1>
+            Los títulos y meta descripciones son elementos importantes en la optimización de motores de búsqueda de una página HTML. Estos elementos proporcionan información importante a los motores de búsqueda sobre el contenido de su sitio web. Asegúrese de que el título y la descripción sean precisos y relevantes al contenido de la página.
+            <br><br>
+            2. Palabras clave relevantes
             <br>
-            <p>
-                La optimización del rendimiento de una página web es una tarea crítica en la creación de sitios web. La velocidad de carga de una página web es esencial para la experiencia del usuario y puede afectar el posicionamiento en los motores de búsqueda. En este sentido, la optimización de rendimiento en HTML es un factor clave para garantizar una experiencia de usuario fluida y una mejor visibilidad en los motores de búsqueda.
-                <br><br>
-                Aquí hay algunas técnicas de optimización de rendimiento que pueden utilizar para mejorar la velocidad de carga de una página web en HTML:
-                <br><br>
-                Reducción de tamaño de archivo: Una técnica importante para mejorar el rendimiento de una página web es reducir el tamaño de los archivos HTML. Esto se puede lograr mediante la eliminación de código innecesario, la compresión de imágenes y la eliminación de etiquetas de formato no utilizadas. Los archivos HTML más pequeños se cargarán más rápido y mejorarán la velocidad de carga de la página.
-                <br><br>
-                Minimización de solicitudes HTTP: Las solicitudes HTTP son utilizadas por el navegador para cargar los archivos necesarios para una página web. Cuantas más solicitudes se realicen, más tiempo tardará la página en cargarse. Por lo tanto, una técnica efectiva para optimizar el rendimiento en HTML es minimizar el número de solicitudes HTTP. Esto se puede lograr mediante la combinación de archivos CSS y JavaScript, y la eliminación de archivos innecesarios.
-                <br><br>
-                Uso de etiquetas de tamaño adecuado: El uso de etiquetas de tamaño adecuado es importante para mejorar el rendimiento de una página web en HTML. Las imágenes grandes y las etiquetas de formato pesado pueden reducir significativamente la velocidad de carga de una página. Por lo tanto, los programadores senior deben asegurarse de usar etiquetas de tamaño adecuado y optimizar las imágenes antes de cargarlas en una página web.
-                <br><br>
-                Carga de recursos en paralelo: Los navegadores modernos pueden cargar varios recursos en paralelo, lo que puede mejorar significativamente la velocidad de carga de una página web. Por lo tanto, los programadores senior deben asegurarse de cargar los recursos de la página web en paralelo para mejorar el rendimiento.
-                <br><br>
-                Uso de herramientas de optimización: Los programadores senior pueden usar herramientas de optimización de rendimiento en HTML, como Google PageSpeed Insights y GTmetrix, para identificar áreas de mejora y realizar correcciones efectivas. Estas herramientas proporcionan información detallada sobre el rendimiento de una página web y ofrecen sugerencias para mejorar la velocidad de carga.
-                <br><br>
-                En conclusión, la optimización de rendimiento en HTML es esencial para garantizar una experiencia de usuario fluida y mejorar la visibilidad en los motores de búsqueda. Los programadores senior deben utilizar técnicas como la reducción del tamaño de archivo, la minimización de solicitudes HTTP, el uso de etiquetas de tamaño adecuado, la carga de recursos en paralelo y el uso de herramientas de optimización para mejorar el rendimiento de una página web. Al implementar estas técnicas, los programadores pueden asegurarse de que las páginas web que crean sean rápidas, accesibles y fáciles de usar para los usuarios finales.
-            </p>
-        </div>
- 
+            Las palabras clave son un factor crucial en la optimización de motores de búsqueda en HTML. Al utilizar palabras clave relevantes en su contenido, etiquetas y descripciones, puede aumentar la visibilidad de su sitio web en los resultados de búsqueda de los motores de búsqueda. Sin embargo, es importante no sobrecargar su contenido con palabras clave ya que esto puede tener un efecto contrario y dañar su posicionamiento en los resultados de búsqueda.
+            <br><br>
+            3. Etiquetas de encabezado adecuadas
+            <br>
+            Las etiquetas de encabezado son una parte importante de la optimización de motores de búsqueda en HTML. Las etiquetas de encabezado (H1, H2, H3, etc.) ayudan a los motores de búsqueda a comprender la jerarquía y la estructura de su contenido. Asegúrese de utilizar las etiquetas de encabezado adecuadas para el contenido de la página y de incluir sus palabras clave en ellas.
+            <br><br>
+            4. Enlaces internos y externos
+            <br>
+            Los enlaces internos y externos son importantes para la optimización de motores de búsqueda en HTML. Los enlaces internos ayudan a los motores de búsqueda a navegar por su sitio web y comprender su estructura, mientras que los enlaces externos pueden aumentar la autoridad y el valor de su sitio web. Asegúrese de utilizar enlaces internos y externos relevantes y de alta calidad.
+            <br><br>
+            5. El contenido multimedia
+            <br>
+            El contenido multimedia, como las imágenes y los videos, también son importantes en la optimización de motores de búsqueda en HTML. Asegúrese de que todas las imágenes tengan etiquetas ALT adecuadas y que los videos estén correctamente etiquetados y descritos.
+            <br><br>
+            6. URL amigables
+            Las URL amigables son otra parte importante de la optimización de motores de búsqueda en HTML. Las URL amigables son más fáciles de entender para los usuarios y para los motores de búsqueda. Asegúrese de utilizar una estructura de URL clara y fácil de entender.
+            <br><br>
+            7. Sitio web actualizado
+            <br>
+            Mantener su sitio web actualizado es importante para la optimización de motores de búsqueda en HTML. Asegúrese de actualizar regularmente el contenido de su sitio web y de mantener su sitio web actualizado con las últimas tendencias y prácticas de la industria. Mantener su sitio web actualizado puede mejorar la calidad del contenido de su sitio web y aumentar la visibilidad de su sitio web en los resultados de búsqueda.
+            <br><br>
+            8. Asegúrese de que su sitio web sea móvil amigable
+            <br>
+            En la actualidad, la mayoría de los usuarios navegan por Internet desde sus dispositivos móviles, lo que significa que es importante asegurarse de que su sitio web sea móvil amigable. Si su sitio web no se ve bien en dispositivos móviles, es probable que los usuarios lo abandonen rápidamente, lo que puede afectar negativamente su posicionamiento en los resultados de búsqueda.
+            <br><br>
+            9. Monitoree y analice su tráfico de búsqueda
+            <br>
+            Es importante monitorear y analizar su tráfico de búsqueda para evaluar la efectividad de su estrategia de optimización de motores de búsqueda en HTML. Utilice herramientas de análisis como Google Analytics para rastrear el tráfico de búsqueda en su sitio web, y revise regularmente sus estadísticas para identificar áreas de mejora y ajustar su estrategia de optimización de motores de búsqueda en consecuencia.
+            <br><br>
+            10. Asegúrese de que su sitio web cargue rápido
+            <br>
+            La velocidad de carga del sitio web es un factor importante en la optimización de motores de búsqueda en HTML. Si su sitio web tarda mucho en cargarse, los usuarios pueden abandonarlo rápidamente, lo que puede afectar negativamente su posicionamiento en los resultados de búsqueda. Asegúrese de que su sitio web cargue rápidamente optimizando las imágenes, minimizando el código y utilizando un alojamiento web de alta calidad.
+            <br><br>
+            En conclusión, la optimización para motores de búsqueda en HTML es un aspecto clave del éxito de su sitio web. La aplicacion de estas estrategia puede aumentar la visibilidad de su sitio web en los resultados de búsqueda de los motores de búsqueda y atraer más tráfico a su sitio. Es importante tener en cuenta que la optimización para motores de búsqueda es un proceso continuo y que debe revisar y actualizar regularmente su sitio web para asegurarse de que esté completamente optimizado para los motores de búsqueda.
+
+        
+        </p>
+    </div>
+
+
+
+    <!-- 10. Optimización de rendimiento en HTML -->
+    <div class="margin" id="optimizacion"></div>
+    <div class="post">
+        <h1>10. Optimización de rendimiento en HTML</h1>
+        <br>
+        <p>
+            La optimización del rendimiento de una página web es una tarea crítica en la creación de sitios web. La velocidad de carga de una página web es esencial para la experiencia del usuario y puede afectar el posicionamiento en los motores de búsqueda. En este sentido, la optimización de rendimiento en HTML es un factor clave para garantizar una experiencia de usuario fluida y una mejor visibilidad en los motores de búsqueda.
+            <br><br>
+            Aquí hay algunas técnicas de optimización de rendimiento que pueden utilizar para mejorar la velocidad de carga de una página web en HTML:
+            <br><br>
+            Reducción de tamaño de archivo: Una técnica importante para mejorar el rendimiento de una página web es reducir el tamaño de los archivos HTML. Esto se puede lograr mediante la eliminación de código innecesario, la compresión de imágenes y la eliminación de etiquetas de formato no utilizadas. Los archivos HTML más pequeños se cargarán más rápido y mejorarán la velocidad de carga de la página.
+            <br><br>
+            Minimización de solicitudes HTTP: Las solicitudes HTTP son utilizadas por el navegador para cargar los archivos necesarios para una página web. Cuantas más solicitudes se realicen, más tiempo tardará la página en cargarse. Por lo tanto, una técnica efectiva para optimizar el rendimiento en HTML es minimizar el número de solicitudes HTTP. Esto se puede lograr mediante la combinación de archivos CSS y JavaScript, y la eliminación de archivos innecesarios.
+            <br><br>
+            Uso de etiquetas de tamaño adecuado: El uso de etiquetas de tamaño adecuado es importante para mejorar el rendimiento de una página web en HTML. Las imágenes grandes y las etiquetas de formato pesado pueden reducir significativamente la velocidad de carga de una página. Por lo tanto, los programadores senior deben asegurarse de usar etiquetas de tamaño adecuado y optimizar las imágenes antes de cargarlas en una página web.
+            <br><br>
+            Carga de recursos en paralelo: Los navegadores modernos pueden cargar varios recursos en paralelo, lo que puede mejorar significativamente la velocidad de carga de una página web. Por lo tanto, los programadores senior deben asegurarse de cargar los recursos de la página web en paralelo para mejorar el rendimiento.
+            <br><br>
+            Uso de herramientas de optimización: Los programadores senior pueden usar herramientas de optimización de rendimiento en HTML, como Google PageSpeed Insights y GTmetrix, para identificar áreas de mejora y realizar correcciones efectivas. Estas herramientas proporcionan información detallada sobre el rendimiento de una página web y ofrecen sugerencias para mejorar la velocidad de carga.
+            <br><br>
+            En conclusión, la optimización de rendimiento en HTML es esencial para garantizar una experiencia de usuario fluida y mejorar la visibilidad en los motores de búsqueda. Los programadores senior deben utilizar técnicas como la reducción del tamaño de archivo, la minimización de solicitudes HTTP, el uso de etiquetas de tamaño adecuado, la carga de recursos en paralelo y el uso de herramientas de optimización para mejorar el rendimiento de una página web. Al implementar estas técnicas, los programadores pueden asegurarse de que las páginas web que crean sean rápidas, accesibles y fáciles de usar para los usuarios finales.
+        </p>
+    </div>
+
+
 
 
 
@@ -731,9 +691,13 @@
     </main>
 
 
+    </div>
+
     <!-- BARRA INFERIOR -->
     <footer>
-            <div class="rss">
+        
+    
+        <div class="rss">
             <h2>Sigueme en mis redes sociales: </h2>
     
             <div class="frontIcons">
@@ -744,13 +708,13 @@
                 <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
             </div>
         </div>
-
     </footer>
-
+    
 
     <!-- JAVASCRIPT -->
     <script src="/js/hamburger.js"></script>
+    <script src="/js/ejemplo.js"></script>
 
-    
+
 </body>
 </html>

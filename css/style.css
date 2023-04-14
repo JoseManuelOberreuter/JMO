@@ -23,7 +23,8 @@ body {
 .post { 
     height: auto;
     width: 90%;
-    margin: 50px auto;
+    margin: 0px auto;
+    margin-bottom: 50px;
     padding: 5%;
     background-color: #fff;
     text-align: justify;

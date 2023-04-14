@@ -6,6 +6,9 @@
     padding: 0;
     font-family: 'Roboto Slab', serif;
 }
+* p, .code, * li, * ul,* b{
+    font-size: 20px;
+}
 
 .active{
     color: var(--color2);
@@ -171,6 +174,7 @@
     background-color: #153462;
     width: 80%;
     margin: 0 auto;
+    margin-top: 15px;
     padding: 5px 25px;
 }
 
@@ -186,7 +190,7 @@
     border: 2px solid #153462;
     color: #fff;
     background-color: #153462;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     transition: background-color 0.5s, color 0.5s;
 }
