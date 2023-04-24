@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/hamburger.css">
+    <link rel="stylesheet" href="/css/carrusel.css">
+
+
+    <!-- CARRUSEL DE IMAGENES-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script></head>
 
 
 
@@ -68,18 +74,6 @@
 
     </div>
     
-    <!-- BARRA LATERAL --> 
-    <div class="sidebar">
-
-        <!-- LINKS DROPDOWN -->
-        <div id="dropdown" class="dropdowncontent">
-            <a href="/html/blog/bloghtml.html" >Html</a>
-            <a href="/html/blog/blogcss.html" id="active">Css</a>
-            <a href="/html/blog/blogjavascript.html" >JavaScript</a>
-            <a href="/html/blog/blogpython.html">Python</a>
-        </div>
-
-    </div>
 
 
     <main id="blog">
@@ -111,6 +105,25 @@
             <a href="#arquitecturas "> <p>10. Arquitecturas CSS: BEM y SMACSS </p> </a>
 
         </div>
+
+        <!-- CARRUSEL DE IMAGENES -->
+        <h2 style="text-align: center; margin-top: 50px ;">Navegue por el menú para acceder a los diferentes temas que he estudiado y publicado en mi blog.</h2>
+
+        <div class="carousel" data-aos="fade-up" data-aos-duration="1000">
+            <div class="carousel-cell">
+                <a href="/html/blog/bloghtml.html"><img src="/img/logos/logo_html.png" alt="Imagen galeria 1" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogcss.html"><img src="/img/logos/logo_css.png" alt="Imagen galeria 2" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogjavascript.html"><img src="/img/logos/logo_js.png" alt="Imagen galeria 3" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogpython.html"><img src="/img/logos/logo_python.png" alt="Imagen galeria 4" class="grayscale"></a>
+            </div>
+        </div>
+
 
 
         <!-- 1. Fundamentos de CSS -->
@@ -385,6 +398,7 @@
 
     <!-- JAVASCRIPT -->
     <script src="/js/hamburger.js"></script>
+    <script src="/js/carrusel.js" ></script>
 
 </body>
 </html>

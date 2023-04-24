@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/hamburger.css">
+    <link rel="stylesheet" href="/css/carrusel.css">
 
+
+    <!-- CARRUSEL DE IMAGENES-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script></head>
+    
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/img/logos/logo6.png">  
@@ -65,25 +71,6 @@
         </div>
 </div>
 
-    <!-- BARRA LATERAL --> 
-    <div class="sidebar">
-
-
-        <!-- LINKS SIDE BAR -->
-        <div id="dropdown" class="dropdowncontent">
-            <a href="/html/blog/bloghtml.html" >Html</a>
-            <a href="/html/blog/blogcss.html" >Css</a>
-            <a href="/html/blog/blogjavascript.html" >JavaScript</a>
-            <a href="/html/blog/blogpython.html">Python</a>
-
-        </div>
-
-
-    </div>
-
-
-
-
  
     <!-- CONTENIDO PRINCIPAL -->
     <main id="blog">
@@ -97,7 +84,6 @@
                 <div class="item1" >
                     <h2>¡Gracias por visitar mi blog!</h2>
                     <br>
-                    <b>Navegue por el menú para acceder a los diferentes temas que he estudiado y publicado en mi blog.</b>
                     <br><br>
                     <p  style="margin: 0 auto;">
                         ¡Muchas gracias por visitar mi blog! Estoy emocionado de presentarle este espacio dedicado a la difusión de información con fines educativos sobre programación. Soy un estudiante de ingeniería en informática y me apasiona plasmar mis conocimientos y experiencias en el campo de la programación para ayudar a otros a aprender y crecer en este ámbito.
@@ -114,6 +100,25 @@
                 </div>
             </div>
         </div>
+
+        <!-- CARRUSEL DE IMAGENES -->
+        <h2 style="text-align: center; margin-top: 50px ;">Navegue por el menú para acceder a los diferentes temas que he estudiado y publicado en mi blog.</h2>
+
+        <div class="carousel" data-aos="fade-up" data-aos-duration="1000">
+            <div class="carousel-cell">
+                <a href="/html/blog/bloghtml.html"><img src="/img/logos/logo_html.png" alt="Imagen galeria 1" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogcss.html"><img src="/img/logos/logo_css.png" alt="Imagen galeria 2" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogjavascript.html"><img src="/img/logos/logo_js.png" alt="Imagen galeria 3" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogpython.html"><img src="/img/logos/logo_python.png" alt="Imagen galeria 4" class="grayscale"></a>
+            </div>
+        </div>
+       
 
 
 
@@ -150,6 +155,7 @@
 
     <!-- JAVASCRIPT -->
     <script src="/js/hamburger.js"></script>
+    <script src="/js/carrusel.js" ></script>
 
 
     <!-- Script Fades -->

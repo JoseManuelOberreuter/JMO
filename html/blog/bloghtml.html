@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/hamburger.css">
+    <link rel="stylesheet" href="/css/carrusel.css">
+
+
+    <!-- CARRUSEL DE IMAGENES-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script></head>
 
 
 
@@ -37,6 +43,7 @@
 
 <body>
 
+
     <!-- BOTOTN HAMBURGESA -->
     <label for="hamburger-btn" class="lbl-hamburger">
         <div class="menu-button">
@@ -56,7 +63,7 @@
         <div class="hamburger-links">
             <a href="/index.html" >Inicio</a>
             <a href="/html/portafolios.html" >Portafolio</a>
-            <a href="/html/blog.html">Blog</a>
+            <a href="/html/blog.html" >Blog</a>
         </div> 
 
         <div class="frontIcons">
@@ -70,20 +77,6 @@
 
     </div>
     
-    <!-- BARRA LATERAL --> 
-    <div class="sidebar">
-
-        <!-- LINKS DROPDOWN -->
-        <div id="dropdown" class="dropdowncontent">
-            <a href="/html/blog/bloghtml.html" id="active">Html</a>
-            <a href="/html/blog/blogcss.html" >Css</a>
-            <a href="/html/blog/blogjavascript.html" >JavaScript</a>
-            <a href="/html/blog/blogpython.html">Python</a>
-
-        </div>
-
-    </div>
-
 
     <main id="blog">
 
@@ -114,6 +107,28 @@
             <a href="#optimizacion"> <p>10. Optimización de rendimiento en HTML </p> </a>
         
         </div>
+
+
+
+        <!-- CARRUSEL DE IMAGENES -->
+        <h2 style="text-align: center; margin-top: 50px ;">Navegue por el menú para acceder a los diferentes temas que he estudiado y publicado en mi blog.</h2>
+
+        <div class="carousel" data-aos="fade-up" data-aos-duration="1000">
+            <div class="carousel-cell">
+                <a href="/html/blog/bloghtml.html"><img src="/img/logos/logo_html.png" alt="Imagen galeria 1" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogcss.html"><img src="/img/logos/logo_css.png" alt="Imagen galeria 2" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogjavascript.html"><img src="/img/logos/logo_js.png" alt="Imagen galeria 3" class="grayscale"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="/html/blog/blogpython.html"><img src="/img/logos/logo_python.png" alt="Imagen galeria 4" class="grayscale"></a>
+            </div>
+        </div>
+
+
 
         <!-- INTRODUCCION HTML -->
         <div class="margin" id="intro"></div>
@@ -172,10 +187,10 @@
                     <div class="codemargin1">&lt;title&gt; Titulo de pagína &lt;/title&gt;</div>
                 <div class="codemargin">&lt;/head &gt;</div>
                 <div class="codemargin">&lt;body &gt;</div>
-                    <div class="codemargin1">&lt;a href="www.linkejemplo.com"&gt; Enlace de ejemplo &lt;/a&gt;</div>
+                    <div class="codemargin1">&lt;a href= "www.linkejemplo.com "&gt; Enlace de ejemplo &lt;/a&gt;</div>
                     <div class="codemargin1">&lt;h1&gt; Encabezado de nivel 1 &lt;/h1&gt;</div> 
                     <div class="codemargin1">&lt;p&gt; Este es un párrafo de ejemplo. &lt;/p&gt;</div>
-                    <div class="codemargin1">&lt;img src="imagen_ejemplo.jpg" alt="Descripción de la imagen"&gt;</div>
+                    <div class="codemargin1">&lt;img src= "imagen_ejemplo.jpg" alt="Descripción de la imagen"&gt;</div>
                 <div class="codemargin">&lt;/body&gt;</div>
                 <div class="codemargin">&lt;footer&gt;</div>
                     <div class="codemargin1">&lt;p&gt;Derechos de autor © 2023 Ejemplo&lt;/p&gt;</div>
@@ -324,7 +339,7 @@
                     
                     <br><br>
 
-                    <div class="codemargin">&lt;a href="https://www.ejemplo.com">Enlace de ejemplo&lt;/a&gt;</div>
+                    <div class="codemargin">&lt;a href= "https:// www.ejemplo.com"> Enlace de ejemplo &lt;/a&gt;</div>
 
                     <br><br>
 
@@ -552,7 +567,7 @@
         </p>
 
         <div class="code">
-            &lt;a href="https://www.google.com/"&gt;Ir a Google&lt;/a&gt;
+            &lt;a href= "https://www.google.com/ "&gt;Ir a Google&lt;/a&gt;
         </div>
 
         <p>
@@ -562,8 +577,8 @@
         </p>
 
         <div class="code">
-            &lt;a href="path/to/image.jpg"&gt;Ver imagen&lt;a/a&gt; <br>
-            &lt;a href="path/to/document.pdf"&gt;Descargar documento&lt;aa&gt;
+            <p>&lt;a href= "path/to/image.jpg"&gt; Ver imagen &lt;/a&gt;</p> <br>
+            <p>&lt;a href= "document.pdf"&gt; Descargar documento &lt;/a&gt;</p>
         </div>
 
         <p>
@@ -714,6 +729,7 @@
     <!-- JAVASCRIPT -->
     <script src="/js/hamburger.js"></script>
     <script src="/js/ejemplo.js"></script>
+    <script src="/js/carrusel.js" ></script>
 
 
 </body>

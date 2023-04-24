@@ -17,7 +17,6 @@
 }
 
 #blog {
-    margin-left: 130px;
     padding: 50px;
 }
 
@@ -223,7 +222,20 @@
 }
 
 
-
+@media all and (max-width: 900px){
+    .codemargin{
+        margin-left: 0;
+    }
+    .codemargin1{
+        margin-left: 0;
+    }
+    .codemargin2{
+        margin-left: 0;
+    }
+    .codemargin3{
+        margin-left: 0;
+    }
+}
 
 
 
@@ -247,7 +259,7 @@
 
     #blog {
         margin-left: 0%;
-        margin: 25px;
+        margin: 2px;
         padding: 0px;
     }
 
