@@ -1,6 +1,6 @@
 var elem = document.querySelector('.carousel');
 
-document.querySelector('.carousel').style.height = '500px';
+document.querySelector('.carousel').style.height = '200px';
 
 var flkty = new Flickity( elem, {
   // opciones aquí
