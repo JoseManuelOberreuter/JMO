@@ -17,47 +17,32 @@
 }
 
 #blog {
-    padding: 50px;
+    padding:0 50px;
 }
 
 
 
 
-/* SIDE BAR */
-.sidebar{
-    height: 100%;
-    width: 130px;
-    position: fixed;
-    overflow: auto;
-    background-color: var(--color2);
+
+.hero_blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 200px auto;
+    width: 90vw;
+    height: 100vh;   
 }
 
-
-.sidebar a, .buttonDrop{
-    font-size: 20px;
-    display: block;
-    width: 100%;
-    padding: 25px 0;
-
+.hero_blog h2{
+    margin-bottom: 20px;
+    color: var(--color1);
+    font-size: 35px;
     text-align: center;
-    text-decoration: none;
-    transition: background-color 1s;
-    
-}
-
-.sidebar a:hover{
-    background-color: var(--color0);
 }
 
 
-.headera {
-    color: var(--color0);
-    background-color:var(--color2);
-}
 
-.headera:hover {
-    color: var(--color2);
-}
+
+
 
 
 .buttonDrop{
