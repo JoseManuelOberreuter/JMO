@@ -1,18 +1,12 @@
 /* FOOTER */
 
-:root{
-    --color0:#fff;
-    --color1:#000;
-    --color2:#333333;
-    --color3:#DDDDDD;
-}
 
 .rss {
     display: block;
 }
-.rss h2 {
+h2 {
     margin-bottom: 20px;
-    color:var(--color0);
+    color:#fff;
 }
 
 
@@ -25,15 +19,25 @@ footer {
     margin-top: 200px;
     padding: 75px 0;
     bottom: 0;
-    background-color: var(--color2);
+    background-color: #1F1F1F;
     text-align: center;
 }
 
 
-@media all and (max-width: 900px){
-
-
+footer img{
+    width: 50px;
+    margin: 10px 10px;
+    opacity: 0.5;
+    transition: 1s;
+}
+footer img:hover{
+    opacity: 1;
 }
 
+.frontIcons{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
 
 
