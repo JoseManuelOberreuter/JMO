@@ -1,6 +1,5 @@
-*{
-  font-family: 'Roboto Slab', serif;
-}
+
+
 
 .blog-header {
   border-bottom: 1px solid #e5e5e5;
@@ -15,9 +14,7 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-}
+
 
 .display-4 {
   font-size: 2.5rem;
@@ -229,6 +226,38 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* LINK IMAGEN PORTADA */
+#blog_hero {
+  background-image: url('/img/imgblog/ia_cyber_osc.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+/* BARRA PARA SUBIR Y BAJAR */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F1F1F1 ; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} 
+
+
 
 
 
@@ -263,3 +292,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+*{
+  font-family: 'Roboto Slab', serif;
+}

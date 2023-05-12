@@ -24,13 +24,13 @@ footer {
 }
 
 
-footer img{
+.frontIcons img{
     width: 50px;
     margin: 10px 10px;
     opacity: 0.5;
     transition: 1s;
 }
-footer img:hover{
+.frontIcons img:hover{
     opacity: 1;
 }
 
