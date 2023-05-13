@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"> <!-- COMPATIBLE CON CHROME -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>José Manuel Oberreuter</title>
 
-    <!-- Styles -->
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/dropdown.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -22,7 +27,7 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script></head>
 
     <!-- Icono Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/logos/logo6.png">  
+    <link rel="icon" type="image/x-icon" href="/ico/ico_jmo_fondoCirculo.ico">  
 
     <!-- Fades -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -62,14 +67,15 @@
     <div id="hidden-hamburger">
         <h1>MENU</h1>
 
+        <!-- ENLACES -->
         <div class="hamburger-links">
             <a href="index.html" >Inicio</a>
             <a href="/html/portafolios.html" >Portafolio</a>
             <a href="/html/blog.html" >Blog</a>
         </div> 
 
+        <!-- ICONOS REDES SOCIALES -->
         <div class="rss">
-
             <div class="frontIcons">
                 <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
@@ -82,53 +88,51 @@
     </div>
 
             
-
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
+        <!-- BANNER DE INICIO -->
         <div id="herobanner">
-
+            <!-- IMAGEN DE FONDO RESPONSIVE-->
             <picture id="fondohero">
-
                 <source srcset="/img/fondojmo0.jpg" media="(min-width:900px)">
                 <source srcset="/img/fondojmo1.jpg" media="(min-width:600px)">
                 <img src="/img/fondojmo2.jpg" alt="fondo" >
-
             </picture>
 
-
+            <!-- CONTENIDO DENTRO DE BANNER -->
             <div class="hero-text">
 
-              <h1 id="jmoh1">José Manuel Oberreuter (JMO)</h1>
-              <h2 id="text"></h2>
+                <!-- TITULO PRINCIPAL -->
+                <h1 id="jmoh1">José Manuel Oberreuter (JMO)</h1>
+                <!-- TEXTO DINAMICO CON JS -->
+                <h2 id="text"></h2>
 
-              <div class="frontIcons" id="frontIcons">
-                <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/gitico.ico" alt="GitHub Icon"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkico.ico" alt="Linkedin Icon"></a>
-                <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaico.ico" alt="Instagram Icon"></a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbico.ico" alt="Facebook Icon"></a>
-                <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitterico.ico" alt="Twitter Icon"></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
-              </div>
-
+                <!-- ICONOS DE BANNER -->
+                <div class="frontIcons" id="hero_icons">
+                    <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+                    <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+                    <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
+                </div>
+    
             </div>
-
-          </div>
-                    
-
-    
-    
+        </div>
+           
         
-        <!-- POST1 -->
+        <!-- ITEM 1 Y 2 -->
         <div data-aos="fade-down" data-aos-duration="2000">
-
             <div class="info">
 
+                <!-- IMAGEN POST -->
                 <div class="item2">
                     <img src="/img/laptopplantas.jpg" alt="laptop">
                 </div>
 
+                <!-- TEXTO POST-->
                 <div class="item1">
-
                     <h2>Bienvenidos a mi pagina web</h2>
                     <br>
                     <p class="description">
@@ -136,7 +140,6 @@
                         <br><br>
                         Estoy abierto a recibir preguntas y comentarios, no duden en contactarme a través de mi blog o por cualquier otro medio conveniente. Mi objetivo es ayudar y responder a sus dudas. ¡Gracias por visitar!        
                     </p>
-
                 </div>
 
             </div>
@@ -152,7 +155,7 @@
         <div data-aos="fade-down" data-aos-duration="2000">
             <div class="info">
 
-
+                <!-- TEXTO POST -->
                 <div class="item4">
                     <h2>Portafolio</h2>
                     <p class="description">
@@ -160,6 +163,8 @@
                         <br><br>
                         Te invito a que explores mi portafolio y veas lo que puedo hacer. Estoy seguro de que encontrarás proyectos interesantes y soluciones innovadoras que te sorprenderán. Si estás interesado en mi trabajo o tienes alguna pregunta, no dudes en contactarme. ¡Espero que disfrutes de mi portafolio!
                     </p>
+
+                    <!-- IMAGEN POST -->
                     <div class="block-item button-item">
                         <a href="/html/portafolios.html" target="_blank" rel="noopener noreferrer"> <button type="button">¡Visita mi portafolio!</button> </a>
                     </div>
@@ -185,12 +190,12 @@
         <div data-aos="fade-down" data-aos-duration="2000">
             <div class="info">
 
-                                
+                <!-- IMAGEN POST -->
                 <div class="item3">
                     <img src="/img/fondoportafolios0.jpg" alt="laptop blog">
                 </div>
 
-
+                <!-- TEXTO POST -->
                 <div class="item4">
                     <h2>Blog personal</h2>
                     <p class="description">
@@ -201,7 +206,6 @@
                     <div class="block-item button-item">
                         <a href="/html/blog.html" target="_blank" rel="noopener noreferrer"> <button type="button">¡Visita mi blog!</button> </a>
                     </div>
-
                 </div>  
 
 
@@ -229,16 +233,12 @@
             </div>    
         </div> -->
 
-
-
-
-
-
-
         
         <!-- POST 4 -->
         <div data-aos="fade-down" data-aos-duration="2000">
             <div class="info">
+
+                <!-- TEXTO CONTACTO -->
                 <div class="item5">
                     <h2>Contactar Conmigo</h2>
                     <p class="description">
@@ -247,29 +247,36 @@
                         Te garantizo una respuesta rápida y eficiente dentro de mi horario hábil de Lunes a Viernes de 9AM a 6PM. Si tienes alguna retroalimentación o sugerencia sobre mi blog o mi trabajo, también estoy abierto a escuchar y aprender de ella. ¡No dudes en contactarme! Estoy a tus disposición.                    
                     </p>                    
                 </div>    
+
+                <!-- FORMULARIO DE CONTACTO -->
                 <form action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST" class="item6">
 
+                    <!-- INPUTS ESCONDIDOS CON CONDICIONES DE WWW.FORSUBMIT.CO -->
                     <input type="hidden" name="_next" value="http://josemanueloberreuter.com/html/thanks.html">    
                     <input type="hidden" name="_subject" value="Nuevo mensaje de JMO">
                     <input type="hidden" name="_autoresponse" value="Muchas gracias por tu mensaje! Te confirmamos que lo hemos recibido con éxito y nos pondremos en contacto contigo a la brevedad posible. Atentamente JMO.">
 
+                    <!-- INPUT NOMBRE -->
                     <div class="block-item">
                         <label for="nombre" >Nombre:</label>
                         <input required type="text" id="nombre" name="Nombre">
                     </div>
+                    <!-- INPUT EMAIL -->
                     <div class="block-item">
                         <label for="email" >Email:</label>
                         <input required type="email" id="email" name="Email">
                     </div>
+                    <!-- INPUT CONFIRMACIÓN DE EMAIL -->
                     <div class="block-item">
                         <label for="emailconf">Confirmación de email:</label>
                         <input required type="email" id="emailconf" name="Email de confirmación">
                     </div>
+                    <!-- INPUT MENSAJE -->
                     <div class="block-item">
                         <label for="mensaje">Mensaje:</label>
                         <textarea required id="mensaje" name="Mensaje"></textarea>
                     </div>
-
+                    <!-- BOTON DE ENVIO -->
                     <div class="block-item button-item">
                         <button type="submit">Enviar</button>
                     </div>
@@ -286,9 +293,8 @@
     <!-- BARRA INFERIOR -->
     <footer>
 
-
+        <!-- TITULO + ICONOS -->
         <div class="rss">
-
             <h2>Sígueme en mis redes sociales: </h2>
             <div class="frontIcons">
                 <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
@@ -298,7 +304,6 @@
                 <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
                 <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
             </div>
-
         </div>
 
     </footer>
@@ -318,7 +323,7 @@
     <script src="/js/carrusel.js" ></script>
 
 
-    <!-- Script Fades -->
+    <!-- SCRIPTS FADES DE BIBLIOTECA AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
