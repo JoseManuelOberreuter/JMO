@@ -14,10 +14,23 @@
 
     <!-- STYLES -->
     <link href="/css/hamburger.css" rel="stylesheet">
-    <link href="/css/blog copy.css" rel="stylesheet">
     <link href="/css/blog.rtl.css" rel="stylesheet">
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/blog.css" rel="stylesheet">
+    
+    <style>
+      #logo_fixed{
+        z-index: 999;
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+
+    </style>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/ico/ico_jmo_fondoCirculo.ico">  
@@ -33,7 +46,8 @@
 
   <body>
 
-  
+    <a href="/index.html"><img src="/img/logos/ico_jmo_circulo.png" alt="Logo JMO Software Developer" id="logo_fixed"></a>
+
 
 <div class="container">
 
@@ -97,7 +111,7 @@
     <!-- POST PRINCIPAL -->
     <div class="p-4 p-md-5 mb-4 rounded text-bg-dark" id="blog_hero">
       <div class="col-md-6 px-0 ">
-        <h1 class="display-4 ">La revolución de la inteligencia artificial</h1>
+        <h1 class="display-4 ">BLOG LA REVOLUCIÓN DE LA INTELIGENCIA ARTIFICIAL </h1>
         <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>
         <p class="lead mb-0"><a href="#" class="text-white fw-bold">Seguir leyendo</a></p>
       </div>
@@ -119,7 +133,7 @@
           <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
               <title>Aprende HTML en 10 sencillos pasos</title>
-              <image xlink:href="/img/imgblog/pro_html.png" class="img_articulo" width="100%" height="100%"  />
+              <image href="/img/imgblog/pro_html.png" class="img_articulo" width="100%" height="100%"  />
             </svg>
           </div>
         </div>
@@ -139,10 +153,10 @@
           <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
               <title>Planificación de campañas publicitarias</title>
-              <image xlink:href="/img/imgblog/cm_campaña.png" class="img_articulo" width="100%" height="100%"  />
+              <image href="/img/imgblog/cm_campana.png" class="img_articulo" width="100%" height="100%"  />
             </svg>
           </div>
-        </div>
+        </  div>
       </div>
 
     </div>
@@ -158,7 +172,29 @@
         <!-- ARTICULO -->
         <article class="blog-post">
 
-
+          <h2>La revolución de la inteligencia artificial</h2>
+          <p class="blog-post-meta">Nov 11</p>
+          <p>
+            La inteligencia artificial (IA) ha emergido como una de las tecnologías más disruptivas de nuestro tiempo, transformando rápidamente la forma en que vivimos y trabajamos. Con avances significativos en áreas como el aprendizaje automático, el procesamiento del lenguaje natural y la visión por computadora, la IA está desencadenando una revolución en diversas industrias, desde la atención médica y la manufactura hasta el transporte y el comercio minorista. En este artículo, exploraremos cómo la inteligencia artificial está redefiniendo nuestro mundo y cómo estas innovaciones están impulsando el futuro.
+          </p>
+          <br>
+          <p>
+            La inteligencia artificial está superando los límites de lo que era considerado posible en el pasado. Algoritmos complejos y modelos de IA están permitiendo avances en campos como el reconocimiento de voz y la comprensión del lenguaje natural, lo que ha llevado al desarrollo de asistentes virtuales y chatbots capaces de interactuar con los usuarios de manera más natural y efectiva. Estas tecnologías están revolucionando la forma en que nos comunicamos y accedemos a la información, facilitando tareas cotidianas y mejorando la experiencia del usuario en múltiples plataformas y dispositivos.
+          </p>
+          <br>
+          <p>
+            Con cada nueva aplicación y avance en inteligencia artificial, nuestro mundo se vuelve más conectado y sofisticado. La revolución de la IA no solo está impulsando mejoras en la eficiencia y la productividad, sino que también está creando oportunidades para el descubrimiento científico, la innovación tecnológica y el mejoramiento de la calidad de vida. A medida que nos sumergimos en este emocionante futuro impulsado por la inteligencia artificial, es crucial comprender y adaptarnos a los cambios que se avecinan, aprovechando las oportunidades que nos brinda y trabajando en conjunto para desarrollar y aplicar esta tecnología de manera ética y responsable.
+          </p>
+          <!-- AÑADIR LINK -->
+          <a href="">Seguir leyendo...</a>
+        </article>
+        <hr>
+        <article>
+        
+          <h2>Aprende HTML en 10 sencillos pasos: Guía para principiantes</h2>
+          <p>
+            En la era digital actual, HTML se ha convertido en el lenguaje de marcado esencial para crear y dar forma a las páginas web que navegamos a diario. Desde sitios web informativos hasta plataformas interactivas, HTML es el cimiento sobre el cual se construye la arquitectura de Internet. Si eres un principiante en el mundo de la programación y estás emocionado por adentrarte en el fascinante universo de la creación web, estás en el lugar adecuado. En esta guía paso a paso, desglosaremos HTML en 10 sencillos pasos para que puedas comenzar desde cero y desarrollar tu primera página web. Lo mejor de todo es que no necesitas tener experiencia previa en programación, ¡solo necesitas una mente abierta y muchas ganas de aprender!
+          </p>
         </article>
 
         <!-- <article class="blog-post">
@@ -312,7 +348,7 @@
 
   <!-- BOTOTN HAMBURGESA -->
   <label for="hamburger-btn" class="lbl-hamburger">
-    <div class="menu-button" style="height: 50px; width: 50px;">
+    <div class="menu-button">
         <input type="checkbox" id="hamburger-btn">
         <span id="spn1" ></span>
         <span id="spn2"></span>
@@ -325,7 +361,7 @@
     <h1>MENU</h1>
 
     <div class="hamburger-links">
-        <a href="index.html" >Inicio</a>
+        <a href="/../index.html" >Inicio</a>
         <a href="/html/portafolios.html" >Portafolio</a>
         <a href="/html/blog.html" >Blog</a>
     </div> 

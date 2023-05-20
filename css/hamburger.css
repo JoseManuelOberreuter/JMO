@@ -11,17 +11,18 @@
     z-index: 999;
     position: fixed;
 
-    bottom: 40px;
-    right: 40px;
+    bottom: 0px;
+    right: 0px;
+
+    margin: 1rem;
 
 
-    padding: 10px;
     border: none;
     border-radius: 100%;
 
 
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -39,10 +40,12 @@
 .menu-button span {
     position: absolute;
     display: block;
-    width: 30px;
+    width: 40px;
     height: 3px;
     background-color: var(--color0);
-    margin: 5px auto;
+    margin: 15px;
+    top: 20px;
+
     transition: all 0.5s ease-in-out;
 }
 

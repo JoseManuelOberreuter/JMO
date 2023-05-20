@@ -15,6 +15,16 @@ body {
 }
 
 
+#logo_fixed{
+    z-index: 999;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
 
 

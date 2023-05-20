@@ -37,13 +37,13 @@
     z-index: 1;
   }
   
-  .hero-text h1 {
+  #jmoh1 {
     font-size: 3em;
     margin: 0;
   }
   
   .hero-text h2 {
-    height: 50px;
+    height: 150px;
     font-size: 2em;
     margin: 0;
     margin: 20px auto;
