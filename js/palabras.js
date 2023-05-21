@@ -1,26 +1,34 @@
-const words = ['Software Developer','Full Stack developer','Desarrollador Web FreeLancer','Estudiante de Ingienería Informatica'];
-  let i = 0;
-  let j = 0;
-  let isDeleting = false;
+const words = [
+  { text: 'Software Developer', color: '#FC2947' },
+  { text: 'Full Stack developer', color: '#7149C6' },
+  { text: 'Desarrollador Web Freelancer', color: '#00EAD3' },
+  { text: 'Estudiante de Ingeniería Informática', color: '#FCE2AE' }
+];
+
+let i = 0;
+let j = 0;
+let isDeleting = false;
+
+setInterval(() => {
+  const word = words[i];
+  let text = document.querySelector('#text');
   
-  setInterval(() => {
-    const word = words[i];
-    let text = document.querySelector('#text').innerHTML;
+  if (isDeleting) {
+    text.innerHTML = text.innerHTML.slice(0, -1);
     
-    if (isDeleting) {
-      text = text.substring(0, text.length - 1);
-      if (text === '') {
-        isDeleting = false;
-        i = (i + 1) % words.length;
-        j = 0;
-      }
-    } else {
-      text = word.substring(0, j + 1);
-      j++;
-      if (j === word.length) {
-        isDeleting = true;
-      }
+    if (text.innerHTML === '') {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+      j = 0;
     }
+  } else {
+    text.innerHTML = word.text.slice(0, j + 1);
+    text.style.color = word.color;
     
-    document.querySelector('#text').innerHTML = text;
-  }, 150);
+    j++;
+    
+    if (j === word.text.length) {
+      isDeleting = true;
+    }
+  }
+}, 150);
