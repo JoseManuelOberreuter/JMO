@@ -24,20 +24,3 @@ footer {
 }
 
 
-.frontIcons img{
-    width: 50px;
-    margin: 10px 10px;
-    opacity: 0.5;
-    transition: 1s;
-}
-.frontIcons img:hover{
-    opacity: 1;
-}
-
-.frontIcons{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-

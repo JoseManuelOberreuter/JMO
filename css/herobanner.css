@@ -7,6 +7,8 @@
     overflow-x: hidden;
     max-width: 100%;
 
+    box-shadow: inset 1 0 5rem rgba(0, 0, 0, .8);
+
   }
   
   #fondohero {
@@ -15,8 +17,8 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    filter: blur(2px) brightness(65%);
     max-width: 100%;
+    background-color: #1F1F1F;
 
   }
 
@@ -41,6 +43,7 @@
     font-size: 3em;
     margin: 0;
   }
+
   
   .hero-text h2 {
     height: 150px;
@@ -53,3 +56,50 @@
 #hero_icons a{
   margin: 0 20px;
 }
+
+
+.img_logoredes:hover{
+  animation: pulse;
+  animation-duration: 2s;
+}
+
+
+/* CONTAINER DE LOGOS REDES SOCIALES */
+.frontIcons{
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* IMAGENES LOGOS REDES SOCIALES */
+.frontIcons img{
+  width: 50px;
+  margin: 10px 10px;
+  opacity: 0.5;
+  transition: 1s;
+}
+.frontIcons img:hover{
+  opacity: 1;
+}
+
+
+
+
+/* TEXTO DINAMICO */
+#text {
+  animation: typing 5s steps(28, end);
+
+  height: 50px;
+  font-size: 2em;
+  margin: 40px auto;
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 900px){
+  #text {
+    font-size: 1.5em;
+  }
+}
+
