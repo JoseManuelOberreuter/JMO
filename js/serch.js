@@ -1,24 +1,12 @@
 // Títulos y enlaces de ejemplo
 var articles = [
     {
-      title: 'Aprende a escribir el lenguaje que todos los programadores saben usar: Python',
-      link: 'https://example.com/python-article'
+      title: 'La revolución de la inteligencia artificial',
+      link: 'https://josemanueloberreuter.com/html/blog/revolucion_ia.html'
     },
     {
       title: 'Aprende Python en 10 sencillos pasos',
       link: 'https://example.com/python-10-steps'
-    },
-    {
-      title: 'Introducción a la programación en Python',
-      link: 'https://example.com/intro-python'
-    },
-    {
-      title: 'Python para principiantes',
-      link: 'https://example.com/python-beginners'
-    },
-    {
-      title: 'Programación avanzada con Python',
-      link: 'https://example.com/python-advanced'
     }
   ];
   

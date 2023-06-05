@@ -258,8 +258,16 @@
 } 
 
 
+.img_blog{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
 
 
+.articulo p{
+  text-align: justify;
+}
 
 /*  INPUT DE BUSQUEDA  */
 #input_serch{
