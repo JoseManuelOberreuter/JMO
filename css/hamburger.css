@@ -17,7 +17,7 @@
     margin: 1rem;
 
 
-    border: none;
+    border: 3px solid #1F1F1F;
     border-radius: 100%;
 
 
@@ -45,12 +45,11 @@
 .menu-button span {
     position: absolute;
     display: block;
-    width: 40px;
+    width:55%;
     height: 3px;
     background-color: var(--color2);
-    margin: 15px;
-    top: 20px;
-
+    margin: 22.5% ;
+    top: 18px;
     transition: all 0.5s ease-in-out;
 }
 
