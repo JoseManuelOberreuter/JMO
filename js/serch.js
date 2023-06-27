@@ -5,8 +5,16 @@ var articles = [
       link: 'https://josemanueloberreuter.com/html/blog/revolucion_ia.html'
     },
     {
-      title: 'Aprende Python en 10 sencillos pasos',
-      link: 'https://example.com/python-10-steps'
+      title: 'Scrum: un marco de trabajo para el desarrollo de software',
+      link: 'https://josemanueloberreuter.com/html/blog/scrum.html'
+    },
+    {
+      title: 'El futuro de la creación de imágenes: Una mirada a Midjourney',
+      link: 'https://josemanueloberreuter.com/html/blog/midjourney1.html'
+    },
+    {
+      title: 'Introducción a Python y su entorno de desarrollo',
+      link: 'https://josemanueloberreuter.com/html/blog/python1.html'
     }
   ];
   

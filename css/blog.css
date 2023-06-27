@@ -234,6 +234,32 @@
 }
 
 
+.code-box {
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.code-content { 
+  padding: 20px;
+  user-select: text;
+}
+.code-content code {
+  color: #ffffff;
+  
+}
+
+.comentario {
+  color: gray;
+  
+}
 
 
 /* BARRA PARA SUBIR Y BAJAR */
