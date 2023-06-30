@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="José Manuel Oberreuter (JMO)">
+    <title>Blog JMO</title>
+
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- STYLES -->
+    <link href="/css/hamburger.css" rel="stylesheet">
+    <link href="/css/blog.rtl.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/ico/ico_jmo_fondoCirculo.ico">  
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet">        
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+  </head>
+
+
+  <body>
+
+  
+
+<div class="container">
+
+  <!-- HEADER SUPERIOR -->
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+
+      <!-- ICONOS REDES SOCIALES -->
+      <div class="col-4 pt-1">
+        <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img class="ico_blog" src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img class="ico_blog" src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+        <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img class="ico_blog" src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img class="ico_blog" src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+        <a target="_blank" href="https://twitter.com/jmo_developer"><img class="ico_blog" src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img class="ico_blog" src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
+      </div>
+
+      <!-- TITULO -->
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-body-emphasis" href="/html/blog.html">BLOG JMO</a>
+      </div>
+
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <div class="search-container">
+          <div class="menu d-block position-static pt-0 mx-0 rounded-3 overflow-hidden" data-bs-theme="light">
+            <form class="d-flex">
+              <input type="search" id="input_serch" class="form-control"  autocomplete="false" placeholder="Buscar..." oninput="filterTitles(this.value)">
+              <button type="submit" class="btn" id="ico_lupa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-1" role="img" viewBox="0 0 24 24">
+                  <title>Search</title>
+                  <circle cx="10.5" cy="10.5" r="7.5"/>
+                  <path d="M21 21l-5.2-5.2"/>
+                </svg>
+              </button>
+            </form>
+            <ul class="list-unstyled mb-0 dropdown-menu" id="dropdown-menu" style="display: none;"></ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+  <!-- CATEGORIAS -->
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Programación</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Computación en la nube</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Inteligencia artificial</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Softwares</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Ingeniería de propmt</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Tecnología</a>
+    </nav>
+  </div>
+  <hr>
+</div>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+    
+    <div class="row g-5">
+      <div class="col-md-8 ">
+
+        <article class="articulo">          
+          
+          <h2 class="text-center">Estructuras de control de Python: <br> condicionales y bucles</h2>
+
+          <!-- IMAGEN DE PORTADA -->
+          <img src="/img/imgblog/python/portada_python3.png" alt="Portada de articulo sobre python" class="img_blog" width="60%">
+
+          
+          <h4><u>Introducción</u></h4>  
+          <p>En el mundo de la programación, las estructuras de control desempeñan un papel fundamental al permitirnos controlar el flujo de ejecución de un programa. Dos de las estructuras de control más utilizadas son las condicionales y los bucles. Estas herramientas nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones, lo que a su vez nos brinda mayor flexibilidad y poder en el desarrollo de software.</p>
+
+          <h4><u>Condicionales</u></h4>
+          <p>Las estructuras de control condicionales nos permiten ejecutar un bloque de código si se cumple una condición determinada. En Python, esto se logra utilizando la declaración <code>if</code>. Veamos varios ejemplos:</p>
+            
+            <div class="code-box">
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              <div class="code-content">
+                <code>
+                  edad = 18 <br>
+                  if edad >= 18: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print("Eres mayor de edad")
+                </code>
+              </div>
+            </div>
+            
+            <p>En este caso, evaluamos si la variable <code>edad</code> es mayor o igual a 18. Si la condición se cumple, se ejecuta el código dentro del bloque <code>if</code>, que en este caso simplemente imprime el mensaje "Eres mayor de edad". Si la condición es falsa, el código dentro del bloque <code>if</code> se omite y continúa la ejecución del programa.</p>
+            
+            <p>Además de la declaración <code>if</code>, también podemos utilizar las declaraciones <code>else</code> y <code>elif</code> para manejar diferentes casos. Esto nos permite crear lógica más compleja y tomar decisiones basadas en múltiples condiciones.</p>
+            
+            <div class="code-box">
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              <div class="code-content">
+                <code>
+                  numero = 10 <br>
+                  if numero % 2 == 0: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print("El número es par") <br>
+                  else: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print("El número es impar")
+                </code>
+              </div>
+            </div>
+            
+            <p>En este caso, se verifica si el número es divisible entre 2 utilizando el operador módulo <code>%</code>. Si el resultado es 0, se ejecuta el código dentro del primer bloque <code>if</code>, que imprime "El número es par". De lo contrario, se ejecuta el código dentro del bloque <code>else</code>, que imprime "El número es impar".</p>
+            
+            <div class="code-box">
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              <div class="code-content">
+                <code>
+                  numero = 7 <br>
+                  if numero == 0: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print("El número es cero") <br>
+                  elif numero > 0: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print("El número es positivo") <br>
+                  else: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print("El número es negativo")
+                </code>
+              </div>
+            </div>
+            
+            <p>En este caso, se evalúa si el número es igual a 0 utilizando el operador de igualdad <code>==</code>. Si es así, se ejecuta el código dentro del primer bloque <code>if</code>. De lo contrario, se evalúa si el número es mayor que 0 utilizando el operador de comparación <code>&gt;</code>. Si es mayor, se ejecuta el código dentro del bloque <code>elif</code>. Si ninguna de las condiciones anteriores se cumple, se ejecuta el código dentro del bloque <code>else</code>.</p>
+
+          <div class="code-box">
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            <div class="code-content">
+              <code>
+                edad = 20 <br>
+                ciudad = "Londres" <br>
+                if edad >= 18 and ciudad == "Londres": <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Eres mayor de edad y vives en Londres") <br>
+                elif edad >= 18: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Eres mayor de edad") <br>
+                else: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Eres menor de edad")
+              </code>
+            </div>
+          </div>
+          <p>En este caso, se evalúa si la edad es mayor o igual a 18 y si la ciudad es "Londres". Si ambas condiciones son verdaderas, se ejecuta el código dentro del primer bloque <code>if</code>. De lo contrario, si solo la edad es mayor o igual a 18, se ejecuta el código dentro del bloque <code>elif</code>. Si ninguna de las condiciones anteriores se cumple, se ejecuta el código dentro del bloque <code>else</code>.</p>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h4><u>Bucles</u></h4>
+            <p>Los bucles nos permiten repetir un bloque de código varias veces. Esto es especialmente útil cuando queremos realizar una tarea similar varias veces o cuando necesitamos recorrer una colección de elementos, como una lista o un conjunto de datos. En Python, los bucles más comunes son el bucle <code>for</code> y el bucle <code>while</code>.</p>
+          
+            <p>Consideremos el siguiente ejemplo que utiliza un bucle <code>for</code> para imprimir los números del 1 al 5:</p>
+          
+            <div class="code-box">
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              <div class="code-content">
+                <code>
+                  for i in range(1, 6): <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+                </code>
+              </div>
+            </div>
+          
+            <p>En este caso, el bucle <code>for</code> itera sobre los valores del 1 al 5 y los imprime uno por uno. Podemos observar cómo se ejecuta el bloque de código dentro del bucle mientras haya elementos en el rango especificado. Otra opción es utilizar un bucle <code>while</code>, que se ejecuta siempre que se cumpla una condición específica. Veamos un ejemplo:</p>
+
+            <div class="code-box">
+              <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+              <div class="code-content">
+                <code>
+                  contador = 0 <br>
+                  while contador < 5: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;print(contador) <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;contador += 1
+                </code>
+              </div>
+            </div>
+            <p>En este caso, el bucle <code>while</code> se ejecuta mientras la variable <code>contador</code> sea menor que 5. En cada iteración, se imprime el valor del contador y se incrementa en 1. El bucle continuará ejecutándose hasta que la condición sea falsa, es decir, cuando el contador alcance el valor de 5.</p>
+            
+            <h4><u>Conclusión</u></h4>
+            <p>Las estructuras de control condicionales y los bucles son elementos fundamentales en la programación. Nos permiten controlar el flujo de ejecución de un programa, tomar decisiones basadas en ciertas condiciones y repetir acciones de forma eficiente. Al dominar estas estructuras, podemos escribir programas más robustos y versátiles.</p>
+            <p>En este artículo, hemos explorado las estructuras de control condicionales, como la declaración <code>if</code>, y los bucles, como el bucle <code>for</code> y el bucle <code>while</code>. Hemos visto ejemplos de uso y cómo pueden mejorar la flexibilidad y el poder de nuestros programas. Con esta comprensión, estás listo para aplicar estas estructuras en tus propios proyectos y aprovechar al máximo su potencial.</p>
+            
+            <h5>Fuentes:</h5>
+            <a href="https://docs.python.org/3/tutorial/controlflow.html">Documentación de pyhton</a>
+            <br><br>
+            
+        <!-- HASHTAGS -->
+        <p class="text-primary">#Programación #Python</p>
+
+        <!-- PARRAFO FINAL -->
+        <p class="fst-italic">¡Gracias por leer hasta el final! Espero que hayas disfrutado leyendo este artículo tanto como yo disfruté escribiéndolo. Si te gustó lo que leíste y quieres seguir apoyándome, no dudes en seguirme en mis redes sociales. ¡Nos vemos en el próximo artículo!</p>
+
+
+        </article>
+      </div>
+
+      
+
+      <!-- BARRA LATERAL -->
+      <div class="col-md-4">
+
+        <!-- BLOQUE OSCURO CON INFORMACIÓN -->
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-body-tertiary rounded">
+            <h4 class="fst-italic">Sobre el blog:</h4>
+            <p class="mb-0"> Dedicado a la difusión de información con fines educativos sobre programación. Aquí encontrarás una amplia variedad de temas relacionados con la programación y la tecnología, desde los conceptos básicos hasta las últimas tendencias.</p>
+          </div>
+
+          <!-- ARCHIVOS -->
+          <div class="p-4">
+            <h4 class="fst-italic">Archivos</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="/html/blog_prox.html">Python</a></li>
+              <li><a href="/html/blog_prox.html">Html</a></li>
+              <li><a href="/html/blog_prox.html">Javascript</a></li>
+              <li><a href="/html/blog_prox.html">Azure</a></li>
+              <li><a href="/html/blog_prox.html">Sql</a></li>
+              <li><a href="/html/blog_prox.html">Bootstrap</a></li>
+            </ol>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LOGO JMO -->
+  <a href="/index.html" ><img src="/img/logos/ico_jmo_circulo.png" alt="Logo JMO Software Developer" id="logo_fixed" class="animate__animated animate__rotateIn animate__delay-1s"></a>
+    
+  <!-- BOTOTN HAMBURGESA -->
+  <label for="hamburger-btn" class="lbl-hamburger ">
+    <div class="menu-button animate__animated animate__rotateIn animate__delay-1s ">
+        <input type="checkbox" id="hamburger-btn">
+        <span id="spn1" ></span>
+        <span id="spn2"></span>
+        <span id="spn3"></span>
+    </div>
+  </label>
+
+
+  <!-- MENU HAMBURGESA ESCONDIDO -->
+  <div id="hidden-hamburger" >
+    <h1>MENU</h1>
+
+    <div class="hamburger-links">
+        <a href="/../index.html" >Inicio</a>
+        <a href="/html/portafolios.html" >Portafolio</a>
+        <a href="/html/blog.html" >Blog</a>
+    </div> 
+
+      <div class="frontIcons">
+          <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+          <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+          <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
+    </div>       
+
+  </div>
+
+
+  <footer>
+
+
+    <div>
+        <h2>Sigueme en mis redes sociales: </h2>
+
+        <div class="frontIcons">
+            <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+            <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+            <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
+        </div>
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="/js/hamburger.js"></script>
+  <script src="/js/serch.js"></script>
+  <script src="/js/copycode.js"></script>
+    
+</body>
+</html>
