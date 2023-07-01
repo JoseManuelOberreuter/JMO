@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="José Manuel Oberreuter (JMO)">
+    <title>Blog JMO</title>
+
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- STYLES -->
+    <link href="/css/hamburger.css" rel="stylesheet">
+    <link href="/css/blog.rtl.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/ico/ico_jmo_fondoCirculo.ico">  
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet">        
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+  </head>
+
+
+  <body>
+
+  
+
+<div class="container">
+
+  <!-- HEADER SUPERIOR -->
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+
+      <!-- ICONOS REDES SOCIALES -->
+      <div class="col-4 pt-1">
+        <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img class="ico_blog" src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img class="ico_blog" src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+        <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img class="ico_blog" src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img class="ico_blog" src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+        <a target="_blank" href="https://twitter.com/jmo_developer"><img class="ico_blog" src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img class="ico_blog" src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
+      </div>
+
+      <!-- TITULO -->
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-body-emphasis" href="/html/blog.html">BLOG JMO</a>
+      </div>
+
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <div class="search-container">
+          <div class="menu d-block position-static pt-0 mx-0 rounded-3 overflow-hidden" data-bs-theme="light">
+            <form class="d-flex">
+              <input type="search" id="input_serch" class="form-control"  autocomplete="false" placeholder="Buscar..." oninput="filterTitles(this.value)">
+              <button type="submit" class="btn" id="ico_lupa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-1" role="img" viewBox="0 0 24 24">
+                  <title>Search</title>
+                  <circle cx="10.5" cy="10.5" r="7.5"/>
+                  <path d="M21 21l-5.2-5.2"/>
+                </svg>
+              </button>
+            </form>
+            <ul class="list-unstyled mb-0 dropdown-menu" id="dropdown-menu" style="display: none;"></ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
+
+  <!-- CATEGORIAS -->
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Programación</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Computación en la nube</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Inteligencia artificial</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Softwares</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Ingeniería de propmt</a>
+      <a class="p-2 link-secondary" href="/html/blog_prox.html">Tecnología</a>
+    </nav>
+  </div>
+  <hr>
+</div>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+    
+    <div class="row g-5">
+      <div class="col-md-8 ">
+
+        <article class="articulo">
+
+          <h2 class="text-center">Listas, tuplas, conjuntos y diccionarios de Python:</h2>
+          <h4><u>Introducción</u></h4>
+          <p>En el mundo de la programación, las estructuras de datos son fundamentales para organizar y manipular información de manera eficiente. Python, como un lenguaje de programación versátil y popular, proporciona varias estructuras de datos incorporadas que son ampliamente utilizadas en el desarrollo de aplicaciones. En este artículo, exploraremos las listas, tuplas, conjuntos y diccionarios en Python, y discutiremos cómo aprovechar al máximo cada una de ellas en nuestros proyectos. Además, proporcionaremos ejemplos de código prácticos para ilustrar su uso.</p>
+          <h4><u>Listas</u></h4>
+          <p>Las listas son una de las estructuras de datos más utilizadas en Python. Se definen mediante corchetes [] y pueden contener elementos de diferentes tipos. Las listas son mutables, lo que significa que podemos agregar, eliminar o modificar elementos después de crear la lista. Veamos un ejemplo:</p>
+
+          <div class="code-box">
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            <div class="code-content">
+              <code>
+                <div class="comentario"># Crear una lista de números</div>
+                numeros = [1, 2, 3, 4, 5]<br><br>
+
+                <div class="comentario"># Agregar un elemento a la lista</div>
+                numeros.append(6)<br><br>
+
+                <div class="comentario"># Acceder a un elemento de la lista</div>
+                primer_elemento = numeros[0]<br><br>
+
+                <div class="comentario"># Modificar un elemento de la lista</div>
+                numeros[1] = 10<br><br>
+
+                <div class="comentario"># Eliminar un elemento de la lista</div>
+                numeros.remove(3)<br><br>
+              </code>
+            </div>
+          </div>
+
+          <h4><u>Tuplas</u></h4>
+          <p>A diferencia de las listas, las tuplas son estructuras de datos inmutables, lo que significa que no se pueden modificar después de su creación. Se definen utilizando paréntesis () o simplemente separando los elementos por comas. Veamos un ejemplo:</p>
+
+          <div class="code-box">
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            <div class="code-content">
+              <code>
+                <div class="comentario"># Crear una tupla de colores</div>
+                colores = ('rojo', 'verde', 'azul')<br><br>
+          
+                <div class="comentario"># Acceder a un elemento de la tupla</div>
+                primer_color = colores[0]<br><br>
+          
+                <div class="comentario"># Desempaquetar una tupla</div>
+                color1, color2, color3 = colores
+              </code>
+            </div>
+          </div>
+
+          <h4><u>Conjuntos</u></h4>
+          <p>Los conjuntos son colecciones no ordenadas de elementos únicos. Se definen utilizando llaves {}. Los conjuntos son útiles cuando necesitamos almacenar elementos sin duplicados y no nos importa el orden. Veamos un ejemplo:</p>
+
+          <div class="code-box">
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            <div class="code-content">
+              <code>
+                <div class="comentario"># Crear un conjunto de frutas</div>
+                frutas = {'manzana', 'plátano', 'naranja'}<br><br>
+          
+                <div class="comentario"># Agregar un elemento al conjunto</div>
+                frutas.add('piña')<br><br>
+          
+                <div class="comentario"># Eliminar un elemento del conjunto</div>
+                frutas.remove('manzana')<br><br>
+          
+                <div class="comentario"># Verificar si un elemento está en el conjunto</div>
+                if 'naranja' in frutas:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("La naranja está en el conjunto de frutas")
+              </code>
+            </div>
+          </div>
+          
+
+          <h4><u>Diccionarios</u></h4>
+          <p>Los diccionarios son estructuras de datos que almacenan pares de clave-valor. Cada clave es única y se utiliza para acceder a su valor correspondiente. Se definen utilizando llaves {} y separando las claves y los valores por dos puntos (:). Veamos un ejemplo:</p>
+
+          <div class="code-box">
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            <div class="code-content">
+              <code>
+                <div class="comentario"># Crear un diccionario de información de una persona</div>
+                persona = {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;'nombre': 'Juan',<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;'edad': 30,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;'ciudad': 'Madrid'<br>
+                }<br><br>
+          
+                <div class="comentario"># Acceder al valor de una clave</div>
+                nombre = persona['nombre']<br><br>
+          
+                <div class="comentario"># Modificar el valor de una clave</div>
+                persona['edad'] = 31<br><br>
+          
+                <div class="comentario"># Agregar una nueva clave-valor al diccionario</div>
+                persona['profesion'] = 'programador'<br><br>
+          
+                <div class="comentario"># Eliminar una clave-valor del diccionario</div>
+                del persona['ciudad']<br><br>
+          
+                <div class="comentario"># Recorrer un diccionario</div>
+                for clave, valor in persona.items():<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(clave + ": " + str(valor))
+              </code>
+            </div>
+          </div>
+                    
+        <h4><u>Conclusión</u></h4>
+        <p>En este artículo, hemos explorado las estructuras de datos fundamentales en Python: listas, tuplas, conjuntos y diccionarios. Cada una de estas estructuras tiene sus propias características y se utiliza en diferentes situaciones. Las listas nos permiten almacenar elementos ordenados y modificarlos fácilmente, las tuplas son inmutables y útiles cuando queremos asegurarnos de que los datos no cambien, los conjuntos son ideales para almacenar elementos únicos sin importar el orden, y los diccionarios nos permiten asociar valores con claves para acceder a ellos eficientemente.</p>
+        <p>Es esencial comprender las fortalezas y debilidades de cada estructura de datos para elegir la más adecuada según los requisitos de nuestro proyecto. Con los ejemplos de código proporcionados, ahora tienes una base sólida para comenzar a utilizar estas estructuras de datos en tus propios programas Python.</p>
+        <p>Recuerda practicar y experimentar con cada una de estas estructuras para familiarizarte con su sintaxis y funcionalidades. Cuanto más las utilices, mejor comprenderás cómo aprovechar al máximo su potencial en tus proyectos.</p>
+              
+          
+
+          
+          
+          <h5>Fuentes:</h5>
+          <a href="https://docs.python.org/es/3/tutorial/datastructures.html" target="_blank">Documentación de pyhton</a>
+          <br><br>
+          
+          <!-- HASHTAGS -->
+          <p class="text-primary">#Programación #Python</p>
+
+          <!-- PARRAFO FINAL -->
+          <p class="fst-italic">¡Gracias por leer hasta el final! Espero que hayas disfrutado leyendo este artículo tanto como yo disfruté escribiéndolo. Si te gustó lo que leíste y quieres seguir apoyándome, no dudes en seguirme en mis redes sociales. ¡Nos vemos en el próximo artículo!</p>
+
+
+        </article>
+
+      </div>
+
+      
+
+      <!-- BARRA LATERAL -->
+      <div class="col-md-4">
+
+        <!-- BLOQUE OSCURO CON INFORMACIÓN -->
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-body-tertiary rounded">
+            <h4 class="fst-italic">Sobre el blog:</h4>
+            <p class="mb-0"> Dedicado a la difusión de información con fines educativos sobre programación. Aquí encontrarás una amplia variedad de temas relacionados con la programación y la tecnología, desde los conceptos básicos hasta las últimas tendencias.</p>
+          </div>
+
+          <!-- ARCHIVOS -->
+          <div class="p-4">
+            <h4 class="fst-italic">Archivos</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="/html/blog_prox.html">Python</a></li>
+              <li><a href="/html/blog_prox.html">Html</a></li>
+              <li><a href="/html/blog_prox.html">Javascript</a></li>
+              <li><a href="/html/blog_prox.html">Azure</a></li>
+              <li><a href="/html/blog_prox.html">Sql</a></li>
+              <li><a href="/html/blog_prox.html">Bootstrap</a></li>
+            </ol>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LOGO JMO -->
+  <a href="/index.html" ><img src="/img/logos/ico_jmo_circulo.png" alt="Logo JMO Software Developer" id="logo_fixed" class="animate__animated animate__rotateIn animate__delay-1s"></a>
+    
+  <!-- BOTOTN HAMBURGESA -->
+  <label for="hamburger-btn" class="lbl-hamburger ">
+    <div class="menu-button animate__animated animate__rotateIn animate__delay-1s ">
+        <input type="checkbox" id="hamburger-btn">
+        <span id="spn1" ></span>
+        <span id="spn2"></span>
+        <span id="spn3"></span>
+    </div>
+  </label>
+
+
+  <!-- MENU HAMBURGESA ESCONDIDO -->
+  <div id="hidden-hamburger" >
+    <h1>MENU</h1>
+
+    <div class="hamburger-links">
+        <a href="/../index.html" >Inicio</a>
+        <a href="/html/portafolios.html" >Portafolio</a>
+        <a href="/html/blog.html" >Blog</a>
+    </div> 
+
+      <div class="frontIcons">
+          <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+          <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+          <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
+    </div>       
+
+  </div>
+
+
+  <footer>
+
+
+    <div>
+        <h2>Sigueme en mis redes sociales: </h2>
+
+        <div class="frontIcons">
+            <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+            <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+            <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img src="/ico/youtubeicogrey.ico" alt="Twitter Icon"></a>
+        </div>
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="/js/hamburger.js"></script>
+  <script src="/js/serch.js"></script>
+  <script src="/js/copycode.js"></script>
+    
+</body>
+</html>
