@@ -139,17 +139,6 @@
 }
 
 
-/* ICONOS SUPERIORES */
-.ico_blog{
-  height: 25px;
-  margin-right: 10px;
-  opacity: .5;
-  transition: opacity 0.5s;
-
-}
-.ico_blog:hover {
-  opacity: 1;
-}
 
 /* ICONOS MENU */
 .ico_menu{
