@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMO Blog: JavaScript</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
+    <link rel="stylesheet" href="/css/carrusel.css">
+
+
+    <!-- CARRUSEL DE IMAGENES-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script></head>
+
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/logos/logo6.png">  
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet">        
+
+    <!-- DROPDOWN JS -->
+    <script src="/js/dropdown.js"></script>
+
+</head>
+<body>
+
+    <!-- BOTOTN HAMBURGESA -->
+    <label for="hamburger-btn" class="lbl-hamburger">
+        <div class="menu-button">
+            <input type="checkbox" id="hamburger-btn">
+            <span id="spn1" ></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+        </div>
+    </label>
+
+    
+    <!-- MENU HAMBURGESA ESCONDIDO -->
+    <div id="hidden-hamburger">
+
+        <h1>MENU</h1>
+
+        <div class="hamburger-links">
+            <a href="/index.html" >Inicio</a>
+            <a href="/html/portafolios.html" >Portafolio</a>
+            <a href="/html/blog.html" >Blog</a>
+        </div> 
+
+        <div class="frontIcons">
+            <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+            <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+            <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+        </div>
+
+
+    </div>
+    
+    <main id="blog">
+
+        
+        <!-- CARRUSEL DE IMAGENES -->
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <p class="carousel_title">Navegue por el menú para acceder a los diferentes temas que he estudiado y publicado en mi blog.</p>
+
+            <div class="carousel" >
+                <div class="carousel-cell">
+                    <a href="/html/blog/bloghtml.html"><img src="/img/logos/logo_html.png" alt="Imagen galeria 1" class="grayscale"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="/html/blog/blogcss.html"><img src="/img/logos/logo_css.png" alt="Imagen galeria 2" class="grayscale"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="/html/blog/blogjavascript.html"><img src="/img/logos/logo_js.png" alt="Imagen galeria 3" class="grayscale"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="/html/blog/blogpython.html"><img src="/img/logos/logo_python.png" alt="Imagen galeria 4" class="grayscale"></a>
+                </div>
+            </div>    
+        </div>
+
+        <!-- INDEX -->
+        <div class="post">                
+            <h1>Index JavaScript:</h1>
+
+            <br>
+                        
+            <a href="#intro"> <p>1. Introducción a JavaScript </p> </a>
+            <br>
+            <a href="#variables"> <p>2. Variables y tipos de datos </p> </a>
+            <br>
+            <a href="#operadores"> <p>3. Operadores y expresiones </p> </a>
+            <br>
+            <a href="#flujo"> <p>4. Control de flujo </p> </a>
+            <br>
+            <a href="#funciones"> <p>5. Funciones </p> </a>
+            <br>
+            <a href="#objetos"> <p>6. Objetos y Arreglos </p> </a>
+            <br>
+            <a href="#DOM"> <p>7. DOM y manipulación del Documento </p> </a>
+            <br>
+            <a href="#eventos"> <p>8. Eventos y formularios </p> </a>
+            <br>
+            <a href="#promesas"> <p>9. Programación Asíncrona y Promesas </p> </a>
+            <br>
+            <a href="#avanzadas"> <p>10. Aplicaciones avanzadas con JavaScript </p> </a>
+
+        </div>
+
+        
+
+        <div class="margin" id="intro"></div>
+        <div class="post">
+
+
+
+
+            <h1>1. Introducción a JavaScript</h1>
+
+            <br>
+
+            <p>
+
+                JavaScript es un lenguaje de programación de alto nivel y orientado a objetos, diseñado para ser ejecutado en el lado del cliente en un navegador web. Fue creado en 1995 por Brendan Eich durante su tiempo en Netscape Communications Corporation y es uno de los lenguajes de programación más utilizados en la actualidad. JavaScript es un lenguaje dinámico, interpretado y basado en prototipos, lo que significa que puede cambiar en tiempo de ejecución y heredar características de objetos existentes.
+                <br>
+                <img src="/img/imgblog/js/JavaScript-logo.png" style="width: 200px;">
+                <small class="textcenter">Logo Javascript</small>
+                <br>
+                JavaScript es un lenguaje versátil y se utiliza en una amplia variedad de aplicaciones, desde la creación de sitios web interactivos hasta la programación de juegos y aplicaciones móviles. Además, JavaScript se puede utilizar en el lado del servidor a través de tecnologías como Node.js, lo que permite a los desarrolladores crear aplicaciones completas utilizando solo JavaScript.
+                <br><br>
+                Aprender JavaScript es una habilidad valiosa para los desarrolladores web, ya que es compatible con una amplia variedad de plataformas y tecnologías. JavaScript es un lenguaje accesible y fácil de aprender, incluso para aquellos sin experiencia previa en programación. Con una sintaxis clara y una comunidad de desarrolladores activa y colaborativa, JavaScript es una excelente opción para aquellos interesados en aprender un nuevo lenguaje de programación.
+                <br><br>
+                Ejemplo de Javascript:
+                <br><br>
+                <div class="code">
+                    console.log("Hola, mundo");
+                </div>
+                <small class="textcenter">Este codigo registra un mensajes en la consola del navegador.</small>
+                <br>
+                JavaScript es uno de los 3 lenguajes que todos los desarrolladores web deben aprender:
+                <br><br>
+                <div class="codemargin">
+                    1. HTML para definir el contenido de las páginas web
+                    <br><br>
+                    2. CSS para especificar el diseño de las páginas web
+                    <br><br>
+                    3. JavaScript para programar el comportamiento de las páginas web    
+                </div>
+                <br><br>
+                Es importante que tener en cuenta que JavaScript es un lenguaje de programación que se utiliza principalmente para desarrollar aplicaciones web, pero también puede utilizarse en otros ámbitos.
+                <br><br>
+
+                En los siguientes apartados exploraremos los conceptos básicos de JavaScript y cómo utilizarlos para crear aplicaciones web interactivas y dinámicas. Desde la creación de variables y tipos de datos hasta el control de flujo y la manipulación del Document Object Model (DOM), aprenderemos a utilizar JavaScript para mejorar la experiencia del usuario en su sitio web. El objetivo final es conseguir las habilidades y conocimientos necesarios para crear aplicaciones web complejas y escalables utilizando JavaScript.
+
+
+            </p>
+
+        </div>
+
+
+
+
+        <div class="margin" id="intro1"></div>
+        <div class="post">
+        
+            <h1>1.1. Primeras líneas de código JavaScript</h1>
+            <br>
+
+            <p>
+                Para poder escribir y ejecutar código JavaScript, necesitarás dos cosas: un editor de código y un navegador web. El editor de código es donde escribirás el código, mientras que el navegador web es donde se ejecutará el código y verás los resultados.
+                <br><br>
+                A continuación, te daré los pasos necesarios para crear tu primer "Hello, world!" en JavaScript:
+                <br><br>
+            </p>
+            <div class="codemargin">
+                <p>
+                    1. Abre un editor de código. Hay muchos editores de código gratuitos disponibles en línea, como Visual Studio Code, Sublime Text, Notepad++ o puedes editar desde un bloc de notas, pero no es recomendable. Escoge el que más te guste o te resulte más cómodo.
+                    <br><br>
+                    2. Crea un archivo nuevo en blanco. Guarda el archivo con un nombre que tenga la extensión ".html" (por ejemplo, "mi_primer_codigo.html"). La extensión ".html" indica que es un archivo HTML, que es el tipo de archivo que utilizaremos para crear nuestra página web.
+                    <br><br>
+                    3. Escribe el siguiente código HTML en el archivo:   
+                </p>
+            </div>
+            <br>    
+            <div class="code">
+                &lt!DOCTYPE html&gt <br>
+                &lthtml&gt <br>
+                &lthead&gt <br>
+                <div class="codemargin">
+                    &lttitle&gtJavascript básico&lt/title&gt<br>
+                </div>
+                &lt/head&gt <br>
+                &ltbody&gt <br>
+                <div class="codemargin">
+                    &lth1&gt Mi primer código Javascript&lt/h1&gt <br>
+                    &ltscript&gt 
+                    <div class="codemargin1">
+                        <b>alert("Hello world!");</b>
+                    </div>                        
+                    &lt/script&gt
+                </div>
+                &lt/body&gt <br>
+                &lt/html&gt 
+
+            </div>
+            <small class="textcenter">
+                Este código es una plantilla básica de una página web. La etiqueta &ltscript&gt se utiliza para escribir código JavaScript dentro de una página HTML.
+            </small>
+            <br>
+            <div class="codemargin">
+                <p>
+                    4. Guarda los cambios en el archivo.
+                    <br><br>
+                    5. Abre el archivo con un navegador web. Haz clic derecho en el archivo guardado y selecciona "Abrir con" y elige tu navegador web preferido.
+                    <br><br>
+                    6. Deberías ver una página web en blanco con un mensaje que dice "Hello, world!" en una ventana emergente. ¡Felicidades! ¡Has creado tu primer "Hello, world!" en JavaScript!
+                </p>
+            </div>
+
+            <br>
+            <p>
+                Espero que estos pasos te hayan resultado útiles. ¡Sigue adelante y sigue aprendiendo más sobre JavaScript!
+
+            </p>
+
+        </div>
+
+
+
+        <div class="margin" id="variables"></div>
+        <div class="post">
+
+            <h1>2. Variables y tipos de datos en JavaScript</h1>
+
+            <br>
+
+            <p>
+                Una variable en JavaScript es un contenedor para almacenar valores. Las variables se utilizan para asignar valores y realizar operaciones en ellos. Para declarar una variable en JavaScript, se utiliza la palabra clave "var", "let" o "const". La diferencia entre estas tres palabras clave es la forma en que se tratan las variables en tiempo de ejecución y su alcance.
+
+                En JavaScript, los valores se pueden asignar a variables utilizando el operador de asignación (=). Por ejemplo:
+            </p>
+
+            <div class="code">
+                <!-- &lt;p&gt;Hola mundo&lt;/p&gt; -->
+                let nombre = "Juan";
+            </div>
+
+            <p>
+                JavaScript es un lenguaje de tipado dinámico, lo que significa que el tipo de una variable se puede cambiar en tiempo de ejecución. Además, JavaScript admite una amplia variedad de tipos de datos, incluyendo números, cadenas de texto, valores booleanos, objetos y arreglos.
+                <br><br>
+                Los tipos de datos más comunes en JavaScript incluyen:
+                <ul>
+                    <li>
+                        Números: Representan valores numéricos, como enteros o decimales.
+                    </li>
+                    <li>
+                        Cadenas de texto: Representan secuencias de caracteres y se declaran utilizando comillas dobles o simples.
+                    </li>
+                    <li>
+                        Valores booleanos: Representan valores verdaderos o falsos.
+                    </li>
+                    <li>
+                        Objetos: Son estructuras de datos que contienen propiedades y métodos.
+                    </li>
+                    <li>
+                        Arreglos: Son estructuras de datos que contienen una colección ordenada de valores.
+                    </li>
+                </ul>
+                Es importante tener en cuenta que JavaScript es sensible a mayúsculas y minúsculas, por lo que "nombre" y "Nombre" son dos variables diferentes. Además, las variables en JavaScript deben comenzar con una letra, un guión bajo o un signo de dólar, y pueden incluir letras, números, guiones bajos y signos de dólar.
+                <br><br>
+                Al trabajar con variables y tipos de datos en JavaScript, es fundamental comprender cómo utilizarlos correctamente para lograr resultados precisos y eficientes. Conocer las diferentes formas de declarar variables y cómo cambian su alcance, así como comprender los distintos tipos de datos disponibles en JavaScript, son habilidades clave para cualquier desarrollador de aplicaciones. Además, al ser un lenguaje de tipado dinámico, es importante tener en cuenta cómo los tipos de datos se pueden manipular y cambiar en tiempo de ejecución. Con el tiempo y la práctica, podrás dominar el uso de variables y tipos de datos en JavaScript y crear aplicaciones más avanzadas y complejas.            </p> 
+        </div>
+
+
+
+
+
+        <div class="margin" id="operadores"></div>
+        <div class="post">
+
+            <h1>3. Operadores y expresiones en JavaScript</h1>
+            <br>
+            <p>
+                Los operadores en JavaScript permiten realizar operaciones matemáticas y lógicas en valores y variables. Hay una amplia variedad de operadores disponibles en JavaScript, desde operadores aritméticos básicos hasta operadores de comparación y lógicos.
+                <br><br>
+                Los operadores aritméticos básicos incluyen suma (+), resta (-), multiplicación (*) y división (/). Estos operadores funcionan de manera similar a como lo harían en matemáticas, permitiendo realizar operaciones simples como sumar dos números o calcular el producto de dos números.
+                <br><br>
+                Además de los operadores aritméticos básicos, JavaScript también ofrece operadores de comparación, que permiten comparar dos valores y devolver un valor booleano (verdadero o falso). Los operadores de comparación más comunes incluyen igual a (==), no igual a (!=), mayor que (>), menor que (<) y mayor o igual a (>=).
+                <br><br>
+                Los operadores lógicos en JavaScript permiten combinar valores booleanos y realizar operaciones lógicas como AND (&&), OR (||) y NOT (!). Estos operadores permiten realizar operaciones más complejas en valores booleanos y son esenciales para la programación de control de flujo y la toma de decisiones en una aplicación.
+                <br><br>
+                Además de los operadores mencionados anteriormente, JavaScript ofrece otros operadores especializados, como el operador ternario (?), que permite realizar una operación condicional en una sola línea de código, y el operador de asignación condicional (??), que permite asignar un valor a una variable si es nulo o indefinido.
+                <br><br>
+                En la programación en JavaScript, es importante comprender los diferentes operadores y cómo utilizarlos para realizar operaciones en valores y variables. A lo largo del tiempo, podrás desarrollar habilidades para elegir el operador adecuado para cada situación y crear código más eficiente y legible.
+            </p>
+        </div>
+
+
+
+
+        <div class="margin" id="flujo"></div>
+        <div class="post">
+
+            <h1>4. Control de flujo con JavaScript</h1>
+            <br>
+            <p>
+
+                Las estructuras de control de flujo en JavaScript permiten controlar el flujo de ejecución de un programa, tomando decisiones y ejecutando diferentes secciones de código en función de ciertas condiciones. Hay tres estructuras de control de flujo principales en JavaScript: if-else, switch y bucles (for, while, do-while).
+                <br><br>
+                La estructura if-else es la forma más básica de control de flujo en JavaScript. Permite a un programa tomar una decisión y ejecutar diferentes secciones de código en función de si una determinada condición se cumple o no. Por ejemplo, si una variable es igual a un valor determinado, se ejecutará una sección de código, pero si no lo es, se ejecutará otra sección de código diferente.
+                <br><br>
+                La estructura switch en JavaScript es similar a la estructura if-else, pero permite controlar el flujo de ejecución en función de múltiples condiciones. En lugar de utilizar varias cláusulas if-else anidadas, puedes utilizar una estructura switch para evaluar una sola expresión y tomar decisiones en función de los diferentes casos posibles.
+                <br><br>
+                Los bucles en JavaScript permiten repetir una sección de código varias veces, hasta que se cumpla una determinada condición. Los bucles for permiten repetir una sección de código un número determinado de veces, mientras que los bucles while y do-while permiten repetir una sección de código hasta que se cumpla una determinada condición.
+                <br><br>
+                En la programación en JavaScript, es importante comprender cómo utilizar estas estructuras de control de flujo para tomar decisiones y controlar el flujo de ejecución de un programa. A medida que avanzas en tus habilidades de programación, podrás desarrollar soluciones más sofisticadas y complejas que utilizan estas estructuras de control de flujo.
+                <br><br>
+                En resumen, las estructuras de control de flujo en JavaScript son esenciales para la programación y permiten tomar decisiones y controlar el flujo de ejecución de un programa. A través de la práctica y el aprendizaje, podrás desarrollar habilidades para utilizar estas estructuras de control de flujo de manera eficiente y crear soluciones más avanzadas y complejas.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="margin" id="funciones"></div>
+        <div class="post">
+
+            <h1>5. Funciones en JavaScript</h1>
+            <br>
+            <p>
+                Las funciones en JavaScript son bloques de código que se pueden reutilizar en diferentes partes de un programa. Las funciones tienen un nombre y pueden tomar uno o más argumentos, y pueden retornar un valor. Las funciones son una parte esencial de la programación en JavaScript y son una herramienta valiosa para organizar y simplificar el código.
+                <br><br>
+                La creación de funciones en JavaScript es muy sencilla. Se puede crear una función utilizando la palabra clave "function" seguida del nombre de la función y los paréntesis que contienen los argumentos. El cuerpo de la función se escribe dentro de un bloque de código delimitado por llaves. Una vez creada, una función se puede invocar o llamar en cualquier parte del programa.
+                <br><br>
+                Las funciones en JavaScript pueden tener argumentos, que son valores que se pasan a la función cuando se invoca. Estos argumentos se pueden utilizar dentro del cuerpo de la función y pueden ser procesados y utilizados para determinar el resultado que se retorna. Las funciones también pueden retornar valores utilizando la palabra clave "return".
+                <br><br>
+                Además de las funciones normales, JavaScript también admite funciones anónimas, que son funciones sin nombre que se pueden asignar a variables o pasar como argumentos a otras funciones. Las funciones anónimas son útiles para crear funciones de manera rápida y sencilla, y se utilizan a menudo en combinación con otros conceptos como los closure y los callbacks.
+                <br><br>
+                En resumen, las funciones en JavaScript son una parte esencial de la programación y ofrecen una manera eficiente de organizar y simplificar el código. Puedes crear funciones con argumentos y retornar valores, y también puedes utilizar funciones anónimas para crear funciones de manera rápida y sencilla. A medida que avanzas en tus habilidades de programación, aprenderás a utilizar las funciones de manera más avanzada y a crear soluciones más complejas y sofisticadas.
+            </p>
+        </div>
+
+        <!-- <div class="post">
+
+            <h1>Bucles en JavaScript</h1>
+            <br>
+            <p>
+                Los bucles en JavaScript son una técnica importante que se utiliza para repetir un bloque de código un número determinado de veces o mientras se cumpla una condición específica. Hay dos tipos de bucles en JavaScript: for y while.
+                <br><br>
+                El bucle for es un tipo de bucle estructurado que se utiliza para repetir un bloque de código un número determinado de veces. Un bucle for consta de tres partes: la inicialización de la variable de control, la condición de parada y la actualización de la variable de control. La sintaxis básica de un bucle for es la siguiente:
+                <div class="code">
+                    for (inicialización; condición; actualización) { <br>
+                    // cuerpo del bucle <br>
+                    }
+                </div>
+
+                El bucle while es un tipo de bucle más flexible que se utiliza para repetir un bloque de código mientras se cumpla una condición específica. La sintaxis básica de un bucle while es la siguiente:
+
+                <div class="code">
+                    while (condición) { <br>
+                    // cuerpo del bucle <br>
+                    } <br>
+                </div>
+
+                Es importante tener en cuenta que si la condición no se cumple en algún momento, el bucle while se detendrá y el código después del bucle se ejecutará. Es importante tener un mecanismo de control dentro del cuerpo del bucle para asegurarse de que la condición se cumpla eventualmente.
+                <br><br>
+                Además de los bucles for y while, JavaScript también admite bucles do-while, que son similares a los bucles while, pero se garantiza que el cuerpo del bucle se ejecute al menos una vez, independientemente de si se cumple o no la condición. La sintaxis básica de un bucle do-while es la siguiente:
+                
+                <div class="code">
+                    do {    <br>
+                    // cuerpo del bucle <br>
+                    } while (condición); <br>
+                </div>
+
+                En resumen, los bucles en JavaScript son una herramienta valiosa para repetir un bloque de código un número determinado de veces o mientras se cumpla una condición específica. Puedes utilizar bucles for y while, así como bucles do-while, para crear soluciones más complejas y sofisticadas. A medida que avanzas en tus habilidades de programación, aprenderás a utilizar los bucles de manera más avanzada y a crear soluciones más eficientes y optimizadas.
+            </p>
+        </div> -->
+
+
+
+
+        <div class="margin" id="objetos"></div>
+        <div class="post">
+
+            <h1>6. Objetos y Arreglos en JavaScript</h1>
+
+            <br>
+
+            <p>
+                En JavaScript, los objetos y los arreglos son estructuras de datos esenciales que permiten almacenar y manipular información de una manera organizada y flexible. Los objetos son una colección de pares clave-valor que representan una entidad o concepto en una aplicación, mientras que los arreglos son una colección ordenada de valores.
+                <br><br>
+                Los objetos en JavaScript se declaran utilizando corchetes ({}) y pueden contener cualquier tipo de dato, incluyendo otros objetos y arreglos. Cada par clave-valor se separa con una coma y se accede a los valores a través de la clave correspondiente. Los objetos son útiles para modelar entidades complejas en una aplicación y facilitan la manipulación y organización de información.
+                <br><br>
+                Los arreglos en JavaScript se declaran utilizando corchetes ([]) y pueden contener cualquier tipo de dato, incluyendo objetos y otros arreglos. Los valores en un arreglo se acceden a través de su índice, que es un número entero que representa su posición en el arreglo. Los arreglos son útiles para representar colecciones de información y permiten realizar operaciones como buscar, ordenar y filtrar datos de manera eficiente.
+                <br><br>    
+                Además de los métodos básicos de acceso y manipulación de objetos y arreglos, JavaScript también ofrece una amplia variedad de métodos incorporados que permiten realizar operaciones más avanzadas en estas estructuras de datos. Algunos ejemplos incluyen métodos para agregar o eliminar elementos de un arreglo, ordenar elementos en un arreglo, o buscar y filtrar valores en un objeto o arreglo.
+                <br><br>
+                    En la programación en JavaScript, es importante comprender cómo utilizar objetos y arreglos de manera efectiva para almacenar y manipular información en una aplicación. Con el tiempo, podrás desarrollar habilidades para modelar entidades complejas y crear soluciones de programación más avanzadas y eficientes.
+            </p>
+        </div>
+
+
+
+        <div class="margin" id="DOM"></div>
+        <div class="post">
+
+            <h1>7. DOM y manipulación del Documento en JavaScript</h1>
+            <br>
+            <p>
+                El Document Object Model (DOM) es una representación en forma de árbol de un documento HTML o XML, que permite a los programadores acceder y manipular los elementos de una página web. En JavaScript, el DOM es un objeto que proporciona una interfaz para interactuar con el contenido y la estructura de una página web.
+                <br><br>
+                La manipulación del DOM en JavaScript permite a los programadores modificar el contenido y el estilo de una página web dinámicamente, en respuesta a eventos del usuario o a cambios en la información de la aplicación. Esto se logra mediante la selección de elementos específicos en el DOM y la modificación de sus propiedades, tales como su contenido, atributos, estilo y posición en el documento.
+                <br><br>
+                Además de la modificación de elementos existentes, la manipulación del DOM también permite la creación y eliminación de elementos en una página web. Esto puede ser útil en situaciones en las que se desea agregar o eliminar contenido dinámicamente en respuesta a la interacción del usuario o a cambios en la información de la aplicación.
+                <br><br>
+                En la manipulación del DOM, es importante considerar la optimización de la velocidad y el rendimiento de la aplicación. Es recomendable evitar la manipulación excesiva y costosa del DOM, ya que esto puede afectar negativamente el rendimiento de la página y disminuir la experiencia del usuario. En su lugar, se deben utilizar técnicas eficientes para seleccionar y modificar elementos, y se deben evitar operaciones costosas en el DOM en respuesta a eventos frecuentes, como el movimiento del mouse.
+                <br><br>
+                En resumen, la manipulación del DOM en JavaScript es una habilidad fundamental para cualquier programador de aplicaciones web. Permite a los desarrolladores crear páginas web dinámicas y interactivas que pueden responder a la interacción del usuario y a los cambios en la información de la aplicación. Al aprender a manipular el DOM de manera efectiva, podrás crear soluciones de programación más avanzadas y mejorar la experiencia del usuario en tus aplicaciones web.            
+            </p>
+        </div>
+
+
+        <div class="margin" id="eventos"></div>
+        <div class="post">
+
+            <h1>8. Eventos y formularios</h1>
+            <br>
+            <p>
+                Los eventos en JavaScript son acciones que ocurren en la página web, como un clic en un botón, una acción de arrastrar y soltar o la carga de una página. Los eventos pueden ser detectados y controlados por JavaScript, permitiendo a los programadores crear aplicaciones web interactivas y dinámicas.
+                <br><br>
+                La gestión de eventos en JavaScript se logra mediante la asignación de un controlador de eventos a un elemento específico en el Document Object Model (DOM). El controlador de eventos es una función que se ejecutará cuando ocurra el evento especificado. Por ejemplo, si deseas que se ejecute una función cuando el usuario haga clic en un botón, puedes asignar esa función como controlador de evento al botón.
+                <br><br>
+                Además de los eventos tradicionales, como los clics y los cambios, JavaScript también permite la creación de eventos personalizados. Estos eventos personalizados pueden ser útiles en situaciones en las que se desea notificar a la aplicación sobre un evento específico que no está incluido en la lista de eventos predeterminados.
+                <br><br>
+                Los formularios son una parte importante de muchas aplicaciones web, ya que permiten a los usuarios ingresar y enviar información. La manipulación de formularios en JavaScript permite a los programadores validar y procesar los datos de un formulario antes de que se envíen al servidor. Esto puede incluir tareas como la validación de la entrada del usuario, la formateo y la conversión de datos.
+                <br><br>
+                La manipulación de formularios en JavaScript se logra mediante la selección de elementos de formularios específicos en el DOM y la manipulación de sus propiedades y valores. Además, JavaScript también proporciona métodos para enviar y recibir datos del servidor sin tener que recargar la página, lo que permite a los programadores crear aplicaciones web más eficientes y suaves.
+                <br><br>
+                En resumen, los eventos y formularios son una parte importante de la programación de aplicaciones web con JavaScript. La gestión de eventos permite a los programadores crear aplicaciones interactivas y dinámicas, mientras que la manipulación de formularios permite a los programadores procesar y enviar información de manera eficiente. Al aprender a utilizar eventos y formularios de manera efectiva en JavaScript, podrás crear soluciones de programación más avanzadas y mejorar la experiencia del usuario en tus aplicaciones web.
+            </p>
+        </div>
+
+
+        <div class="margin" id="promesas"></div>
+        <div class="post">
+            <h1>9. Programación Asíncrona y Promesas en JavaScript</h1>
+            <br>
+            <p>
+                La programación asíncrona es un aspecto clave de la programación en JavaScript y en muchas otras plataformas. Se refiere a la capacidad de un programa para ejecutar tareas en segundo plano sin bloquear la ejecución principal del programa. Esto permite a los programadores crear aplicaciones más eficientes y responsivas, ya que los programas no tienen que esperar a que una tarea en particular se complete antes de continuar con la ejecución.
+                <br><br>
+                JavaScript proporciona varias formas de realizar programación asíncrona, incluyendo el uso de funciones de retorno de llamada, objetos asíncronos y promesas. Las promesas son una forma de manejar la programación asíncrona en JavaScript que se ha vuelto cada vez más popular.
+                <br><br>    
+                Una promesa es un objeto que representa el resultado de una operación asíncrona. Una promesa puede estar en uno de tres estados: pendiente, resuelta o rechazada. Una vez que una promesa se resuelve o rechaza, no puede cambiar de estado. Esto permite a los programadores manejar la programación asíncrona de una manera más predecible y controlable.
+                <br><br>
+                Para utilizar promesas en JavaScript, primero debes crear una promesa y proporcionar una función que se ejecutará cuando la promesa se resuelva o rechace. Luego, puedes encadenar otros métodos a la promesa para realizar tareas adicionales cuando se complete la promesa. Por ejemplo, puedes encadenar un método "then" que se ejecutará cuando la promesa se resuelva y un método "catch" que se ejecutará cuando la promesa se rechace.
+                <br><br>
+                Además de simplificar la programación asíncrona, las promesas también proporcionan otras ventajas, como la posibilidad de encadenar varias promesas juntas para crear un flujo de trabajo asíncrono complejo. Las promesas también pueden ser utilizadas con async/await, una nueva forma de manejar la programación asíncrona en JavaScript que proporciona una sintaxis más clara y fácil de leer.
+                <br><br>
+                En resumen, las promesas son una forma poderosa y popular de manejar la programación asíncrona en JavaScript. Al aprender a utilizar promesas de manera efectiva, podrás crear soluciones de programación más avanzadas y mejorar la eficiencia y la responsividad de tus aplicaciones.
+
+            </p>
+        </div>
+
+        <div class="margin" id="avanzadas"></div>
+        <div class="post">
+            <h1>10. Aplicaciones avanzadas con Javascript</h1>
+            <br>
+            <p>
+                JavaScript es un lenguaje de programación versátil y poderoso que se utiliza en una amplia gama de aplicaciones, desde sitios web interactivos hasta aplicaciones de escritorio y móviles. A medida que vayas mejorando tus habilidades en JavaScript, podrás explorar una variedad de aplicaciones avanzadas que utilizan el lenguaje para crear soluciones más complejas y potentes.
+                <br><br>
+                Una de las aplicaciones más populares de JavaScript es la creación de juegos en línea. Con las bibliotecas y marcos de trabajo específicos para juegos, puedes crear juegos de navegador y móvil en 2D y 3D. Además, puedes utilizar JavaScript para crear juegos con realidad virtual y aumentada, lo que permite a los jugadores experimentar una experiencia de juego más inmersiva.
+                <br><br>
+                Otra aplicación avanzada de JavaScript es la creación de aplicaciones de escritorio y móvil. Puedes utilizar JavaScript con un marco de trabajo como Electron para crear aplicaciones de escritorio nativas para Windows, Mac y Linux. También puedes utilizar JavaScript con un marco de trabajo móvil como React Native para crear aplicaciones móviles nativas para iOS y Android.
+                <br><br>
+                JavaScript también se utiliza en la creación de aplicaciones de inteligencia artificial y aprendizaje automático. Puedes utilizar bibliotecas y marcos de trabajo específicos para aprendizaje automático, como TensorFlow.js, para crear aplicaciones de aprendizaje automático en el navegador. Esto permite a los desarrolladores crear soluciones de aprendizaje automático de alto rendimiento sin tener que salir del navegador.
+                <br><br>
+                Además, JavaScript también es un componente clave en la creación de aplicaciones de realidad virtual y aumentada. Puedes utilizar JavaScript con bibliotecas y marcos de trabajo específicos para realidad virtual y aumentada, como A-Frame, para crear experiencias de realidad virtual y aumentada en el navegador. Esto permite a los desarrolladores crear soluciones de realidad virtual y aumentada más accesibles y económicas, ya que no requieren hardware costoso para funcionar.
+                <br><br>
+                En resumen, JavaScript es un lenguaje de programación versátil y poderoso que se utiliza en una amplia gama de aplicaciones avanzadas. Desde la creación de juegos hasta la inteligencia artificial y la realidad virtual
+            </p>
+        </div>
+
+    </main>
+
+
+    <!-- BARRA INFERIOR -->
+    <footer>
+
+            <div class="rss">
+            <h2>Sigueme en mis redes sociales: </h2>
+    
+            <div class="frontIcons">
+                <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+                <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+                <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+            </div>
+        </div>
+
+    </footer>
+
+        <!-- JAVASCRIPT -->
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/carrusel.js" ></script>
+
+    
+</body>
+</html>

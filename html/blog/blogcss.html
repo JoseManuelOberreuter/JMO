@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMO Blog: CSS</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
+    <link rel="stylesheet" href="/css/carrusel.css">
+
+
+    <!-- CARRUSEL DE IMAGENES-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script></head>
+
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/logos/logo6.png">  
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap" rel="stylesheet">        
+
+    <script src="/js/dropdown.js"></script>
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+    <!-- BOTOTN HAMBURGESA -->
+    <label for="hamburger-btn" class="lbl-hamburger">
+        <div class="menu-button">
+            <input type="checkbox" id="hamburger-btn">
+            <span id="spn1" ></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+        </div>
+    </label>
+
+    
+    <!-- MENU HAMBURGESA ESCONDIDO -->
+    <div id="hidden-hamburger">
+
+        <h1>MENU</h1>
+
+        <div class="hamburger-links">
+            <a href="/index.html" >Inicio</a>
+            <a href="/html/portafolios.html" >Portafolio</a>
+            <a href="/html/blog.html">Blog</a>
+        </div> 
+
+        <div class="frontIcons">
+            <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+            <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+            <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+        </div>
+
+
+    </div>
+    
+
+
+    <main id="blog">
+
+        
+        <!-- CARRUSEL DE IMAGENES -->
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <p class="carousel_title">Navegue por el menú para acceder a los diferentes temas que he estudiado y publicado en mi blog.</p>
+
+            <div class="carousel" >
+                <div class="carousel-cell">
+                    <a href="/html/blog/bloghtml.html"><img src="/img/logos/logo_html.png" alt="Imagen galeria 1" class="grayscale"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="/html/blog/blogcss.html"><img src="/img/logos/logo_css.png" alt="Imagen galeria 2" class="grayscale"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="/html/blog/blogjavascript.html"><img src="/img/logos/logo_js.png" alt="Imagen galeria 3" class="grayscale"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="/html/blog/blogpython.html"><img src="/img/logos/logo_python.png" alt="Imagen galeria 4" class="grayscale"></a>
+                </div>
+            </div>    
+        </div>
+
+        <!-- Index -->
+        <div class="post">
+            <h1>Index CSS:</h1>
+
+            <br>
+                        
+            <a href="#fundamentos"> <p>1. Fundamentos de CSS </p> </a>
+            <br>
+            <a href="#estilizando"> <p>2. Estilizando elementos básicos con CSS </p> </a>
+            <br>
+            <a href="#seleccion"> <p>3. Selección de elementos avanzada en CSS </p> </a>
+            <br>
+            <a href="#responsive"> <p>4. Diseño responsive con CSS </p> </a>
+            <br>
+            <a href="#animacion"> <p>5. Animaciones CSS simples </p> </a>
+            <br>
+            <a href="#layout"> <p>6. Diseño de layout complejo con CSS Grid </p> </a>
+            <br>
+            <a href="#avanzada"> <p>7. Animaciones CSS avanzadas </p> </a>
+            <br>
+            <a href="#formularios"> <p>8. Personalización de formularios con CSS </p> </a>
+            <br>
+            <a href="#rendimiento"> <p>9. Optimización de rendimiento en CSS </p> </a>
+            <br>
+            <a href="#arquitecturas "> <p>10. Arquitecturas CSS: BEM y SMACSS </p> </a>
+
+        </div>
+
+
+
+        <!-- 1. Fundamentos de CSS -->
+        <div class="margin" id="fundamentos"></div>
+        <div class="post">
+
+            <h1>1. Fundamentos de CSS</h1>
+            <br>
+            <p>
+                CSS, o Cascading Style Sheets, es un lenguaje de diseño utilizado para dar estilo y formato a documentos HTML. En este artículo, vamos a explorar los fundamentos de CSS y cómo puede ayudarte a crear diseños web impresionantes. En primer lugar, es importante entender que CSS funciona en conjunto con HTML. HTML proporciona la estructura del documento, mientras que CSS se encarga de la presentación y el estilo. En otras palabras, HTML es el esqueleto de una página web, y CSS es el maquillaje que lo hace atractivo.
+            </p>
+            <img src="/img/imgblog/css/logo_css.png" alt="Logo css" style="width: 200px;">
+            <p>
+                Hay tres formas principales de aplicar CSS a un documento HTML: a través de una hoja de estilo externa, mediante un estilo en línea o directamente en el elemento HTML en sí. <b>La forma más común de aplicar CSS es mediante una hoja de estilo externa </b>, ya que permite mantener un estilo coherente en todo el sitio web.
+                <br><br>
+                La hoja de estilo externa es un archivo independiente que contiene todas las reglas de estilo CSS para el sitio web, es necesario crear el archivo "ejemplo.css", <b>asegurate que el archivo termine en ".css"</b> , y enlazarlo a través de una etiqueta <b>&lt;link&gt;</b>  en el encabezado &lt;head&gt; del documento HTML. El uso de una hoja de estilo externa permite mantener un estilo coherente en todo el sitio web, ya que se puede aplicar un conjunto de reglas de estilo a todas las páginas. Además, permite la reutilización de estilos, lo que puede reducir la cantidad de código necesario en cada página y hacer que el sitio web sea más fácil de mantener y actualizar.
+            </p>
+            <br>
+            <div class="code_title"><p>Ejemplo.css</p></div>
+            <div class="code">
+                .estilos_css {  <br>
+                    <div class="codemargin">color: black</div>
+                }
+            </div>
+            
+            <p>
+                Por otro lado, el estilo en línea se aplica directamente en el &lt;head&gt; de un elemento HTML utilizando el atributo &lt;style&gt;. Esto puede ser útil para aplicar estilos únicos a elementos específicos, pero no es tan eficiente como el uso de una hoja de estilo externa. El estilo en línea también puede ser difícil de mantener a medida que se agregan más elementos y páginas al sitio web.
+            </p>
+            <br>
+
+            <div class="code_title"><p>HTML:</p></div>
+            <div class="code">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt; <br>
+                <div class="codemargin">&lt;head&gt;</div>
+                    <div class="codemargin1">&lt;style&gt;</div>
+                        <div class="codemargin2">h1 {</div>
+                            <div class="codemargin3">background-color: #555;</div>
+                        <div class="codemargin2">}</div>
+                    <div class="codemargin1">&lt;/style&gt;</div>
+                <div class="codemargin">&lt;/head&gt;</div>
+                <div class="codemargin">&lt;body &gt;</div>
+                    <div class="codemargin1">&lt;h1&gt;Titulo h1&lt;/h1&gt;</div> 
+                <div class="codemargin">&lt;/body&gt;</div>
+                &lt;/html&gt;
+            </div>
+
+            <p>
+                La aplicación de estilos directamente en el elemento HTML en sí es un método muy específico y puede ser complicado de mantener. Este método se utiliza mejor solo en casos raros donde se requieren estilos muy específicos para elementos individuales.
+            </p>
+            <br>
+
+            <div class="code_title"><p>HTML:</p></div>
+            <div class="code">
+                &lt;p style="color:green;"&gt;Texto de ejemplo&lt;/p&gt;
+            </div>
+            
+            <p>
+                Ahora, vamos a discutir algunos de los conceptos clave de CSS. El primer concepto es el selector, que es utilizado para seleccionar elementos HTML específicos y aplicar estilos a ellos. Los selectores pueden ser simples, como seleccionar todos los elementos de un tipo específico, o más complejos, como seleccionar elementos con un atributo específico. 
+                <br><br>
+                Una vez que has seleccionado un elemento HTML, es importante entender cómo aplicar estilos a ese elemento. Esto se logra mediante la propiedad CSS. Hay cientos de propiedades CSS diferentes, pero algunas de las más comunes incluyen color, tamaño de fuente, margen y relleno. Cada propiedad tiene un valor asociado que especifica cómo se aplicará ese estilo al elemento seleccionado.
+                <br><br>
+                A continuación algunos ejemplos:
+            </p>
+            <br>
+            <div class="code_title"><p>CSS:</p></div>
+            <div class="code">
+                <div class="codecoment">// el selector "*" selecciona a todos los elementos HTML</div>
+                * { <br>
+                    <div class="codecoment">// el atributo "margin" definee el margen </div>
+                    <div class="codemargin">margin: 0;</div>
+                } 
+                <br><br>
+
+
+                <div class="codecoment">// el selector "p" selecciona todas las etiquetas HTML p</div>
+                p { <br>
+                    <div class="codecoment">// el atributo "width" definee el ancho</div>
+                    <div class="codemargin">width: 100%;</div>
+                }
+                <br><br>
+
+
+                <div class="codecoment">// el selector "." selecciona la class HTML de los elementos</div>
+                .clase { <br>
+                    <div class="codecoment">// el atributo "padding" define el espacio en blanco que hay haber entre el contenido de un elemento y su borde</div>
+                    <div class="codemargin">padding: 10px;</div>
+                }
+                <br><br>
+
+                <div class="codecoment">// el selector "#" selecciona un id HTML </div>
+                #id {   <br>
+                    <div class="codecoment">// el atributo "color" define el color primario del elemento</div>
+                    <div class="codemargin">color: red;</div>                   
+                }
+
+                
+            </div>
+            <p>
+                <br><br>
+                Otro concepto importante de CSS es el <b>efecto cascade o cascada</b>. La cascada es la forma en que se determina qué estilo se aplicará a un elemento específico si hay múltiples estilos que se aplican a ese elemento. Los estilos se aplican en orden, con los estilos más específicos que tienen una mayor prioridad sobre los estilos más generales. Si hay un empate, el estilo que aparece más tarde en la hoja de estilo tiene prioridad.
+                <br><br>
+                A continuación un ejemplo de el efecto cascada:
+                <br><br> 
+            </p>
+            
+            <div class="code_title"><p>HTML:</p></div>
+            <div class="code">
+                &lt;div class="container"&gt;
+                <div class="codemargin">&lt;p&gt;Este es un parrafo de ejemplo&lt;/p&gt;</div>
+                &lt;/div&gt;    
+            </div>
+
+            <div class="code_title"><p>CSS:</p></div>
+            <div class="code">
+                .container {    <br>
+                    <div class="codemargin">background-color: yellow;</div>
+                }
+                <br><br>
+
+                p { <br>
+                    <div class="codemargin">font-size: 14px;</div>
+                    <div class="codemargin">color: red;</div>
+                }
+                <br><br>
+                  
+                .container p {  <br>
+                    <div class="codemargin">font-size: 18px;</div>
+                }   
+
+            </div>
+
+            <a href="/html/blog/ejemplos/ejemplo_css_1.html" id="a_ejemplo"><button class="btn_ejemplo">Prueba el codigo!</button></a> 
+            
+            <p>
+                En el ejemplo anterior, se puede observar cómo el background-color de un elemento &lt;p&gt; se establece inicialmente en rojo en la regla de estilo &lt;p&gt;, pero posteriormente se redefine como amarillo en la regla de estilo ".container p".
+                <br><br>
+                El efecto cascada de CSS establece que si hay múltiples reglas de estilo que se aplican a un mismo elemento HTML, se seguirá un orden de prioridad para determinar cuál regla de estilo se aplicará finalmente. En este caso, ambas reglas de estilo se aplican al elemento &lt;p&gt;, pero la segunda regla de estilo ".container p" tiene una mayor especificidad ya que se aplica solo a los elementos &lt;p&gt; dentro de un contenedor con la clase ".container". Por lo tanto, el fondo del párrafo se establece finalmente en amarillo debido al efecto cascada de CSS.
+                <br><br>
+                Es importante tener en cuenta que el efecto cascada de CSS puede ser beneficioso cuando se utilizan de manera efectiva, pero también puede crear conflictos si no se comprende completamente. Para evitar conflictos, se recomienda mantener las reglas de estilo tan específicas como sea posible y evitar la aplicación de estilos innecesarios.
+            </p>
+            <br><br><br><br>
+            <p>
+                La herencia es otro concepto importante de CSS. La herencia se refiere a la forma en que los estilos se aplican a los elementos secundarios a través de los elementos primarios. Por ejemplo, si aplicas un estilo de fuente a un elemento HTML de nivel superior, todos los elementos secundarios heredarán ese estilo de fuente a menos que se anule con un estilo diferente.
+                <br><br>
+                Otro aspecto importante de CSS es la especificidad. La especificidad se refiere a la forma en que se determina qué estilo se aplicará a un elemento específico si hay múltiples estilos que se aplican al mismo elemento con la misma prioridad. Los selectores más específicos tienen una mayor prioridad.
+                <br><br>
+                Finalmente, es importante tener en cuenta que CSS está en constante evolución. Las últimas versiones de CSS, como CSS3, han agregado muchas nuevas características y funcionalidades que permiten una mayor flexibilidad en la creación de diseños web. Es importante estar al tanto de las últimas tendencias y actualizaciones de CSS para asegurarse de estar utilizando la tecnología más actualizada.
+                <br><br>
+                En conclusión, los fundamentos de CSS son esenciales para cualquier desarrollador de software que quiera crear diseños web impresionantes y coherentes. Al comprender los selectores, laspropiedades, la cascada, la herencia y la especificidad, los desarrolladores pueden crear estilos coherentes y precisos en todo el sitio web. Además, es importante seguir aprendiendo y actualizándose sobre las últimas tendencias y características de CSS para seguir siendo un desarrollador de software líder en el campo.
+                <br><br>
+                Espero que este artículo haya sido útil para entender los fundamentos de CSS y cómo puede ayudarte a crear diseños web impresionantes. Recuerda que CSS es solo una pieza del rompecabezas en el desarrollo de software, y es importante tener una comprensión profunda de todos los aspectos de la creación de sitios web, desde el diseño hasta la implementación y la optimización.
+            </p>
+
+        </div>
+
+
+        <!-- 2. Estilizando elementos básicos con CSS -->
+        <div class="margin" id="estilizando"></div>
+        <div class="post">
+
+            <h1>2. Estilizando elementos básicos con CSS</h1>
+
+        </div>
+
+
+        <!-- 3. Selección de elementos avanzada en CSS -->
+        <div class="margin" id="seleccion"></div>
+        <div class="post">
+
+            <h1>3. Selección de elementos avanzada en CSS</h1>
+
+        </div>
+
+
+        <!-- 4. Diseño responsive con CSS -->
+        <div class="margin" id="responsive"></div>
+        <div class="post">
+
+            <h1>4. Diseño responsive con CSS</h1>
+
+        </div>
+
+
+        <!-- 5. Animaciones CSS simples -->
+        <div class="margin" id="animacion"></div>
+        <div class="post">
+
+            <h1>5. Animaciones CSS simples</h1>
+
+        </div>
+
+
+        <!-- 6. Diseño de layout complejo con CSS Grid  -->
+        <div class="margin" id="layout"></div>
+        <div class="post">
+
+            <h1>6. Diseño de layout complejo con CSS Grid </h1>
+
+        </div>
+
+
+        <!-- 7. Animaciones CSS avanzadas -->
+        <div class="margin" id="avanzada"></div>
+        <div class="post">
+
+            <h1>7. Animaciones CSS avanzadas</h1>
+
+        </div>
+
+
+        <!-- 8. Personalización de formularios con CSS -->
+        <div class="margin" id="formularios"></div>
+        <div class="post">
+
+            <h1>8. Personalización de formularios con CSS</h1>
+
+        </div>
+
+
+        <!-- 9. Optimización de rendimiento en CSS -->
+        <div class="margin" id="rendimiento"></div>
+        <div class="post">
+
+            <h1>9. Optimización de rendimiento en CSS</h1>
+
+        </div>
+
+
+        <!-- 10. Arquitecturas CSS: BEM y SMACSS  -->
+        <div class="margin" id="arquitecturas"></div>
+        <div class="post">
+
+            <h1>10. Arquitecturas CSS: BEM y SMACSS </h1>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    </div>
+
+    <!-- BARRA INFERIOR -->
+    <footer>
+        
+    
+        <div class="rss">
+            <h2>Sigueme en mis redes sociales: </h2>
+    
+            <div class="frontIcons">
+                <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img src="/ico/giticogrey.ico" alt="GitHub Icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img src="/ico/linkicogrey.ico" alt="Linkedin Icon"></a>
+                <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img src="/ico/instaicogrey.ico" alt="Instagram Icon"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img src="/ico/fbicogrey.ico" alt="Facebook Icon"></a>
+                <a target="_blank" href="https://twitter.com/jmo_developer"><img src="/ico/twitericogrey.ico" alt="Twitter Icon"></a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/carrusel.js" ></script>
+
+</body>
+</html>
