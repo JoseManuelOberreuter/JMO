@@ -40,7 +40,7 @@
 <div class="container">
 
   <!-- HEADER SUPERIOR -->
-  <header class="blog-header lh-1 py-3">
+  <header class="blog-header lh-1 py-3 mb-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
 
       <!-- ICONOS REDES SOCIALES -->
@@ -80,18 +80,6 @@
     </div>
   </header>
 
-  <!-- CATEGORIAS -->
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <a class="p-2 link-secondary" href="/html/blog_prox.html">Programación</a>
-      <a class="p-2 link-secondary" href="/html/blog_prox.html">Computación en la nube</a>
-      <a class="p-2 link-secondary" href="/html/blog_prox.html">Inteligencia artificial</a>
-      <a class="p-2 link-secondary" href="/html/blog_prox.html">Softwares</a>
-      <a class="p-2 link-secondary" href="/html/blog_prox.html">Ingeniería de propmt</a>
-      <a class="p-2 link-secondary" href="/html/blog_prox.html">Tecnología</a>
-    </nav>
-  </div>
-  <hr>
 </div>
   <!-- CONTENIDO PRINCIPAL -->
   <main class="container">
@@ -101,38 +89,60 @@
 
         <article class="articulo">
 
-          <h2 class="text-center">Listas, tuplas, conjuntos y diccionarios de Python:</h2>
+          <h2 class="text-center">Funciones y módulos en Python</h2>
           <img src="/img/imgblog/python/portada_python4.png" alt="Portada de articulo sobre python" class="img_blog" width="60%">
 
           <h4><u>Introducción</u></h4>
-          <p>En el mundo de la programación, las estructuras de datos son fundamentales para organizar y manipular información de manera eficiente. Python, como un lenguaje de programación versátil y popular, proporciona varias estructuras de datos incorporadas que son ampliamente utilizadas en el desarrollo de aplicaciones. En este artículo, exploraremos las listas, tuplas, conjuntos y diccionarios en Python, y discutiremos cómo aprovechar al máximo cada una de ellas en nuestros proyectos. Además, proporcionaremos ejemplos de código prácticos para ilustrar su uso.</p>
-          <h4><u>Listas</u></h4>
-          <p>Las listas son una de las estructuras de datos más utilizadas en Python. Se definen mediante corchetes [] y pueden contener elementos de diferentes tipos. Las listas son mutables, lo que significa que podemos agregar, eliminar o modificar elementos después de crear la lista. Veamos un ejemplo:</p>
+          <p>Python es un lenguaje de programación versátil y poderoso que se utiliza en una amplia gama de aplicaciones. Una de las características más destacadas de Python es su capacidad para utilizar funciones y módulos, lo que permite a los desarrolladores organizar y reutilizar su código de manera eficiente. En este artículo, exploramos a fondo las funciones y módulos en Python y cómo pueden mejorar la calidad y la eficiencia de tu código.</p>
+          
+          <h4><u>I. Funciones en Python:</u></h4>
+          <p>Las funciones son bloques de código que se pueden ejecutar repetidamente con diferentes conjuntos de valores. Son una parte fundamental de cualquier programa en Python y ofrecen una forma conveniente de dividir el código en tareas más pequeñas y manejables.</p>
+          <p>Definición y sintaxis de una función:</p>
+          <p>En Python, una función se define utilizando la palabra clave "def" seguida del nombre de la función y paréntesis que pueden contener parámetros. Aquí tienes un ejemplo básico de cómo se define una función en Python:</p>
 
           <div class="code-box">
             <button class="copy-button" onclick="copyCode(this)">Copiar</button>
             <div class="code-content">
               <code>
-                <div class="comentario"># Crear una lista de números</div>
-                numeros = [1, 2, 3, 4, 5]<br><br>
-
-                <div class="comentario"># Agregar un elemento a la lista</div>
-                numeros.append(6)<br><br>
-
-                <div class="comentario"># Acceder a un elemento de la lista</div>
-                primer_elemento = numeros[0]<br><br>
-
-                <div class="comentario"># Modificar un elemento de la lista</div>
-                numeros[1] = 10<br><br>
-
-                <div class="comentario"># Eliminar un elemento de la lista</div>
-                numeros.remove(3)<br><br>
+                def saludar(nombre): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print("Hola,", nombre)
               </code>
             </div>
           </div>
 
-          <h4><u>Tuplas</u></h4>
-          <p>A diferencia de las listas, las tuplas son estructuras de datos inmutables, lo que significa que no se pueden modificar después de su creación. Se definen utilizando paréntesis () o simplemente separando los elementos por comas. Veamos un ejemplo:</p>
+          <p>Parámetros y argumentos:</p>
+          <p>Los parámetros son variables utilizadas en la definición de una función, mientras que los argumentos son los valores reales pasados a la función cuando se invoca. Python admite parámetros posicionales, argumentos con nombre y argumentos por defecto.</p>
+          
+          <div class="code-box">
+            <button class="copy-button" onclick="copyCode(this)">Copiar</button>
+            <div class="code-content">
+              <code>
+                <div class="comentario"># Función que suma dos números.</div>
+                def sumar(a, b):  <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;resultado = a + b <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return resultado<br><br>
+          
+                <div class="comentario"># Ejemplo de llamada a la función con argumentos posicionales</div>
+                resultado1 = sumar(3, 4)  <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(resultado1)  # Salida: 7<br><br>
+          
+                <div class="comentario"># Ejemplo de llamada a la función con argumentos con nombre</div>
+                resultado2 = sumar(a=2, b=5)  <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(resultado2)  
+                <div class="comentario"># Salida: 7</div>
+              </code>
+            </div>
+          </div>
+          
+
+          <p>Retorno de valores:</p>
+          <p>Una función puede devolver un valor utilizando la palabra clave "return". Esto es útil cuando necesitas que una función realice un cálculo y devuelva el resultado.</p>
+
+          <p>Funciones con argumentos variables:</p>
+          <p>En Python, es posible definir funciones que acepten un número variable de argumentos. Esto se puede lograr utilizando argumentos posicionales, argumentos con nombre o argumentos arbitrarios.</p>
+          
+          <h4><u>II. Módulos en Python:</u></h4>
+          <p>Los módulos son archivos que contienen código Python y se utilizan para organizar y reutilizar funcionalidades relacionadas. Python proporciona una amplia biblioteca estándar de módulos que cubren una amplia gama de tareas, como manipulación de archivos, matemáticas, networking y más.</p>
 
           <div class="code-box">
             <button class="copy-button" onclick="copyCode(this)">Copiar</button>
