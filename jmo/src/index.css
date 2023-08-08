@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* SOCIAL MEDIA ICONS */
+.ico_blog {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.ico_blog:hover {
+  opacity: 1;
+}

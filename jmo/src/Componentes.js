@@ -44,19 +44,26 @@ export const Categorias = () => {
 };
   
 
-// SOCIAL MEDIA ICONS
+// SOCIAL MEDIA ICONS DIRECTORY:  ./public/img/LosgosRedesSociales
 export const IconosRS = () => {
-    return (
-        <div className="col-4 pt-1">
-            <a target="_blank" href="https://github.com/JoseManuelOberreuter"><img className="ico_blog" src="/ico/giticogrey.ico" alt="GitHub Icon" /></a>
-            <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/"><img className="ico_blog" src="/ico/linkicogrey.ico" alt="Linkedin Icon" /></a>
-            <a target="_blank" href="https://www.instagram.com/jmo.developer/"><img className="ico_blog" src="/ico/instaicogrey.ico" alt="Instagram Icon" /></a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596"><img className="ico_blog" src="/ico/fbicogrey.ico" alt="Facebook Icon" /></a>
-            <a target="_blank" href="https://twitter.com/jmo_developer"><img className="ico_blog" src="/ico/twitericogrey.ico" alt="Twitter Icon" /></a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA "><img className="ico_blog" src="/ico/youtubeicogrey.ico" alt="YouTube Icon" /></a>
-        </div>
-    );
+  return (
+    <div className="col-4 pt-1">
+      <a target="_blank" href="https://github.com/JoseManuelOberreuter">
+          <img className="ico_blog" src="/img/LogosRedesSociales/giticogrey.ico" alt="GitHub Icon" />
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">
+          <img className="ico_blog" src="/img/LogosRedesSociales/linkicogrey.ico" alt="Linkedin Icon" />
+      </a>
+    </div>
+  );
 };
+
+
+
+
+
+
+
 
 
 
