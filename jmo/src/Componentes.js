@@ -1,5 +1,6 @@
 import React from 'react';
 
+// HEADEAR
 export const ContainerHeader = () => {
     return (
       <div className="container">
@@ -17,7 +18,7 @@ export const Header = () => {
             <IconosRS />
 
             <div class="col-4 text-center">
-                <h2>BLOG DE INFORMATICA</h2>
+                <h2>BLOG JMO</h2>
             </div>
 
             <SearchBar />
@@ -54,17 +55,21 @@ export const IconosRS = () => {
       <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">
           <img className="ico_blog" src="/img/LogosRedesSociales/linkicogrey.ico" alt="Linkedin Icon" />
       </a>
+      <a target="_blank" href="https://www.instagram.com/jmo.developer/">
+          <img className="ico_blog" src="/img/LogosRedesSociales/instaicogrey.ico" alt="Linkedin Icon" />
+      </a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596">
+          <img className="ico_blog" src="/img/LogosRedesSociales/fbicogrey.ico" alt="Linkedin Icon" />
+      </a>
+      <a target="_blank" href="https://twitter.com/jmo_developer">
+          <img className="ico_blog" src="/img/LogosRedesSociales/twitericogrey.ico" alt="Linkedin Icon" />
+      </a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA ">
+          <img className="ico_blog" src="/img/LogosRedesSociales/youtubeicogrey.ico" alt="Linkedin Icon" />
+      </a>
     </div>
   );
 };
-
-
-
-
-
-
-
-
 
 
 export const SearchBar = () => {
@@ -112,4 +117,124 @@ export const SearchBar = () => {
   );
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const LogoJmo = ()  => {
+  return (
+    
+    <div className="col-4 pt-1">
+          <img className="jmo_logo" src="/img/IconosJmo/ico_jmo_fondoCirculo.ico" alt="GitHub Icon" />
+    </div>
+
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const Main = () => {
+  return (
+    <main class="container">
+      <MainPost/>
+    </main>
+  )
+}
+
+export const MainPost = () => {
+  return (
+    <div class="p-4 p-md-5 mx-5 mb-4 rounded text-bg-dark" id="blog_hero">
+      <div class="col-md-6 px-0 ">
+        <h1 class="display-4 "> <b>La revolución de la inteligencia artificial</b></h1>
+        <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>
+        <p class="lead mb-0"><a href="/html/blog/revolucion_ia.html" class="text-white fw-bold">Seguir leyendo</a></p>
+      </div>
+    </div>
+
+  );
+}
+
+export const MainPostSecondary = () => {
+  return (
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+
+        <ScrumPost />
+
+      </div>
+
+      
+      
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Ingeniería de prompt</strong>
+            <h3 class="mb-0 h4">El futuro de la creación de imágenes: Una mirada a Midjourney.</h3>
+            <div class="mb-1 text-body-secondary">13 Junio</div>
+            <p class="mb-auto">La IA de Midjourney puede generar imágenes sorprendentes y visualmente impactantes.</p>
+            <a href="/html/blog/midjourney1.html" class="stretched-link">Seguir leyendo</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Planificación de campañas publicitarias</title>
+              <image href="/img/imgblog/mj_portada_art.png" class="img_articulo" width="100%" height="100%"  />
+            </svg>
+          </div>
+        </  div>
+      </div>
+
+    </div>
+
+  );
+}
+
+
+
+export const ScrumPost = () => {
+  return(
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
+          
+    <div class="col p-4 d-flex flex-column position-static">
+      <strong class="d-inline-block mb-2 text-primary">Programación</strong>
+      <h3 class="mb-0 h4">Scrum: Un marco de trabajo para el desarrollo de software</h3>
+      <div class="mb-1 text-body-secondary">23 Junio</div>
+      <p class="card-text mb-auto">En el mundo del desarrollo de software, seleccionar la metodología adecuada es crucial para aumentar las posibilidades de éxito de un proyecto.</p>
+      <a href="/html/blog/scrum.html" class="stretched-link">Seguir leyendo</a>
+    </div>
+
+    <div class="col-auto d-none d-lg-block">
+      <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Scrum</title>
+        <image href="/img/imgblog/scrum_blog.png" class="img_articulo" width="100%" height="100%"  />
+      </svg>
+    </div>
+
+
+  </div>
+  );
+};
 
