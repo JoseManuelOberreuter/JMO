@@ -3,7 +3,7 @@ import React from 'react';
 // HEADEAR
 export const ContainerHeader = () => {
     return (
-      <div className="container">
+      <div >
         <Header />
         <Categorias />
       </div>
@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header className="blog-header lh-1 py-3">
         <div className="row flex-nowrap justify-content-between align-items-center">
-
+    
             <IconosRS />
 
             <div class="col-4 text-center">
@@ -158,7 +158,7 @@ export const LogoJmo = ()  => {
 
 export const Main = () => {
   return (
-    <main class="container">
+    <main>
       <MainPost/>
     </main>
   )
@@ -166,7 +166,7 @@ export const Main = () => {
 
 export const MainPost = () => {
   return (
-    <div class="p-4 p-md-5 mx-5 mb-4 rounded text-bg-dark" id="blog_hero">
+    <div class="p-4 p-md-5 mb-4 rounded text-bg-dark" id="blog_hero">
       <div class="col-md-6 px-0 ">
         <h1 class="display-4 "> <b>La revolución de la inteligencia artificial</b></h1>
         <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>

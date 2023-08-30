@@ -1,4 +1,10 @@
 
+.App {
+
+  width: 90%;
+  margin: 0 auto;
+
+}
 
 
 .blog-header {
@@ -282,6 +288,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 } 
+
+
+
+
 
 
 .img_blog{
