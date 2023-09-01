@@ -1,19 +1,18 @@
 import './App.css';
 import   {
-  ContainerHeader,
+  Header,
   LogoJmo,
-  MainPost,
-  MainPostSecondary
+  Main,
+  SecondaryPost
 
 } from './Componentes'
 
 function App() {
   return (
     <div className="App">
-      <ContainerHeader />
+      <Header />
 
-      <MainPost />
-      <MainPostSecondary />
+      <Main />
 
       <LogoJmo />
     </div>

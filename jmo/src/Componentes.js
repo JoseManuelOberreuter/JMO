@@ -1,18 +1,10 @@
 import React from 'react';
 
-// HEADEAR
-export const ContainerHeader = () => {
-    return (
-      <div >
-        <Header />
-        <Categorias />
-      </div>
-    );
-};
+
 
 export const Header = () => {
   return (
-    <header className="blog-header lh-1 py-3">
+    <header className="border-bottom lh-1 py-2 mb-2">
         <div className="row flex-nowrap justify-content-between align-items-center">
     
             <IconosRS />
@@ -28,7 +20,7 @@ export const Header = () => {
   );
 };
 
-
+// HEADER CATEGORIAS NO MOSTRADO
 export const Categorias = () => {
     return (
         <div className="nav-scroller py-1 mb-2">
@@ -45,7 +37,7 @@ export const Categorias = () => {
 };
   
 
-// SOCIAL MEDIA ICONS DIRECTORY:  ./public/img/LosgosRedesSociales
+// HEADEAR SOCIAL MEDIA ICONS 
 export const IconosRS = () => {
   return (
     <div className="col-4 pt-1">
@@ -71,7 +63,7 @@ export const IconosRS = () => {
   );
 };
 
-
+// HEADEAR SEARCH BAR
 export const SearchBar = () => {
   const filterTitles = (value) => {
     // Aquí puedes implementar la lógica para filtrar títulos
@@ -125,12 +117,7 @@ export const SearchBar = () => {
 
 
 
-
-
-
-
-
-
+// STICKY LOGO
 export const LogoJmo = ()  => {
   return (
     
@@ -149,24 +136,35 @@ export const LogoJmo = ()  => {
 
 
 
-
-
-
-
-
-
-
 export const Main = () => {
   return (
     <main>
+
       <MainPost/>
+
+      <SecondaryPost />
+
+      <div class="row g-5">
+        <div class="col-md-8 ">
+          
+          <h3 class="pb-4 mb-4 border-bottom h4">
+            Publicaciones recientes:
+          </h3>
+
+        </div>
+      </div>
+
+
+
     </main>
   )
 }
 
+
+
 export const MainPost = () => {
   return (
-    <div class="p-4 p-md-5 mb-4 rounded text-bg-dark" id="blog_hero">
+    <div class="p-4 p-md-4 mb-2 rounded text-bg-dark " id="blog_hero">
       <div class="col-md-6 px-0 ">
         <h1 class="display-4 "> <b>La revolución de la inteligencia artificial</b></h1>
         <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>
@@ -177,35 +175,16 @@ export const MainPost = () => {
   );
 }
 
-export const MainPostSecondary = () => {
+export const SecondaryPost = () => {
   return (
 
-    <div class="row mb-2">
-      <div class="col-md-6">
-
-        <ScrumPost />
-
-      </div>
-
+    <div class="row mb-2 ">
       
-      
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success">Ingeniería de prompt</strong>
-            <h3 class="mb-0 h4">El futuro de la creación de imágenes: Una mirada a Midjourney.</h3>
-            <div class="mb-1 text-body-secondary">13 Junio</div>
-            <p class="mb-auto">La IA de Midjourney puede generar imágenes sorprendentes y visualmente impactantes.</p>
-            <a href="/html/blog/midjourney1.html" class="stretched-link">Seguir leyendo</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Planificación de campañas publicitarias</title>
-              <image href="/img/imgblog/mj_portada_art.png" class="img_articulo" width="100%" height="100%"  />
-            </svg>
-          </div>
-        </  div>
-      </div>
+
+        <ScrumCard />
+
+        <MidjourneyCard />
+
 
     </div>
 
@@ -214,27 +193,49 @@ export const MainPostSecondary = () => {
 
 
 
-export const ScrumPost = () => {
+export const ScrumCard = () => {
   return(
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
-          
-    <div class="col p-4 d-flex flex-column position-static">
-      <strong class="d-inline-block mb-2 text-primary">Programación</strong>
-      <h3 class="mb-0 h4">Scrum: Un marco de trabajo para el desarrollo de software</h3>
-      <div class="mb-1 text-body-secondary">23 Junio</div>
-      <p class="card-text mb-auto">En el mundo del desarrollo de software, seleccionar la metodología adecuada es crucial para aumentar las posibilidades de éxito de un proyecto.</p>
-      <a href="/html/blog/scrum.html" class="stretched-link">Seguir leyendo</a>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
+            
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">Programación</strong>
+        <h3 class="mb-0 h4">Scrum: Un marco de trabajo para el desarrollo de software</h3>
+        <div class="mb-1 text-body-secondary">23 Junio</div>
+        <p class="card-text mb-auto">En el mundo del desarrollo de software, seleccionar la metodología adecuada es crucial para aumentar las posibilidades de éxito de un proyecto.</p>
+        <a href="/html/blog/scrum.html" class="stretched-link">Seguir leyendo</a>
+      </div>
+
+      <div class="col-auto d-none d-lg-block">
+        <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Scrum</title>
+          <image href="" class="img_articulo" width="100%" height="100%"  />
+        </svg>
+      </div>
     </div>
-
-    <div class="col-auto d-none d-lg-block">
-      <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Scrum</title>
-        <image href="/img/imgblog/scrum_blog.png" class="img_articulo" width="100%" height="100%"  />
-      </svg>
-    </div>
-
-
   </div>
   );
 };
+
+export const MidjourneyCard = () => {
+  return (
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Ingeniería de prompt</strong>
+          <h3 class="mb-0 h4">El futuro de la creación de imágenes: Una mirada a Midjourney.</h3>
+          <div class="mb-1 text-body-secondary">13 Junio</div>
+          <p class="card-text mb-auto">La IA de Midjourney puede generar imágenes sorprendentes y visualmente impactantes. En este post veremos cómo aprovechar esta herramienta.</p>
+          <a href="/html/blog/midjourney1.html" class="stretched-link">Seguir leyendo</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Midjourney</title>
+            <image href="/img/imgblog/mj_portada_art.png" class="img_articulo" width="100%" height="100%"  />
+          </svg>
+        </div>
+      </  div>
+    </div>
+  )
+}
 
