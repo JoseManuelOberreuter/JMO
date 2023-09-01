@@ -42,22 +42,22 @@ export const IconosRS = () => {
   return (
     <div className="col-4 pt-1">
       <a target="_blank" href="https://github.com/JoseManuelOberreuter">
-          <img className="ico_blog" src="/img/LogosRedesSociales/giticogrey.ico" alt="GitHub Icon" />
+          <img className="ico_blog" src="/img/rs-logos/giticogrey.ico" alt="GitHub Icon" />
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">
-          <img className="ico_blog" src="/img/LogosRedesSociales/linkicogrey.ico" alt="Linkedin Icon" />
+          <img className="ico_blog" src="/img/rs-logos/linkicogrey.ico" alt="Linkedin Icon" />
       </a>
       <a target="_blank" href="https://www.instagram.com/jmo.developer/">
-          <img className="ico_blog" src="/img/LogosRedesSociales/instaicogrey.ico" alt="Linkedin Icon" />
+          <img className="ico_blog" src="/img/rs-logos/instaicogrey.ico" alt="Linkedin Icon" />
       </a>
       <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596">
-          <img className="ico_blog" src="/img/LogosRedesSociales/fbicogrey.ico" alt="Linkedin Icon" />
+          <img className="ico_blog" src="/img/rs-logos/fbicogrey.ico" alt="Linkedin Icon" />
       </a>
       <a target="_blank" href="https://twitter.com/jmo_developer">
-          <img className="ico_blog" src="/img/LogosRedesSociales/twitericogrey.ico" alt="Linkedin Icon" />
+          <img className="ico_blog" src="/img/rs-logos/twitericogrey.ico" alt="Linkedin Icon" />
       </a>
       <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA ">
-          <img className="ico_blog" src="/img/LogosRedesSociales/youtubeicogrey.ico" alt="Linkedin Icon" />
+          <img className="ico_blog" src="/img/rs-logos/youtubeicogrey.ico" alt="Linkedin Icon" />
       </a>
     </div>
   );
@@ -122,7 +122,7 @@ export const LogoJmo = ()  => {
   return (
     
     <div className="col-4 pt-1">
-          <img className="jmo_logo" src="/img/IconosJmo/ico_jmo_fondoCirculo.ico" alt="GitHub Icon" />
+          <img className="jmo_logo" src="/img/ico-jmo/ico_jmo_fondoCirculo.ico" alt="GitHub Icon" />
     </div>
 
   );
@@ -151,13 +151,52 @@ export const Main = () => {
             Publicaciones recientes:
           </h3>
 
+          {/* PREVIEW DE ARTICULOS*/}
+
+
         </div>
+
+        <Sidebar />
+
+
       </div>
 
 
 
     </main>
   )
+}
+
+
+
+export const Sidebar = () => {
+  return(
+    <div class="col-md-4">
+
+      <div class="position-sticky">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">Sobre el blog:</h4>
+          <p class="mb-0"> Dedicado a la difusión de información con fines educativos sobre programación. Aquí encontrarás una amplia variedad de temas relacionados con la programación y la tecnología, desde los conceptos básicos hasta las últimas tendencias.</p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Archivos</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="/html/blog_prox.html">Python</a></li>
+            <li><a href="/html/blog_prox.html">Html</a></li>
+            <li><a href="/html/blog_prox.html">Javascript</a></li>
+            <li><a href="/html/blog_prox.html">Azure</a></li>
+            <li><a href="/html/blog_prox.html">Sql</a></li>
+            <li><a href="/html/blog_prox.html">Bootstrap</a></li>
+          </ol>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  );
 }
 
 
@@ -209,13 +248,15 @@ export const ScrumCard = () => {
       <div class="col-auto d-none d-lg-block">
         <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Scrum</title>
-          <image href="" class="img_articulo" width="100%" height="100%"  />
+          <image href="/img/img-articles/scrum_blog.png" class="img_articulo" width="100%" height="100%"  />
         </svg>
       </div>
     </div>
   </div>
   );
 };
+
+
 
 export const MidjourneyCard = () => {
   return (
@@ -231,7 +272,7 @@ export const MidjourneyCard = () => {
         <div class="col-auto d-none d-lg-block">
           <svg class="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Midjourney</title>
-            <image href="/img/imgblog/mj_portada_art.png" class="img_articulo" width="100%" height="100%"  />
+            <image href="/img/img-articles/mj_portada_art.png" class="img_articulo" width="100%" height="100%"  />
           </svg>
         </div>
       </  div>
