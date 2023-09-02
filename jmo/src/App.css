@@ -234,7 +234,7 @@
 
 /* LINK IMAGEN PORTADA */
 #blog_hero {
-  background-image: url('/public/img/ImgArticles/ia_cyber.png');
+  background-image: url('/public/img/img-articles/ia_cyber.png');
   background-size: cover;
   background-position: center;
 }
