@@ -3,18 +3,28 @@ import   {
   Header,
   LogoJmo,
   Main,
-  SecondaryPost
+  ScrumCard,
+  MidjourneyCard,
+  Footer
 
 } from './Componentes'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div>
+      <div className="App">
+        
+        <Header />
 
-      <Main />
+        <Main />
 
-      <LogoJmo />
+        <LogoJmo />
+
+
+      </div>
+
+      <Footer/>
+
     </div>
   );
 }
