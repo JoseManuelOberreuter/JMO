@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { 
-  PostIA
+  PostIA,
+  PostMicrosoftIa0
 } from './Posts';
 
 
@@ -158,7 +159,13 @@ export const Main = () => {
 
         {/* <PreviewRecentPosts /> */}
 
-        <PostIA />
+        {/*
+         <PostIA />
+          */}
+
+          <PostMicrosoftIa0 />
+
+
 
 
 

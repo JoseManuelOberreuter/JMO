@@ -112,5 +112,80 @@ export const PostIA = () => {
 };
 
 
+export const PostMicrosoftIa0 = () => {
+  return (
+    <div class="col-md-8 ">
+      <article className="articulo text-justify">
+        <h1 className="my-2 text-center">
+            Introducción a la IA
+        </h1>
+        <div className="d-flex justify-content-center text-center">
+            <p className="text-primary mx-2">
+                <div className='hashtag'>
+                    #Microsoft
+                </div>
+            </p>
+            <p className="text-primary mx-2">
+                <div className='hashtag'>
+                    #InteligenciaArtificial
+                </div>
+            </p>
+        </div>
+
+
+
+        <img src="/img/img-articles/ia_cyber.png" alt="Imagen Inteligencia Artificial" className="my-2 mx-auto d-block" width="50%" />
+
+        <p>
+        ¡La IA nos permite crear un software increíble que puede mejorar la atención médica, permitir que las personas superen las desventajas físicas,
+         potenciar la infraestructura inteligente, crear experiencias de entretenimiento increíbles e incluso salvar el planeta!
+        </p>
+
+
+        <p>
+            La IA no es una tecnología del futuro, sino que ya está entre nosotros, y su poder radica en su capacidad de complementar y mejorar la creatividad humana.
+            Jane, quien perdió la vista a una edad temprana pero logra una vida independiente gracias a la IA, que le ayuda a leer y navegar por el mundo. 
+            La IA de Microsoft se utiliza en diversas áreas, desde la agricultura para abordar el cambio climático hasta la conservación de la biodiversidad.
+        </p>
+
+        <p>
+            Es importante entender que la IA no se trata simplemente de replicar la inteligencia humana, sino de transformar industrias enteras.
+            Esto incluye la atención médica, la ingeniería y las telecomunicaciones, donde la IA de Microsoft desempeña un papel fundamental.
+            la IA de Microsoft no se limita a productos tangibles, sino que empodera a las personas para crear experiencias únicas y aprovechar su potencial al máximo. 
+            Este es solo el comienzo de una nueva era donde la inteligencia artificial nos ofrece un mundo lleno de posibilidades, y el rumbo que tomemos dependerá de nuestras elecciones.
+        </p>
+
+        <h3>¿Qué es la IA?</h3>
+
+        <p>En pocas palabras, la IA es la creación de software que imita los comportamientos y capacidades humanas. Las cargas de trabajo clave incluyen:</p>
+
+        <ul>
+            <li><strong>Aprendizaje automático:</strong> esta es a menudo la base de un sistema de IA, y es la forma en que "enseñamos" un modelo informático para hacer predicciones y sacar conclusiones de los datos.</li>
+            <li><strong>Detección de anomalías:</strong> la capacidad de detectar automáticamente errores o actividad inusual en un sistema.</li>
+            <li><strong>Visión por computadora:</strong> La capacidad del software para interpretar el mundo visualmente a través de cámaras, video e imágenes.</li>
+            <li><strong>Procesamiento del lenguaje natural:</strong> La capacidad de una computadora para interpretar el lenguaje escrito o hablado, y responder de la misma manera.</li>
+            <li><strong>Minería de conocimiento:</strong> la capacidad de extraer información de grandes volúmenes de datos a menudo no estructurados para crear un almacén de conocimiento en el que se pueden realizar búsquedas.</li>
+        </ul>
+
+
+
+
+
+
+
+
+
+        <p className="fst-italic">
+          ¡Gracias por leer hasta el final! Espero que hayas disfrutado leyendo
+          este artículo tanto como yo disfruté escribiéndolo. Si te gustó lo que
+          leíste y quieres seguir apoyándome, no dudes en seguirme en mis redes
+          sociales. ¡Nos vemos en el próximo artículo!
+        </p>
+      </article>
+    </div>
+  );
+};
+
+
 
 
