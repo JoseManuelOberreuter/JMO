@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { 
-  PostIA,
+  // PostIA,
   PostMicrosoftIa0
 } from './Posts';
 
