@@ -1,6 +1,19 @@
 
 import React from 'react';
 
+export const FinalDePost = () => {
+  return (
+    <div>
+        <p className="fst-italic">
+          ¡Gracias por leer hasta el final! Espero que hayas disfrutado leyendo
+          este artículo tanto como yo disfruté escribiéndolo. Si te gustó lo que
+          leíste y quieres seguir apoyándome, no dudes en seguirme en mis redes
+          sociales. ¡Nos vemos en el próximo artículo!
+        </p>
+    </div>
+  )
+}
+
 // export const PostIA = () => {
 //   return (
 //     <div class="col-md-8 ">
@@ -172,23 +185,76 @@ export const PostMicrosoftIa0 = () => {
 
 
 
+        <FinalDePost/>
 
 
 
-
-
-
-        <p className="fst-italic">
-          ¡Gracias por leer hasta el final! Espero que hayas disfrutado leyendo
-          este artículo tanto como yo disfruté escribiéndolo. Si te gustó lo que
-          leíste y quieres seguir apoyándome, no dudes en seguirme en mis redes
-          sociales. ¡Nos vemos en el próximo artículo!
-        </p>
       </article>
     </div>
   );
 };
 
 
+
+export const PostMicrosoftAI900 = () => {
+  return (
+    <div className="col-md-8">
+      <article className="articulo text-justify">
+        <h1 className="my-2 text-center">
+          Examen AI-900: Microsoft Azure AI Fundamentals
+        </h1>
+
+        <p>
+          El examen AI-900 es una oportunidad para demostrar tu conocimiento de los conceptos de aprendizaje automático e inteligencia artificial, así como de los servicios relacionados de Microsoft Azure. Este examen está diseñado tanto para personas con conocimientos técnicos como para aquellas sin experiencia en ingeniería de software y ciencia de datos.
+        </p>
+
+        <p>
+          Aunque no se requiere experiencia previa en estos campos, es beneficioso tener conocimientos básicos de la nube y de aplicaciones cliente-servidor. El AI-900 no es un requisito previo para otras certificaciones de Azure, como Azure Data Scientist Associate o Azure AI Engineer Associate, pero puede ser útil en la preparación para ellas.
+        </p>
+
+        <h2>Contenido del Examen</h2>
+
+        <p>
+          El AI-900 evalúa diferentes áreas de conocimiento, incluyendo:
+        </p>
+
+        <ul>
+          <li>Descripción de las cargas de trabajo y las consideraciones de inteligencia artificial (20-25 %).</li>
+          <li>Descripción de los principios fundamentales del aprendizaje automático en Azure (25-30 %).</li>
+          <li>Descripción de las características de las cargas de trabajo de Computer Vision en Azure (15-20 %).</li>
+          <li>Descripción de las características de las cargas de trabajo de procesamiento del lenguaje natural (NLP) en Azure (25-30 %).</li>
+        </ul>
+
+        <h2>Preparación para el Examen</h2>
+
+        <p>
+          Para prepararte para el examen AI-900, puedes utilizar las siguientes rutas de aprendizaje proporcionadas por Microsoft:
+        </p>
+
+        <ul>
+          <li>Microsoft Azure AI Fundamentals: Introducción a la inteligencia artificial.</li>
+          <li>Microsoft Azure AI Fundamentals: Exploración de las herramientas visuales para el aprendizaje automático.</li>
+          <li>Microsoft Azure AI Fundamentals: Exploración de la visión informática.</li>
+          <li>Microsoft Azure AI Fundamentals: Exploración del procesamiento de lenguaje natural.</li>
+          <li>Microsoft Azure AI Fundamentals: Exploración de la ayuda para la toma de decisiones.</li>
+        </ul>
+
+        <p>
+          Este examen te permite validar tus conocimientos fundamentales en el campo de la inteligencia artificial y el aprendizaje automático, así como en los servicios ofrecidos por Microsoft Azure. ¡Prepárate y demuestra tu competencia en este emocionante campo tecnológico!
+        </p>
+        
+        <p>
+          Fuente: <br></br>
+          <a target="_blank" href='https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/'>AI-900: Microsoft Azure AI Fundamentals</a>
+
+        </p>
+
+        <FinalDePost />
+      </article>
+    </div>
+  );
+};
+
+export default PostMicrosoftAI900;
 
 

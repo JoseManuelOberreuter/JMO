@@ -2,7 +2,9 @@ import React from 'react';
 
 import { 
   // PostIA,
-  PostMicrosoftIa0
+  PostMicrosoftIa0,
+  PostMicrosoftAI900
+  
 } from './Posts';
 
 
@@ -41,9 +43,6 @@ export const Categorias = () => {
         </div>
     );
 };
-  
-
-
 
 
 // HEADEAR SOCIAL MEDIA ICONS 
@@ -71,7 +70,6 @@ export const IconosRS = () => {
     </div>
   );
 };
-
 
 
 // HEADEAR SEARCH BAR
@@ -122,12 +120,6 @@ export const SearchBar = () => {
 
 
 
-
-
-
-
-
-
 // STICKY LOGO
 export const LogoJmo = ()  => {
   return (
@@ -140,13 +132,7 @@ export const LogoJmo = ()  => {
 };
 
 
-
-
-
-
-
-
-
+// MAIN CONTENT 
 export const Main = () => {
   return (
     <main>
@@ -157,15 +143,18 @@ export const Main = () => {
 
       <div class="row g-5">
 
-        {/* <PreviewRecentPosts /> */}
 
         {/*
+        POSTS 
+
          <PostIA />
+         <PostMicrosoftIa0 />
+         
           */}
 
-          <PostMicrosoftIa0 />
+          
 
-
+          <PostMicrosoftAI900/>
 
 
 
