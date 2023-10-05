@@ -10,10 +10,6 @@ import {
 
 
 
-
-
-
-
 export const Header = () => {
   return (
     <header className="border-bottom lh-1 py-2 mb-2">
@@ -137,34 +133,36 @@ export const LogoJmo = ()  => {
 
 
 // MAIN CONTENT 
-export const Main = () => {
-  const [selectedPost, setSelectedPost] = useState(null);
 
-  // Function to handle post selection
-  const handlePostSelection = (postName) => {
-    setSelectedPost(postName);
+export const Main = () => {
+
+  const [mostrarPostIA, setMostrarPostIA] = useState(false);
+  
+  // Función para cambiar el estado y mostrar el componente PostIA
+  const onSeguirLeyendoClick = () => {
+    setMostrarPostIA(true);
   };
 
   return (
     <main>
-      {/* Conditional rendering based on the selected post */}
-      {selectedPost === 'PostIA' && <PostIA />}
-      {selectedPost === 'PostMicrosoftIa0' && <PostMicrosoftIa0 />}
-      {selectedPost === 'PostMicrosoftAI900' && <PostMicrosoftAI900 />}
-      
-      {selectedPost === null && (
-        <>
-          <MainPost onShowPostMicrosoftIa={() => handlePostSelection('PostIA')} />
-          <SecondaryPost />
-          <div class="row g-5">
-            <PreviewRecentPosts />
-            <Sidebar />
+      <div>
+        {mostrarPostIA ? (
+          <PostIA />
+        ) : (
+          <div>
+            <MainPost onSeguirLeyendoClick={onSeguirLeyendoClick} />
+            <SecondaryPost />
+            <div className="row g-5">
+              <PreviewRecentPosts />
+              <Sidebar />
+            </div>
           </div>
-        </>
-      )}
+        )}
+      </div>
     </main>
   );
 };
+
 
 
 
@@ -200,16 +198,26 @@ export const Sidebar = () => {
 }
 
 
+
+const onSeguirLeyendoClick = () => {
+
+}
+
+
 // HERO BANER
 
-const MainPost = ({ onShowPostMicrosoftIa }) => {
+const MainPost = ({onSeguirLeyendoClick}) => {
+
+  
 
   return (
     <div class="p-4 p-md-4 mb-2 rounded text-bg-dark " id="blog_hero">
       <div class="col-md-6 px-0 ">
         <h1 class="display-4 "> <b>La revolución de la inteligencia artificial</b></h1>
         <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>
-        <button className='button-link' onClick={() => onShowPostMicrosoftIa('PostIA')}>Seguir leyendo</button>
+        <button className="button-link" onClick={onSeguirLeyendoClick}>
+          Seguir leyendo
+        </button>
       </div>
     </div>
 
