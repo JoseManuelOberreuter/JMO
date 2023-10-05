@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import   {
   Header,
@@ -9,7 +10,19 @@ import   {
 
 } from './Componentes'
 
+
+/*
+TO DO:
+- MEJORAR LINKS 
+- HACER SOBRE MI 
+- HACER PORTAFOLIOS
+*/
+
+
+
 function App() {
+
+  
   return (
     <div>
       <div className="App">
