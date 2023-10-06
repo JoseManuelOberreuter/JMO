@@ -266,6 +266,5 @@ export const PostMicrosoftAI900 = () => {
   );
 };
 
-export default PostMicrosoftAI900;
 
 
