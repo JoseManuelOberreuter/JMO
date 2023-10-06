@@ -11,14 +11,20 @@ import {
 
 
 export const Header = () => {
+
+  const onTitleClick = () => {
+
+    window.location.reload();
+  }
+
   return (
     <header className="border-bottom lh-1 py-2 mb-2">
         <div className="row flex-nowrap justify-content-between align-items-center">
     
             <IconosRS />
 
-            <div class="col-4 text-center">
-                <h2>Blog de programación</h2>
+            <div class="col-4 text-center cursor-pointer" onClick={onTitleClick}>
+                <h1>Blog de programación</h1>
             </div>
 
             <SearchBar />
@@ -122,10 +128,17 @@ export const SearchBar = () => {
 
 // STICKY LOGO
 export const LogoJmo = ()  => {
+
+  const onLogoClick = () => {
+
+    window.location.reload();
+  }
+
+
   return (
     
     <div className="col-4 pt-1">
-          <img className="jmo_logo position-fixed" src="/img/ico-jmo/ico_jmo_fondoCirculo.ico" alt="GitHub Icon" />
+      <img className="jmo_logo position-fixed" src="/img/ico-jmo/ico_jmo_fondoCirculo.ico" alt="GitHub Icon" onClick={onLogoClick}/>
     </div>
 
   );

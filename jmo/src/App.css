@@ -7,6 +7,12 @@
 }
 
 
+
+.cursor-pointer{
+  cursor:pointer
+}
+
+
 .button-link {
   border: none;
   color: #0D6EFD;

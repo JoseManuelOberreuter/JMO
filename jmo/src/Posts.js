@@ -15,7 +15,6 @@ export const FinalDePost = () => {
 }
 
 
-// SOLUCIONAR SIDEBAR
 export const PostIA = () => {
   return (
 
@@ -126,9 +125,7 @@ export const PostIA = () => {
           </p>
         </article>
       </div>
-      <div className="col-md-3 order-md-1">
         <Sidebar />
-      </div>
     </div>
   </main>
 
