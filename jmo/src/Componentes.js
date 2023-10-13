@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { 
   PostIA,
@@ -18,35 +19,56 @@ export const Header = () => {
   }
 
   return (
-    <header className="border-bottom lh-1 py-2 mb-2">
+    <header className="lh-1 py-2">
         <div className="row flex-nowrap justify-content-between align-items-center">
-    
-            <IconosRS />
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
-            <div class="col-4 text-center cursor-pointer" onClick={onTitleClick}>
-                <h1>Blog de programación</h1>
-            </div>
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active px-2 text-black text-strong fs-5 ">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 text-dark fs-5">Acerca de Mí</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 text-dark fs-5">Portafolio</a>
+                </li>
+              </ul>
 
-            <SearchBar />
 
+              
+
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" className="form-control form-control-dark" placeholder="Search..." aria-label="Search" />
+              </form>
+
+          </div>
         </div>
+      </div>
     </header>
+
+    
   );
 };
+
+
+
+
+
+
 
 // HEADER CATEGORIAS NO MOSTRADO
 export const Categorias = () => {
     return (
-        <div className="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 link-secondary" href="/html/blog_prox.html">Programación</a>
-                <a class="p-2 link-secondary" href="/html/blog_prox.html">Computación en la nube</a>
-                <a class="p-2 link-secondary" href="/html/blog_prox.html">Inteligencia artificial</a>
-                <a class="p-2 link-secondary" href="/html/blog_prox.html">Softwares</a>
-                <a class="p-2 link-secondary" href="/html/blog_prox.html">Ingeniería de propmt</a>
-                <a class="p-2 link-secondary" href="/html/blog_prox.html">Tecnología</a>
-            </nav>
-        </div>
+      <div class="nav-scroller py-1  border-bottom border-top">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis" href="#">Acerca de mí</a>
+          <a class="nav-item nav-link link-body-emphasis active" href="#">Blog de programación</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Portafolio profesional</a>
+
+        </nav>
+      </div>
     );
 };
 

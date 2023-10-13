@@ -3,9 +3,17 @@
 
   width: 90%;
   margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+
 
 }
 
+
+
+
+.text-strong {
+  font-weight: bold;
+}
 
 
 .cursor-pointer{
@@ -354,29 +362,3 @@
 
 
 
-@media (min-width: 768px) {
-  #input_serch{
-    width: 150px;
-  }
-  .ul_dropdown{
-    width: 150px; 
-    
-  }
-
-}
-@media (min-width: 1000px) {
-  #input_serch{
-    width: 250px;
-  }
-  .ul_dropdown{
-    width: 250px;
-  }
-
-}
-
-
-
-
-*{
-  font-family: 'Roboto Slab', serif;
-}
