@@ -19,21 +19,25 @@ export const Header = () => {
   }
 
   return (
-    <header className="lh-1 py-2">
+    <header className="lh-1 py-2 mb-2 border-bottom">
         <div className="row flex-nowrap justify-content-between align-items-center">
-          <div class="container">
+          <div class="container ">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
               <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li class="nav-item">
-                  <a href="#" class="nav-link active px-2 text-black text-strong fs-5 ">Blog</a>
+                  <a href="#" class="nav-link active px-2 text-black text-strong fs-5 ">JMO</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-dark fs-5">Acerca de Mí</a>
+                  <a href="#" class="nav-link active px-2 text-secondary fs-5 ">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-dark fs-5">Portafolio</a>
+                  <a href="#" class="nav-link px-2 text-secondary fs-5">Portafolio</a>
                 </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 text-secondary fs-5">Acerca de Mí</a>
+                </li>
+
               </ul>
 
 
@@ -518,6 +522,12 @@ export function Footer() {
               </div>
             </form>
           </div>
+
+
+
+          <IconosRS />
+
+
         </div>
       </footer>
     </div>
