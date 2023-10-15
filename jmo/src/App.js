@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
+
+import { Header } from './Components/Headear';
 import './App.css';
 import   {
-  Header,
   LogoJmo,
   MainBlog,
   Footer
