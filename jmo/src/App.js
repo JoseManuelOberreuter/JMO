@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
-import { Header } from './Components/Headear';
+import { Header } from './Components/Hedear';
 import './App.css';
 import   {
   LogoJmo,
@@ -14,7 +15,7 @@ import   {
 /*
 TO DO:
 - MEJORAR LINKS 
-- HACER SOBRE MI 
+- HACER ACERCA DE MI 
 - HACER PORTAFOLIOS
 */
 
@@ -24,24 +25,22 @@ function App() {
 
   
   return (
-    <div>
-
-
-
+    <Router>
       <div className="App">
-        
         <Header />
-
-        <MainBlog />
-
+        <Routes>
+          <Route path="/" element={<MainBlog />} />
+          <Route path="/blog" element={<MainBlog />} />
+          {/* <Route path="/portfolio" element={} /> */}
+          {/* <Route path="/about" element={} /> */}
+        </Routes>
         <LogoJmo />
-
-
+        <Footer />
       </div>
+    </Router>
 
-      <Footer/>
 
-    </div>
+
   );
 }
 
