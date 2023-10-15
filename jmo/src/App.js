@@ -4,9 +4,7 @@ import './App.css';
 import   {
   Header,
   LogoJmo,
-  Main,
-  ScrumCard,
-  MidjourneyCard,
+  MainBlog,
   Footer
 
 } from './Componentes'
@@ -33,7 +31,7 @@ function App() {
         
         <Header />
 
-        <Main />
+        <MainBlog />
 
         <LogoJmo />
 

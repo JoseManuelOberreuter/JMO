@@ -205,7 +205,7 @@ export const Sidebar = () => {
 
 // MAIN CONTENT 
 
-export const Main = () => {
+export const MainBlog = () => {
 
   const [mostrarPostIA, setMostrarPostIA] = useState(false);
   
