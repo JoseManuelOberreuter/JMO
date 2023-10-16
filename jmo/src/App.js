@@ -3,13 +3,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 import { Header } from './Components/Hedear';
+import { MainPortafolios } from './Components/Portafolios';
+import { MainAboutMe } from './Components/AboutMe';
+
+
+
 import './App.css';
 import   {
   LogoJmo,
   MainBlog,
   Footer
 
-} from './Componentes'
+} from './Components/Componentes'
 
 
 /*
@@ -29,10 +34,17 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
+
+          {/* INDEX */}
           <Route path="/" element={<MainBlog />} />
+
+          {/* BLOG  */}
           <Route path="/blog" element={<MainBlog />} />
-          {/* <Route path="/portfolio" element={} /> */}
-          {/* <Route path="/about" element={} /> */}
++
+          <Route path="/portfolio" element={<MainPortafolios/>} />
+          
+          <Route path="/about" element={<MainAboutMe/>} />
+
         </Routes>
         <LogoJmo />
         <Footer />
