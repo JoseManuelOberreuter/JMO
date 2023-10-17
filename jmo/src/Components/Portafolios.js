@@ -38,41 +38,36 @@ export const MainPortafolios = () => {
   );
 };
 
+
 const CardPortafolios1 = () => {
-  return ( // Agrega un return aquí
-          <div className="col">
-            <div className="card shadow-sm">
-              <svg
-                className="bd-placeholder-img card-img-top"
-                width="100%"
-                height="225"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: Thumbnail"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" />
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                  Thumbnail
-                </text>
-              </svg>
-              <div className="card-body">
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </p>
-                <div className="d-flex justify-content-between align-items-center">
-                  <div className="btn-group">
-                    <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small className="text-body-secondary">9 mins</small>
-                </div>
+  const projectLink = "https://josemanueloberreuter.github.io/Binance_API/";
+
+  return (
+    <div className="col">
+      <a href={projectLink} className='text-decoration-none' target="_blank" >
+        <div className="card shadow-sm">
+          <img
+            src="./img/data_screen.png" 
+            alt="Data Screen"
+            className="card-img-top"
+          />
+          <div className="card-body">
+            <p className="card-text">
+              App React JS para seguimiento en tiempo real de las 10 principales criptomonedas en Binance, con gráficos precisos mediante la API de Binance.
+            </p>
+            <div className="d-flex justify-content-between align-items-center">
+              <div className="btn-group">
+                <a href={projectLink} className="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
               </div>
+              <small className="text-body-secondary">Agosto 2023</small>
             </div>
           </div>
-
-
+      </div>
+      </a>
+    </div>
   );
 };
+
+
