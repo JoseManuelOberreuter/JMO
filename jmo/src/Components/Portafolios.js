@@ -1,5 +1,9 @@
 import React from 'react';
 
+
+// TO DO:
+// 
+
 export const MainPortafolios = () => {
   return (
     <main>
@@ -24,12 +28,10 @@ export const MainPortafolios = () => {
 
 
           <CardPortafolios1 />
-          <CardPortafolios1 />
-          <CardPortafolios1 />
+          <CardPortafolios2 />
+          <CardPortafolios3 />
 
-          <CardPortafolios1 />
-          <CardPortafolios1 />
-          <CardPortafolios1 />
+
           </div>
         </div>
       </div>
@@ -71,3 +73,65 @@ const CardPortafolios1 = () => {
 };
 
 
+const CardPortafolios2 = () => {
+  const projectLink = "https://josemanueloberreuter.github.io/Webapp_kinenesiologia/index.html";
+
+  return (
+    <div className="col">
+      <a href={projectLink} className='text-decoration-none' target="_blank" >
+        <div className="card shadow-sm">
+          <img
+            src="./img/kinepaula.png" 
+            alt="Data Screen"
+            className="card-img-top"
+          />
+          <div className="card-body">
+            <p className="card-text">
+              Página web de una fisioterapeuta profesional con formularios para programar sesiones, diseñada con estilo Bootstrap.            </p>
+            <div className="d-flex justify-content-between align-items-center">
+              <div className="btn-group">
+                <a href={projectLink} className="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+              </div>
+              <small className="text-body-secondary">Julio 2023</small>
+            </div>
+          </div>
+      </div>
+      </a>
+    </div>
+  );
+};
+
+
+
+const CardPortafolios3 = () => {
+  const projectLink = "https://josemanueloberreuter.github.io/Arquitectos/";
+
+  return (
+    <div className="col">
+      <a href={projectLink} className='text-decoration-none' target="_blank" >
+        <div className="card shadow-sm">
+          <img
+            src="./img/house_beach.png" 
+            alt="Data Screen"
+            className="card-img-top"
+          />
+          <div className="card-body">
+            <p className="card-text">
+              Página web para estudio de arquitectura con diseño personalizado en CSS y un formulario interactivo para solicitar presupuestos.
+            </p>
+            <div className="d-flex justify-content-between align-items-center">
+              <div className="btn-group">
+                <a href={projectLink} className="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                  Ver
+                </a>
+              </div>
+              <small className="text-body-secondary">Enero 2023</small>
+            </div>
+          </div>
+      </div>
+      </a>
+    </div>
+  );
+};
