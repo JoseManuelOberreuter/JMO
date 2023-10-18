@@ -15,7 +15,7 @@ export const FinalDePost = () => {
 }
 
 
-
+// POSTS ORDENADOS DE LOS MAS RECIENTES A LOS MÁS ANTIGUOS
 
 export const PostMicrosoftIa0 = () => {
   return (
@@ -334,7 +334,7 @@ export const PostScrum = () => {
 };
 
 
-export const PostIA = () => {
+export const PostRevolucionIA = () => {
   return (
 
     <main>

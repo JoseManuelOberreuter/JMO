@@ -8,7 +8,7 @@ import { MainAboutMe } from './Components/AboutMe';
 import { Footer } from './Components/Footer';
 
 import {
-  PostIA,
+  PostRevolucionIA,
   PostScrum,
 } from './Components/Posts'
 
@@ -57,7 +57,7 @@ function App() {
           <Route path="/about" element={<MainAboutMe/>} />
 
           {/* POSTS ROUTES */}
-          <Route path="/PostIA" element={<PostIA/>} />
+          <Route path="/PostRevolucionIA" element={<PostRevolucionIA/>} />
 
           <Route path="/PostScrum" element={<PostScrum/>} />
 
