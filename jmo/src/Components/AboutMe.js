@@ -135,7 +135,7 @@ export const MainAboutMe = () => {
               {/* <button className="btn btn-outline-secondary" type="button">Example button</button> */}
             </div>
           </div>
-        </div> *
+        </div> 
   
 
       </div>

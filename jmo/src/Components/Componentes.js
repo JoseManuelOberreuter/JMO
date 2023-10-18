@@ -17,21 +17,6 @@ import {
 
 
 
-// HEADER CATEGORIAS NO MOSTRADO
-export const Categorias = () => {
-    return (
-      <div class="nav-scroller py-1  border-bottom border-top">
-        <nav class="nav nav-underline justify-content-between">
-          <a class="nav-item nav-link link-body-emphasis" href="#">Acerca de mí</a>
-          <a class="nav-item nav-link link-body-emphasis active" href="#">Blog de programación</a>
-          <a class="nav-item nav-link link-body-emphasis" href="#">Portafolio profesional</a>
-
-        </nav>
-      </div>
-    );
-};
-
-
 
 
 
@@ -91,28 +76,20 @@ export const Sidebar = () => {
 
 export const MainBlog = () => {
 
-  const [mostrarPostIA, setMostrarPostIA] = useState(false);
-  
-  // Función para cambiar el estado y mostrar el componente PostIA
-  const onSeguirLeyendoClick = () => {
-    setMostrarPostIA(true);
-  };
 
   return (
     <main>
       <div>
-        {mostrarPostIA ? (
-          <PostIA />
-        ) : (
+
           <div>
-            <MainPost onSeguirLeyendoClick={onSeguirLeyendoClick} />
+            <MainPost onSeguirLeyendoClick/>
             <SecondaryPost />
             <div className="row g-5">
               <PreviewRecentPosts />
               <Sidebar />
             </div>
           </div>
-        )}
+      
       </div>
     </main>
   );
@@ -123,20 +100,24 @@ export const MainBlog = () => {
 
 
 // HERO BANER
-const MainPost = ({onSeguirLeyendoClick}) => {
+const MainPost = () => {
 
   
 
   return (
-    <div class="p-4 p-md-4 mb-2 rounded text-bg-dark " id="blog_hero">
-      <div class="col-md-6 px-0 ">
-        <h1 class="display-4 "> <b>La revolución de la inteligencia artificial</b></h1>
-        <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>
-        <button className="button-link" onClick={onSeguirLeyendoClick}>
-          Seguir leyendo
-        </button>
+    
+
+      <div class="p-4 p-md-4 mb-2 rounded text-bg-dark " id="blog_hero">
+        <div class="col-md-6 px-0 ">
+          <h1 class="display-4 "> <b>La revolución de la inteligencia artificial</b></h1>
+          <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>
+          <Link to="/PostIA" >
+            Seguir leyendo
+          </Link>
+        </div>
       </div>
-    </div>
+    
+
 
   );
 }
@@ -158,31 +139,7 @@ export const SecondaryPost = () => {
 }
 
 
-// FOOTER SOCIAL MEDIA ICONS 
-export const IconosRS = () => {
-  return (
-    <div className="col-4 pt-1">
-      <a target="_blank" href="https://github.com/JoseManuelOberreuter">
-          <img className="ico_blog" src="/img/rs-logos/giticogrey.ico" alt="GitHub Icon" />
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">
-          <img className="ico_blog" src="/img/rs-logos/linkicogrey.ico" alt="Linkedin Icon" />
-      </a>
-      <a target="_blank" href="https://www.instagram.com/jmo.developer/">
-          <img className="ico_blog" src="/img/rs-logos/instaicogrey.ico" alt="Linkedin Icon" />
-      </a>
-      <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596">
-          <img className="ico_blog" src="/img/rs-logos/fbicogrey.ico" alt="Linkedin Icon" />
-      </a>
-      <a target="_blank" href="https://twitter.com/jmo_developer">
-          <img className="ico_blog" src="/img/rs-logos/twitericogrey.ico" alt="Linkedin Icon" />
-      </a>
-      <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA ">
-          <img className="ico_blog" src="/img/rs-logos/youtubeicogrey.ico" alt="Linkedin Icon" />
-      </a>
-    </div>
-  );
-};
+
 
 
 // CARDS
@@ -192,12 +149,11 @@ export const ScrumCard = () => {
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
             
       <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-primary">Programación</strong>
         <h3 class="mb-0 h4">Scrum: Un marco de trabajo para el desarrollo de software</h3>
         <div class="mb-1 text-body-secondary">23 Junio</div>
         <p class="card-text mb-auto">En el mundo del desarrollo de software, seleccionar la metodología adecuada es crucial para aumentar las posibilidades de éxito de un proyecto.</p>
         <div>
-          <buttom className='button-link'>Seguir leyendo</buttom>
+          <Link to="/PostScrum">Seguir leyendo</Link>
         </div>
         
       </div>
@@ -220,7 +176,6 @@ export const MidjourneyCard = () => {
     <div class="col-md-6">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Ingeniería de prompt</strong>
           <h3 class="mb-0 h4">El futuro de la creación de imágenes: Una mirada a Midjourney.</h3>
           <div class="mb-1 text-body-secondary">13 Junio</div>
           <p class="card-text mb-auto">La IA de Midjourney puede generar imágenes sorprendentes y visualmente impactantes. En este post veremos cómo aprovechar esta herramienta.</p>
@@ -253,6 +208,9 @@ export const PreviewRecentPosts = () => {
       </h3>
 
       {/* PREVIEW DE ARTICULOS*/}
+      <PreviewPython4 />
+
+      <PreviewPython3 />
 
       <PreviewPython2 />
 
@@ -401,47 +359,4 @@ export const PreviewIa1 = () => {
 
 
 
-
-
-
-export function Footer() {
-  return (
-    <div className="container border-top">
-      <footer className="py-5">
-        <div className="row ">
-
-
-          <div className="col-6 col-md-2 mb-3">
-            <h5>JMO</h5>
-            <ul className="nav flex-column">
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Blog</a></li>
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Portafolio</a></li>
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Sobre mi</a></li>
-            </ul>
-          </div>
-
-
-
-          <div className="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Comunícate Conmigo</h5>
-              <p>Por favor, ingresa tu consulta a continuación y te responderé a la brevedad.</p>
-              <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label htmlFor="newsletter1" className="visually-hidden">Escríbeme un mensaje</label>
-                <input id="newsletter1" type="text" className="form-control" placeholder="Escríbeme un mensaje" />
-                <button className="btn btn-primary" type="button">Enviar</button>
-              </div>
-            </form>
-          </div>
-
-
-
-          <IconosRS />
-
-
-        </div>
-      </footer>
-    </div>
-  );
-}
 

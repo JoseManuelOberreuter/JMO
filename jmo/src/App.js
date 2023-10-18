@@ -5,15 +5,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './Components/Hedear';
 import { MainPortafolios } from './Components/Portafolios';
 import { MainAboutMe } from './Components/AboutMe';
+import { Footer } from './Components/Footer';
 
-
+import {
+  PostIA,
+  PostScrum,
+} from './Components/Posts'
 
 import './App.css';
 import   {
   LogoJmo,
   MainBlog,
-  Footer
-
 } from './Components/Componentes'
 
 
@@ -48,9 +50,19 @@ function App() {
           {/* BLOG  */}
           <Route path="/blog" element={<MainBlog />} />
 +
+          {/* PORTAFOLIOS */}
           <Route path="/portfolio" element={<MainPortafolios/>} />
           
+          {/* ABOUT ME */}
           <Route path="/about" element={<MainAboutMe/>} />
+
+          {/* POSTS ROUTES */}
+          <Route path="/PostIA" element={<PostIA/>} />
+
+          <Route path="/PostScrum" element={<PostScrum/>} />
+
+
+          
 
         </Routes>
         <LogoJmo />
