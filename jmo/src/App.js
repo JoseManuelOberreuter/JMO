@@ -10,6 +10,7 @@ import { Footer } from './Components/Footer';
 import {
   PostRevolucionIA,
   PostScrum,
+  PostMidjourney,
 } from './Components/Posts'
 
 import './App.css';
@@ -61,9 +62,8 @@ function App() {
 
           {/* POSTS ROUTES */}
           <Route path="/PostRevolucionIA" element={<PostRevolucionIA/>} />
-
           <Route path="/PostScrum" element={<PostScrum/>} />
-
+          <Route path="/PostMidjourney" element={<PostMidjourney/>} />
 
           
 

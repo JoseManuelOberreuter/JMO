@@ -162,7 +162,7 @@ export const MidjourneyCard = () => {
           <div class="mb-1 text-body-secondary">13 Junio</div>
           <p class="card-text mb-auto">La IA de Midjourney puede generar imágenes sorprendentes y visualmente impactantes. En este post veremos cómo aprovechar esta herramienta.</p>
           <div>
-            <buttom className='button-link'>Seguir leyendo</buttom>
+            <Link to="/PostMidjourney" className='button-link'>Seguir leyendo</Link>
           </div>
         </div>
         <div class="col-auto d-none d-lg-block">
