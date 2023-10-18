@@ -1,5 +1,7 @@
 import { Sidebar } from './Componentes';
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export const FinalDePost = () => {
   return (

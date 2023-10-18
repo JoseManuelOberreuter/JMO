@@ -13,8 +13,10 @@ import {
 } from './Components/Posts'
 
 import './App.css';
+import { LogoJmo } from './Components/Logo';
+
+
 import   {
-  LogoJmo,
   MainBlog,
 } from './Components/Componentes'
 
@@ -31,6 +33,7 @@ TO DO:
 - IMPLEMENT BACKEND TO SERCHBAR 
 - DO BUILD ON GITHUB 
 - DO DEPLOY ON AZURE
+- FIX BUG OF HEADER BOLD WHEN THE USER CLIC ON THE LOGO
 */
 
 

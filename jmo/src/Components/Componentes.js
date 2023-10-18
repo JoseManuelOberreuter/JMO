@@ -21,24 +21,6 @@ import {
 
 
 
-// STICKY LOGO
-export const LogoJmo = ()  => {
-
-  const onLogoClick = () => {
-
-    window.location.reload();
-  }
-
-
-  return (
-    
-    <div className="col-4 pt-1">
-      <img className="jmo_logo position-fixed" src="/img/ico-jmo/ico_jmo_fondoCirculo.ico" alt="GitHub Icon" onClick={onLogoClick}/>
-    </div>
-
-  );
-};
-
 
 
 export const Sidebar = () => {
