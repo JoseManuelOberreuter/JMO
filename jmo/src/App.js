@@ -21,7 +21,7 @@ import './App.css';
 
 import   {
   MainBlog,
-} from './Components/Componentes'
+} from './Components/HeroBanner'
 
 
 

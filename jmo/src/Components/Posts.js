@@ -1,4 +1,4 @@
-import { Sidebar } from './Componentes';
+import { Sidebar } from './SideBar';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -197,7 +197,28 @@ export const PostPython1 = () => {
               manera eficiente y productiva.
             </p>
 
-            {/* Contenido omitido para brevedad */}
+            <ol>
+              <li><strong>Instalar Python:</strong> Visita el sitio web oficial de Python (<a href="https://www.python.org">https://www.python.org</a>) y descarga la última versión estable. Sigue las instrucciones de instalación adecuadas para tu sistema operativo.</li>
+              <br />
+              <li><strong>Editor de código:</strong> Elige un editor de código que se adapte a tus necesidades. Algunas opciones populares son Visual Studio Code, PyCharm, Sublime Text y Atom. Estos editores de código ofrecen características útiles como resaltado de sintaxis, autocompletado y depuración integrada.</li>
+              <br />
+              <li><strong>Entorno virtual:</strong> Es buena práctica crear entornos virtuales para tus proyectos de Python. Un entorno virtual te permite aislar las dependencias de cada proyecto, lo que facilita la gestión y evita conflictos entre bibliotecas. Puedes crear un entorno virtual utilizando la herramienta <code>venv</code> que viene incluida con Python.</li>
+              <br />
+              <li><strong>Gestor de paquetes:</strong> Python cuenta con un gestor de paquetes llamado <code>pip</code> que te permite instalar y administrar paquetes adicionales. Puedes utilizar <code>pip</code> para instalar bibliotecas populares como NumPy, Pandas o Django. Además, puedes crear un archivo <code>requirements.txt</code> para listar todas las dependencias de tu proyecto y luego instalarlas automáticamente con un solo comando.</li>
+              <br />
+              <li><strong>Explora la comunidad de Python:</strong> Python tiene una comunidad activa y amigable de desarrolladores dispuestos a ayudar. Puedes unirte a foros y grupos en línea, seguir blogs y tutoriales, y participar en conferencias y eventos para aprender más y ampliar tus conocimientos sobre Python.</li>
+            </ol>
+
+
+            <h5><u>¡Hola, mundo!</u></h5>
+
+            <p>Una vez que hayas configurado tu entorno de desarrollo, estás listo para escribir tu primer programa en Python. El programa tradicional "¡Hola, mundo!" es una excelente manera de comenzar. Abre tu editor de texto o IDE y escribe lo siguiente:</p>
+
+            <code>print("¡Hola, mundo!")</code>
+            <br /><br />
+
+            <p>Guarda el archivo con una extensión .py, como hola_mundo.py, y ejecútalo desde la línea de comandos utilizando el comando python hola_mundo.py. Verás que el programa imprime "¡Hola, mundo!" en la consola.</p>
+
 
             <h5>
               <u>Conclusión</u>
@@ -224,6 +245,9 @@ export const PostPython1 = () => {
     </main>
   );
 };
+
+
+
 
 
 
