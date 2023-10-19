@@ -6,20 +6,24 @@ import { Header } from './Components/Hedear';
 import { MainPortafolios } from './Components/Portafolios';
 import { MainAboutMe } from './Components/AboutMe';
 import { Footer } from './Components/Footer';
+import { LogoJmo } from './Components/Logo';
+
+
 
 import {
-  PostRevolucionIA,
+  PostPython1,
   PostScrum,
   PostMidjourney,
+  PostRevolucionIA,
 } from './Components/Posts'
 
 import './App.css';
-import { LogoJmo } from './Components/Logo';
-
 
 import   {
   MainBlog,
 } from './Components/Componentes'
+
+
 
 
 /*
@@ -64,6 +68,7 @@ function App() {
           <Route path="/PostRevolucionIA" element={<PostRevolucionIA/>} />
           <Route path="/PostScrum" element={<PostScrum/>} />
           <Route path="/PostMidjourney" element={<PostMidjourney/>} />
+          <Route path="/PostPython1" element={<PostPython1/>} />
 
           
 

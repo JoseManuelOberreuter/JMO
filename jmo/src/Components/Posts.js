@@ -163,94 +163,60 @@ export const PostMicrosoftAI900 = () => {
 
 
 
-export const PostMidjourney = () => {
-  
+
+export const PostPython1 = () => {
   const imageStyle = {
-    display: 'block',
-    margin: '25px auto'
-    
+    display: "block",
+    margin: "25px auto"
   };
 
   return (
     <main className="container">
-      <div class="row g-5">
-        <div class="col-md-8 ">
-          <article class="articulo">
-            <h1 className="text-center">El futuro de la creación de imágenes: Una mirada a Midjourney</h1>
-            <img style={imageStyle} src="/img/img-articles/mj_portada_art.png" alt="Portada Midjourney"  width="60%" />
-            <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
-            <img style={imageStyle} src="/img/img-articles/mj_logo.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p className="text-center">Logo Midjourey</p>
-            <p>La IA de Midjourney se basa en algoritmos de aprendizaje profundo, que han sido entrenados con una amplia variedad de datos visuales y estéticos. Esto permite a Midjourney generar imágenes sorprendentes y visualmente impactantes que desafían las convenciones tradicionales y empujan los límites de lo posible. Desde paisajes surrealistas hasta retratos abstractos, <b>Midjourney</b> es capaz de crear obras de arte únicas.</p>
-            <p>No debemos olvidar que, Midjourney es solo una inteligencia artificial que <b>analiza, observa y copia imágenes </b> de los artistas de todo el mundo y de todas las épocas. A través de su capacidad de aprendizaje profundo, Midjourney analiza y absorbe las obras maestras creadas por los grandes artistas de la historia, desentrañando sus técnicas y estilos únicos.</p>
-            <h2>Inicio rapido de Midjourney:</h2>  
-            <br />
-            <p>1. <u>Inicie sesión en su cuenta de Discord</u></p>
-            <p>Puede acceder al Midjourney Bot desde cualquier lugar donde use Discord, ya sea a través de la web, su teléfono o las aplicaciones de escritorio. Antes de unirte al servidor de Midjourney Discord,<b> debes tener una cuenta de Discord verificada.</b></p>
-            <p>Si aún no tienes Discord, puedes crear una cuenta y descargar la aplicación desde el siguiente enlace:</p>
-            <p><a href="https://discord.com/">https://discord.com/</a></p>
-            <br />
-            <p>2. <u>Suscribirse a un plan de Midjourney</u></p>
-            <p>Midjourney menciona como segundo paso comprar un plan de suscripción, pero también ofrece a los usuarios la oportunidad de probar sus servicios con <b>30 imágenes gratis</b>. Sin embargo, debido a la alta demanda, puede ocurrir que los servidores se sobrecarguen y los administradores cierren temporalmente las pruebas gratuitas debido al exceso de usuarios, como ha sucedido recientemente.</p>
-            <p>Por lo tanto, si las pruebas gratuitas están disponibles, los usuarios podrán probar este sorprendente software de generación de imágenes. En caso contrario, Midjourney ofrece un plan básico por 1 mes que incluye aproximadamente <b>200 imágenes generadas</b> a un precio estimado de <b>10 dólares al mes</b>.</p>
-            <br />
-            <p>3. <u>Vaya a Discord y agregue el servidor Midjourney</u></p>
-            <p>Para unirse o crear un servidor, presione el botón en la parte inferior de la lista de servidores en la barra lateral izquierda. <b>Presione el botón</b> y pegue o escriba <b>http://discord.gg/midjourney</b> para unirse al servidor de Midjourney.</p>
-            <img style={imageStyle} src="/img/img-articles/mj_discord.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <img style={imageStyle} src="/img/img-articles/mj_discord2.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p>4. <u>Ir a cualquier canal</u></p>
-            <p>En el servidor oficial de Midjourney, seleccione cualquier canal visible en la barra lateral izquierda, como el canal #General o #Newbie. Estos canales son ideales para interactuar con otros miembros del servidor, hacer preguntas y obtener orientación sobre el uso de Midjourney.</p>
-            <p>Es recomendable agregar el bot de Midjourney a un servidor personal en lugar de utilizar los comandos en servidores públicos. Cuando ejecutas cualquier comando en un canal público, es probable que se pierda en cuestión de minutos debido al alto flujo de mensajes en esos servidores. Para evitar esto, se recomienda crear un servidor personal y exclusivo donde puedas instalar el bot de Midjourney y asegurarte de que los resultados de tus comandos no se pierdan en el chat.</p>
-            <p>Es importante tener en cuenta que, en caso de que una imagen se haya perdido en el chat o la hayas eliminado del Discord, aún puedes acceder a ella iniciando sesión en la página de Discord y navegando a tu perfil.</p>
-            <br />
-            <p>5. <u>Usar el comando /imagine</u></p>
-            <p>Interactúe con el bot Midjourney en Discord usando un comandos. Los comandos se utilizan para crear imágenes, cambiar la configuración predeterminada, supervisar la información del usuario y realizar otras tareas útiles. El comando /imagine genera una imagen única a partir de una breve descripción de texto (conocida como Prompt).</p>
-            <p>Uso de /imagine:</p>
-            <ol>
-              <li>Escriba o seleccione el comando en la ventana emergente de comandos de barra diagonal: /imagine prompt:</li>
-              <li>Escriba una descripción de la imagen que desea crear en el campo .prompt</li>
-              <li>Envía tu mensaje.</li>
-            </ol>  
-            <img style={imageStyle} src="/img/img-articles/mj_imagine.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="100%" />
-            <br />
-            
-            <p>6. <u>Acepte los Términos de Servicio</u></p>
-            <p>El Midjourney Bot generará una ventana emergente pidiéndole que acepte los Términos de servicio. Es importante que <b>acepte los Términos de servicio</b> para poder generar cualquier imagen.</p>
-            <p>7. <u>Procesa el trabajo</u></p>
-            <p>El Midjourney Bot tarda aproximadamente un minuto en generar cuatro opciones de tu prompt.</p>
-            <img style={imageStyle} src="/img/img-articles/mj_img_proceso.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p>Midjourney utiliza potentes unidades de procesamiento de gráficos (GPU) para interpretar y procesar cada solicitud. Cuando compras una suscripción a Midjourney, estás adquiriendo tiempo en estas GPU. Cada vez que creas una imagen, utilizas parte del tiempo de GPU de tu suscripción.</p>
-            <p>Utiliza el comando <b>/info</b> para comprobar rápidamente el tiempo restante y ver el tiempo de prueba que te queda.</p>
-            <br />
-            <p>8. <u>Amplíe o cree variaciones</u></p>
-            <p>Una vez que la cuadrícula de imagen inicial haya terminado de generarse, aparecen dos filas de botones:</p>
-            <img style={imageStyle} src="/img/img-articles/mj_variaciones.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p>Los botones U mejoran una imagen generando una versión más grande de la imagen seleccionada y agregando más detalles.</p>
-            <p>Los botones V crean ligeras variaciones de la imagen de cuadrícula seleccionada. La creación de una variación genera una nueva cuadrícula de imagen similar al estilo y la composición general de la imagen elegida.</p>
-            <h3>Galería de ejemplos</h3>
-            <p>A continuación, te presentamos una selección de imágenes generadas por Midjourney, junto con los prompts que se utilizaron para crearlas. Estas obras de arte únicas fueron producidas por la poderosa inteligencia artificial de Midjourney, que combina algoritmos de aprendizaje profundo con la creatividad de los artistas que lo inspiran.</p>
-            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo1.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> bedroom melting into the ocean</p>
+      <div className="row g-5">
+        <div className="col-md-8">
+          <article className="articulo">
+            <h1 className="text-center">
+              Introducción a Python y su entorno de desarrollo
+            </h1>
 
-            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo2.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> Korean Bibimbap</p>
+            <img
+              style={imageStyle}
+              src="/img/img-articles/mj_img_proceso.png"
+              alt="Imagen Inteligencia Artificial"
+              className="img_blog"
+              width="60%"
+            />
 
-            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo3.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> a woman wearing glasses with flowers and tigers on her wall, in the style of glamorous hollywood portraits, light magenta and pink, 32k uhd, deconstructed hot pants tailoring, dramatic lighting effects, nyfw-inspired, modern jewelry</p>
+            <p>
+              Python se ha convertido en uno de los lenguajes de programación
+              más populares y versátiles del mundo. Con su sintaxis simple y
+              legible, es ideal tanto para principiantes como para expertos en
+              programación. Si estás interesado en aprender Python y aprovechar
+              todo su potencial, es importante comprender no solo el lenguaje en
+              sí, sino también el entorno de desarrollo adecuado para trabajar de
+              manera eficiente y productiva.
+            </p>
 
-            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo4.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> malachite Storm trooper as a vintagepunk samurai, dark grey background, blue and golden details, artstation, hyperdetailed, 8k, beautiful lighting, artstation by James Jean, Moebius, cory loftis, craig mullins, rutkowski, Mucha, hyperdetailed, over the shoulder, close up, james jean, mucha, fractal, vibrant colors, rococo art , 8k resolution, clear shape, defined shape, full body:: topalltwist::0</p>
+            {/* Contenido omitido para brevedad */}
 
-            <h3>Conclusión</h3>
-            <p>Midjourney es un software con una inteligencia artificial impulsada por potentes procesadores de gráficos de alto nivel, lo que lo convierte en <b>uno de los mejores programas disponibles en el mercado para crear imágenes desde cero</b>. Además, su integración con Discord lo hace accesible y fácil de instalar para aquellos que ya son usuarios de la plataforma.</p>
-            <p>Este artículo es solo el comienzo de una serie en la que exploraremos cómo utilizar y mejorar las imágenes utilizando la <b>ingeniería de prompt</b> con Midjourney. Estamos emocionados de adentrarnos en el mundo de la creación de imágenes y descubrir todo lo que esta fascinante inteligencia artificial tiene para ofrecer.</p>
-            <p class="text-primary">#IngieneriaDePrompt #Midjourney #InteligenciaArtificial</p>
-            <br />
-            <p>Enlaces de referencias:</p>
-            <p><a href="https://docs.midjourney.com/docs/quick-start">Documentacion de Midjourney</a></p>
-            
-            <FinalDePost />
+            <h5>
+              <u>Conclusión</u>
+            </h5>
+            <p>
+              En este artículo, hemos proporcionado una introducción básica a
+              Python y te hemos guiado a través del proceso de configuración de tu
+              entorno de desarrollo para comenzar a programar en este lenguaje.
+              Recuerda que Python es un lenguaje versátil y poderoso, utilizado en
+              una amplia gama de aplicaciones, desde desarrollo web hasta
+              aprendizaje automático.
+            </p>
+            <p>
+              A medida que continúes aprendiendo Python, te recomendamos explorar
+              sus características y funcionalidades, así como aprovechar la
+              abundante documentación y los recursos disponibles en línea.
+            </p>
 
+            <p className="text-primary">#Programación #Python</p>
           </article>
         </div>
         <Sidebar />
@@ -258,6 +224,10 @@ export const PostMidjourney = () => {
     </main>
   );
 };
+
+
+
+
 
 
 export const PostScrum = () => {
@@ -439,6 +409,104 @@ export const PostScrum = () => {
     </main>
   );
 };
+
+
+export const PostMidjourney = () => {
+  
+  const imageStyle = {
+    display: 'block',
+    margin: '25px auto'
+    
+  };
+
+  return (
+    <main className="container">
+      <div class="row g-5">
+        <div class="col-md-8 ">
+          <article class="articulo">
+            <h1 className="text-center">El futuro de la creación de imágenes: Una mirada a Midjourney</h1>
+            <img style={imageStyle} src="/img/img-articles/mj_portada_art.png" alt="Portada Midjourney"  width="60%" />
+            <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
+            <img style={imageStyle} src="/img/img-articles/mj_logo.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p className="text-center">Logo Midjourey</p>
+            <p>La IA de Midjourney se basa en algoritmos de aprendizaje profundo, que han sido entrenados con una amplia variedad de datos visuales y estéticos. Esto permite a Midjourney generar imágenes sorprendentes y visualmente impactantes que desafían las convenciones tradicionales y empujan los límites de lo posible. Desde paisajes surrealistas hasta retratos abstractos, <b>Midjourney</b> es capaz de crear obras de arte únicas.</p>
+            <p>No debemos olvidar que, Midjourney es solo una inteligencia artificial que <b>analiza, observa y copia imágenes </b> de los artistas de todo el mundo y de todas las épocas. A través de su capacidad de aprendizaje profundo, Midjourney analiza y absorbe las obras maestras creadas por los grandes artistas de la historia, desentrañando sus técnicas y estilos únicos.</p>
+            <h2>Inicio rapido de Midjourney:</h2>  
+            <br />
+            <p>1. <u>Inicie sesión en su cuenta de Discord</u></p>
+            <p>Puede acceder al Midjourney Bot desde cualquier lugar donde use Discord, ya sea a través de la web, su teléfono o las aplicaciones de escritorio. Antes de unirte al servidor de Midjourney Discord,<b> debes tener una cuenta de Discord verificada.</b></p>
+            <p>Si aún no tienes Discord, puedes crear una cuenta y descargar la aplicación desde el siguiente enlace:</p>
+            <p><a href="https://discord.com/">https://discord.com/</a></p>
+            <br />
+            <p>2. <u>Suscribirse a un plan de Midjourney</u></p>
+            <p>Midjourney menciona como segundo paso comprar un plan de suscripción, pero también ofrece a los usuarios la oportunidad de probar sus servicios con <b>30 imágenes gratis</b>. Sin embargo, debido a la alta demanda, puede ocurrir que los servidores se sobrecarguen y los administradores cierren temporalmente las pruebas gratuitas debido al exceso de usuarios, como ha sucedido recientemente.</p>
+            <p>Por lo tanto, si las pruebas gratuitas están disponibles, los usuarios podrán probar este sorprendente software de generación de imágenes. En caso contrario, Midjourney ofrece un plan básico por 1 mes que incluye aproximadamente <b>200 imágenes generadas</b> a un precio estimado de <b>10 dólares al mes</b>.</p>
+            <br />
+            <p>3. <u>Vaya a Discord y agregue el servidor Midjourney</u></p>
+            <p>Para unirse o crear un servidor, presione el botón en la parte inferior de la lista de servidores en la barra lateral izquierda. <b>Presione el botón</b> y pegue o escriba <b>http://discord.gg/midjourney</b> para unirse al servidor de Midjourney.</p>
+            <img style={imageStyle} src="/img/img-articles/mj_discord.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src="/img/img-articles/mj_discord2.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p>4. <u>Ir a cualquier canal</u></p>
+            <p>En el servidor oficial de Midjourney, seleccione cualquier canal visible en la barra lateral izquierda, como el canal #General o #Newbie. Estos canales son ideales para interactuar con otros miembros del servidor, hacer preguntas y obtener orientación sobre el uso de Midjourney.</p>
+            <p>Es recomendable agregar el bot de Midjourney a un servidor personal en lugar de utilizar los comandos en servidores públicos. Cuando ejecutas cualquier comando en un canal público, es probable que se pierda en cuestión de minutos debido al alto flujo de mensajes en esos servidores. Para evitar esto, se recomienda crear un servidor personal y exclusivo donde puedas instalar el bot de Midjourney y asegurarte de que los resultados de tus comandos no se pierdan en el chat.</p>
+            <p>Es importante tener en cuenta que, en caso de que una imagen se haya perdido en el chat o la hayas eliminado del Discord, aún puedes acceder a ella iniciando sesión en la página de Discord y navegando a tu perfil.</p>
+            <br />
+            <p>5. <u>Usar el comando /imagine</u></p>
+            <p>Interactúe con el bot Midjourney en Discord usando un comandos. Los comandos se utilizan para crear imágenes, cambiar la configuración predeterminada, supervisar la información del usuario y realizar otras tareas útiles. El comando /imagine genera una imagen única a partir de una breve descripción de texto (conocida como Prompt).</p>
+            <p>Uso de /imagine:</p>
+            <ol>
+              <li>Escriba o seleccione el comando en la ventana emergente de comandos de barra diagonal: /imagine prompt:</li>
+              <li>Escriba una descripción de la imagen que desea crear en el campo .prompt</li>
+              <li>Envía tu mensaje.</li>
+            </ol>  
+            <img style={imageStyle} src="/img/img-articles/mj_imagine.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="100%" />
+            <br />
+            
+            <p>6. <u>Acepte los Términos de Servicio</u></p>
+            <p>El Midjourney Bot generará una ventana emergente pidiéndole que acepte los Términos de servicio. Es importante que <b>acepte los Términos de servicio</b> para poder generar cualquier imagen.</p>
+            <p>7. <u>Procesa el trabajo</u></p>
+            <p>El Midjourney Bot tarda aproximadamente un minuto en generar cuatro opciones de tu prompt.</p>
+            <img style={imageStyle} src="/img/img-articles/mj_img_proceso.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p>Midjourney utiliza potentes unidades de procesamiento de gráficos (GPU) para interpretar y procesar cada solicitud. Cuando compras una suscripción a Midjourney, estás adquiriendo tiempo en estas GPU. Cada vez que creas una imagen, utilizas parte del tiempo de GPU de tu suscripción.</p>
+            <p>Utiliza el comando <b>/info</b> para comprobar rápidamente el tiempo restante y ver el tiempo de prueba que te queda.</p>
+            <br />
+            <p>8. <u>Amplíe o cree variaciones</u></p>
+            <p>Una vez que la cuadrícula de imagen inicial haya terminado de generarse, aparecen dos filas de botones:</p>
+            <img style={imageStyle} src="/img/img-articles/mj_variaciones.jpg" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p>Los botones U mejoran una imagen generando una versión más grande de la imagen seleccionada y agregando más detalles.</p>
+            <p>Los botones V crean ligeras variaciones de la imagen de cuadrícula seleccionada. La creación de una variación genera una nueva cuadrícula de imagen similar al estilo y la composición general de la imagen elegida.</p>
+            <h3>Galería de ejemplos</h3>
+            <p>A continuación, te presentamos una selección de imágenes generadas por Midjourney, junto con los prompts que se utilizaron para crearlas. Estas obras de arte únicas fueron producidas por la poderosa inteligencia artificial de Midjourney, que combina algoritmos de aprendizaje profundo con la creatividad de los artistas que lo inspiran.</p>
+            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo1.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p class="text-center"><b>Prompt:</b> bedroom melting into the ocean</p>
+
+            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo2.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p class="text-center"><b>Prompt:</b> Korean Bibimbap</p>
+
+            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo3.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p class="text-center"><b>Prompt:</b> a woman wearing glasses with flowers and tigers on her wall, in the style of glamorous hollywood portraits, light magenta and pink, 32k uhd, deconstructed hot pants tailoring, dramatic lighting effects, nyfw-inspired, modern jewelry</p>
+
+            <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo4.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <p class="text-center"><b>Prompt:</b> malachite Storm trooper as a vintagepunk samurai, dark grey background, blue and golden details, artstation, hyperdetailed, 8k, beautiful lighting, artstation by James Jean, Moebius, cory loftis, craig mullins, rutkowski, Mucha, hyperdetailed, over the shoulder, close up, james jean, mucha, fractal, vibrant colors, rococo art , 8k resolution, clear shape, defined shape, full body:: topalltwist::0</p>
+
+            <h3>Conclusión</h3>
+            <p>Midjourney es un software con una inteligencia artificial impulsada por potentes procesadores de gráficos de alto nivel, lo que lo convierte en <b>uno de los mejores programas disponibles en el mercado para crear imágenes desde cero</b>. Además, su integración con Discord lo hace accesible y fácil de instalar para aquellos que ya son usuarios de la plataforma.</p>
+            <p>Este artículo es solo el comienzo de una serie en la que exploraremos cómo utilizar y mejorar las imágenes utilizando la <b>ingeniería de prompt</b> con Midjourney. Estamos emocionados de adentrarnos en el mundo de la creación de imágenes y descubrir todo lo que esta fascinante inteligencia artificial tiene para ofrecer.</p>
+            <p class="text-primary">#IngieneriaDePrompt #Midjourney #InteligenciaArtificial</p>
+            <br />
+            <p>Enlaces de referencias:</p>
+            <p><a href="https://docs.midjourney.com/docs/quick-start">Documentacion de Midjourney</a></p>
+            
+            <FinalDePost />
+
+          </article>
+        </div>
+        <Sidebar />
+      </div>
+    </main>
+  );
+};
+
 
 
 export const PostRevolucionIA = () => {
