@@ -79,7 +79,7 @@ export const PreviewRecentPosts = () => {
             <p>Python es un lenguaje de programación ampliamente utilizado y apreciado por su sencillez y legibilidad. Es ideal tanto para principiantes como para programadores experimentados debido a su enfoque intuitivo y su amplia gama de aplicaciones. Una de las bases fundamentales de la programación en Python es comprender las variables, los tipos de datos y las operaciones básicas. En este artículo, exploraremos estos conceptos clave para ayudarte a dar tus primeros pasos en Python.</p>
             <p>En Python, las variables se utilizan para almacenar valores. Puedes pensar en ellas como contenedores que mantienen información que puede cambiar a lo largo del programa. Para crear una variable en Python, solo necesitas asignarle un nombre y un valor utilizando el operador de asignación "=".</p>
   
-            <buttom className='button-link'>Seguir leyendo</buttom>
+            <Link className='button-link'>Seguir leyendo</Link>
           </article>
       </div>
     )
@@ -112,7 +112,7 @@ export const PreviewRecentPosts = () => {
             <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
             <p>La IA de Midjourney se basa en algoritmos de aprendizaje profundo, que han sido entrenados con una amplia variedad de datos visuales y estéticos. Esto permite a Midjourney generar imágenes sorprendentes y visualmente impactantes que desafían las convenciones tradicionales y empujan los límites de lo posible. Desde paisajes surrealistas hasta retratos abstractos, <b>Midjourney</b> es capaz de crear obras de arte únicas.</p>
             <p>No debemos olvidar que, Midjourney es solo una inteligencia artificial que <b>analiza, observa y copia imágenes </b> de los artistas de todo el mundo y de todas las épocas. A través de su capacidad de aprendizaje profundo, Midjourney analiza y absorbe las obras maestras creadas por los grandes artistas de la historia, desentrañando sus técnicas y estilos únicos.</p>
-            <buttom className='button-link'>Seguir leyendo</buttom>
+            <Link to="/PostScrum" className='button-link'>Seguir leyendo</Link>
           </article>
       </div>
     )
@@ -128,7 +128,7 @@ export const PreviewRecentPosts = () => {
             <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
             <p>La IA de Midjourney se basa en algoritmos de aprendizaje profundo, que han sido entrenados con una amplia variedad de datos visuales y estéticos. Esto permite a Midjourney generar imágenes sorprendentes y visualmente impactantes que desafían las convenciones tradicionales y empujan los límites de lo posible. Desde paisajes surrealistas hasta retratos abstractos, <b>Midjourney</b> es capaz de crear obras de arte únicas.</p>
             <p>No debemos olvidar que, Midjourney es solo una inteligencia artificial que <b>analiza, observa y copia imágenes </b> de los artistas de todo el mundo y de todas las épocas. A través de su capacidad de aprendizaje profundo, Midjourney analiza y absorbe las obras maestras creadas por los grandes artistas de la historia, desentrañando sus técnicas y estilos únicos.</p>
-            <buttom className='button-link'>Seguir leyendo</buttom>
+            <Link to="/PostMidjourney" className='button-link'>Seguir leyendo</Link>
           </article>
       </div>
     )
@@ -152,7 +152,7 @@ export const PreviewRecentPosts = () => {
           <p>
             Con cada nueva aplicación y avance en inteligencia artificial, nuestro mundo se vuelve más conectado y sofisticado. La revolución de la IA no solo está impulsando mejoras en la eficiencia y la productividad, sino que también está creando oportunidades para el descubrimiento científico, la innovación tecnológica y el mejoramiento de la calidad de vida. A medida que nos sumergimos en este emocionante futuro impulsado por la inteligencia artificial, es crucial comprender y adaptarnos a los cambios que se avecinan, aprovechando las oportunidades que nos brinda y trabajando en conjunto para desarrollar y aplicar esta tecnología de manera ética y responsable.
           </p>
-          <buttom className='button-link'>Seguir leyendo</buttom>
+          <Link to="/PostRevolucionIA" className='button-link'>Seguir leyendo</Link>
           
         </article>
       </div>
