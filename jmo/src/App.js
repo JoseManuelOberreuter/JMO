@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router,useLocation, Link , Route, Routes } from 'react-router-dom';
 
 
 import { Header } from './Components/Hedear';
@@ -41,6 +41,16 @@ TO DO:
 - FIX BUG OF HEADER BOLD WHEN THE USER CLIC ON THE LOGO
 */
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 
 
 function App() {
@@ -50,6 +60,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <ScrollToTop /> 
         <Routes>
 
           {/* INDEX */}

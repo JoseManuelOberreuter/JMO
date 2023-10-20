@@ -181,7 +181,7 @@ export const PostPython1 = () => {
 
             <img
               style={imageStyle}
-              src="/img/img-articles/mj_img_proceso.png"
+              src="/img/img-articles/portada_python.png"
               alt="Imagen Inteligencia Artificial"
               className="img_blog"
               width="60%"
@@ -238,6 +238,8 @@ export const PostPython1 = () => {
             </p>
 
             <p className="text-primary">#Programación #Python</p>
+
+            <FinalDePost/>
           </article>
         </div>
         <Sidebar />
