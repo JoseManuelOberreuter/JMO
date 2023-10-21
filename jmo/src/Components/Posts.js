@@ -3,6 +3,44 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+// QUE HACER: 
+// ARREGLAR PYTHONPOST2 COPYCODE Y MEJORAR 
+
+
+
+
+
+function copyCode(props) {
+  const { code } = props;
+
+  const handleCopyClick = () => {
+    // Llama a la función copyToClipboard para copiar el código al portapapeles
+    copyToClipboard(code);
+  };
+
+  return (
+    <button className="copy-button" onClick={handleCopyClick}>
+      Copiar
+    </button>
+  );
+}
+
+function copyToClipboard(text) {
+  // Crea un elemento de texto oculto para copiar el texto
+  const textArea = document.createElement('textarea');
+  textArea.value = text;
+  document.body.appendChild(textArea);
+
+  // Selecciona y copia el texto al portapapeles
+  textArea.select();
+  document.execCommand('copy');
+
+  // Limpia y elimina el elemento de texto
+  document.body.removeChild(textArea);
+}
+
+
+
 export const FinalDePost = () => {
   return (
     <div>
@@ -161,6 +199,167 @@ export const PostMicrosoftAI900 = () => {
 
 
 
+export function PostPython2() {
+
+  const codeBlock1 = 
+  `
+  let es_estudiante = true;
+  let es_trabajador = false;
+
+  let puede_votar = es_estudiante || es_trabajador;
+  let es_adulto = !es_estudiante;
+
+  console.log(puede_votar);  // Resultado: true
+  console.log(es_adulto);  // Resultado: false
+
+  `;
+  
+  return (
+    <main className="container">
+    <div className="row g-5">
+      <div className="col-md-8">
+
+        <article>
+          <h2>Operaciones Básicas en Python</h2>
+
+          <p>
+            <b>Operaciones de comparación:</b> puedes comparar dos valores utilizando operadores de comparación, como <code>==</code> (igual), <code>!=</code> (no igual), <code>&gt;</code> (mayor que), <code>&lt;</code> (menor que), <code>&gt;=</code> (mayor o igual que), <code>&lt;=</code> (menor o igual que).
+          </p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <button className="copy-button" onClick={() => copyCode(this)}>Copiar</button>
+            <div className="code-content">
+              <code>
+                let a = 10;
+                let b = 5;
+
+                let es_mayor = a &gt; b;
+                let es_igual = a === b;
+                let es_diferente = a !== b;
+
+                console.log(es_mayor);  // Resultado: true
+                console.log(es_igual);  // Resultado: false
+                console.log(es_diferente);  // Resultado: true
+              </code>
+            </div>
+          </div>
+
+          <p><b>Operaciones lógicas:</b> puedes combinar expresiones lógicas utilizando operadores lógicos, como and (y), or (o) y not (no).</p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <button className="copy-button" onClick={() => copyCode(this)}>Copiar</button>
+            <div className="code-content">
+              <code>
+
+              </code>
+            </div>
+          </div>
+
+          <p><b>Acceso a elementos de una lista:</b> Permite obtener un elemento específico de una lista utilizando índices.</p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <button className="copy-button" onClick={() => copyCode(this)}>Copiar</button>
+            <div className="code-content">
+              <code>
+                let mi_lista = [1, 2, 3, 4, 5];
+                console.log(mi_lista[0]);  // imprime 1
+                console.log(mi_lista[2]);  // imprime 3
+              </code>
+            </div>
+          </div>
+
+          <p><b>Acceso a elementos de un diccionario:</b> Permite obtener un valor específico de un diccionario utilizando claves.</p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <button className="copy-button" onClick={() => copyCode(this)}>Copiar</button>
+            <div className="code-content">
+              <pre>
+                <code>
+                  {`let mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"};
+                  console.log(mi_diccionario["nombre"]);  // imprime "Juan"
+                  console.log(mi_diccionario["edad"]);  // imprime 25`}
+                </code>
+              </pre>
+            </div>
+          </div>
+
+
+          <p><b>Conversión de tipos de datos:</b> Permite cambiar el tipo de un dato a otro, como convertir un número a una cadena o un booleano.</p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <button className="copy-button" onClick={() => copyCode(this)}>Copiar</button>
+            <div className="code-content">
+              <code>
+                let numero = "10";
+                let numero_entero = parseInt(numero);
+                let numero_float = parseFloat(numero);
+                let cadena = numero.toString();
+                let booleano = numero ? true : false;
+
+                console.log(numero_entero);  // Resultado: 10
+                console.log(numero_float);  // Resultado: 10.0
+                console.log(cadena);  // Resultado: "10"
+                console.log(booleano);  // Resultado: true
+              </code>
+            </div>
+          </div>
+
+          <p><b>Obtener la longitud de una lista:</b> Permite conocer la cantidad de elementos que contiene una lista utilizando la propiedad length.</p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <button className="copy-button" onClick={() => copyCode(this)}>Copiar</button>
+            <div className="code-content">
+              <code>
+                let mi_lista = [1, 2, 3, 4, 5];
+                let longitud = mi_lista.length;
+
+                console.log(longitud);  // Resultado: 5
+              </code>
+            </div>
+          </div>
+
+          <p><b>Obtener datos ingresados por el usuario:</b> Permite solicitar al usuario que ingrese datos durante la ejecución del programa utilizando la función prompt.</p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <button className="copy-button" onClick={() => copyCode(this)}>Copiar</button>
+            <div className="code-content">
+              <code>
+                let nombre = prompt("Ingrese su nombre: "); // Input de usuario
+                console.log("Hola, " + nombre + "!");  // Salida: "Hola, [nombre]!"
+              </code>
+            </div>
+          </div>
+
+          <p>Estas operaciones básicas te permiten manipular y transformar datos según tus necesidades dentro de un programa JavaScript.</p>
+
+          <h5><u>Conclusión</u></h5>
+
+          <p>
+            En este artículo, hemos explorado las variables, los tipos de datos y las operaciones básicas en JavaScript. Las variables te permiten almacenar valores que pueden cambiar a lo largo del programa, mientras que los tipos de datos te ofrecen diferentes formas de representar y manipular información. Las operaciones básicas te permiten realizar cálculos matemáticos, comparaciones y manipulaciones de datos.
+          </p>
+
+          <p className="text-primary">#Programación #JavaScript</p>
+
+          <p className="fst-italic">
+            ¡Gracias por leer hasta el final! Espero que hayas disfrutado leyendo este artículo tanto como yo disfruté escribiéndolo. Si te gustó lo que leíste y quieres seguir apoyándome, no dudes en seguirme en mis redes sociales. ¡Nos vemos en el próximo artículo!
+          </p>
+          <FinalDePost/>
+          </article>
+        </div>
+        <Sidebar />
+      </div>
+    </main>  );
+}
+
+
+
 
 
 
@@ -247,7 +446,6 @@ export const PostPython1 = () => {
     </main>
   );
 };
-
 
 
 

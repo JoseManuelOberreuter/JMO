@@ -12,6 +12,7 @@ import { LogoJmo } from './Components/Logo';
 
 import {
   PostPython1,
+  PostPython2,
   PostScrum,
   PostMidjourney,
   PostRevolucionIA,
@@ -80,6 +81,7 @@ function App() {
           <Route path="/PostScrum" element={<PostScrum/>} />
           <Route path="/PostMidjourney" element={<PostMidjourney/>} />
           <Route path="/PostPython1" element={<PostPython1/>} />
+          <Route path="/PostPython2" element={<PostPython2/>} />
 
           
 
