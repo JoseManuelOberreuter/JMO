@@ -10,6 +10,54 @@ import { Link } from 'react-router-dom';
 
 
 
+function CopyCode({ code }) {
+  const [buttonText, setButtonText] = useState('Copiar');
+
+  const handleCopyClick = () => {
+    copyToClipboard(code);
+    setButtonText('Copiado');
+    setTimeout(() => {
+      setButtonText('Copiar');
+    }, 2000);
+  };
+
+  return (
+    <div>
+      <button className="copy-button" onClick={handleCopyClick}>
+        {buttonText}
+      </button>
+      <div className="code-content">
+        <pre style={{ overflowX: 'auto', whiteSpace: 'pre-wrap' }}>
+          <code>
+            {code}
+          </code>
+        </pre>
+      </div>
+    </div>
+  );
+}
+
+
+
+
+
+
+function copyToClipboard(text) {
+  // Crea un elemento de texto oculto para copiar el texto
+  const textArea = document.createElement('textarea');
+  textArea.value = text;
+  document.body.appendChild(textArea);
+
+  // Selecciona y copia el texto al portapapeles
+  textArea.select();
+  document.execCommand('copy');
+
+  // Limpia y elimina el elemento de texto
+  document.body.removeChild(textArea);
+}
+
+
+
 
 export const FinalDePost = () => {
   return (
@@ -173,76 +221,262 @@ export const PostMicrosoftAI900 = () => {
 
 
 
-// La función copyCode puede aceptar el código y una descripción como argumentos
-function CopyCode({ code }) {
-  const [buttonText, setButtonText] = useState('Copiar');
+export function PostPython2() {
 
-  const handleCopyClick = () => {
-    // Llama a la función copyToClipboard para copiar el código al portapapeles
-    copyToClipboard(code);
-    setButtonText('Copiado');
-    // Restaura el texto del botón después de 2 segundos
-    setTimeout(() => {
-      setButtonText('Copiar');
-    }, 2000);
+  const imageStyle = {
+    display: "block",
+    margin: "25px auto"
   };
 
-  return (
-    <div>
-      <button className="copy-button" onClick={handleCopyClick}>
-        {buttonText}
-      </button>
-      <div className="code-content">
-        <code>
-          {code}
-        </code>
-      </div>
-    </div>
-  );
-}
 
-function copyToClipboard(text) {
-  // Crea un elemento de texto oculto para copiar el texto
-  const textArea = document.createElement('textarea');
-  textArea.value = text;
-  document.body.appendChild(textArea);
 
-  // Selecciona y copia el texto al portapapeles
-  textArea.select();
-  document.execCommand('copy');
 
-  // Limpia y elimina el elemento de texto
-  document.body.removeChild(textArea);
-}
-
-export function PostPython2() {
-  const codeBlock1 = 
-  `
-  let es_estudiante = true;
-  let es_trabajador = false;
-
-  let puede_votar = es_estudiante || es_trabajador;
-  let es_adulto = !es_estudiante;
-
-  console.log(puede_votar);  // Resultado: true
-  console.log(es_adulto);  // Resultado: false
-  `;
-
+  
   return (
     <main className="container">
       <div className="row g-5">
         <div className="col-md-8">
           <article>
-            <h2>Operaciones Básicas en Python</h2>
+            <h1 class="text-center">Variables, Tipos de Datos y Operaciones Básicas en Python</h1>
 
-            <p>
-              <b>Operaciones de comparación:</b> puedes comparar dos valores utilizando operadores de comparación, como <code>==</code> (igual), <code>!=</code> (no igual), <code>&gt;</code> (mayor que), <code>&lt;</code> (menor que), <code>&gt;=</code> (mayor o igual que), <code>&lt;=</code> (menor o igual que).
-            </p>
+            <img
+              style={imageStyle}
+              src="/img/img-articles/portada_python1.png"
+              alt="Imagen Inteligencia Artificial"
+              className="img_blog"
+              width="60%"
+            />
+
+            <p>Python es un lenguaje de programación ampliamente utilizado y apreciado por su sencillez y legibilidad. Es ideal tanto para principiantes como para programadores experimentados debido a su enfoque intuitivo y su amplia gama de aplicaciones. Una de las bases fundamentales de la programación en Python es comprender las variables, los tipos de datos y las operaciones básicas. En este artículo, exploraremos estos conceptos clave para ayudarte a dar tus primeros pasos en Python.</p>
+
+
+            
+
+
+            <h2><u>Variables en Python</u></h2>
+            <p>En Python, las variables se utilizan para almacenar valores. Puedes pensar en ellas como contenedores que mantienen información que puede cambiar a lo largo del programa. Para crear una variable en Python, solo necesitas asignarle un nombre y un valor utilizando el operador de asignación "=".</p>  
+            <p>Aquí hay un ejemplo:</p>
 
             {/* BLOQUE DE CODIGO */}
             <div className="code-box">
-              <CopyCode code={codeBlock1} />
+              <CopyCode code={  `
+nombre = "Juan" \n 
+edad = 25
+              `} />
             </div>
+
+            <p>En este caso, hemos creado dos variables: nombre y edad. La variable nombre almacena el valor "Juan" y la variable edad almacena el valor 25.</p>
+            <p>Es importante destacar que en Python no es necesario declarar explícitamente el tipo de una variable. El tipo se infiere automáticamente según el valor asignado. Esto se conoce como "tipado dinámico" y hace que Python sea muy flexible.</p>
+
+            <h2><u>Tipos de Datos en Python</u></h2>
+            <p>Python proporciona varios tipos de datos incorporados, que incluyen:</p>
+
+
+            <ul>
+              <li><strong>int:</strong> representa números enteros, como 1, 10, -5.</li>
+              <li><strong>float:</strong> representa números decimales, como 3.14, 2.71828.</li>
+              <li><strong>str:</strong> representa cadenas de texto, como "Hola", "Python es genial".</li>
+              <li><strong>bool:</strong> representa valores booleanos True (verdadero) o False (falso).</li>
+              <li><strong>list:</strong> representa una secuencia ordenada de elementos, como [1, 2, 3].</li>
+              <li><strong>tuple:</strong> representa una secuencia ordenada e inmutable de elementos, como (1, 2, 3).</li>
+              <li><strong>dict:</strong> representa una colección de pares clave-valor, como {'{"nombre": "Juan", "edad": 25}'}</li>
+              <li><strong>set:</strong> representa una colección desordenada de elementos únicos, como {'{1, 2, 3}'}.</li>
+            </ul>
+
+
+            <p>Estos son solo algunos de los tipos de datos más comunes en Python. Cada tipo tiene sus propias propiedades y métodos asociados que puedes utilizar para manipular los datos almacenados.</p>
+
+            <h5><u>Operaciones Básicas en Python</u></h5>
+
+            <p>Python proporciona una amplia gama de operaciones para manipular datos. Aquí hay algunas de las operaciones básicas más utilizadas:</p>
+            <p><b>Operaciones aritméticas:</b> puedes realizar operaciones matemáticas básicas, como suma (+), resta (-), multiplicación (*), división (/) y módulo (%).</p>
+
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={
+  `
+  a = 10 \n
+  b = 5 \n\n
+
+  suma = a + b  \n
+  resta = a - b \n
+  multiplicacion = a * b \n
+  division = a / b \n
+  modulo = a % b \n\n
+  
+  print(suma)  # Resultado: 15 \n
+  print(resta)  # Resultado: 5  \n
+  print(multiplicacion)  # Resultado: 50 \n
+  print(division)  # Resultado: 2.0 \n
+  print(modulo)  # Resultado: 0 
+  `
+              } />
+            </div>
+
+
+            <p> <b>Concatenación de cadenas:</b> puedes combinar dos cadenas utilizando el operador de concatenación (+).</p>
+
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={
+`
+saludo = "Hola" \n
+nombre = "José" \n\n
+
+mensaje = saludo + ", " + nombre + "!" \n
+print(mensaje) # Resultado: Hola, José ! 
+`
+              } />
+            </div>
+
+
+            <p><b>Operaciones de comparación:</b> puedes comparar dos valores utilizando operadores de comparación, como {"=="} (igual), {"!="} (no igual), {">"} (mayor que), {"<"} (menor que), {">="} (mayor o igual que), {"<="} (menor o igual que).</p>
+
+
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={
+`
+a = 10 \n
+b = 5 \n\n
+
+es_mayor = a > b  \n
+es_igual = a == b \n
+es_diferente = a != b \n\n
+
+print(es_mayor) # Resultado: True \n
+print(es_igual) # Resultado: False \n
+print(es_diferente) # Resultado: True 
+`
+              } />
+            </div>
+
+
+
+
+            <p><b>Operaciones lógicas:</b> puedes combinar expresiones lógicas utilizando operadores lógicos, como and (y), or (o) y not (no).</p>
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={
+`
+es_estudiante = True \n
+es_trabajador = False \n\n
+
+puede_votar = es_estudiante or es_trabajador \n
+es_adulto = not es_estudiantebr \n\n
+
+print(puede_votar) # Resultado: True \n
+print(es_adulto)  # Resultado: False
+`
+              } />
+            </div>
+
+
+            <p><b>Acceso a elementos de una lista:</b> Permite obtener un elemento específico de una lista utilizando índices.</p>
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={
+`
+mi_lista = [1, 2, 3, 4, 5] \n \n
+print(mi_lista[0]) # imprime 1 \n
+print(mi_lista[2]) # imprime 3
+`
+              } />
+            </div>
+
+
+            <p><b>Acceso a elementos de un diccionario:</b> Permite obtener un valor específico de un diccionario utilizando claves.</p>
+
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={
+`
+mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"} \n\n
+
+print(mi_diccionario["nombre"])  # imprime "Juan" \n
+print(mi_diccionario["edad"])  # imprime 25
+`
+              } />
+
+              
+            </div>
+
+            <p><b>Conversión de tipos de datos:</b> Permite cambiar el tipo de un dato a otro, como convertir un número a una cadena o un booleano.</p>
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={  `
+numero = "10" \n
+numero_entero = int(numero) \n
+numero_float = float(numero) \n
+cadena = str(numero) \n
+booleano = bool(numero) \n\n
+
+print(numero_entero) # Resultado: 10 \n
+print(numero_float) # Resultado: 10.0 \n
+print(cadena) # Resultado: "10" \n
+print(booleano) # Resultado: True \n        
+
+`} />
+            </div>
+
+
+            <p><b>Obtener la longitud de una lista:</b> Permite conocer la cantidad de elementos que contiene una lista utilizando la función len().</p>
+
+
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={  `
+mi_lista = [1, 2, 3, 4, 5]  \n
+longitud = len(mi_lista) \n\n
+
+print(longitud) # Resultado: 5
+
+`} />
+            </div>
+
+            <p><b>Obtener datos ingresados por el usuario:</b> Permite solicitar al usuario que ingrese datos durante la ejecución del programa utilizando la función input().</p>
+
+            {/* BLOQUE DE CODIGO */}
+            <div className="code-box">
+              <CopyCode code={  `
+nombre = input("Ingrese su nombre: ") # Input de usuario  \n\n
+
+print("Hola, " + nombre + "!")  # Salida: "Hola, [nombre]!"
+`} />
+            </div>
+
+
+
+
+            <p>Estas operaciones básicas te permiten manipular y transformar datos según tus necesidades dentro de un programa Python.</p>
+
+            <h5><u>Conclusión</u></h5>
+
+            <p>En este artículo, hemos explorado las variables, los tipos de datos y las operaciones básicas en Python. Las variables te permiten almacenar valores que pueden cambiar a lo largo del programa, mientras que los tipos de datos te ofrecen diferentes formas de representar y manipular información. Las operaciones básicas te permiten realizar cálculos matemáticos, comparaciones y manipulaciones de datos.</p>
+            <p>Python es un lenguaje de programación poderoso y versátil, y comprender estos conceptos fundamentales es esencial para comenzar a programar en Python. A medida que te familiarices con estos conceptos, podrás construir programas más complejos y resolver problemas más desafiantes.</p>
+            <br /><br />
+
+
+
+
+
+            <h5>Fuentes:</h5>
+            <a href="https://www.freecodecamp.org/espanol/news/operadores-basicos-en-python-con-ejemplos/" target="_blank" rel="noopener noreferrer">
+              Operadores Básicos en Python con ejemplos
+            </a>
+
+
+
+            <p class="text-primary">#Programación #Python</p>
+
 
             <FinalDePost />
           </article>
@@ -331,6 +565,8 @@ export const PostPython1 = () => {
               sus características y funcionalidades, así como aprovechar la
               abundante documentación y los recursos disponibles en línea.
             </p>
+
+
 
             <p className="text-primary">#Programación #Python</p>
 
