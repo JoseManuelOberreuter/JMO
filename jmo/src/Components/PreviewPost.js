@@ -60,7 +60,7 @@ export const PreviewRecentPosts = () => {
             <p>Las estructuras de control condicionales nos permiten ejecutar un bloque de código si se cumple una condición determinada. En Python, esto se logra utilizando la declaración if.</p>
             <p>Los bucles nos permiten repetir un bloque de código varias veces. Esto es especialmente útil cuando queremos realizar una tarea similar varias veces o cuando necesitamos recorrer una colección de elementos, como una lista o un conjunto de datos.</p>
   
-            <buttom className='button-link'>Seguir leyendo</buttom>
+            <Link to="/PostPython3" className='button-link'>Seguir leyendo</Link>
           </article>
       </div>
     )

@@ -218,7 +218,158 @@ export const PostMicrosoftAI900 = () => {
 
 
 
+export function PostPython3() {
 
+  const imageStyle = {
+    display: "block",
+    margin: "25px auto"
+  };
+
+
+
+
+  
+  return (
+    <main className="container">
+      <div className="row g-5">
+        <div className="col-md-8">
+          <article>
+          <h1 class="text-center">Estructuras de control de Python: condicionales y bucles</h1>
+
+          <img
+            style={imageStyle}
+            src="/img/img-articles/portada_python3.png"
+            alt="Imagen Inteligencia Artificial"
+            className="img_blog"
+            width="60%"
+          />
+
+          <h4><u>Introducción</u></h4>  
+          <p>En el mundo de la programación, las estructuras de control desempeñan un papel fundamental al permitirnos controlar el flujo de ejecución de un programa. Dos de las estructuras de control más utilizadas son las condicionales y los bucles. Estas herramientas nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones, lo que a su vez nos brinda mayor flexibilidad y poder en el desarrollo de software.</p>
+
+          <h4><u>Condicionales</u></h4>
+          <p>Las estructuras de control condicionales nos permiten ejecutar un bloque de código si se cumple una condición determinada. En Python, esto se logra utilizando la declaración <code>if</code>. Veamos varios ejemplos:</p>
+
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+edad = 18  \n
+if edad >= 18: \n
+  print("Eres mayor de edad")
+
+            `} />
+          </div>
+
+          <p>En este caso, evaluamos si la variable <code>edad</code> es mayor o igual a 18. Si la condición se cumple, se ejecuta el código dentro del bloque <code>if</code>, que en este caso simplemente imprime el mensaje "Eres mayor de edad". Si la condición es falsa, el código dentro del bloque <code>if</code> se omite y continúa la ejecución del programa.</p>
+          
+          <p>Además de la declaración <code>if</code>, también podemos utilizar las declaraciones <code>else</code> y <code>elif</code> para manejar diferentes casos. Esto nos permite crear lógica más compleja y tomar decisiones basadas en múltiples condiciones.</p>
+
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+numero = 10 \n\n
+if numero % 2 == 0: \n
+    print("El número es par") \n\n
+else: \n
+    print("El número es impar")
+            `} />
+          </div>
+
+
+          <p>En este caso, se verifica si el número es divisible entre 2 utilizando el operador módulo <code>%</code>. Si el resultado es 0, se ejecuta el código dentro del primer bloque <code>if</code>, que imprime "El número es par". De lo contrario, se ejecuta el código dentro del bloque <code>else</code>, que imprime "El número es impar".</p>
+          
+          
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+numero = 7  \n
+if numero == 0:  \n
+    print("El número es cero") \n
+elif numero > 0:  \n
+    print("El número es positivo")  \n
+else:  \n
+    print("El número es negativo")
+            `} />
+          </div>
+
+          <p>En este caso, se evalúa si el número es igual a 0 utilizando el operador de igualdad <code>==</code>. Si es así, se ejecuta el código dentro del primer bloque <code>if</code>. De lo contrario, se evalúa si el número es mayor que 0 utilizando el operador de comparación <code>&gt;</code>. Si es mayor, se ejecuta el código dentro del bloque <code>elif</code>. Si ninguna de las condiciones anteriores se cumple, se ejecuta el código dentro del bloque <code>else</code>.</p>
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+edad = 20 \n
+ciudad = "Londres" \n
+if edad >= 18 and ciudad == "Londres": \n
+    print("Eres mayor de edad y vives en Londres") \n
+elif edad >= 18: \n
+    print("Eres mayor de edad") \n
+else: \n
+    print("Eres menor de edad")
+            `} />
+          </div>
+
+          <p>En este caso, se evalúa si la edad es mayor o igual a 18 y si la ciudad es "Londres". Si ambas condiciones son verdaderas, se ejecuta el código dentro del primer bloque <code>if</code>. De lo contrario, si solo la edad es mayor o igual a 18, se ejecuta el código dentro del bloque <code>elif</code>. Si ninguna de las condiciones anteriores se cumple, se ejecuta el código dentro del bloque <code>else</code>.</p>
+
+
+          <h2><u>Bucles</u></h2>
+          <p>Los bucles nos permiten repetir un bloque de código varias veces. Esto es especialmente útil cuando queremos realizar una tarea similar varias veces o cuando necesitamos recorrer una colección de elementos, como una lista o un conjunto de datos. En Python, los bucles más comunes son el bucle <code>for</code> y el bucle <code>while</code>.</p>
+        
+          <p>Consideremos el siguiente ejemplo que utiliza un bucle <code>for</code> para imprimir los números del 1 al 5:</p>
+          
+
+         {/* BLOQUE DE CODIGO */}
+         <div className="code-box">
+            <CopyCode code={  `
+for i in range(1, 6): \n
+    print(i)
+            `} />
+          </div>
+
+          <p>En este caso, el bucle <code>for</code> itera sobre los valores del 1 al 5 y los imprime uno por uno. Podemos observar cómo se ejecuta el bloque de código dentro del bucle mientras haya elementos en el rango especificado. Otra opción es utilizar un bucle <code>while</code>, que se ejecuta siempre que se cumpla una condición específica. Veamos un ejemplo:</p>
+
+
+
+         {/* BLOQUE DE CODIGO */}
+         <div className="code-box">
+            <CopyCode code={  `
+contador = 0 \n
+while contador < 5: \n
+    print(contador) \n
+    contador += 1
+            `} />
+          </div>
+
+
+          <p>En este caso, el bucle <code>while</code> se ejecuta mientras la variable <code>contador</code> sea menor que 5. En cada iteración, se imprime el valor del contador y se incrementa en 1. El bucle continuará ejecutándose hasta que la condición sea falsa, es decir, cuando el contador alcance el valor de 5.</p>
+            
+          <h2><u>Conclusión</u></h2>
+          <p>Las estructuras de control condicionales y los bucles son elementos fundamentales en la programación. Nos permiten controlar el flujo de ejecución de un programa, tomar decisiones basadas en ciertas condiciones y repetir acciones de forma eficiente. Al dominar estas estructuras, podemos escribir programas más robustos y versátiles.</p>
+          <p>En este artículo, hemos explorado las estructuras de control condicionales, como la declaración <code>if</code>, y los bucles, como el bucle <code>for</code> y el bucle <code>while</code>. Hemos visto ejemplos de uso y cómo pueden mejorar la flexibilidad y el poder de nuestros programas. Con esta comprensión, estás listo para aplicar estas estructuras en tus propios proyectos y aprovechar al máximo su potencial.</p>
+
+
+
+          
+          <h5>Fuentes:</h5>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">
+            What is Scrum?
+          </a>
+
+          <br />
+          <br />
+
+
+          <p class="text-primary">#Programación #Python</p>
+
+          <FinalDePost />
+          </article>
+        </div>
+        <Sidebar />
+      </div>
+    </main>
+  );
+}
 
 
 export function PostPython2() {
@@ -566,7 +717,13 @@ export const PostPython1 = () => {
               abundante documentación y los recursos disponibles en línea.
             </p>
 
+            <h5>Fuentes:</h5>
+          <a href="https://docs.python.org/3/tutorial/index.html" target="_blank" rel="noopener noreferrer">
+            What is Scrum?
+          </a>
 
+          <br />
+          <br />
 
             <p className="text-primary">#Programación #Python</p>
 
