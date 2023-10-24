@@ -9,6 +9,10 @@ import { Footer } from './Components/Footer';
 import { LogoJmo } from './Components/Logo';
 
 
+import {
+  ArchivosIA,
+} from './Components/SideBar'
+
 
 import {
   PostPython4,
@@ -25,6 +29,7 @@ import './App.css';
 import   {
   MainBlog,
 } from './Components/HeroBanner'
+import { Sidebar } from './Components/SideBar';
 
 
 
@@ -86,6 +91,13 @@ function App() {
           <Route path="/PostPython2" element={<PostPython2/>} />
           <Route path="/PostPython3" element={<PostPython3/>} />
           <Route path="/PostPython4" element={<PostPython4/>} />
+
+
+
+
+
+          {/* SIDEBAR ROUTES */}
+          <Route path="/ArchivosIA" element={<ArchivosIA />} />
 
           
 

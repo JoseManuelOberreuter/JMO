@@ -1,4 +1,9 @@
+import { Link } from 'react-router-dom';
 
+import {
+  CardMidjourney,
+  CardRevolucionIA
+} from './Cards'
 
 
 export const Sidebar = () => {
@@ -14,12 +19,10 @@ export const Sidebar = () => {
           <div class="p-4">
             <h4 class="fst-italic">Archivos</h4>
             <ol class="list-unstyled mb-0">
-              <li><a href="/html/blog_prox.html">Python</a></li>
-              <li><a href="/html/blog_prox.html">Html</a></li>
-              <li><a href="/html/blog_prox.html">Javascript</a></li>
               <li><a href="/html/blog_prox.html">Azure</a></li>
-              <li><a href="/html/blog_prox.html">Sql</a></li>
-              <li><a href="/html/blog_prox.html">Bootstrap</a></li>
+              <li><a href="/html/blog_prox.html">Python</a></li>
+              <li><Link to="/ArchivosIA">Inteligencia Artificial</Link></li>
+              <li><a href="/html/blog_prox.html">Métodos Ágiles</a></li>
             </ol>
           </div>
   
@@ -31,4 +34,33 @@ export const Sidebar = () => {
     );
   }
   
+
+export const ArchivosIA = () => {
+    return(
+      <main className="container">
+        <div className="row g-5">
+          <div className="col-md-8">
+            <div className="album py-5 mb-5">
+              <div className="container">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                  <CardRevolucionIA/>
+                  <CardMidjourney/>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <Sidebar/>
+
+        </div>
+      </main>
+    );
+  }
+  
+
+
+
+
   
