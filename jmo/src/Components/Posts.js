@@ -218,6 +218,164 @@ export const PostMicrosoftAI900 = () => {
 
 
 
+export function PostPython4() {
+
+  const imageStyle = {
+    display: "block",
+    margin: "25px auto"
+  };
+
+
+
+
+  
+  return (
+    <main className="container">
+      <div className="row g-5">
+        <div className="col-md-8">
+          <article>
+          <h1 class="text-center">Listas, tuplas, conjuntos y diccionarios de Python:</h1>
+
+          <img
+            style={imageStyle}
+            src="/img/img-articles/portada_python4.png"
+            alt="Imagen Inteligencia Artificial"
+            className="img_blog"
+            width="60%"
+          />
+
+          <h2><u>Introducción</u></h2>
+          <p>En el mundo de la programación, las estructuras de datos son fundamentales para organizar y manipular información de manera eficiente. Python, como un lenguaje de programación versátil y popular, proporciona varias estructuras de datos incorporadas que son ampliamente utilizadas en el desarrollo de aplicaciones. En este artículo, exploraremos las listas, tuplas, conjuntos y diccionarios en Python, y discutiremos cómo aprovechar al máximo cada una de ellas en nuestros proyectos. Además, proporcionaremos ejemplos de código prácticos para ilustrar su uso.</p>
+          
+          <h2><u>Listas</u></h2>
+          <p>Las listas son una de las estructuras de datos más utilizadas en Python. Se definen mediante corchetes [] y pueden contener elementos de diferentes tipos. Las listas son mutables, lo que significa que podemos agregar, eliminar o modificar elementos después de crear la lista. Veamos un ejemplo:</p>
+
+
+
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+# Crear una lista de números 
+numeros = [1, 2, 3, 4, 5] 
+
+# Agregar un elemento a la lista 
+numeros.append(6) 
+
+# Acceder a un elemento de la lista 
+primer_elemento = numeros[0] 
+
+# Modificar un elemento de la lista 
+numeros[1] = 10 
+
+# Eliminar un elemento de la lista 
+numeros.remove(3)
+            `} />
+          </div>
+
+          <h2><u>Tuplas</u></h2>
+          <p>A diferencia de las listas, las tuplas son estructuras de datos inmutables, lo que significa que no se pueden modificar después de su creación. Se definen utilizando paréntesis () o simplemente separando los elementos por comas. Veamos un ejemplo:</p>
+
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+# Crear una tupla de colores 
+colores = ('rojo', 'verde', 'azul') 
+
+# Acceder a un elemento de la tupla 
+primer_color = colores[0] 
+
+# Desempaquetar una tupla 
+color1, color2, color3 = colores
+            `} />
+          </div>
+
+
+
+          <h2><u>Conjuntos</u></h2>
+          <p>Los conjuntos son colecciones no ordenadas de elementos únicos. Se definen utilizando llaves {}. Los conjuntos son útiles cuando necesitamos almacenar elementos sin duplicados y no nos importa el orden. Veamos un ejemplo:</p>
+          
+          
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+# Crear un conjunto de frutas 
+frutas = {'manzana', 'plátano', 'naranja'} 
+
+# Agregar un elemento al conjunto 
+frutas.add('piña') 
+
+# Eliminar un elemento del conjunto 
+frutas.remove('manzana') 
+
+# Verificar si un elemento está en el conjunto 
+if 'naranja' in frutas: 
+    print("La naranja está en el conjunto de frutas")
+            `} />
+          </div>
+
+          <h2><u>Diccionarios</u></h2>
+          <p>Los diccionarios son estructuras de datos que almacenan pares de clave-valor. Cada clave es única y se utiliza para acceder a su valor correspondiente. Se definen utilizando llaves {} y separando las claves y los valores por dos puntos (:). Veamos un ejemplo:</p>
+
+
+          {/* BLOQUE DE CODIGO */}
+          <div className="code-box">
+            <CopyCode code={  `
+# Crear un diccionario de información de una persona
+persona = { 
+'nombre': 'Juan', 
+    'edad': 30, 
+    'ciudad': 'Madrid' 
+} 
+
+# Acceder al valor de una clave 
+nombre = persona['nombre'] 
+
+# Modificar el valor de una clave 
+persona['edad'] = 31 
+
+# Agregar una nueva clave-valor al diccionario 
+persona['profesion'] = 'programador'
+
+# Eliminar una clave-valor del diccionario 
+del persona['ciudad'] 
+
+# Recorrer un diccionario 
+for clave, valor in persona.items(): 
+    print(clave + ": " + str(valor))
+            `} />
+          </div>
+
+          <h2><u>Conclusión</u></h2>
+          <p>En este artículo, hemos explorado las estructuras de datos fundamentales en Python: listas, tuplas, conjuntos y diccionarios. Cada una de estas estructuras tiene sus propias características y se utiliza en diferentes situaciones. Las listas nos permiten almacenar elementos ordenados y modificarlos fácilmente, las tuplas son inmutables y útiles cuando queremos asegurarnos de que los datos no cambien, los conjuntos son ideales para almacenar elementos únicos sin importar el orden, y los diccionarios nos permiten asociar valores con claves para acceder a ellos eficientemente.</p>
+          <p>Es esencial comprender las fortalezas y debilidades de cada estructura de datos para elegir la más adecuada según los requisitos de nuestro proyecto. Con los ejemplos de código proporcionados, ahora tienes una base sólida para comenzar a utilizar estas estructuras de datos en tus propios programas Python.</p>
+          <p>Recuerda practicar y experimentar con cada una de estas estructuras para familiarizarte con su sintaxis y funcionalidades. Cuanto más las utilices, mejor comprenderás cómo aprovechar al máximo su potencial en tus proyectos.</p>
+
+
+
+          
+          <h5>Fuentes:</h5>
+          <a href="https://docs.python.org/es/3/tutorial/datastructures.html" target="_blank" rel="noopener noreferrer">
+            Documentación de pyhton
+          </a>
+
+          <br />
+          <br />
+
+
+          <p class="text-primary">#Programación #Python</p>
+
+          <FinalDePost />
+          </article>
+        </div>
+        <Sidebar />
+      </div>
+    </main>
+  );
+}
+
+
 export function PostPython3() {
 
   const imageStyle = {
@@ -254,8 +412,9 @@ export function PostPython3() {
           {/* BLOQUE DE CODIGO */}
           <div className="code-box">
             <CopyCode code={  `
-edad = 18  \n
-if edad >= 18: \n
+edad = 18  
+
+if edad >= 18: 
   print("Eres mayor de edad")
 
             `} />
@@ -269,10 +428,12 @@ if edad >= 18: \n
           {/* BLOQUE DE CODIGO */}
           <div className="code-box">
             <CopyCode code={  `
-numero = 10 \n\n
-if numero % 2 == 0: \n
-    print("El número es par") \n\n
-else: \n
+numero = 10 
+
+if numero % 2 == 0: 
+    print("El número es par")
+
+else: 
     print("El número es impar")
             `} />
           </div>
@@ -284,12 +445,15 @@ else: \n
           {/* BLOQUE DE CODIGO */}
           <div className="code-box">
             <CopyCode code={  `
-numero = 7  \n
-if numero == 0:  \n
-    print("El número es cero") \n
-elif numero > 0:  \n
-    print("El número es positivo")  \n
-else:  \n
+numero = 7  
+
+if numero == 0:  
+    print("El número es cero")
+
+elif numero > 0:  
+    print("El número es positivo")
+
+else:  
     print("El número es negativo")
             `} />
           </div>
@@ -299,13 +463,16 @@ else:  \n
           {/* BLOQUE DE CODIGO */}
           <div className="code-box">
             <CopyCode code={  `
-edad = 20 \n
-ciudad = "Londres" \n
-if edad >= 18 and ciudad == "Londres": \n
-    print("Eres mayor de edad y vives en Londres") \n
-elif edad >= 18: \n
-    print("Eres mayor de edad") \n
-else: \n
+edad = 20 
+ciudad = "Londres" 
+
+if edad >= 18 and ciudad == "Londres": 
+    print("Eres mayor de edad y vives en Londres") 
+
+elif edad >= 18: 
+    print("Eres mayor de edad") 
+
+else: 
     print("Eres menor de edad")
             `} />
           </div>
@@ -322,7 +489,7 @@ else: \n
          {/* BLOQUE DE CODIGO */}
          <div className="code-box">
             <CopyCode code={  `
-for i in range(1, 6): \n
+for i in range(1, 6):
     print(i)
             `} />
           </div>
@@ -334,9 +501,10 @@ for i in range(1, 6): \n
          {/* BLOQUE DE CODIGO */}
          <div className="code-box">
             <CopyCode code={  `
-contador = 0 \n
-while contador < 5: \n
-    print(contador) \n
+contador = 0 
+
+while contador < 5: 
+    print(contador) 
     contador += 1
             `} />
           </div>
@@ -353,7 +521,7 @@ while contador < 5: \n
           
           <h5>Fuentes:</h5>
           <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">
-            What is Scrum?
+            Documentación de pyhton
           </a>
 
           <br />
@@ -411,7 +579,8 @@ export function PostPython2() {
             {/* BLOQUE DE CODIGO */}
             <div className="code-box">
               <CopyCode code={  `
-nombre = "Juan" \n 
+nombre = "Juan" 
+
 edad = 25
               `} />
             </div>
@@ -447,19 +616,19 @@ edad = 25
             <div className="code-box">
               <CopyCode code={
   `
-  a = 10 \n
-  b = 5 \n\n
+  a = 10 
+  b = 5 
 
-  suma = a + b  \n
-  resta = a - b \n
-  multiplicacion = a * b \n
-  division = a / b \n
-  modulo = a % b \n\n
+  suma = a + b 
+  resta = a - b
+  multiplicacion = a * b 
+  division = a / b 
+  modulo = a % b 
   
-  print(suma)  # Resultado: 15 \n
-  print(resta)  # Resultado: 5  \n
-  print(multiplicacion)  # Resultado: 50 \n
-  print(division)  # Resultado: 2.0 \n
+  print(suma)  # Resultado: 15 
+  print(resta)  # Resultado: 5  
+  print(multiplicacion)  # Resultado: 50 
+  print(division)  # Resultado: 2.0 
   print(modulo)  # Resultado: 0 
   `
               } />
@@ -473,10 +642,10 @@ edad = 25
             <div className="code-box">
               <CopyCode code={
 `
-saludo = "Hola" \n
-nombre = "José" \n\n
+saludo = "Hola" 
+nombre = "José" 
 
-mensaje = saludo + ", " + nombre + "!" \n
+mensaje = saludo + ", " + nombre + "!" 
 print(mensaje) # Resultado: Hola, José ! 
 `
               } />
@@ -491,15 +660,15 @@ print(mensaje) # Resultado: Hola, José !
             <div className="code-box">
               <CopyCode code={
 `
-a = 10 \n
-b = 5 \n\n
+a = 10 
+b = 5 
 
-es_mayor = a > b  \n
-es_igual = a == b \n
-es_diferente = a != b \n\n
+es_mayor = a > b  
+es_igual = a == b 
+es_diferente = a != b 
 
-print(es_mayor) # Resultado: True \n
-print(es_igual) # Resultado: False \n
+print(es_mayor) # Resultado: True 
+print(es_igual) # Resultado: False 
 print(es_diferente) # Resultado: True 
 `
               } />
@@ -514,13 +683,13 @@ print(es_diferente) # Resultado: True
             <div className="code-box">
               <CopyCode code={
 `
-es_estudiante = True \n
-es_trabajador = False \n\n
+es_estudiante = True 
+es_trabajador = False 
 
-puede_votar = es_estudiante or es_trabajador \n
-es_adulto = not es_estudiantebr \n\n
+puede_votar = es_estudiante or es_trabajador 
+es_adulto = not es_estudiantebr 
 
-print(puede_votar) # Resultado: True \n
+print(puede_votar) # Resultado: True 
 print(es_adulto)  # Resultado: False
 `
               } />
@@ -533,8 +702,9 @@ print(es_adulto)  # Resultado: False
             <div className="code-box">
               <CopyCode code={
 `
-mi_lista = [1, 2, 3, 4, 5] \n \n
-print(mi_lista[0]) # imprime 1 \n
+mi_lista = [1, 2, 3, 4, 5] 
+
+print(mi_lista[0]) # imprime 1 
 print(mi_lista[2]) # imprime 3
 `
               } />
@@ -548,9 +718,9 @@ print(mi_lista[2]) # imprime 3
             <div className="code-box">
               <CopyCode code={
 `
-mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"} \n\n
+mi_diccionario = {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"} 
 
-print(mi_diccionario["nombre"])  # imprime "Juan" \n
+print(mi_diccionario["nombre"])  # imprime "Juan" 
 print(mi_diccionario["edad"])  # imprime 25
 `
               } />
@@ -563,17 +733,16 @@ print(mi_diccionario["edad"])  # imprime 25
             {/* BLOQUE DE CODIGO */}
             <div className="code-box">
               <CopyCode code={  `
-numero = "10" \n
-numero_entero = int(numero) \n
-numero_float = float(numero) \n
-cadena = str(numero) \n
-booleano = bool(numero) \n\n
+numero = "10" 
+numero_entero = int(numero) 
+numero_float = float(numero) 
+cadena = str(numero) 
+booleano = bool(numero) 
 
-print(numero_entero) # Resultado: 10 \n
-print(numero_float) # Resultado: 10.0 \n
-print(cadena) # Resultado: "10" \n
-print(booleano) # Resultado: True \n        
-
+print(numero_entero) # Resultado: 10 
+print(numero_float) # Resultado: 10.0 
+print(cadena) # Resultado: "10" 
+print(booleano) # Resultado: True 
 `} />
             </div>
 
@@ -585,8 +754,8 @@ print(booleano) # Resultado: True \n
             {/* BLOQUE DE CODIGO */}
             <div className="code-box">
               <CopyCode code={  `
-mi_lista = [1, 2, 3, 4, 5]  \n
-longitud = len(mi_lista) \n\n
+mi_lista = [1, 2, 3, 4, 5]  
+longitud = len(mi_lista) 
 
 print(longitud) # Resultado: 5
 
@@ -598,7 +767,7 @@ print(longitud) # Resultado: 5
             {/* BLOQUE DE CODIGO */}
             <div className="code-box">
               <CopyCode code={  `
-nombre = input("Ingrese su nombre: ") # Input de usuario  \n\n
+nombre = input("Ingrese su nombre: ") # Input de usuario  
 
 print("Hola, " + nombre + "!")  # Salida: "Hola, [nombre]!"
 `} />
@@ -719,7 +888,7 @@ export const PostPython1 = () => {
 
             <h5>Fuentes:</h5>
           <a href="https://docs.python.org/3/tutorial/index.html" target="_blank" rel="noopener noreferrer">
-            What is Scrum?
+            Documentación de pyhton
           </a>
 
           <br />
