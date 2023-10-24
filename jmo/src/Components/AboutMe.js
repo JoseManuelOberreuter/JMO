@@ -22,10 +22,6 @@ export const MainAboutMe = () => {
 
 
 
-      
-
-
-
             </div>
           
         </div>
@@ -51,7 +47,12 @@ export const MainAboutMe = () => {
                                       <div className="text-center my-5">
                                           <h1 className="display-5 fw-bolder"><span className="text-gradient d-inline">Acerca de mí</span></h1>
                                           <p className="lead fw-light mb-4">Hola! Mi nombre es José Manuel Oberreuter (JMO) </p>
-                                          <p className="text-muted">Soy un estudiante en técnico en desarrollo y análisis de sistemas, con un enfoque destacado en la innovación. Mi habilidad para abordar desafíos se basa en mi compromiso con la autoeducación. Aspiro a aplicar mis conocimientos y habilidades en una empresa, contribuyendo a su mejora continua y aportando de manera consistente.</p>
+                                          <p className="text-muted">
+                                            Soy un estudiante en Ingeniería Informatica, con 
+                                            un enfoque destacado en la innovación. Mi habilidad para abordar
+                                            desafíos se basa en mi compromiso con la autoeducación.
+                                            Aspiro a ser un experto en Inteligencia Artificial.
+                                          </p>
 
                                       </div>
                                   </div>
