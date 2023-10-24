@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
 
 import {
+  CardPython1,
+  CardPython2,
+  CardPython3,
+  CardPython4,
+
   CardMidjourney,
-  CardRevolucionIA
+  CardRevolucionIA,
+  CardScrum
 } from './Cards'
 
 
@@ -19,10 +25,9 @@ export const Sidebar = () => {
           <div class="p-4">
             <h4 class="fst-italic">Archivos</h4>
             <ol class="list-unstyled mb-0">
-              <li><a href="/html/blog_prox.html">Azure</a></li>
-              <li><a href="/html/blog_prox.html">Python</a></li>
+              <li><Link to="/ArchivosPythos">Python</Link></li>
               <li><Link to="/ArchivosIA">Inteligencia Artificial</Link></li>
-              <li><a href="/html/blog_prox.html">Métodos Ágiles</a></li>
+              <li><Link to="/ArchivosMetodosAgiles">Métodos Ágiles</Link></li>
             </ol>
           </div>
   
@@ -46,6 +51,58 @@ export const ArchivosIA = () => {
 
                   <CardRevolucionIA/>
                   <CardMidjourney/>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <Sidebar/>
+
+        </div>
+      </main>
+    );
+  }
+
+export const ArchivosMetodosAgiles = () => {
+    return(
+      <main className="container">
+        <div className="row g-5">
+          <div className="col-md-8">
+            <div className="album py-5 mb-5">
+              <div className="container">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                  <CardScrum/>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <Sidebar/>
+
+        </div>
+      </main>
+    );
+  }
+  
+
+
+
+export const ArchivosPythos = () => {
+    return(
+      <main className="container">
+        <div className="row g-5">
+          <div className="col-md-8">
+            <div className="album py-5 mb-5">
+              <div className="container">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                  <CardPython1/>
+                  <CardPython2/>
+                  <CardPython3/>
+                  <CardPython4/>
 
                 </div>
               </div>

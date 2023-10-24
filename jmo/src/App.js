@@ -10,6 +10,8 @@ import { LogoJmo } from './Components/Logo';
 
 
 import {
+  ArchivosPythos,
+  ArchivosMetodosAgiles,
   ArchivosIA,
 } from './Components/SideBar'
 
@@ -36,7 +38,6 @@ import { Sidebar } from './Components/SideBar';
 
 /*
 TO DO:
-- LINKS TO POSTS
 - LINKS TO ARCHIVOS 
 - LINKS TO SEGUIR LEYENDO
 
@@ -98,6 +99,8 @@ function App() {
 
           {/* SIDEBAR ROUTES */}
           <Route path="/ArchivosIA" element={<ArchivosIA />} />
+          <Route path="/ArchivosMetodosAgiles" element={<ArchivosMetodosAgiles />} />
+          <Route path="/ArchivosPythos" element={<ArchivosPythos />} />
 
           
 

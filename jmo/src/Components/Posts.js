@@ -238,7 +238,7 @@ export function PostPython4() {
 
           <img
             style={imageStyle}
-            src="/img/img-articles/portada_python4.png"
+            src="/img/img-articles/portada_python3.png"
             alt="Imagen Inteligencia Artificial"
             className="img_blog"
             width="60%"
@@ -396,7 +396,7 @@ export function PostPython3() {
 
           <img
             style={imageStyle}
-            src="/img/img-articles/portada_python3.png"
+            src="/img/img-articles/portada_python2.png"
             alt="Imagen Inteligencia Artificial"
             className="img_blog"
             width="60%"
@@ -809,10 +809,6 @@ print("Hola, " + nombre + "!")  # Salida: "Hola, [nombre]!"
 
 
 
-
-
-
-
 export const PostPython1 = () => {
   const imageStyle = {
     display: "block",
@@ -904,11 +900,6 @@ export const PostPython1 = () => {
     </main>
   );
 };
-
-
-
-
-
 
 
 
@@ -1087,6 +1078,7 @@ export const PostScrum = () => {
           
           </article>
         </div>
+        <Sidebar />
       </div>
     </main>
   );
