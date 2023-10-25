@@ -6,6 +6,7 @@ import { Header } from './Components/Hedear';
 import { MainPortafolios } from './Components/Portafolios';
 import { MainAboutMe } from './Components/AboutMe';
 import { Footer } from './Components/Footer';
+import { Thanks } from './Components/Thanks';
 
 
 import {
@@ -37,16 +38,10 @@ import { Sidebar } from './Components/SideBar';
 
 /*
 TO DO:
-- LINKS TO ARCHIVOS 
-- LINKS TO SEGUIR LEYENDO
-
-- ADD ANIMATION TO THE LOGO
-- ADD ESTUDIOS IN ABOUT ME
-- ADD PROYECTS TO PORTFOLIOS
+- ADD THE CORRECT PATH OF THANKS TO INPUT NEXT OF THE FORM
 - IMPLEMENT BACKEND TO SERCHBAR 
 - DO BUILD ON GITHUB 
 - DO DEPLOY ON AZURE
-- FIX BUG OF HEADER BOLD WHEN THE USER CLIC ON THE LOGO
 */
 
 function ScrollToTop() {
@@ -83,6 +78,9 @@ function App() {
           {/* ABOUT ME */}
           <Route path="/about" element={<MainAboutMe/>} />
 
+          {/* THANKS*/}
+          <Route path="/Thanks" element={<Thanks/>} />
+
           {/* POSTS ROUTES */}
           <Route path="/PostRevolucionIA" element={<PostRevolucionIA/>} />
           <Route path="/PostScrum" element={<PostScrum/>} />
@@ -91,8 +89,6 @@ function App() {
           <Route path="/PostPython2" element={<PostPython2/>} />
           <Route path="/PostPython3" element={<PostPython3/>} />
           <Route path="/PostPython4" element={<PostPython4/>} />
-
-
 
 
 

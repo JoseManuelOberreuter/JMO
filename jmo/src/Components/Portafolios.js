@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 // TO DO:
@@ -16,7 +17,7 @@ export const MainPortafolios = () => {
             </p>
             <p>
               <a href="newsletter1" className="btn btn-primary my-2 mx-2">Contactarme</a>
-              <a href="#" className="btn btn-secondary my-2 mx-2">Acerca de mí</a>
+              <Link to="/about" className="btn btn-secondary my-2 mx-2">Acerca de mí</Link>
             </p>
           </div>
         </div>
