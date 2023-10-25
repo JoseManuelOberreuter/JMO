@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export const Header = () => {
   const location = useLocation();
-  const [activeLink, setActiveLink] = useState(location.pathname);
+  const [activeLink, setActiveLink] = useState('/'); // Establece el enlace activo en la ruta raíz por defecto
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
   };
+
+  useEffect(() => {
+    // Establece el enlace activo en la ruta raíz ("/") al iniciar la aplicación
+    if (location.pathname === '/') {
+      setActiveLink('/blog');
+    }
+  }, [location.pathname]);
 
   return (
     <header className="lh-1 py-2 mb-2 border-bottom">

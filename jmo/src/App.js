@@ -6,7 +6,6 @@ import { Header } from './Components/Hedear';
 import { MainPortafolios } from './Components/Portafolios';
 import { MainAboutMe } from './Components/AboutMe';
 import { Footer } from './Components/Footer';
-import { LogoJmo } from './Components/Logo';
 
 
 import {
@@ -105,7 +104,6 @@ function App() {
           
 
         </Routes>
-        <LogoJmo />
         <Footer />
       </div>
     </Router>
