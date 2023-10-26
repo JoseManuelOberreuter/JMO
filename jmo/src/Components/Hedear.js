@@ -1,5 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+
+import { 
+  CardMidjourney,
+  CardPython1,
+  CardPython2,
+  CardPython3,
+  CardPython4,
+  CardRevolucionIA,
+  CardScrum
+} from './Cards';
+
 
 export const Header = () => {
   const location = useLocation();
@@ -57,12 +68,68 @@ export const Header = () => {
               </li>
             </ul>
 
-            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" className="form-control form-control-dark" placeholder="Search..." aria-label="Search" />
-            </form>
+            <SearchBar/>
           </div>
         </div>
       </div>
     </header>
   );
 };
+
+
+const cardsData = [
+  { id: 1, title: 'La revolución de la inteligencia artificial' },
+  { id: 2, title: 'El futuro de la creación de imágenes: Una mirada a Midjourney' },
+  { id: 3, title: 'Scrum: Un marco de trabajo para el desarrollo de software' },
+  { id: 4, title: 'Introducción a Python y su entorno de desarrollo' },
+  { id: 5, title: 'Variables, Tipos de Datos y Operaciones Básicas en Python' },
+  { id: 6, title: 'Estructuras de control de Python: condicionales y bucles' },
+  { id: 7, title: 'Listas, tuplas, conjuntos y diccionarios de Python' },
+];
+
+
+
+const SearchBar = ({ onSearch }) => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const searchBarRef = useRef(null);
+
+  const handleSearchChange = (event) => {
+    const query = event.target.value;
+    setSearchQuery(query);
+
+    const results = query ? performSearch(query) : [];
+    setSearchResults(results);
+    setIsDropdownVisible(results.length > 0);
+  };
+
+  const performSearch = (query) => {
+    return cardsData.filter((card) => card.title.toLowerCase().includes(query.toLowerCase()));
+  };
+
+  const searchBarWidth = searchBarRef.current ? searchBarRef.current.offsetWidth : 'auto';
+
+  return (
+    <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 position-relative" role="search">
+      <input
+        type="search"
+        className="form-control form-control-dark"
+        placeholder="Search..."
+        aria-label="Search"
+        value={searchQuery}
+        onChange={handleSearchChange}
+        ref={searchBarRef}
+      />
+      <ul
+        className={`dropdown-menu ${isDropdownVisible ? 'show' : ''} position-absolute start-0 w-100`}
+      >
+        {searchResults.map((result) => (
+          <li key={result.id}><a className="dropdown-item" href="#">{result.title}</a></li>
+        ))}
+      </ul>
+    </form>
+  );
+};
+
+export default SearchBar;
