@@ -8,6 +8,11 @@
 }
 
 
+
+
+
+
+
 .hover-bold:hover {
   font-weight: bold;
 }
@@ -257,8 +262,7 @@
 .dropdown-menu {
   --bs-dropdown-min-width: initial !important; /* Anula la propiedad --bs-dropdown-min-width */
   --bs-dropdown-padding-y: initial !important;  
-  transform: translateX(-65%)
-}
+  }
 
 @media (min-width: 768px) {
   .dropdown-menu {

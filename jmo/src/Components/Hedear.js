@@ -32,6 +32,7 @@ export const Header = () => {
       <div className="row flex-nowrap justify-content-between align-items-center">
         <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li className="nav-item">
                 <Link
@@ -77,6 +78,9 @@ export const Header = () => {
 };
 
 
+
+
+// Definimos un array de objetos que contiene datos de tarjetas con títulos y IDs.
 const cardsData = [
   { id: 1, title: 'La revolución de la inteligencia artificial' },
   { id: 2, title: 'El futuro de la creación de imágenes: Una mirada a Midjourney' },
@@ -87,30 +91,36 @@ const cardsData = [
   { id: 7, title: 'Listas, tuplas, conjuntos y diccionarios de Python' },
 ];
 
-
-
+// Definimos un componente de React llamado "SearchBar" que toma una función "onSearch" como argumento.
 const SearchBar = ({ onSearch }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const searchBarRef = useRef(null);
+  
+  // Definimos estados y referencias para el componente.
+  const [searchQuery, setSearchQuery] = useState(''); // Estado para la consulta de búsqueda.
+  const [searchResults, setSearchResults] = useState([]); // Estado para los resultados de la búsqueda.
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false); // Estado para controlar la visibilidad de la lista desplegable.
+  const searchBarRef = useRef(null); // Referencia para el elemento de entrada de búsqueda.
 
+  // Función que maneja cambios en la entrada de búsqueda.
   const handleSearchChange = (event) => {
     const query = event.target.value;
     setSearchQuery(query);
 
+    // Realizamos la búsqueda y actualizamos los resultados y la visibilidad de la lista desplegable.
     const results = query ? performSearch(query) : [];
     setSearchResults(results);
     setIsDropdownVisible(results.length > 0);
   };
 
+  // Función que realiza la búsqueda en los datos de las tarjetas.
   const performSearch = (query) => {
     return cardsData.filter((card) => card.title.toLowerCase().includes(query.toLowerCase()));
   };
 
+  // Calculamos el ancho del componente de búsqueda.
   const searchBarWidth = searchBarRef.current ? searchBarRef.current.offsetWidth : 'auto';
 
   return (
+    // Componente de formulario de búsqueda con una entrada de texto y una lista desplegable.
     <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 position-relative" role="search">
       <input
         type="search"
@@ -122,9 +132,10 @@ const SearchBar = ({ onSearch }) => {
         ref={searchBarRef}
       />
       <ul
-        className={`dropdown-menu ${isDropdownVisible ? 'show' : ''} position-absolute start-0 w-100`}
+        className={`dropdown-menu ${isDropdownVisible ? 'show' : ''} position-absolute w-100 `}
       >
         {searchResults.map((result) => (
+          // Renderizamos los resultados de búsqueda como elementos de lista desplegable.
           <li key={result.id}><a className="dropdown-item" href="#">{result.title}</a></li>
         ))}
       </ul>
@@ -132,4 +143,4 @@ const SearchBar = ({ onSearch }) => {
   );
 };
 
-export default SearchBar;
+export default SearchBar; // Exportamos el componente "SearchBar".
