@@ -49,7 +49,7 @@ export function Footer() {
 // FOOTER SOCIAL MEDIA ICONS 
 export const IconosRS = () => {
     return (
-      <div className="col-4 pt-1">
+      <div className="col-12 col-md-4 pt-1 d-flex justify-content-center align-items-center">
         <a target="_blank" href="https://github.com/JoseManuelOberreuter">
             <img className="ico_blog" src="/img/rs-logos/giticogrey.ico" alt="GitHub Icon" />
         </a>
@@ -65,9 +65,9 @@ export const IconosRS = () => {
         <a target="_blank" href="https://twitter.com/jmo_developer">
             <img className="ico_blog" src="/img/rs-logos/twitericogrey.ico" alt="Linkedin Icon" />
         </a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA ">
+        {/* <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA ">
             <img className="ico_blog" src="/img/rs-logos/youtubeicogrey.ico" alt="Linkedin Icon" />
-        </a>
+        </a> */}
       </div>
     );
   };
