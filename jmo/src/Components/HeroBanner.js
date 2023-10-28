@@ -38,11 +38,11 @@ export const MainBlog = () => {
   
         <div class="p-4 p-md-4 mb-2 rounded text-bg-dark " id="blog_hero">
           <div class="col-md-6 px-0 ">
-            <h1 class="display-4 "> <b>La revolución de la inteligencia artificial</b></h1>
-            <p class="lead my-3">la inteligencia artificial está transformando la forma en que interactuamos con la tecnología y el mundo que nos rodea.</p>
-            <Link to="/PostRevolucionIA" >
-              Seguir leyendo
-            </Link>
+            <h1 class="display-4 "><b>Blog JMO: aprende y desarrolla conmigo.</b></h1>
+            <p class="lead my-3">Acompáñame en un emocionante viaje de descubrimiento tecnológico e informático a través de mis publicaciones.</p>
+            <a href="#publicaciones-recientes" >
+              Publicaciones recientes
+            </a>
           </div>
         </div>
       

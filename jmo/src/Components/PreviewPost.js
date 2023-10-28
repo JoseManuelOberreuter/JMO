@@ -6,7 +6,7 @@ export const PreviewRecentPosts = () => {
     return(
       <div class="col-md-8 ">
             
-        <h3 class="pb-1 mb-4 border-bottom h4">
+        <h3 id="publicaciones-recientes" class="pb-1 mb-4 border-bottom h4">
           Publicaciones recientes:
         </h3>
   
