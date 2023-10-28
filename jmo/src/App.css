@@ -275,7 +275,7 @@
 
 /* LINK IMAGEN PORTADA */
 #blog_hero {
-  background-image: url('/public/img/portada.png');
+  background-image: url('/public/img/portada-principal.png');
   background-size: cover;
   background-position: center;
   position: relative;

@@ -32,11 +32,26 @@ export const PreviewRecentPosts = () => {
   }
    
   export const PreviewPython4 = () => {
+
+    const imageStyle = {
+      display: "block",
+      margin: "25px auto",
+      width: "20%"
+    };
+
+    
     return(
       <div>
           <article className="text-justify border-bottom pb-2 my-2">
             <h2>Listas, tuplas, conjuntos y diccionarios de Python</h2>
             <p class="blog-post-meta">Julio 3</p>
+            <img
+            style={imageStyle}
+            src="/img/img-articles/portada_python3.png"
+            alt="Imagen Inteligencia Artificial"
+            className="img_blog"
+            width="60%"
+          />
             <p>En el mundo de la programación, las estructuras de datos son fundamentales para organizar y manipular información de manera eficiente. Python, como un lenguaje de programación versátil y popular, proporciona varias estructuras de datos incorporadas que son ampliamente utilizadas en el desarrollo de aplicaciones. En este artículo, exploraremos las listas, tuplas, conjuntos y diccionarios en Python, y discutiremos cómo aprovechar al máximo cada una de ellas en nuestros proyectos. Además, proporcionaremos ejemplos de código prácticos para ilustrar su uso.</p>
             <p>Cada una de estas estructuras tiene sus propias características y se utiliza en diferentes situaciones. Las listas nos permiten almacenar elementos ordenados y modificarlos fácilmente, las tuplas son inmutables y útiles cuando queremos asegurarnos de que los datos no cambien, los conjuntos son ideales para almacenar elementos únicos sin importar el orden, y los diccionarios nos permiten asociar valores con claves para acceder a ellos eficientemente.</p>
             <Link to="/PostPython4" className='button-link'>Seguir leyendo</Link>
