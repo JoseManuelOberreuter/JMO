@@ -824,13 +824,13 @@ export const PostPython1 = () => {
               Introducción a Python y su entorno de desarrollo
             </h1>
 
-            <img
-              style={imageStyle}
-              src="/img/img-articles/portada_python.png"
-              alt="Imagen Inteligencia Artificial"
-              className="img_blog"
-              width="60%"
-            />
+              <img
+                style={imageStyle}
+                src="/img/img-articles/portada_python.png"
+                alt="Imagen Inteligencia Artificial"
+                className="img_blog"
+                width="60%"
+              />
 
             <p>
               Python se ha convertido en uno de los lenguajes de programación
