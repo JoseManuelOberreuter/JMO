@@ -89,27 +89,27 @@ export const PreviewRecentPosts = () => {
   export const PreviewPython3 = () => {
 
 
-
+    const imageStyle = {
+      display: "block",
+      margin: "25px auto",
+      width: "30%"
+    };
     return(
       <div>
           <article className="text-justify border-bottom pb-2 my-2">
             <h2>Estructuras de control de Python: condicionales y bucles</h2>
             <p class="blog-post-meta">Junio 30</p>
-            <div className="row">
-              <div className="col-md-6">
-                <p>En el mundo de la programación, las estructuras de control desempeñan un papel fundamental al permitirnos controlar el flujo de ejecución de un programa. Dos de las estructuras de control más utilizadas son las condicionales y los bucles. Estas herramientas nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones, lo que a su vez nos brinda mayor flexibilidad y poder en el desarrollo de software.</p>
-              </div>
-              <div className="col-md-6">
 
-                <img
-                style={imageStyle}
-                src="/img/img-articles/portada_python2.png"
-                alt="Imagen Inteligencia Artificial"
-                className="img_blog"
-                />
-                </div>
-            </div>
-              <p>En el mundo de la programación, las estructuras de control desempeñan un papel fundamental al permitirnos controlar el flujo de ejecución de un programa. Dos de las estructuras de control más utilizadas son las condicionales y los bucles. Estas herramientas nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones, lo que a su vez nos brinda mayor flexibilidad y poder en el desarrollo de software.</p>
+            
+            <img
+            style={imageStyle}
+            src="/img/img-articles/portada_python2.png"
+            alt="Imagen Inteligencia Artificial"
+            className="img_blog"
+            />
+
+            <p>En el mundo de la programación, las estructuras de control desempeñan un papel fundamental al permitirnos controlar el flujo de ejecución de un programa. Dos de las estructuras de control más utilizadas son las condicionales y los bucles. Estas herramientas nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones, lo que a su vez nos brinda mayor flexibilidad y poder en el desarrollo de software.</p>
+            <p>En el mundo de la programación, las estructuras de control desempeñan un papel fundamental al permitirnos controlar el flujo de ejecución de un programa. Dos de las estructuras de control más utilizadas son las condicionales y los bucles. Estas herramientas nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones, lo que a su vez nos brinda mayor flexibilidad y poder en el desarrollo de software.</p>
             <p>Las estructuras de control condicionales nos permiten ejecutar un bloque de código si se cumple una condición determinada. En Python, esto se logra utilizando la declaración if.</p>
             <p>Los bucles nos permiten repetir un bloque de código varias veces. Esto es especialmente útil cuando queremos realizar una tarea similar varias veces o cuando necesitamos recorrer una colección de elementos, como una lista o un conjunto de datos.</p>
   
@@ -122,29 +122,26 @@ export const PreviewRecentPosts = () => {
   
   
   export const PreviewPython2 = () => {
-
+    const imageStyle = {
+      display: "block",
+      margin: "25px auto",
+      width: "30%"
+    };
 
     return(
       <div>
           <article className="text-justify border-bottom pb-2 my-2">
             <h2>Variables, Tipos de Datos y Operaciones Básicas en Python</h2>
             <p class="blog-post-meta">Junio 27</p>
-            <div className="row">
-              <div className="col-md-6"> 
-              <img
-              style={imageStyle}
-              src="/img/img-articles/portada_python1.png"
-              alt="Imagen Inteligencia Artificial"
-              className="img_blog"
-              />
-            </div>
-            <div className="col-md-6">
-              <p>Python es un lenguaje de programación ampliamente utilizado y apreciado por su sencillez y legibilidad. Es ideal tanto para principiantes como para programadores experimentados debido a su enfoque intuitivo y su amplia gama de aplicaciones. Una de las bases fundamentales de la programación en Python es comprender las variables, los tipos de datos y las operaciones básicas. En este artículo, exploraremos estos conceptos clave para ayudarte a dar tus primeros pasos en Python.</p>
-            </div>  
 
+            <img
+            style={imageStyle}
+            src="/img/img-articles/portada_python1.png"
+            alt="Imagen Inteligencia Artificial"
+            className="img_blog"
+            />
+            <p>Python es un lenguaje de programación ampliamente utilizado y apreciado por su sencillez y legibilidad. Es ideal tanto para principiantes como para programadores experimentados debido a su enfoque intuitivo y su amplia gama de aplicaciones. Una de las bases fundamentales de la programación en Python es comprender las variables, los tipos de datos y las operaciones básicas. En este artículo, exploraremos estos conceptos clave para ayudarte a dar tus primeros pasos en Python.</p>
   
-
-            </div>
             <p>En Python, las variables se utilizan para almacenar valores. Puedes pensar en ellas como contenedores que mantienen información que puede cambiar a lo largo del programa. Para crear una variable en Python, solo necesitas asignarle un nombre y un valor utilizando el operador de asignación "=".</p>
   
             <Link to="/PostPython2" className='button-link'>Seguir leyendo</Link>
@@ -157,26 +154,25 @@ export const PreviewRecentPosts = () => {
   
   export const PreviewPython1 = () => {
 
-
+    const imageStyle = {
+      display: "block",
+      margin: "25px auto",
+      width: "30%"
+    };
     return(
       <div>
           <article className="text-justify border-bottom pb-2 my-2">
             <h2>Introducción a Python y su entorno de desarrollo</h2>
             <p class="blog-post-meta">Junio 26</p>
-            <div className="row">
-              <div className="col-md-6"> 
-                <p>Python se ha convertido en uno de los lenguajes de programación más populares y versátiles del mundo. Con su sintaxis simple y legible, es ideal tanto para principiantes como para expertos en programación. Si estás interesado en aprender Python y aprovechar todo su potencial, es importante comprender no solo el lenguaje en sí, sino también el entorno de desarrollo adecuado para trabajar de manera eficiente y productiva.</p>
-              </div>
-              <div className="col-md-6"> 
-                <img
-                  style={imageStyle}
-                  src="/img/img-articles/portada_python.png"
-                  alt="Imagen Inteligencia Artificial"
-                  className="img_blog"
-                />
-              </div>
+            <img
+              style={imageStyle}
+              src="/img/img-articles/portada_python.png"
+              alt="Imagen Inteligencia Artificial"
+              className="img_blog"
+            />
+            <p>Python se ha convertido en uno de los lenguajes de programación más populares y versátiles del mundo. Con su sintaxis simple y legible, es ideal tanto para principiantes como para expertos en programación. Si estás interesado en aprender Python y aprovechar todo su potencial, es importante comprender no solo el lenguaje en sí, sino también el entorno de desarrollo adecuado para trabajar de manera eficiente y productiva.</p>
 
-            </div>
+
             <p>En este artículo, te introduciré al fascinante mundo de Python y te mostraré cómo configurar tu entorno de desarrollo para comenzar a programar </p>
             <Link to="/PostPython1" className='button-link'>Seguir leyendo</Link>
           </article>
@@ -187,25 +183,24 @@ export const PreviewRecentPosts = () => {
   
   
   export const PreviewSrcum1 = () => {
+    const imageStyle = {
+      display: "block",
+      margin: "25px auto",
+      width: "30%"
+    };
     return(
       <div>
           <article className="text-justify border-bottom pb-2 my-2">
             <h2>Scrum: Un marco de trabajo para el desarrollo de software</h2>
             <p class="blog-post-meta">Junio 23</p>
 
-            <div className="row">
-              <div className="col-md-6"> 
-              <img
-                src="/img/img-articles/scrum_blog.png"
-                alt="Portada de articulo sobre Scrum"
-                style={imageStyle}
-                className="mx-auto d-block"
-              />
-              </div>
-              <div className="col-md-6"> 
-                <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
-              </div>
-            </div>
+            <img
+              src="/img/img-articles/scrum_blog.png"
+              alt="Portada de articulo sobre Scrum"
+              style={imageStyle}
+              className="mx-auto d-block"
+            />
+            <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
 
             <p>La IA de Midjourney se basa en algoritmos de aprendizaje profundo, que han sido entrenados con una amplia variedad de datos visuales y estéticos. Esto permite a Midjourney generar imágenes sorprendentes y visualmente impactantes que desafían las convenciones tradicionales y empujan los límites de lo posible. Desde paisajes surrealistas hasta retratos abstractos, <b>Midjourney</b> es capaz de crear obras de arte únicas.</p>
             <p>No debemos olvidar que, Midjourney es solo una inteligencia artificial que <b>analiza, observa y copia imágenes </b> de los artistas de todo el mundo y de todas las épocas. A través de su capacidad de aprendizaje profundo, Midjourney analiza y absorbe las obras maestras creadas por los grandes artistas de la historia, desentrañando sus técnicas y estilos únicos.</p>
@@ -217,29 +212,27 @@ export const PreviewRecentPosts = () => {
   
   
   export const PreviewMj1 = () => {
+    const imageStyle = {
+      display: "block",
+      margin: "25px auto",
+      width: "30%"
+    };
+
+    
     return(
       <div>
           <article className="text-justify border-bottom pb-2 my-2">
             <h2>El futuro de la creación de imágenes: Una mirada a Midjourney</h2>
             <p class="blog-post-meta">Junio 15</p>
+            <img
+              src="/img/img-articles/mj_portada_art.png"
+              alt="Portada de articulo sobre Scrum"
+              style={imageStyle}
+              className="mx-auto d-block"
 
-            <div className="row">
-              <div className="col-md-6"> 
-                <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
-              </div>
-              <div className="col-md-6"> 
-              <img
-                src="/img/img-articles/mj_portada_art.png"
-                alt="Portada de articulo sobre Scrum"
-                style={imageStyle}
-                className="mx-auto d-block"
+            />  
 
-              />              
-              </div>
-            </div>
-
-
-
+            <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
             <p>La IA de Midjourney se basa en algoritmos de aprendizaje profundo, que han sido entrenados con una amplia variedad de datos visuales y estéticos. Esto permite a Midjourney generar imágenes sorprendentes y visualmente impactantes que desafían las convenciones tradicionales y empujan los límites de lo posible. Desde paisajes surrealistas hasta retratos abstractos, <b>Midjourney</b> es capaz de crear obras de arte únicas.</p>
             <p>No debemos olvidar que, Midjourney es solo una inteligencia artificial que <b>analiza, observa y copia imágenes </b> de los artistas de todo el mundo y de todas las épocas. A través de su capacidad de aprendizaje profundo, Midjourney analiza y absorbe las obras maestras creadas por los grandes artistas de la historia, desentrañando sus técnicas y estilos únicos.</p>
             <Link to="/PostMidjourney" className='button-link'>Seguir leyendo</Link>
