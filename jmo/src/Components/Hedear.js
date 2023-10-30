@@ -82,13 +82,13 @@ export const Header = () => {
 
 // Definimos un array de objetos que contiene datos de tarjetas con títulos y IDs.
 const cardsData = [
-  { id: 1, title: 'La revolución de la inteligencia artificial' },
-  { id: 2, title: 'El futuro de la creación de imágenes: Una mirada a Midjourney' },
-  { id: 3, title: 'Scrum: Un marco de trabajo para el desarrollo de software' },
-  { id: 4, title: 'Introducción a Python y su entorno de desarrollo' },
-  { id: 5, title: 'Variables, Tipos de Datos y Operaciones Básicas en Python' },
-  { id: 6, title: 'Estructuras de control de Python: condicionales y bucles' },
-  { id: 7, title: 'Listas, tuplas, conjuntos y diccionarios de Python' },
+  { id: 1, title: 'La revolución de la inteligencia artificial', route: '/PostRevolucionIA' },
+  { id: 2, title: 'El futuro de la creación de imágenes: Una mirada a Midjourney', route: '/PostMidjourney' },
+  { id: 3, title: 'Scrum: Un marco de trabajo para el desarrollo de software', route: '/PostScrum' },
+  { id: 4, title: 'Introducción a Python y su entorno de desarrollo', route: '/PostPython1' },
+  { id: 5, title: 'Variables, Tipos de Datos y Operaciones Básicas en Python', route: '/PostPython2' },
+  { id: 6, title: 'Estructuras de control de Python: condicionales y bucles', route: '/PostPython3' },
+  { id: 7, title: 'Listas, tuplas, conjuntos y diccionarios de Python', route: '/PostPython4' },
 ];
 
 // Definimos un componente de React llamado "SearchBar" que toma una función "onSearch" como argumento.
@@ -116,12 +116,18 @@ const SearchBar = ({ onSearch }) => {
     return cardsData.filter((card) => card.title.toLowerCase().includes(query.toLowerCase()));
   };
 
+  const clearSearchResults = () => {
+    setSearchQuery(''); // Borra el campo de búsqueda
+    setSearchResults([]); // Borra los resultados
+    setIsDropdownVisible(false); // Oculta la lista desplegable
+  };
+
   // Calculamos el ancho del componente de búsqueda.
   const searchBarWidth = searchBarRef.current ? searchBarRef.current.offsetWidth : 'auto';
 
   return (
     // Componente de formulario de búsqueda con una entrada de texto y una lista desplegable.
-    <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 position-relative" role="search">
+    <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 position-relative" role="search" style={{ zIndex: 2 }}>
       <input
         type="search"
         className="form-control form-control-dark"
@@ -136,7 +142,10 @@ const SearchBar = ({ onSearch }) => {
       >
         {searchResults.map((result) => (
           // Renderizamos los resultados de búsqueda como elementos de lista desplegable.
-          <li key={result.id}><a className="dropdown-item" href="#">{result.title}</a></li>
+          <li key={result.id} >
+            {/* Utilizamos Link para redirigir a la página correspondiente al elemento seleccionado. */}
+            <Link to={result.route} className="dropdown-item" onClick={clearSearchResults}>{result.title}</Link>
+          </li>
         ))}
       </ul>
     </form>

@@ -14,7 +14,7 @@ import {
 
 export const Sidebar = () => {
     return(
-      <div class="col-md-4 ">
+      <div class="col-md-4 " style={{ zIndex: 1 }}>
   
         <div class="sticky-top ">
           <div class="p-4 mb-3 bg-body-tertiary rounded">
