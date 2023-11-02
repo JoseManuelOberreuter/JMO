@@ -1,5 +1,5 @@
 # PERSONAL WEBPAGE
 
-[Link JMO](www.josemanueloberreuter.com)
+[Link JMO](https://josemanueloberreuter.github.io/JMO/)
 
 
