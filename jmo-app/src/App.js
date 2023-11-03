@@ -67,7 +67,7 @@ function App() {
         <Routes>
 
           {/* INDEX */}
-          <Route path="/" element={<MainBlog />} />
+          <Route path="" element={<MainBlog />} />
 
           {/* BLOG  */}
           <Route path="/blog" element={<MainBlog />} />
