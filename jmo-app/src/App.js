@@ -36,13 +36,6 @@ import { Sidebar } from './Components/SideBar';
 
 
 
-/*
-TO DO:
-- ADD DE NEW POST MICROSOFT 1 AND 2
-- ADD THE CORRECT PATH IN THE INPUT NEXT OF THE FOOTER
-- DO BUILD ON GITHUB
-- DO DEPLOY ON AZURE
-*/
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -62,12 +55,13 @@ function App() {
   return (
     <Router>
       <div className="App">
+
         <Header />
         <ScrollToTop /> 
         <Routes>
 
           {/* INDEX */}
-          <Route path="" element={<MainBlog />} />
+          <Route path="/JMO" element={<MainBlog />} />
 
           {/* BLOG  */}
           <Route path="/blog" element={<MainBlog />} />
