@@ -1,3 +1,7 @@
+
+# JMO
+Personal Webpage
+
 TO DO:
 - FIX IMG SRC
 - ADD DE NEW POST MICROSOFT 1 AND 2
