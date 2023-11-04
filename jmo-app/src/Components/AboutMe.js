@@ -1,5 +1,8 @@
 import React from 'react';
-import { Sidebar } from './SideBar';
+
+
+import imgYo from './img/about/yo.jpg'
+import certificado from './img/about/certificado_az900.jpg'
 
 // MAIN CONTENT 
 
@@ -40,7 +43,7 @@ export const MainAboutMe = () => {
                               <div className="row gx-5">
                                   {/* Columna de la imagen */}
                                   <div className="col-md-6">
-                                      <img src="./img/yo.jpg" alt="Imagen" className="img-fluid" />
+                                      <img src={imgYo} alt="Imagen" className="img-fluid" />
                                   </div>
                                   {/* Columna del texto */}
                                   <div className="col-md-6 d-flex align-items-center">
@@ -90,7 +93,7 @@ export const MainAboutMe = () => {
 
                                 {/* Columna de la imagen */}
                                 <div className="col-md-6">
-                                    <img src="./img/certificado_az900.jpg" alt="Certificado Microsoft AZ 900" className="img-fluid" />
+                                    <img src={certificado} alt="Certificado Microsoft AZ 900" className="img-fluid" />
                                 </div>
 
                             </div>

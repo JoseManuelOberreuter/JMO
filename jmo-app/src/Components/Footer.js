@@ -1,3 +1,4 @@
+import { IconosRS } from './Iconos';
 import { Link } from 'react-router-dom';
 
 
@@ -46,28 +47,3 @@ export function Footer() {
   }
   
 
-// FOOTER SOCIAL MEDIA ICONS 
-export const IconosRS = () => {
-    return (
-      <div className="col-12 col-md-4 pt-1 d-flex justify-content-center align-items-center">
-        <a target="_blank" href="https://github.com/JoseManuelOberreuter">
-            <img className="ico_blog" src="/img/rs-logos/giticogrey.ico" alt="GitHub Icon" />
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">
-            <img className="ico_blog" src="/img/rs-logos/linkicogrey.ico" alt="Linkedin Icon" />
-        </a>
-        <a target="_blank" href="https://www.instagram.com/jmo.developer/">
-            <img className="ico_blog" src="/img/rs-logos/instaicogrey.ico" alt="Linkedin Icon" />
-        </a>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100083188934596">
-            <img className="ico_blog" src="/img/rs-logos/fbicogrey.ico" alt="Linkedin Icon" />
-        </a>
-        <a target="_blank" href="https://twitter.com/jmo_developer">
-            <img className="ico_blog" src="/img/rs-logos/twitericogrey.ico" alt="Linkedin Icon" />
-        </a>
-        {/* <a target="_blank" href="https://www.youtube.com/channel/UCi1uX_qrjLD_pG-GNfho7dA ">
-            <img className="ico_blog" src="/img/rs-logos/youtubeicogrey.ico" alt="Linkedin Icon" />
-        </a> */}
-      </div>
-    );
-  };
