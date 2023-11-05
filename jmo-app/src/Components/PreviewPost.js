@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom';
 
+import imgPython4 from './img/articles/portada_python3.png'
+import imgPython3 from './img/articles/portada_python2.png'
+import imgPython2 from './img/articles/portada_python1.png'
+import imgPython1 from './img/articles/portada_python.png'
+import imgScrum from './img/articles/scrum_blog.png'
+import imgMidjourney from './img/articles/mj_portada_art.png'
+import imgIa from './img/articles/ia_cyber.png'
+
 // PREVIEW DE POST 
 
 export const PreviewRecentPosts = () => {
@@ -51,7 +59,7 @@ export const PreviewRecentPosts = () => {
     
     return (
       <div>
-        <article className="text-justify border-bottom pb-2 my-2">
+        <article className="text-justify border-bottom pb-2 my-4">
           <h2>Listas, tuplas, conjuntos y diccionarios de Python</h2>
           <p className="blog-post-meta">Julio 3</p>
           <div className="row">
@@ -59,7 +67,7 @@ export const PreviewRecentPosts = () => {
             <div className="col-md-6">
               <img
                 style={imageStyle}
-                src="/img/img-articles/portada_python3.png"
+                src={imgPython4}
                 alt="Imagen Inteligencia Artificial"
                 className="img_blog"
               />
@@ -96,14 +104,14 @@ export const PreviewRecentPosts = () => {
     };
     return(
       <div>
-          <article className="text-justify border-bottom pb-2 my-2">
+          <article className="text-justify border-bottom pb-2 my-4">
             <h2>Estructuras de control de Python: condicionales y bucles</h2>
             <p class="blog-post-meta">Junio 30</p>
 
             
             <img
             style={imageStyle}
-            src="/img/img-articles/portada_python2.png"
+            src={imgPython3}
             alt="Imagen Inteligencia Artificial"
             className="img_blog"
             />
@@ -130,13 +138,13 @@ export const PreviewRecentPosts = () => {
 
     return(
       <div>
-          <article className="text-justify border-bottom pb-2 my-2">
+          <article className="text-justify border-bottom pb-2 my-4">
             <h2>Variables, Tipos de Datos y Operaciones Básicas en Python</h2>
             <p class="blog-post-meta">Junio 27</p>
 
             <img
             style={imageStyle}
-            src="/img/img-articles/portada_python1.png"
+            src={imgPython2}
             alt="Imagen Inteligencia Artificial"
             className="img_blog"
             />
@@ -161,12 +169,12 @@ export const PreviewRecentPosts = () => {
     };
     return(
       <div>
-          <article className="text-justify border-bottom pb-2 my-2">
+          <article className="text-justify border-bottom pb-2 my-4">
             <h2>Introducción a Python y su entorno de desarrollo</h2>
             <p class="blog-post-meta">Junio 26</p>
             <img
               style={imageStyle}
-              src="/img/img-articles/portada_python.png"
+              src={imgPython1}
               alt="Imagen Inteligencia Artificial"
               className="img_blog"
             />
@@ -190,12 +198,12 @@ export const PreviewRecentPosts = () => {
     };
     return(
       <div>
-          <article className="text-justify border-bottom pb-2 my-2">
+          <article className="text-justify border-bottom pb-2 my-4">
             <h2>Scrum: Un marco de trabajo para el desarrollo de software</h2>
             <p class="blog-post-meta">Junio 23</p>
 
             <img
-              src="/img/img-articles/scrum_blog.png"
+              src={imgScrum}
               alt="Portada de articulo sobre Scrum"
               style={imageStyle}
               className="mx-auto d-block"
@@ -221,11 +229,11 @@ export const PreviewRecentPosts = () => {
     
     return(
       <div>
-          <article className="text-justify border-bottom pb-2 my-2">
+          <article className="text-justify border-bottom pb-2 my-4">
             <h2>El futuro de la creación de imágenes: Una mirada a Midjourney</h2>
             <p class="blog-post-meta">Junio 15</p>
             <img
-              src="/img/img-articles/mj_portada_art.png"
+              src={imgMidjourney}
               alt="Portada de articulo sobre Scrum"
               style={imageStyle}
               className="mx-auto d-block"
@@ -244,7 +252,7 @@ export const PreviewRecentPosts = () => {
   export const PreviewIa1 = () => {
     return(
       <div>
-        <article className="text-justify pb-2 my-2">
+        <article className="text-justify pb-2 my-4">
   
           <h2>La revolución de la inteligencia artificial</h2>
           <p className="blog-post-meta">Mayo 23</p>
@@ -253,7 +261,7 @@ export const PreviewRecentPosts = () => {
           <div className="row">
             <div className="col-md-6"> 
               <img
-                src="/img/img-articles/ia_cyber.png"
+                src={imgIa}
                 alt="Portada de articulo sobre Scrum"
                 style={imageStyle}
                 className="mx-auto d-block"

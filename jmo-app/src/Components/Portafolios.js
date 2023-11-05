@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import dataScreen from './img/portafolio/data_screen.png'
+import houseBeach from './img/portafolio/house_beach.png'
+import kinePaula from './img/portafolio/kinepaula.png'
+
 
 // TO DO:
 // 
@@ -50,7 +54,7 @@ const CardPortafolios1 = () => {
       <a href={projectLink} className='text-decoration-none' target="_blank" >
         <div className="card shadow-sm">
           <img
-            src="./img/data_screen.png" 
+            src={dataScreen}
             alt="Data Screen"
             className="card-img-top"
           />
@@ -82,7 +86,7 @@ const CardPortafolios2 = () => {
       <a href={projectLink} className='text-decoration-none' target="_blank" >
         <div className="card shadow-sm">
           <img
-            src="./img/kinepaula.png" 
+            src={kinePaula}
             alt="Data Screen"
             className="card-img-top"
           />
@@ -114,7 +118,7 @@ const CardPortafolios3 = () => {
       <a href={projectLink} className='text-decoration-none' target="_blank" >
         <div className="card shadow-sm">
           <img
-            src="./img/house_beach.png" 
+            src={houseBeach} 
             alt="Data Screen"
             className="card-img-top"
           />

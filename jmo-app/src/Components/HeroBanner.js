@@ -3,6 +3,9 @@ import { PreviewRecentPosts } from "./PreviewPost";
 import { Sidebar } from "./SideBar";
 import { Link } from "react-router-dom";
 
+import imgPortfolio from './img/herobanner/portada-proyecto.png'
+import imgAbout from './img/herobanner/portada-about.png'
+
 
 
 
@@ -94,7 +97,7 @@ export const MainBlog = () => {
         <div className="col-auto d-none d-lg-block">
           <svg className="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Portafolio</title>
-            <img  className="img_articulo" width="100%" height="100%" />
+            <img src={imgPortfolio} className="img_articulo" width="100%" height="100%" />
           </svg>
         </div>
       </div>
@@ -117,7 +120,7 @@ export const MainBlog = () => {
           <div className="col-auto d-none d-lg-block">
             <svg className="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
               <title>About me</title>
-              <img href="./img/portada-about.png"  className="img_articulo" width="100%" height="100%"  />
+              <img href={imgAbout}  className="img_articulo" width="100%" height="100%"  />
             </svg>
           </div>
         </  div>
