@@ -31,7 +31,6 @@ import './App.css';
 import   {
   MainBlog,
 } from './Components/HeroBanner'
-import { Sidebar } from './Components/SideBar';
 
 
 
@@ -53,7 +52,7 @@ function App() {
 
   
   return (
-    <HashRouter>
+    <Router>
       <div className="App">
 
         <Header />
@@ -96,7 +95,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
 
 
 
