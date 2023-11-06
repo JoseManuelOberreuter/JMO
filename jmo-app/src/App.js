@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router,useLocation, Link , Route, Routes } from 'react-router-dom';
+import { HashRouter as Router,useLocation, Link , Route, Routes } from 'react-router-dom';
 
 
 import { Header } from './Components/Hedear';
@@ -53,7 +53,7 @@ function App() {
 
   
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
 
         <Header />
@@ -96,7 +96,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
 
 
 
