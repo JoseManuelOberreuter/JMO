@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router,useLocation, Link , Route, Routes } from 'react-router-dom';
+import { HashRouter as Router,useLocation , Route, Routes } from 'react-router-dom';
 
 
 import { Header } from './Components/Hedear';
@@ -61,7 +61,7 @@ function App() {
         <Routes>
 
           {/* INDEX */}
-          <Route path="/JMO" element={<MainBlog />} />
+          <Route path="/" element={<MainBlog />} />
 
           {/* BLOG  */}
           <Route path="/blog" element={<MainBlog />} />
