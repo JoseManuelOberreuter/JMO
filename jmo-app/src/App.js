@@ -60,7 +60,7 @@ function App() {
         <Routes>
 
           {/* INDEX */}
-          <Route path="/JMO" element={<MainBlog />} />
+          <Route path="/" element={<MainBlog />} />
 
           {/* BLOG  */}
           <Route path="/blog" element={<MainBlog />} />
