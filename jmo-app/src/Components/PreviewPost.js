@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import imgPython4 from './Components/img/articles/portada_python3.png'
-import imgPython3 from './jmo-app/Components/img/articles/portada_python2.png'
+import imgPython4 from './img/articles/portada_python3.png'
+import imgPython3 from './img/articles/portada_python2.png'
 import imgPython2 from './img/articles/portada_python1.png'
 import imgPython1 from './img/articles/portada_python.png'
 import imgScrum from './img/articles/scrum_blog.png'
