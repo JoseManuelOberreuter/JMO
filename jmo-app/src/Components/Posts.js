@@ -77,8 +77,8 @@ export const FinalDePost = () => {
 export const PostMicrosoftIa0 = () => {
   return (
     <main>
-      <div class="row g-5">
-        <div class="col-md-8 ">
+      <div className="row g-5">
+        <div className="col-md-8 ">
           <article className="articulo text-justify">
 
             
@@ -233,7 +233,7 @@ export function PostPython4() {
       <div className="row g-5">
         <div className="col-md-8">
           <article>
-          <h1 class="text-center">Listas, tuplas, conjuntos y diccionarios de Python:</h1>
+          <h1 className="text-center">Listas, tuplas, conjuntos y diccionarios de Python:</h1>
 
           <img
             style={imageStyle}
@@ -363,7 +363,7 @@ for clave, valor in persona.items():
           <br />
 
 
-          <p class="text-primary">#Programación #Python</p>
+          <p className="text-primary">#Programación #Python</p>
 
           <FinalDePost />
           </article>
@@ -391,7 +391,7 @@ export function PostPython3() {
       <div className="row g-5">
         <div className="col-md-8">
           <article>
-          <h1 class="text-center">Estructuras de control de Python: condicionales y bucles</h1>
+          <h1 className="text-center">Estructuras de control de Python: condicionales y bucles</h1>
 
           <img
             style={imageStyle}
@@ -527,7 +527,7 @@ while contador < 5:
           <br />
 
 
-          <p class="text-primary">#Programación #Python</p>
+          <p className="text-primary">#Programación #Python</p>
 
           <FinalDePost />
           </article>
@@ -794,7 +794,7 @@ print("Hola, " + nombre + "!")  # Salida: "Hola, [nombre]!"
 
 
 
-            <p class="text-primary">#Programación #Python</p>
+            <p className="text-primary">#Programación #Python</p>
 
 
             <FinalDePost />
@@ -1094,9 +1094,9 @@ export const PostMidjourney = () => {
 
   return (
     <main className="container">
-      <div class="row g-5">
-        <div class="col-md-8 ">
-          <article class="articulo">
+      <div className="row g-5">
+        <div className="col-md-8 ">
+          <article className="articulo">
             <h1 className="text-center">El futuro de la creación de imágenes: Una mirada a Midjourney</h1>
             <img style={imageStyle} src="/img/img-articles/mj_portada_art.png" alt="Portada Midjourney"  width="60%" />
             <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
@@ -1151,21 +1151,21 @@ export const PostMidjourney = () => {
             <h3>Galería de ejemplos</h3>
             <p>A continuación, te presentamos una selección de imágenes generadas por Midjourney, junto con los prompts que se utilizaron para crearlas. Estas obras de arte únicas fueron producidas por la poderosa inteligencia artificial de Midjourney, que combina algoritmos de aprendizaje profundo con la creatividad de los artistas que lo inspiran.</p>
             <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo1.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> bedroom melting into the ocean</p>
+            <p className="text-center"><b>Prompt:</b> bedroom melting into the ocean</p>
 
             <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo2.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> Korean Bibimbap</p>
+            <p className="text-center"><b>Prompt:</b> Korean Bibimbap</p>
 
             <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo3.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> a woman wearing glasses with flowers and tigers on her wall, in the style of glamorous hollywood portraits, light magenta and pink, 32k uhd, deconstructed hot pants tailoring, dramatic lighting effects, nyfw-inspired, modern jewelry</p>
+            <p className="text-center"><b>Prompt:</b> a woman wearing glasses with flowers and tigers on her wall, in the style of glamorous hollywood portraits, light magenta and pink, 32k uhd, deconstructed hot pants tailoring, dramatic lighting effects, nyfw-inspired, modern jewelry</p>
 
             <img style={imageStyle} src="/img/img-articles/mj_img_ejemplo4.png" alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <p class="text-center"><b>Prompt:</b> malachite Storm trooper as a vintagepunk samurai, dark grey background, blue and golden details, artstation, hyperdetailed, 8k, beautiful lighting, artstation by James Jean, Moebius, cory loftis, craig mullins, rutkowski, Mucha, hyperdetailed, over the shoulder, close up, james jean, mucha, fractal, vibrant colors, rococo art , 8k resolution, clear shape, defined shape, full body:: topalltwist::0</p>
+            <p className="text-center"><b>Prompt:</b> malachite Storm trooper as a vintagepunk samurai, dark grey background, blue and golden details, artstation, hyperdetailed, 8k, beautiful lighting, artstation by James Jean, Moebius, cory loftis, craig mullins, rutkowski, Mucha, hyperdetailed, over the shoulder, close up, james jean, mucha, fractal, vibrant colors, rococo art , 8k resolution, clear shape, defined shape, full body:: topalltwist::0</p>
 
             <h3>Conclusión</h3>
             <p>Midjourney es un software con una inteligencia artificial impulsada por potentes procesadores de gráficos de alto nivel, lo que lo convierte en <b>uno de los mejores programas disponibles en el mercado para crear imágenes desde cero</b>. Además, su integración con Discord lo hace accesible y fácil de instalar para aquellos que ya son usuarios de la plataforma.</p>
             <p>Este artículo es solo el comienzo de una serie en la que exploraremos cómo utilizar y mejorar las imágenes utilizando la <b>ingeniería de prompt</b> con Midjourney. Estamos emocionados de adentrarnos en el mundo de la creación de imágenes y descubrir todo lo que esta fascinante inteligencia artificial tiene para ofrecer.</p>
-            <p class="text-primary">#IngieneriaDePrompt #Midjourney #InteligenciaArtificial</p>
+            <p className="text-primary">#IngieneriaDePrompt #Midjourney #InteligenciaArtificial</p>
             <br />
             <p>Enlaces de referencias:</p>
             <p><a href="https://docs.midjourney.com/docs/quick-start">Documentacion de Midjourney</a></p>
@@ -1218,7 +1218,7 @@ export const PostRevolucionIA = () => {
               Con cada nueva aplicación y avance en inteligencia artificial, nuestro mundo se vuelve más conectado y sofisticado. La revolución de la IA no solo está impulsando mejoras en la eficiencia y la productividad, sino que también está creando oportunidades para el <b>descubrimiento científico</b>, la<b> innovación tecnológica</b> y el <b>mejoramiento de la calidad de vida</b>. A medida que nos sumergimos en este emocionante futuro impulsado por la inteligencia artificial, es crucial comprender y adaptarnos a los cambios que se avecinan, aprovechando las oportunidades que nos brinda y trabajando en conjunto para desarrollar y aplicar esta tecnología de manera ética y responsable.
           </p>
             
-          <p class="text-decoration-underline">El poder del aprendizaje automático:</p>
+          <p className="text-decoration-underline">El poder del aprendizaje automático:</p>
           <p>
               El aprendizaje automático, una rama clave de la inteligencia artificial, está permitiendo a las máquinas aprender y mejorar automáticamente a partir de datos sin una programación explícita. Con algoritmos sofisticados y redes neuronales, las máquinas pueden <b>analizar grandes volúmenes de información</b> y extraer patrones y conocimientos valiosos. Esto ha impulsado aplicaciones revolucionarias en áreas como la detección de fraudes, la recomendación de productos, la personalización de servicios y la predicción del comportamiento del consumidor.
           </p>
@@ -1234,38 +1234,38 @@ export const PostRevolucionIA = () => {
           </li>
           </ul>
           
-          <p class="text-decoration-underline">La automatización de tareas rutinarias:</p>
+          <p className="text-decoration-underline">La automatización de tareas rutinarias:</p>
           <p>
               Uno de los mayores impactos de la IA es su capacidad para automatizar tareas rutinarias y <b>repetitivas</b>. Los sistemas de IA pueden realizar tareas con mayor velocidad, precisión y eficiencia que los humanos, lo que nos permite liberar tiempo y recursos para actividades más creativas y estratégicas. Desde la automatización de <b>procesos empresariales</b> hasta las <b>campañas de consolidación de clientes</b> a través de email, la IA está transformando la forma en que las organizaciones operan y se relacionan con sus clientes. La automatización de tareas rutinarias se implementa ya hace algunos años con diferentes softwares, pero con la llegada de la inteligencia artificial el potencial de esta aumenta exponencialmente.
           </p>
-          <p class="text-decoration-underline">La IA y la medicina:</p>
+          <p className="text-decoration-underline">La IA y la medicina:</p>
           <p>
               En el campo de la atención médica, la inteligencia artificial está desempeñando un papel fundamental en el <b>diagnóstico temprano</b>, el <b>descubrimiento de medicamentos</b> y la mejora de los resultados de los pacientes. Los algoritmos de aprendizaje automático pueden analizar imágenes médicas, como <b>tomografías computarizadas</b> y <b>resonancias magnéticas</b>, para detectar enfermedades con mayor precisión que los médicos humanos. Además, la IA está acelerando la investigación médica al analizar grandes conjuntos de datos genómicos y de pacientes para identificar patrones y posibles tratamientos personalizados.
           </p>
           <p>Articulo de medicina sobre IA:</p>
-          <blockquote class="blockquote">
+          <blockquote className="blockquote">
               <a href="https://www.infosalus.com/salud-investigacion/noticia-potencial-ia-rehabilitacion-futuras-aplicaciones-son-infinitas-20230519131618.html">El potencial de la IA en la rehabilitación: "Las futuras aplicaciones son infinitas"</a>
           </blockquote>
             
 
-          <p class="text-decoration-underline">La IA en el transporte y la logística:</p>
+          <p className="text-decoration-underline">La IA en el transporte y la logística:</p>
           <p>
               Otro campo donde la IA está revolucionando las operaciones es el transporte y la logística. Los <b>vehículos autónomos</b> están en aumento, utilizando tecnologías de IA como el reconocimiento de objetos y la toma de decisiones en tiempo real para conducir de manera segura y eficiente. Además, los <b>algoritmos de optimización</b> basados en IA están mejorando la gestión de flotas, la planificación de rutas y la programación de entregas, lo que <b>reduce los costos</b> y los tiempos de entrega.
           </p>
           <p>Articulo sobre transporte y logística basada en IA:</p>
-          <blockquote class="blockquote">
+          <blockquote className="blockquote">
               <a href="https://es.cointelegraph.com/news/amazon-implements-ai-to-enhance-logistics-and-delivery-speeds">Amazon aplica IA para mejorar la logística y la velocidad de entrega</a>
           </blockquote>
             
             
-          <p class="text-decoration-underline">Ética y consideraciones sociales:</p>
+          <p className="text-decoration-underline">Ética y consideraciones sociales:</p>
           <p>
               A medida que la IA continúa su avance, también es importante abordar las cuestiones éticas y sociales asociadas. El uso responsable de la IA, la <b>transparencia en los algoritmos</b> y la <b>protección de la privacidad</b> son temas críticos que deben ser considerados. Además, debemos estar atentos a los posibles <b>impactos en el mercado laboral</b>, ya que la automatización impulsada por la IA podría cambiar la naturaleza de ciertos trabajos y requerir una adaptación por parte de los trabajadores.
           </p>
 
           <p>En el siguiente artículo podemos observar el debate que se genera:</p>
 
-          <blockquote class="blockquote">
+          <blockquote className="blockquote">
               <a href="https://www.clarin.com/economia/regulacion-inteligencia-artificial-imperiosa-cuestion-etica-social-economica_0_KBHTBXZQPj.html">
                   Regulación de la inteligencia artificial: una imperiosa cuestión ética, social y económica
               </a>

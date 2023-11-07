@@ -4,7 +4,7 @@ import { Sidebar } from "./SideBar";
 import { Link } from "react-router-dom";
 
 import imgPortfolio from './img/herobanner/portada-proyecto.png'
-import imgAbout from './img/herobanner/portada-about.png'
+import imgAbout from './/img/herobanner/portada-about.png'
 
 
 

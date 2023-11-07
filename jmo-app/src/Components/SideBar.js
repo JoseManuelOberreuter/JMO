@@ -14,17 +14,17 @@ import {
 
 export const Sidebar = () => {
     return(
-      <div class="col-md-4 " style={{ zIndex: 1 }}>
+      <div className="col-md-4 " style={{ zIndex: 1 }}>
   
-        <div class="sticky-top ">
-          <div class="p-4 mb-3 bg-body-tertiary rounded">
-            <h4 class="fst-italic">Sobre el blog:</h4>
-            <p class="mb-0"> Dedicado a la difusión de información con fines educativos sobre programación. Aquí encontrarás una amplia variedad de temas relacionados con la programación y la tecnología, desde los conceptos básicos hasta las últimas tendencias.</p>
+        <div className="sticky-top ">
+          <div className="p-4 mb-3 bg-body-tertiary rounded">
+            <h4 className="fst-italic">Sobre el blog:</h4>
+            <p className="mb-0"> Dedicado a la difusión de información con fines educativos sobre programación. Aquí encontrarás una amplia variedad de temas relacionados con la programación y la tecnología, desde los conceptos básicos hasta las últimas tendencias.</p>
           </div>
   
-          <div class="p-4">
-            <h4 class="fst-italic">Archivos</h4>
-            <ol class="list-unstyled mb-0">
+          <div className="p-4">
+            <h4 className="fst-italic">Archivos</h4>
+            <ol className="list-unstyled mb-0">
               <li><Link to="/ArchivosPythos">Python</Link></li>
               <li><Link to="/ArchivosIA">Inteligencia Artificial</Link></li>
               <li><Link to="/ArchivosMetodosAgiles">Métodos Ágiles</Link></li>

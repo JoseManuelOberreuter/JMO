@@ -12,9 +12,9 @@ import imgIa from './img/articles/ia_cyber.png'
 
 export const PreviewRecentPosts = () => {
     return(
-      <div class="col-md-8 ">
+      <div className="col-md-8 ">
             
-        <h3 id="publicaciones-recientes" class="pb-1 mb-4 border-bottom h4">
+        <h3 id="publicaciones-recientes" className="pb-1 mb-4 border-bottom h4">
           Publicaciones recientes:
         </h3>
   
@@ -106,7 +106,7 @@ export const PreviewRecentPosts = () => {
       <div>
           <article className="text-justify border-bottom pb-2 my-4">
             <h2>Estructuras de control de Python: condicionales y bucles</h2>
-            <p class="blog-post-meta">Junio 30</p>
+            <p className="blog-post-meta">Junio 30</p>
 
             
             <img
@@ -140,7 +140,7 @@ export const PreviewRecentPosts = () => {
       <div>
           <article className="text-justify border-bottom pb-2 my-4">
             <h2>Variables, Tipos de Datos y Operaciones Básicas en Python</h2>
-            <p class="blog-post-meta">Junio 27</p>
+            <p className="blog-post-meta">Junio 27</p>
 
             <img
             style={imageStyle}
@@ -171,7 +171,7 @@ export const PreviewRecentPosts = () => {
       <div>
           <article className="text-justify border-bottom pb-2 my-4">
             <h2>Introducción a Python y su entorno de desarrollo</h2>
-            <p class="blog-post-meta">Junio 26</p>
+            <p className="blog-post-meta">Junio 26</p>
             <img
               style={imageStyle}
               src={imgPython1}
@@ -200,7 +200,7 @@ export const PreviewRecentPosts = () => {
       <div>
           <article className="text-justify border-bottom pb-2 my-4">
             <h2>Scrum: Un marco de trabajo para el desarrollo de software</h2>
-            <p class="blog-post-meta">Junio 23</p>
+            <p className="blog-post-meta">Junio 23</p>
 
             <img
               src={imgScrum}
@@ -231,7 +231,7 @@ export const PreviewRecentPosts = () => {
       <div>
           <article className="text-justify border-bottom pb-2 my-4">
             <h2>El futuro de la creación de imágenes: Una mirada a Midjourney</h2>
-            <p class="blog-post-meta">Junio 15</p>
+            <p className="blog-post-meta">Junio 15</p>
             <img
               src={imgMidjourney}
               alt="Portada de articulo sobre Scrum"
