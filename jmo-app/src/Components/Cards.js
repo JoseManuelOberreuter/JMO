@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
 
+import imgPython4 from './img/articles/portada_python3.png'
+import imgPython3 from './img/articles/portada_python2.png'
+import imgPython2 from './img/articles/portada_python1.png'
+import imgPython1 from './img/articles/portada_python.png'
+import imgScrum from './img/articles/scrum_blog.png'
+import imgMidjourney from './img/articles/mj_portada_art.png'
+import imgIa from './img/articles/ia_cyber.png'
 
 export const CardRevolucionIA = () => {
 
-    const CardStyle = {
-        
-    }
+
 
     return (
       <div className="col ">
@@ -14,8 +19,8 @@ export const CardRevolucionIA = () => {
             <img
                 
                 wi
-                src="/img/img-articles/ia_cyber.png" 
-                alt="Data Screen"
+                src={imgIa}
+                alt="Imagen Inteligencia Artificial"
                 className="card-img-top"
             />
             <div className="card-body">
@@ -45,10 +50,9 @@ export const CardMidjourney = () => {
         <Link to="/PostMidjourney"  className='text-decoration-none' >
           <div className="card shadow-sm">
             <img
-                
                 wi
-                src="/img/img-articles/mj_portada_art.png" 
-                alt="Data Screen"
+                src={imgMidjourney}
+                alt="Imagen de Midjourney"
                 className="card-img-top"
             />
             <div className="card-body">
@@ -82,8 +86,8 @@ export const CardScrum = () => {
             <img
                 
                 wi
-                src="/img/img-articles/scrum_blog.png" 
-                alt="Data Screen"
+                src={imgScrum}
+                alt="Imagen Equipo de trabajo Scrum"
                 className="card-img-top"
             />
             <div className="card-body">
@@ -115,8 +119,8 @@ export const CardPython1 = () => {
             <img
                 
                 wi
-                src="/img/img-articles/portada_python.png" 
-                alt="Data Screen"
+                src={imgPython1}
+                alt="Imagen PC Python"
                 className="card-img-top"
             />
             <div className="card-body">
@@ -148,8 +152,8 @@ export const CardPython2 = () => {
             <img
                 
                 wi
-                src="/img/img-articles/portada_python1.png" 
-                alt="Data Screen"
+                src={imgPython2}
+                alt="Imagen PC Python 2"
                 className="card-img-top"
             />
             <div className="card-body">
@@ -181,9 +185,9 @@ export const CardPython3 = () => {
           <div className="card shadow-sm">
             <img
                 
-                wi
-                src="/img/img-articles/portada_python2.png" 
-                alt="Data Screen"
+                
+                src={imgPython3} 
+                alt="Imagen Laptop Python"
                 className="card-img-top"
             />
             <div className="card-body">
@@ -216,8 +220,8 @@ export const CardPython4 = () => {
             <img
                 
                 wi
-                src="/img/img-articles/portada_python3.png" 
-                alt="Data Screen"
+                src={imgPython4}
+                alt="Imgen Chip Python"
                 className="card-img-top"
             />
             <div className="card-body">

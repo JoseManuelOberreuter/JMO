@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+//Imagenes post 
 import imgPython4 from './img/articles/portada_python3.png'
 import imgPython3 from './img/articles/portada_python2.png'
 import imgPython2 from './img/articles/portada_python1.png'
@@ -69,7 +70,7 @@ export const PreviewRecentPosts = () => {
                 style={imageStyle}
                 src={imgPython4}
                 alt="Imagen Inteligencia Artificial"
-                className="img_blog"
+                className="img_blog rounded"
               />
             </div>
             <div className="col-md-6">
@@ -113,7 +114,7 @@ export const PreviewRecentPosts = () => {
             style={imageStyle}
             src={imgPython3}
             alt="Imagen Inteligencia Artificial"
-            className="img_blog"
+            className="img_blog rounded"
             />
 
             <p>En el mundo de la programación, las estructuras de control desempeñan un papel fundamental al permitirnos controlar el flujo de ejecución de un programa. Dos de las estructuras de control más utilizadas son las condicionales y los bucles. Estas herramientas nos permiten tomar decisiones y repetir acciones en función de ciertas condiciones, lo que a su vez nos brinda mayor flexibilidad y poder en el desarrollo de software.</p>
@@ -146,7 +147,7 @@ export const PreviewRecentPosts = () => {
             style={imageStyle}
             src={imgPython2}
             alt="Imagen Inteligencia Artificial"
-            className="img_blog"
+            className="img_blog rounded"
             />
             <p>Python es un lenguaje de programación ampliamente utilizado y apreciado por su sencillez y legibilidad. Es ideal tanto para principiantes como para programadores experimentados debido a su enfoque intuitivo y su amplia gama de aplicaciones. Una de las bases fundamentales de la programación en Python es comprender las variables, los tipos de datos y las operaciones básicas. En este artículo, exploraremos estos conceptos clave para ayudarte a dar tus primeros pasos en Python.</p>
   
@@ -176,7 +177,7 @@ export const PreviewRecentPosts = () => {
               style={imageStyle}
               src={imgPython1}
               alt="Imagen Inteligencia Artificial"
-              className="img_blog"
+              className="img_blog rounded"
             />
             <p>Python se ha convertido en uno de los lenguajes de programación más populares y versátiles del mundo. Con su sintaxis simple y legible, es ideal tanto para principiantes como para expertos en programación. Si estás interesado en aprender Python y aprovechar todo su potencial, es importante comprender no solo el lenguaje en sí, sino también el entorno de desarrollo adecuado para trabajar de manera eficiente y productiva.</p>
 
@@ -206,7 +207,7 @@ export const PreviewRecentPosts = () => {
               src={imgScrum}
               alt="Portada de articulo sobre Scrum"
               style={imageStyle}
-              className="mx-auto d-block"
+              className="mx-auto d-block rounded"
             />
             <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
 
@@ -236,7 +237,7 @@ export const PreviewRecentPosts = () => {
               src={imgMidjourney}
               alt="Portada de articulo sobre Scrum"
               style={imageStyle}
-              className="mx-auto d-block"
+              className="mx-auto d-block rounded"
 
             />  
 
@@ -264,7 +265,7 @@ export const PreviewRecentPosts = () => {
                 src={imgIa}
                 alt="Portada de articulo sobre Scrum"
                 style={imageStyle}
-                className="mx-auto d-block"
+                className="mx-auto d-block rounded"
               />
               </div>
               <div className="col-md-6"> 

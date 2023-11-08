@@ -43,7 +43,7 @@ export const MainAboutMe = () => {
                               <div className="row gx-5">
                                   {/* Columna de la imagen */}
                                   <div className="col-md-6">
-                                      <img src={imgYo} alt="Imagen" className="img-fluid" />
+                                      <img src={imgYo} alt="Imagen" className="img-fluid rounded" />
                                   </div>
                                   {/* Columna del texto */}
                                   <div className="col-md-6 d-flex align-items-center">
@@ -93,7 +93,7 @@ export const MainAboutMe = () => {
 
                                 {/* Columna de la imagen */}
                                 <div className="col-md-6">
-                                    <img src={certificado} alt="Certificado Microsoft AZ 900" className="img-fluid" />
+                                    <img src={certificado} alt="Certificado Microsoft AZ 900" className="img-fluid rounded" />
                                 </div>
 
                             </div>

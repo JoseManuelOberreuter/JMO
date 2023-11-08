@@ -125,7 +125,7 @@ export const PostMicrosoftIa0 = () => {
 
 
 
-            <img src="/img/img-articles/ia_cyber.png" alt="Imagen Inteligencia Artificial" className="my-2 mx-auto d-block" width="50%" />
+            <img src="/img/img-articles/ia_cyber.png" alt="Imagen Inteligencia Artificial" className="my-2 mx-auto d-block rounded" width="50%" />
 
             <p>
             ¡La IA nos permite crear un software increíble que puede mejorar la atención médica, permitir que las personas superen las desventajas físicas,
@@ -263,7 +263,7 @@ export function PostPython4() {
             style={imageStyle}
             src={imgPython4}
             alt="Imagen Inteligencia Artificial"
-            className="img_blog"
+            className="img_blog rounded"
             width="60%"
           />
 
@@ -421,7 +421,7 @@ export function PostPython3() {
             style={imageStyle}
             src={imgPython3}
             alt="Imagen Inteligencia Artificial"
-            className="img_blog"
+            className="img_blog rounded"
             width="60%"
           />
 
@@ -585,7 +585,7 @@ export function PostPython2() {
               style={imageStyle}
               src={imgPython2}
               alt="Imagen Inteligencia Artificial"
-              className="img_blog"
+              className="img_blog rounded"
               width="60%"
             />
 
@@ -851,7 +851,7 @@ export const PostPython1 = () => {
                 style={imageStyle}
                 src={imgPython1}
                 alt="Imagen Inteligencia Artificial"
-                className="img_blog"
+                className="img_blog rounded"
                 width="60%"
               />
 
@@ -952,7 +952,7 @@ export const PostScrum = () => {
                 src={imgScrum}
                 alt="Portada de articulo sobre Scrum"
                 style={imageStyle}
-                className="mx-auto d-block"
+                className="mx-auto d-block rounded"
 
               />
 
@@ -972,7 +972,7 @@ export const PostScrum = () => {
                 src="/img/img-articles/scrum_logo.png"
                 alt="Scrum logo"
                 style={imageStyle}
-                className="mx-auto d-block"
+                className="mx-auto d-block rounded"
 
               />
 
@@ -1042,7 +1042,7 @@ export const PostScrum = () => {
                 src="/img/img-articles/scrum_ciclo.png"
                 alt="Scrum ciclo"
                 style={imageStyle}
-                className="mx-auto d-block"
+                className="mx-auto d-block rounded"
 
               />
 
@@ -1124,9 +1124,9 @@ export const PostMidjourney = () => {
         <div className="col-md-8 ">
           <article className="articulo">
             <h1 className="text-center">El futuro de la creación de imágenes: Una mirada a Midjourney</h1>
-            <img style={imageStyle} src={imgMidjourney} alt="Portada Midjourney"  width="60%" />
+            <img style={imageStyle} src={imgMidjourney} alt="Portada Midjourney"  width="60%" className='rounded' />
             <p>En un mundo en constante evolución, la tecnología continúa abriendo nuevas puertas y posibilidades en todas las áreas de nuestra vida. Una de esas áreas es la creación de imágenes, y una inteligencia artificial en particular ha estado captando la atención de artistas, diseñadores, creadores de contenido y programadores por igual : <b>Midjourney</b>.</p>
-            <img style={imageStyle} src={mj_logo} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_logo} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p className="text-center">Logo Midjourey</p>
             <p>La IA de Midjourney se basa en algoritmos de aprendizaje profundo, que han sido entrenados con una amplia variedad de datos visuales y estéticos. Esto permite a Midjourney generar imágenes sorprendentes y visualmente impactantes que desafían las convenciones tradicionales y empujan los límites de lo posible. Desde paisajes surrealistas hasta retratos abstractos, <b>Midjourney</b> es capaz de crear obras de arte únicas.</p>
             <p>No debemos olvidar que, Midjourney es solo una inteligencia artificial que <b>analiza, observa y copia imágenes </b> de los artistas de todo el mundo y de todas las épocas. A través de su capacidad de aprendizaje profundo, Midjourney analiza y absorbe las obras maestras creadas por los grandes artistas de la historia, desentrañando sus técnicas y estilos únicos.</p>
@@ -1143,8 +1143,8 @@ export const PostMidjourney = () => {
             <br />
             <p>3. <u>Vaya a Discord y agregue el servidor Midjourney</u></p>
             <p>Para unirse o crear un servidor, presione el botón en la parte inferior de la lista de servidores en la barra lateral izquierda. <b>Presione el botón</b> y pegue o escriba <b>http://discord.gg/midjourney</b> para unirse al servidor de Midjourney.</p>
-            <img style={imageStyle} src={mj_discord} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
-            <img style={imageStyle} src={mj_discord2} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_discord} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
+            <img style={imageStyle} src={mj_discord2} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p>4. <u>Ir a cualquier canal</u></p>
             <p>En el servidor oficial de Midjourney, seleccione cualquier canal visible en la barra lateral izquierda, como el canal #General o #Newbie. Estos canales son ideales para interactuar con otros miembros del servidor, hacer preguntas y obtener orientación sobre el uso de Midjourney.</p>
             <p>Es recomendable agregar el bot de Midjourney a un servidor personal en lugar de utilizar los comandos en servidores públicos. Cuando ejecutas cualquier comando en un canal público, es probable que se pierda en cuestión de minutos debido al alto flujo de mensajes en esos servidores. Para evitar esto, se recomienda crear un servidor personal y exclusivo donde puedas instalar el bot de Midjourney y asegurarte de que los resultados de tus comandos no se pierdan en el chat.</p>
@@ -1158,34 +1158,34 @@ export const PostMidjourney = () => {
               <li>Escriba una descripción de la imagen que desea crear en el campo .prompt</li>
               <li>Envía tu mensaje.</li>
             </ol>  
-            <img style={imageStyle} src={mj_imagine} alt="Imagen Inteligencia Artificial" className="img_blog" width="100%" />
+            <img style={imageStyle} src={mj_imagine} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="100%" />
             <br />
             
             <p>6. <u>Acepte los Términos de Servicio</u></p>
             <p>El Midjourney Bot generará una ventana emergente pidiéndole que acepte los Términos de servicio. Es importante que <b>acepte los Términos de servicio</b> para poder generar cualquier imagen.</p>
             <p>7. <u>Procesa el trabajo</u></p>
             <p>El Midjourney Bot tarda aproximadamente un minuto en generar cuatro opciones de tu prompt.</p>
-            <img style={imageStyle} src={mj_proceso} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_proceso} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p>Midjourney utiliza potentes unidades de procesamiento de gráficos (GPU) para interpretar y procesar cada solicitud. Cuando compras una suscripción a Midjourney, estás adquiriendo tiempo en estas GPU. Cada vez que creas una imagen, utilizas parte del tiempo de GPU de tu suscripción.</p>
             <p>Utiliza el comando <b>/info</b> para comprobar rápidamente el tiempo restante y ver el tiempo de prueba que te queda.</p>
             <br />
             <p>8. <u>Amplíe o cree variaciones</u></p>
             <p>Una vez que la cuadrícula de imagen inicial haya terminado de generarse, aparecen dos filas de botones:</p>
-            <img style={imageStyle} src={mj_variaciones} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_variaciones} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p>Los botones U mejoran una imagen generando una versión más grande de la imagen seleccionada y agregando más detalles.</p>
             <p>Los botones V crean ligeras variaciones de la imagen de cuadrícula seleccionada. La creación de una variación genera una nueva cuadrícula de imagen similar al estilo y la composición general de la imagen elegida.</p>
             <h3>Galería de ejemplos</h3>
             <p>A continuación, te presentamos una selección de imágenes generadas por Midjourney, junto con los prompts que se utilizaron para crearlas. Estas obras de arte únicas fueron producidas por la poderosa inteligencia artificial de Midjourney, que combina algoritmos de aprendizaje profundo con la creatividad de los artistas que lo inspiran.</p>
-            <img style={imageStyle} src={mj_ejemplo1} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_ejemplo1} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p className="text-center"><b>Prompt:</b> bedroom melting into the ocean</p>
 
-            <img style={imageStyle} src={mj_ejemplo2} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_ejemplo2} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p className="text-center"><b>Prompt:</b> Korean Bibimbap</p>
 
-            <img style={imageStyle} src={mj_ejemplo3} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_ejemplo3} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p className="text-center"><b>Prompt:</b> a woman wearing glasses with flowers and tigers on her wall, in the style of glamorous hollywood portraits, light magenta and pink, 32k uhd, deconstructed hot pants tailoring, dramatic lighting effects, nyfw-inspired, modern jewelry</p>
 
-            <img style={imageStyle} src={mj_ejemplo4} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+            <img style={imageStyle} src={mj_ejemplo4} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
             <p className="text-center"><b>Prompt:</b> malachite Storm trooper as a vintagepunk samurai, dark grey background, blue and golden details, artstation, hyperdetailed, 8k, beautiful lighting, artstation by James Jean, Moebius, cory loftis, craig mullins, rutkowski, Mucha, hyperdetailed, over the shoulder, close up, james jean, mucha, fractal, vibrant colors, rococo art , 8k resolution, clear shape, defined shape, full body:: topalltwist::0</p>
 
             <h3>Conclusión</h3>
@@ -1219,7 +1219,7 @@ export const PostRevolucionIA = () => {
             La revolución de la inteligencia artificial
           </h1>
 
-          <img src={imgIa} alt="Imagen Inteligencia Artificial" className="img_blog" width="60%" />
+          <img src={imgIa} alt="Imagen Inteligencia Artificial" className="img_blog rounded" width="60%" />
 
 
           <h2>La revolución de la inteligencia artificial</h2>
