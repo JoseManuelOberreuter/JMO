@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/JMO/static/css/main.3aa32c94.css",
-    "main.js": "/JMO/static/js/main.acf1e972.js",
+    "main.css": "/JMO/static/css/main.406c5339.css",
+    "main.js": "/JMO/static/js/main.189ded0a.js",
     "static/js/787.c0a9cc5a.chunk.js": "/JMO/static/js/787.c0a9cc5a.chunk.js",
     "static/media/mj_img_proceso.png": "/JMO/static/media/mj_img_proceso.5a7564c6ec9adac9f1b7.png",
     "static/media/mj_img_ejemplo1.png": "/JMO/static/media/mj_img_ejemplo1.efe590140d07a3228651.png",
     "static/media/mj_img_ejemplo2.png": "/JMO/static/media/mj_img_ejemplo2.d5cce6b738f5ce8ac932.png",
     "static/media/mj_img_ejemplo4.png": "/JMO/static/media/mj_img_ejemplo4.d95fa3bb5f9048893687.png",
     "static/media/mj_portada_art.png": "/JMO/static/media/mj_portada_art.279a369e18ae05cb4a8f.png",
-    "static/media/portada-about.png": "/JMO/static/media/portada-about.caf47d9a46f3997757e1.png",
-    "static/media/portada-proyecto.png": "/JMO/static/media/portada-proyecto.e4bcd8c32526ca98115a.png",
     "static/media/portada_python3.png": "/JMO/static/media/portada_python3.15af3efb8cffcce463be.png",
     "static/media/data_screen.png": "/JMO/static/media/data_screen.b42cf3f0faf764dd2148.png",
+    "static/media/portafolio.png": "/JMO/static/media/portafolio.745d3761c0aaac55fb65.png",
     "static/media/portada_python1.png": "/JMO/static/media/portada_python1.61f2f46bfd2a82d6df71.png",
     "static/media/house_beach.png": "/JMO/static/media/house_beach.f553eeec4ba42735f966.png",
     "static/media/ia_cyber.png": "/JMO/static/media/ia_cyber.000a4ffd402d95f3df9f.png",
     "static/media/mj_img_ejemplo3.png": "/JMO/static/media/mj_img_ejemplo3.f62427a74d289c6797e0.png",
     "static/media/portada_python2.png": "/JMO/static/media/portada_python2.095bf901187a0cac7e24.png",
     "static/media/portada-principal.png": "/JMO/static/media/portada-principal.383b8342052af50e4c78.png",
+    "static/media/AboutMe.png": "/JMO/static/media/AboutMe.6251f9e068519a447e9d.png",
     "static/media/scrum_blog.png": "/JMO/static/media/scrum_blog.b42f4f7f9e7dfafface0.png",
     "static/media/portada_python.png": "/JMO/static/media/portada_python.621c50b35ab79cee0430.png",
     "static/media/kinepaula.png": "/JMO/static/media/kinepaula.9ddeb4b3bc53eba12f81.png",
@@ -34,12 +34,12 @@
     "static/media/twitericogrey.ico": "/JMO/static/media/twitericogrey.412d9ddb4d165f76e256.ico",
     "static/media/mj_imagine.jpg": "/JMO/static/media/mj_imagine.59e514dee6e7417889b9.jpg",
     "index.html": "/JMO/index.html",
-    "main.3aa32c94.css.map": "/JMO/static/css/main.3aa32c94.css.map",
-    "main.acf1e972.js.map": "/JMO/static/js/main.acf1e972.js.map",
+    "main.406c5339.css.map": "/JMO/static/css/main.406c5339.css.map",
+    "main.189ded0a.js.map": "/JMO/static/js/main.189ded0a.js.map",
     "787.c0a9cc5a.chunk.js.map": "/JMO/static/js/787.c0a9cc5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aa32c94.css",
-    "static/js/main.acf1e972.js"
+    "static/css/main.406c5339.css",
+    "static/js/main.189ded0a.js"
   ]
 }
