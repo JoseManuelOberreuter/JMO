@@ -52,7 +52,7 @@ const CardPortafolios1 = () => {
 
   return (
     <div className="col">
-      <a href={projectLink} className='text-decoration-none' target="_blank" >
+      <a href={projectLink} className='text-decoration-none' target="_blank" rel="noreferrer">
         <div className="card shadow-sm">
           <img
             src={dataScreen}
@@ -84,7 +84,7 @@ const CardPortafolios2 = () => {
 
   return (
     <div className="col">
-      <a href={projectLink} className='text-decoration-none' target="_blank" >
+      <a href={projectLink} className='text-decoration-none' target="_blank" rel="noreferrer" >
         <div className="card shadow-sm">
           <img
             src={kinePaula}
@@ -116,7 +116,7 @@ const CardPortafolios3 = () => {
 
   return (
     <div className="col">
-      <a href={projectLink} className='text-decoration-none' target="_blank" >
+      <a href={projectLink} className='text-decoration-none' target="_blank" rel="noreferrer">
         <div className="card shadow-sm">
           <img
             src={houseBeach} 

@@ -113,8 +113,6 @@ const SearchBar = ({ onSearch }) => {
     setIsDropdownVisible(false); // Oculta la lista desplegable
   };
 
-  // Calculamos el ancho del componente de búsqueda.
-  const searchBarWidth = searchBarRef.current ? searchBarRef.current.offsetWidth : 'auto';
 
   return (
     // Componente de formulario de búsqueda con una entrada de texto y una lista desplegable.

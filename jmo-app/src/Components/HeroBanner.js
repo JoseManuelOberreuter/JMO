@@ -95,7 +95,7 @@ export const MainBlog = () => {
           </div>
           <div class="col-auto d-none d-lg-flex align-items-center justify-content-center px-3">
             <title>Portafolio</title>
-            <img src={imgPortfolio} class="img_articulo rounded" width="200" height="200" />
+            <img src={imgPortfolio} class="img_articulo rounded" width="200" height="200" alt="Imagen Portafolio JMO" />
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@ export const MainBlog = () => {
           </div>
           <div class="col-auto d-none d-lg-flex align-items-center justify-content-center px-3">
             <title>About me</title>
-            <img src={imgAbout} class="img_articulo rounded" width="200" height="200" />
+            <img src={imgAbout} class="img_articulo rounded" width="200" height="200" alt="Imagen Inteligencia Artificial JMO" />
           </div>
         </div>
       </div>

@@ -225,7 +225,7 @@ export const PostMicrosoftAI900 = () => {
             
             <p>
               Fuente: <br></br>
-              <a target="_blank" href='https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/'>AI-900: Microsoft Azure AI Fundamentals</a>
+              <a target="_blank" rel="noreferrer" href='https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/'>AI-900: Microsoft Azure AI Fundamentals</a>
 
             </p>
 
