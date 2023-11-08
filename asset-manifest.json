@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/JMO/static/css/main.3aa32c94.css",
+    "main.js": "/JMO/static/js/main.8cb23a72.js",
+    "static/js/787.c0a9cc5a.chunk.js": "/JMO/static/js/787.c0a9cc5a.chunk.js",
+    "static/media/mj_portada_art.png": "/JMO/static/media/mj_portada_art.279a369e18ae05cb4a8f.png",
+    "static/media/portada-about.png": "/JMO/static/media/portada-about.caf47d9a46f3997757e1.png",
+    "static/media/portada-proyecto.png": "/JMO/static/media/portada-proyecto.e4bcd8c32526ca98115a.png",
+    "static/media/portada_python3.png": "/JMO/static/media/portada_python3.15af3efb8cffcce463be.png",
+    "static/media/data_screen.png": "/JMO/static/media/data_screen.b42cf3f0faf764dd2148.png",
+    "static/media/portada_python1.png": "/JMO/static/media/portada_python1.61f2f46bfd2a82d6df71.png",
+    "static/media/house_beach.png": "/JMO/static/media/house_beach.f553eeec4ba42735f966.png",
+    "static/media/ia_cyber.png": "/JMO/static/media/ia_cyber.000a4ffd402d95f3df9f.png",
+    "static/media/portada_python2.png": "/JMO/static/media/portada_python2.095bf901187a0cac7e24.png",
+    "static/media/portada-principal.png": "/JMO/static/media/portada-principal.383b8342052af50e4c78.png",
+    "static/media/scrum_blog.png": "/JMO/static/media/scrum_blog.b42f4f7f9e7dfafface0.png",
+    "static/media/portada_python.png": "/JMO/static/media/portada_python.621c50b35ab79cee0430.png",
+    "static/media/kinepaula.png": "/JMO/static/media/kinepaula.9ddeb4b3bc53eba12f81.png",
+    "static/media/certificado_az900.jpg": "/JMO/static/media/certificado_az900.5541052d7546876ba2d4.jpg",
+    "static/media/yo.jpg": "/JMO/static/media/yo.7982ce42b7300b779b66.jpg",
+    "static/media/fbicogrey.ico": "/JMO/static/media/fbicogrey.d3f231fb921d60e1169f.ico",
+    "static/media/giticogrey.ico": "/JMO/static/media/giticogrey.252e90a44f37be566be9.ico",
+    "static/media/instaicogrey.ico": "/JMO/static/media/instaicogrey.5bb3b9b116cb9c45b969.ico",
+    "static/media/linkicogrey.ico": "/JMO/static/media/linkicogrey.db6c09f7ef84f5b7fe55.ico",
+    "static/media/twitericogrey.ico": "/JMO/static/media/twitericogrey.412d9ddb4d165f76e256.ico",
+    "index.html": "/JMO/index.html",
+    "main.3aa32c94.css.map": "/JMO/static/css/main.3aa32c94.css.map",
+    "main.8cb23a72.js.map": "/JMO/static/js/main.8cb23a72.js.map",
+    "787.c0a9cc5a.chunk.js.map": "/JMO/static/js/787.c0a9cc5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3aa32c94.css",
+    "static/js/main.8cb23a72.js"
+  ]
+}
