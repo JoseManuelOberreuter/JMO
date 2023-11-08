@@ -2,6 +2,8 @@
 import { PreviewRecentPosts } from "./PreviewPost";
 import { Sidebar } from "./SideBar";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 import imgPortfolio from './img/herobanner/portada-proyecto.png'
 import imgAbout from './/img/herobanner/portada-about.png'
@@ -47,9 +49,9 @@ export const MainBlog = () => {
           <div className="col-md-6 px-0 ">
             <h1 className="display-4 "><b>JMO Tech Blog: aprende y desarrolla conmigo.</b></h1>
             <p className="lead my-3">Acompáñame en un emocionante viaje de descubrimiento tecnológico e informático a través de mis publicaciones.</p>
-            <a href="#publicaciones-recientes" >
+            <ScrollLink to="publicaciones-recientes" smooth={true} duration={500} className="button-link">
               Publicaciones recientes
-            </a>
+            </ScrollLink>
           </div>
         </div>
       

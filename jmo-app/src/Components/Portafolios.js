@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 import dataScreen from './img/portafolio/data_screen.png'
 import houseBeach from './img/portafolio/house_beach.png'
@@ -20,7 +21,7 @@ export const MainPortafolios = () => {
               Bienvenidos a mi portafolio de tecnología e informática, donde podrán conocer más acerca de mis habilidades, experiencia y pasiones en el mundo del desarrollo web y la tecnología.
             </p>
             <p>
-              <a href="newsletter1" className="btn btn-primary my-2 mx-2">Contactarme</a>
+              <ScrollLink to="form-footer" smooth={true} duration={500} className="btn btn-primary my-2 mx-2">Contactarme</ScrollLink>
               <Link to="/about" className="btn btn-secondary my-2 mx-2">Acerca de mí</Link>
             </p>
           </div>

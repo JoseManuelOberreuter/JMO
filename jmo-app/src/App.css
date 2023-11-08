@@ -32,15 +32,13 @@
 .button-link {
   border: none;
   color: #0D6EFD;
-  border-bottom: 1px solid #ffffff00;
-  background-color: #ffffff00;
   padding: 0;
   cursor: pointer;
-  transition: .5s;
+  transition: .1s;
 }
 
 .button-link:hover {
-  border-bottom: 1px solid #0D6EFD;
+  color: rgb(3, 94, 230);
 }
 
 

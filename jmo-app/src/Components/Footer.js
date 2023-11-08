@@ -21,7 +21,7 @@ export function Footer() {
   
   
             <div className="col-md-5 offset-md-1 mb-3">
-              <form action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
+              <form id='form-footer' action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST">
                 <h5>Comunícate Conmigo</h5>
                 <p>Por favor, ingresa tu consulta a continuación y te responderé a la brevedad.</p>
                 <div className="d-flex flex-column flex-sm-row w-100 gap-2">
