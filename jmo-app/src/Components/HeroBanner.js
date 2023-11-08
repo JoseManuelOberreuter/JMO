@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 
 
-import imgPortfolio from './img/herobanner/portada-proyecto.png'
-import imgAbout from './/img/herobanner/portada-about.png'
+import imgPortfolio from './img/portafolio/portafolio.png'
+import imgAbout from './img/portafolio/AboutMe.png'
 
 
 
@@ -83,27 +83,23 @@ export const MainBlog = () => {
   // CARDS
   export const Portafolio = () => {
     return(
-      <div className="col-md-6">
-        <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
-              
-        <div className="col p-4 d-flex flex-column position-static">
-        <h3 className="mb-0 h4">Descubre mi Portafolio Profesional</h3>
-        <div className="mb-1 text-body-secondary">Explora mis habilidades en desarrollo web y tecnología.</div>
-        <p className="card-text mb-auto">En esta sección podrán conocer más acerca de mis habilidades, experiencia y pasiones en el mundo del desarrollo web y la tecnología.</p>
-        <div>
-          <Link to="/portfolio">Acerca de mi </Link>
-        </div>
-          
-        </div>
-  
-        <div className="col-auto d-none d-lg-block">
-          <svg className="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0 h4">Descubre mi Portafolio Profesional</h3>
+            <div class="mb-1 text-body-secondary">Explora mis habilidades en desarrollo web y tecnología.</div>
+            <p class="card-text mb-auto">En esta sección podrán conocer más acerca de mis habilidades, experiencia y pasiones en el mundo del desarrollo web y la tecnología.</p>
+            <div>
+              <Link to="/portfolio">Acerca de mi </Link>
+            </div>
+          </div>
+          <div class="col-auto d-none d-lg-flex align-items-center justify-content-center px-3">
             <title>Portafolio</title>
-            <img src={imgPortfolio} className="img_articulo" width="100%" height="100%" />
-          </svg>
+            <img src={imgPortfolio} class="img_articulo rounded" width="200" height="200" />
+          </div>
         </div>
       </div>
-    </div>
+
     );
   };
   
@@ -111,21 +107,19 @@ export const MainBlog = () => {
   
   export const About = () => {
     return (
-      <div className="col-md-6">
-        <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm  position-relative">
-          <div className="col p-4 d-flex flex-column position-static">
-          <h3 className="mb-0 h4">Descubre Más Acerca de JMO</h3>
-            <div className="mb-1 text-body-secondary">Mi nombre es José Manuel Oberreuter y soy desarrollador de software.</div>
-            <p className="card-text mb-auto">Soy un estudiante en Ingeniería Informática, comprometido con el autoaprendizaje constante y la mejora de habilidades en programación.</p>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0 h4">Descubre Más Acerca de JMO</h3>
+            <div class="mb-1 text-body-secondary">Mi nombre es José Manuel Oberreuter y soy desarrollador de software.</div>
+            <p class="card-text mb-auto">Soy un estudiante en Ingeniería Informática, comprometido con el autoaprendizaje constante y la mejora de habilidades en programación.</p>
             <Link to="/about">Más información</Link>
           </div>
-          <div className="col-auto d-none d-lg-block">
-            <svg className="bd-placeholder-img px-3"  width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>About me</title>
-              <img href={imgAbout}  className="img_articulo" width="100%" height="100%"  />
-            </svg>
+          <div class="col-auto d-none d-lg-flex align-items-center justify-content-center px-3">
+            <title>About me</title>
+            <img src={imgAbout} class="img_articulo rounded" width="200" height="200" />
           </div>
-        </  div>
+        </div>
       </div>
     )
   }
