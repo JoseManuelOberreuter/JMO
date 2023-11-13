@@ -1,14 +1,14 @@
-import { Sidebar } from './SideBar';
-import {FinalDePost} from './Posts'
+import { Sidebar } from '../SideBar';
+import {FinalDePost} from '../Posts'
 
-import IA900_1 from './img/articles/machine-learn.gif'
-import IA900_2 from './img/articles/anomaly-detection.gif'
-import IA900_3 from './img/articles/image-classification.png'
-import IA900_4 from './img/articles/object-detection.png'
-import IA900_5 from './img/articles/semantic-segmentation.png'
-import IA900_6 from './img/articles/image-analysis.png'
-import IA900_7 from './img/articles/face-analysis.png'
-import IA900_8 from './img/articles/ocr.png'
+import IA900_1 from '../../Components/img/articles/machine-learn.gif'
+import IA900_2 from '../../Components/img/articles/anomaly-detection.gif'
+import IA900_3 from '../../Components/img/articles/image-classification.png'
+import IA900_4 from '../../Components/img/articles/object-detection.png'
+import IA900_5 from '../../Components/img/articles/semantic-segmentation.png'
+import IA900_6 from '../../Components/img/articles/image-analysis.png'
+import IA900_7 from '../../Components/img/articles/face-analysis.png'
+import IA900_8 from '../../Components/img/articles/ocr.png'
 
 
 
@@ -39,8 +39,8 @@ export const PostMicrosoftIA900 = () => {
   
   
   
-  
-              <h2 className=' my-2'>Introducción a la inteligencia artificial</h2>
+              {/* UNIDAD 1 */}
+              <h2 className='mt-4'>Introducción a la inteligencia artificial</h2>
   
               <p>
               ¡La IA nos permite crear un software increíble que puede mejorar la atención médica, permitir que las personas superen las desventajas físicas,
@@ -72,8 +72,11 @@ export const PostMicrosoftIA900 = () => {
                   <li><strong>Procesamiento del lenguaje natural:</strong> La capacidad de una computadora para interpretar el lenguaje escrito o hablado, y responder de la misma manera.</li>
                   <li><strong>Minería de conocimiento:</strong> la capacidad de extraer información de grandes volúmenes de datos a menudo no estructurados para crear un almacén de conocimiento en el que se pueden realizar búsquedas.</li>
               </ul>
-  
-              <h2>Descripción del aprendizaje automático</h2>
+
+
+
+              {/* UNIDAD 2 */}
+              <h2 className='mt-4'>Descripción del aprendizaje automático</h2>
   
               <p>
                 El aprendizaje automático es la base de la mayoría de soluciones de inteligencia artificial.
@@ -138,8 +141,8 @@ export const PostMicrosoftIA900 = () => {
   
   
   
-  
-              <h2>Descripción de la detección de anomalías</h2>
+              {/* UNIDAD 3 */}
+              <h2 className='mt-4'>Descripción de la detección de anomalías</h2>
               <p>Imagine que va a crear un sistema de software para supervisar las transacciones de tarjetas de crédito y detectar patrones de uso inusuales que podrían indicar fraudes. O bien, una aplicación que realiza el seguimiento de la actividad en una línea de producción automatizada e identifica los errores. O bien, un sistema de telemetría de coches de carreras que usa sensores para advertir de forma proactiva a los ingenieros sobre posibles errores mecánicos antes de que se produzcan.</p>
               <p>Estos tipos de escenarios se pueden solucionar mediante la detección de anomalías, una técnica basada en el aprendizaje automático que analiza los datos en el tiempo e identifica cambios inusuales.</p>
               <p>Ahora se verá cómo la detección de anomalías podría ayudar en el escenario de los coches de carreras.</p>
@@ -166,7 +169,12 @@ export const PostMicrosoftIA900 = () => {
               <p>En Microsoft Azure, el servicio Anomaly Detector proporciona una interfaz de programación de aplicaciones (API) que los desarrolladores pueden usar para crear soluciones de detección de anomalías.</p>
               <p>Para obtener más información, vea el sitio web del <a href='https://azure.microsoft.com/es-es/products/ai-services/ai-anomaly-detector/'>servicio Anomaly Detector</a>.</p>
   
-              <h2>Descripción de la visión informática</h2>
+
+
+
+
+              {/* UNIDAD 4 */}
+              <h2 className='mt-4'>Descripción de la visión informática</h2>
   
               <p>La visión informática es un área de la inteligencia artificial que trata el procesamiento visual. Ahora se explorarán algunas de las posibilidades que ofrece.</p>
               <p>La aplicación Seeing AI es un buen ejemplo del potencial de la visión informática. Diseñada para usuarios invidentes y con visión reducida, la aplicación Seeing AI aprovecha la eficacia de la inteligencia artificial para abrir el mundo visual y describir personas, texto y objetos cercanos.</p>
@@ -302,11 +310,104 @@ export const PostMicrosoftIA900 = () => {
                 </tbody>
               </table>
   
+
+
+              {/* UNIDAD 5 */}
+              <h2 className='mt-4'>Descripción del procesamiento de lenguaje natural</h2>
+              <p>El procesamiento de lenguaje natural (PNL) es el área de la inteligencia artificial que se ocupa de crear software capaz de entender el lenguaje escrito y hablado.</p>
+              <p>PNL permite crear software que puede hacer lo siguiente:</p>
+              <ol>
+                <li>Analizar e interpretar texto en documentos, mensajes de correo electrónico y otros orígenes.</li>
+                <li>Interpretar el lenguaje hablado y sintetizar las respuestas del habla.</li>
+                <li>Traducir automáticamente frases habladas o escritas entre idiomas.</li>
+                <li>Interpretar comandos y determinar las acciones apropiadas.</li>
+              </ol>
+              <p>Por ejemplo, Starship Commander es un juego de realidad virtual (VR) de Human Interact, que tiene lugar en un mundo de ciencia ficción. En el juego se usa el procesamiento de lenguaje natural para permitir que los jugadores controlen la narración e interactúen con los personajes y los sistemas de naves del juego.</p>
   
+              <h3 className='text-muted fs-4 my-2'>Procesamiento de lenguaje natural en Microsoft Azure</h3>
+              <p>En Microsoft Azure puede usar los servicios de Azure AI siguientes para crear soluciones de procesamiento de lenguaje natural:</p>
   
-  
-              {/* CONTINUAR EN UNIDAD 5 */}
-  
+
+              <table className='table table-striped'>
+                <thead>
+                  <tr>
+                    <th>Servicio</th>
+                    <th>Funciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lenguaje de Azure AI</td>
+                    <td>Use este servicio para acceder a características que le permitan comprender y analizar texto, entrenar modelos de lenguaje que puedan comprender comandos de texto o hablados y compilar aplicaciones inteligentes.</td>
+                  </tr>
+                  <tr>
+                    <td>Traductor de Azure AI</td>
+                    <td>Use este servicio para traducir texto en más de 60 idiomas.</td>
+                  </tr>
+                  <tr>
+                    <td>Voz de Azure AI</td>
+                    <td>Use este servicio para reconocer y sintetizar mensajes de voz y traducir idiomas hablados.</td>
+                  </tr>
+                  <tr>
+                    <td>Servicio de Bot de Azure AI</td>
+                    <td>Este servicio proporciona una plataforma para IA conversacional, la capacidad de un "agente" de software para participar en una conversación. Los desarrolladores pueden usar Bot Framework para crear un bot y administrarlo con Azure Bot Service, a fin de integrar servicios de back-end como Language, y conectarse a canales de chat web, correo electrónico, Microsoft Teams, etc.</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+
+              {/* UNIDAD 6 */}
+              <h2 className='mt-4'>Descripción de la minería del conocimiento</h2>
+              <p>La minería de conocimiento es el término que se usa para describir soluciones que implican la extracción de información de grandes volúmenes de datos a menudo no estructurados para crear un almacén de conocimiento indexado.</p>
+              <h3 className='text-muted fs-4 my-2'>Minería de conocimientos en Microsoft Azure</h3>
+              <p>Una de estas soluciones de minería de conocimiento es Azure Cognitive Search, una solución de búsqueda privada y empresarial que incluye herramientas para crear índices. Los índices se pueden usar solo internamente o para habilitar contenido que permita búsquedas en recursos de Internet de acceso público.</p>
+              <p>Azure Cognitive Search puede usar las funcionalidades integradas de inteligencia artificial de servicios de Azure AI, como el procesamiento de imágenes, la extracción de contenido y el procesamiento de lenguaje natural, para llevar a cabo la minería de conocimiento de documentos. Gracias a las funcionalidades de inteligencia artificial del producto, se pueden indexar documentos que antes no permitían búsquedas y acceder rápidamente a información de grandes cantidades de datos.</p>
+
+              {/* UNIDAD 7 */}
+              <h2 className='mt-4'>Desafíos y riesgos con la inteligencia artificial</h2>
+              <p>La Inteligencia artificial es una herramienta poderosa que se puede usar para beneficiar enormemente al mundo. Pero como cualquier herramienta, se debe utilizar de manera responsable.</p>
+              <p>En la tabla siguiente se muestran algunos de los posibles desafíos y riesgos a los que se enfrenta un desarrollador de aplicaciones de inteligencia artificial.</p>
+
+              <table className='table table-striped'>
+                <thead>
+                  <tr>
+                    <th>Desafío o riesgo</th>
+                    <th>Ejemplo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>El sesgo puede afectar a los resultados.</td>
+                    <td>Un modelo de aprobación de préstamos discrimina por sexo debido a un sesgo en los datos con los que se entrenó.</td>
+                  </tr>
+                  <tr>
+                    <td>Los errores pueden causar daños.</td>
+                    <td>Un vehículo autónomo experimenta un error del sistema y provoca una colisión.</td>
+                  </tr>
+                  <tr>
+                    <td>Se podrían exponer datos.</td>
+                    <td>Un bot de diagnóstico médico se entrena con datos confidenciales de pacientes, que se almacenan de forma insegura.</td>
+                  </tr>
+                  <tr>
+                    <td>Es posible que las soluciones no funcionen para todos los usuarios.</td>
+                    <td>Un asistente de automatización del hogar no proporciona ninguna salida de audio para usuarios con discapacidades visuales.</td>
+                  </tr>
+                  <tr>
+                    <td>Los usuarios deben confiar en un sistema complejo.</td>
+                    <td>Una herramienta financiera basada en inteligencia artificial realiza recomendaciones de inversión: ¿en qué se basan?</td>
+                  </tr>
+                  <tr>
+                    <td>¿Quién es responsable de las decisiones basadas en la inteligencia artificial?</td>
+                    <td>Se condena a una persona inocente de un crimen basándose en las evidencias del reconocimiento facial: ¿quién es responsable?</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+
+
               <FinalDePost/>
   
   

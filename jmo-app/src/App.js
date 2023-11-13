@@ -26,7 +26,7 @@ import {
   PostRevolucionIA,
 } from './Components/Posts'
 
-import {PostMicrosoftIA900} from './Components/Post_IA900_1'
+import {PostMicrosoftIA900} from './Components/posts/Post_IA900_1'
 
 import './App.css';
 
