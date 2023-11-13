@@ -15,7 +15,7 @@ import {
   ArchivosIA,
 } from './Components/SideBar'
 
-
+// POSTS 
 import {
   PostPython4,
   PostPython3,
@@ -25,6 +25,8 @@ import {
   PostMidjourney,
   PostRevolucionIA,
 } from './Components/Posts'
+
+import {PostMicrosoftIA900} from './Components/Post_IA900_1'
 
 import './App.css';
 
@@ -82,6 +84,7 @@ function App() {
           <Route path="/PostPython2" element={<PostPython2/>} />
           <Route path="/PostPython3" element={<PostPython3/>} />
           <Route path="/PostPython4" element={<PostPython4/>} />
+          <Route path="/IA900_1" element={<PostMicrosoftIA900/>} />
 
 
 
