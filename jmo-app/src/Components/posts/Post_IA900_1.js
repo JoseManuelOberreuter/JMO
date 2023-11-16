@@ -404,6 +404,9 @@ export const PostMicrosoftIA900 = () => {
                 </tbody>
               </table>
 
+              {/* UNIDAD 8 */}
+              <h2 className='mt-4'>Descripción de la inteligencia artificial responsable</h2>
+              <p>En Microsoft, el desarrollo de software de inteligencia artificial se guía por un conjunto de seis principios diseñados para garantizar que las aplicaciones de inteligencia artificial ofrezcan soluciones sorprendentes a problemas difíciles sin consecuencias negativas no deseadas.</p>
 
 
 
@@ -418,5 +421,5 @@ export const PostMicrosoftIA900 = () => {
         </div>
       </main>
     );
-  };
+};
   
