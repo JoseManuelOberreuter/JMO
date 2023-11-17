@@ -34,7 +34,7 @@ import mj_ejemplo4 from './img/articles/mj_img_ejemplo4.png'
 
 
 
-function CopyCode({ code }) {
+export function CopyCode({ code }) {
   const [buttonText, setButtonText] = useState('Copiar');
 
   const handleCopyClick = () => {
@@ -66,7 +66,7 @@ function CopyCode({ code }) {
 
 
 
-function copyToClipboard(text) {
+export function copyToClipboard(text) {
   // Crea un elemento de texto oculto para copiar el texto
   const textArea = document.createElement('textarea');
   textArea.value = text;

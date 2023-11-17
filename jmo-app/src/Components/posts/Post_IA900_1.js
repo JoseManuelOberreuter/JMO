@@ -12,7 +12,7 @@ import IA900_8 from '../../Components/img/articles/ocr.png'
 
 
 
-export const PostMicrosoftIA900 = () => {
+export const PostMicrosoftIgniteAzureMachineLearning = () => {
     return (
       <main>
         <div className="row g-5">
