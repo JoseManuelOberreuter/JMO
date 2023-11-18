@@ -353,6 +353,8 @@ df.head()                    `} />
                 
                 <h3 className="text-muted">Entrenamiento de modelos de aprendizaje automático</h3>
 
+                {/* CONTINUAR CON MICROSOFT IGNITE CHALLENGE */}
+
 
 
 

@@ -1,3 +1,12 @@
+// TO DO:
+// - FIX BUG HEADEAR LINKS 
+// - ADD MORE PROYECTS ON PYTHON 
+// - POST NEW POSTS
+// - UPDATE SIDEBAR, ADD LINK MICROSOFT
+
+
+
+
 import React, { useEffect } from 'react';
 import { HashRouter as Router,useLocation , Route, Routes } from 'react-router-dom';
 
