@@ -352,20 +352,136 @@ df.head()                    `} />
                 </ol>
                 
                 <h3 className="text-muted">Entrenamiento de modelos de aprendizaje automático</h3>
+                <p>Ahora que ha preparado los datos, puede usarlos para entrenar un modelo de aprendizaje automático para predecir la diabetes. Podemos entrenar dos tipos diferentes de modelos con nuestro conjunto de datos: un modelo de regresión (predicción) o un modelo de clasificación (predicción). Entrenará los modelos con la biblioteca scikit-learn y realizará un seguimiento de los modelos con MLflow.<code>Y Risk</code></p>
+                <h4>Entrenamiento de un modelo de regresión</h4>
+                <ol>
+                  <li>Ejecute el siguiente código para dividir los datos en un conjunto de datos de entrenamiento y prueba, y para separar las características de la etiqueta que desea predecir:<code>Y</code></li>
+                  <div className="code-box">
+                    <CopyCode code={  `
+from sklearn.model_selection import train_test_split
+    
+X, y = df_clean[['AGE','SEX','BMI','BP','S1','S2','S3','S4','S5','S6']].values, df_clean['Y'].values
+    
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
+                    `} />
+                  </div>
+                  <li>Agregue otra celda de código nueva al cuaderno, escriba el siguiente código en ella y ejecútelo:</li>
+                  <div className="code-box">
+                    <CopyCode code={  `
+import mlflow
+experiment_name = "diabetes-regression"
+mlflow.set_experiment(experiment_name)
+                    `} />
+                  </div>
+                  <p>El código crea un experimento de MLflow denominado . En este experimento se realizará un seguimiento de los modelos.<code>diabetes-regression</code></p>
+                  <li>Agregue otra celda de código nueva al cuaderno, escriba el siguiente código en ella y ejecútelo:</li>
+                  <div className="code-box">
+                    <CopyCode code={  `
+from sklearn.linear_model import LinearRegression
+    
+with mlflow.start_run():
+   mlflow.autolog()
+    
+   model = LinearRegression()
+   model.fit(X_train, y_train)
+                    `} />
+                  </div>
+                  <p>El código entrena un modelo de regresión mediante regresión lineal. Los parámetros, las métricas y los artefactos se registran automáticamente con MLflow.</p>
+                </ol>
 
-                {/* CONTINUAR CON MICROSOFT IGNITE CHALLENGE */}
+                <h4>Entrenamiento de un modelo de clasificación</h4>
+                <ol>
+                  <li>Ejecute el siguiente código para dividir los datos en un conjunto de datos de entrenamiento y prueba, y para separar las características de la etiqueta que desea predecir: <code>Risk</code></li>
+                  <div className="code-box">
+                    <CopyCode code={  `
+from sklearn.model_selection import train_test_split
+    
+X, y = df_clean[['AGE','SEX','BMI','BP','S1','S2','S3','S4','S5','S6']].values, df_clean['Risk'].values
+    
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
+                    `} />
+                  </div>
+                  <li>Agregue otra celda de código nueva al cuaderno, escriba el siguiente código en ella y ejecútelo:</li>
+                  <div className="code-box">
+                    <CopyCode code={  `
+import mlflow
+experiment_name = "diabetes-classification"
+mlflow.set_experiment(experiment_name)
+                    `} />
+                  </div>
+                  <p>El código crea un experimento de MLflow denominado . En este experimento se realizará un seguimiento de los modelos.<code>diabetes-classification</code></p>
+                  <li>Agregue otra celda de código nueva al cuaderno, escriba el siguiente código en ella y ejecútelo:</li>
+                  <div className="code-box">
+                    <CopyCode code={  `
+from sklearn.linear_model import LogisticRegression
+    
+with mlflow.start_run():
+    mlflow.sklearn.autolog()
 
+    model = LogisticRegression(C=1/0.1, solver="liblinear").fit(X_train, y_train)
+                    `} />
+                  </div>
+                  <p>El código entrena un modelo de clasificación mediante regresión logística. Los parámetros, las métricas y los artefactos se registran automáticamente con MLflow.</p>
+                </ol>
 
+                <h3 className="text-muted">Explora tus experimentos</h3>
+                <p>Microsoft Fabric realizará un seguimiento de todos sus experimentos y le permitirá explorarlos visualmente.</p>
+                <ol>
+                  <li>Navegue a su espacio de trabajo desde la barra de menú central de la izquierda.</li>
+                  <li>Seleccione el experimento para abrirlo.<code>diabetes-regression</code></li>
+                  <p>Propina: Si no ve ninguna ejecución de experimento registrada, actualice la página.</p>
+                  <li>Revise las métricas de ejecución para explorar la precisión de su modelo de regresión.</li>
+                  <li>Vuelva a la página principal y seleccione el experimento para abrirlo.diabetes-classification</li>
+                  <li>Revise las métricas de ejecución para explorar la precisión del modelo de clasificación. Tenga en cuenta que el tipo de métricas es diferente, ya que ha entrenado un tipo diferente de modelo.</li>
+                </ol>
 
+                <h3 className='text-muted'>Guarde el modelo</h3>
+                <p>Después de comparar los modelos de aprendizaje automático que ha entrenado en los experimentos, puede elegir el modelo con mejor rendimiento. Para utilizar el modelo con mejor rendimiento, guárdelo y utilícelo para generar predicciones.</p>
+                <ol>
+                  <li>Seleccione Guardar en el cuadro Guardar como modelo.</li>
+                  <li>Seleccione Crear un nuevo modelo en la ventana emergente recién abierta.</li>
+                  <li>Seleccione la carpeta. <code>model</code></li>
+                  <li>Asigne un nombre al modelo y seleccione Guardar.<code>model-diabetes</code></li>
+                  <li>Seleccione Ver modelo en la notificación que aparece en la parte superior derecha de la pantalla cuando se crea el modelo. También puede actualizar la ventana. El modelo guardado está vinculado en Versiones del modelo.</li>
+                </ol>
+                <p>Tenga en cuenta que el modelo, el experimento y la ejecución del experimento están vinculados, lo que le permite revisar cómo se entrena el modelo.</p>
 
+                <h3 className='text-muted'>Guarde el cuaderno y finalice la sesión de Spark</h3>
+                <p>Ahora que ha terminado de entrenar y evaluar los modelos, puede guardar el cuaderno con un nombre descriptivo y finalizar la sesión de Spark.</p>
+                <ol>
+                  <li>En la barra de menús del bloc de notas, use el ⚙️ icono Configuración para ver la configuración del bloc de notas.</li>
+                  <li>Establezca el nombre del cuaderno en Entrenar y comparar modelos y, a continuación, cierre el panel de configuración.</li>
+                  <li>En el menú del bloc de notas, seleccione Detener sesión para finalizar la sesión de Spark.</li>
+                </ol>
 
+                <h3 className='text-muted'>Limpieza de recursos</h3>
+                <p>En este ejercicio, ha creado un cuaderno y entrenado un modelo de aprendizaje automático. Usó scikit-learn para entrenar el modelo y MLflow para realizar un seguimiento de su rendimiento.</p>
+                <p>Si ha terminado de explorar el modelo y los experimentos, puede eliminar el área de trabajo que creó para este ejercicio.</p>
+                <ol>
+                  <li>En la barra de la izquierda, seleccione el icono del espacio de trabajo para ver todos los elementos que contiene.</li>
+                  <li>En el menú ... de la barra de herramientas, seleccione Configuración del espacio de trabajo.</li>
+                  <li>En la sección Otros, seleccione Quitar esta área de trabajo .</li>
+                </ol>
 
+                {/* 
+                  UNIDAD 6 
+                  AÑADIR LOGICA DE RADIO
+                */}
 
+                <h2>Prueba de conocimientos</h2>
+                <p>1. Tiene acceso a un conjunto de datos histórico que contiene los gastos mensuales del departamento de marketing. Quiere generar predicciones de los gastos del mes que viene. ¿Qué tipo de modelo de Machine Learning se necesita? </p>
+                <p>Correcto. La previsión se usa cuando se quieren predecir valores numéricos futuros a partir de datos de series temporales.</p>
 
+                <p>2. ¿Qué característica de Microsoft Fabric debe usar para revisar los resultados del seguimiento de MLflow a través de una interfaz de usuario? </p>
+                <p>Correcto. Los experimentos de Microsoft Fabric ofrecen una interfaz de usuario visual para explorar las métricas.</p>
 
+                <p>3. ¿Qué característica de Microsoft Fabric debe usar para acelerar la exploración y limpieza de datos? </p>
+                <p>Correcto. Use Data Wrangler para visualizar y limpiar los datos.</p>
 
-
-
+                <h2>Resume</h2>
+                <p>Microsoft Fabric ofrece un área de trabajo central para realizar tareas de ciencia de datos de principio a fin.</p>
+                <p>Para realizar tareas de ciencia de datos, primero debe definir el problema. Después, puede identificar los datos que necesita e ingerirlos en Microsoft Fabric. Cuando haya ingerido los datos, puede explorar y preparar los datos mediante cuadernos o Limpieza y transformación de datos.</p>
+                <p>Para entrenar modelos de Machine Learning como parte del proyecto de ciencia de datos, puede realizar el seguimiento del trabajo con experimentos. A fin de usar un modelo para generar información, puede usar la función PREDICT integrada.</p>
 
 
 
