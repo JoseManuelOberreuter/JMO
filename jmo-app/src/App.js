@@ -36,7 +36,8 @@ import {
 } from './Components/Posts'
 
 import {PostMicrosoftIA900} from './Components/posts/Post_IA900_1'
-import {MicrosoftIgniteAzureML} from './Components/posts/Microsoft_IgniteAzureML'
+import {MicrosoftIgniteAzureML1} from './Components/posts/Microsoft_IgniteAzureML1'
+import {MicrosoftIgniteAzureML2} from './Components/posts/Microsoft_IgniteAzureML2'
 
 import './App.css';
 
@@ -105,7 +106,7 @@ function App() {
           <Route path="/ArchivosPythos" element={<ArchivosPythos />} />
 
           {/* Ruta de pueba */}
-          <Route path="/Prueba" element={<MicrosoftIgniteAzureML/>} />
+          <Route path="/Prueba" element={<MicrosoftIgniteAzureML2/>} />
 
         </Routes>
         <Footer />
