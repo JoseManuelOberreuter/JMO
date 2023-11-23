@@ -58,37 +58,37 @@ export const PreviewRecentPosts = () => {
       width: "60%"
     };
   
-    return (
-      <div>
-        <article className="text-justify border-bottom pb-2 my-4">
-          <h2>Introducción a la Inteligencia Artificial en Microsoft Azure</h2>
-          <p className="blog-post-meta">Noviembre 12</p>
-          <div className="row">
+    // return (
+    //   <div>
+    //     <article className="text-justify border-bottom pb-2 my-4">
+    //       <h2>Introducción a la Inteligencia Artificial en Microsoft Azure</h2>
+    //       <p className="blog-post-meta">Noviembre 12</p>
+    //       <div className="row">
   
-            <div className="col-md-6">
-              {/* <img
-                style={imageStyle}
-                src={imgIAAzure}
-                alt="Imagen Inteligencia Artificial en Azure"
-                className="img_blog rounded"
-              /> */}
-            </div>
-            <div className="col-md-6">
-              <p>
-                La inteligencia artificial (IA) permite la creación de nuevas experiencias y soluciones increíbles, y Microsoft Azure proporciona servicios fáciles de usar que le ayudarán a empezar. Esta ruta de aprendizaje te ayuda a prepararse para Exam AI-900: Microsoft Azure AI Fundamentals.
-              </p>
-            </div>
+    //         <div className="col-md-6">
+    //           {/* <img
+    //             style={imageStyle}
+    //             src={imgIAAzure}
+    //             alt="Imagen Inteligencia Artificial en Azure"
+    //             className="img_blog rounded"
+    //           /> */}
+    //         </div>
+    //         <div className="col-md-6">
+    //           <p>
+    //             La inteligencia artificial (IA) permite la creación de nuevas experiencias y soluciones increíbles, y Microsoft Azure proporciona servicios fáciles de usar que le ayudarán a empezar. Esta ruta de aprendizaje te ayuda a prepararse para Exam AI-900: Microsoft Azure AI Fundamentals.
+    //           </p>
+    //         </div>
   
-          </div>
-          <p>
-            En este artículo, exploraremos conceptos clave en la inteligencia artificial, como el aprendizaje automático, la detección de anomalías, la visión informática, el procesamiento de lenguaje natural y la minería del conocimiento. Además, destacaremos cómo Microsoft Azure ofrece servicios específicos para cada uno de estos dominios, facilitando a los desarrolladores la implementación de soluciones de IA efectivas y éticas.
-          </p>
-          <Link to="/IA900_1" className="button-link">
-            Seguir leyendo
-          </Link>
-        </article>
-      </div>
-    );
+    //       </div>
+    //       <p>
+    //         En este artículo, exploraremos conceptos clave en la inteligencia artificial, como el aprendizaje automático, la detección de anomalías, la visión informática, el procesamiento de lenguaje natural y la minería del conocimiento. Además, destacaremos cómo Microsoft Azure ofrece servicios específicos para cada uno de estos dominios, facilitando a los desarrolladores la implementación de soluciones de IA efectivas y éticas.
+    //       </p>
+    //       <Link to="/IA900_1" className="button-link">
+    //         Seguir leyendo
+    //       </Link>
+    //     </article>
+    //   </div>
+    // );
   }
   
   
