@@ -1,24 +1,45 @@
+import React, { useState } from 'react';
+import './css/HeroBanner.css'
+
 // MAIN CONTENT 
 import { PreviewRecentPosts } from "./PreviewPost";
 import { Sidebar } from "./SideBar";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
-
-
-import imgPortfolio from './img/portafolio/portafolio.png'
-import imgAbout from './img/portafolio/AboutMe.png'
+import imgPortfolio from './img/portafolio/portafolio.png';
+import imgAbout from './img/portafolio/AboutMe.png';
 
 
 
+export const HeroBanner = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const handleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
+  return (
+    <div className="hero-banner">
+      <div className="content">
+        <h1>Bienvenido a la Comunidad de Programación</h1>
+        <p>Aprende, Colabora y Crea con Nosotros</p>
+        <button onClick={handleShowMore}>
+          {showMore ? 'Mostrar Menos' : 'Mostrar Más'}
+        </button>
+        {showMore && (
+          <div className="more-info">
+            <p>Únete a nuestro foro, explora tutoriales y mucho más.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export const MainBlog = () => {
-
-    
-
     return (
       <main>
         <div>
-  
             <div>
               <MainPost onSeguirLeyendoClick/>
               <SecondaryPost />
@@ -27,24 +48,14 @@ export const MainBlog = () => {
                 <Sidebar />
               </div>
             </div>
-        
         </div>
       </main>
     );
   };
-  
-  
-  
-  
-  
+
   // HERO BANER
   const MainPost = () => {
-  
-    
-  
     return (
-      
-  
         <div className="p-4 p-md-4 mb-2 rounded text-bg-dark " id="blog_hero">
           <div className="col-md-6 px-0 ">
             <h1 className="display-4 "><b>JMO Tech Blog: aprende y desarrolla conmigo.</b></h1>
@@ -54,25 +65,15 @@ export const MainBlog = () => {
             </ScrollLink>
           </div>
         </div>
-      
-  
-  
     );
   }
   
   export const SecondaryPost = () => {
     return (
-  
       <div className="row mb-2 ">
-        
-  
           <Portafolio />
-  
-          <About />
-  
-  
+          <About /> 
       </div>
-  
     );
   }
   
@@ -99,7 +100,6 @@ export const MainBlog = () => {
           </div>
         </div>
       </div>
-
     );
   };
   
