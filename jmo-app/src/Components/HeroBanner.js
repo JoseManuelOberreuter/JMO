@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/HeroBanner.css'
+import '../css/HeroBanner.css'
 
 // MAIN CONTENT 
 import { PreviewRecentPosts } from "./PreviewPost";

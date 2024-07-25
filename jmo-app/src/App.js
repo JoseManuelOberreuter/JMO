@@ -15,29 +15,41 @@ import { ArchivosPythos, ArchivosMetodosAgiles, ArchivosIA } from './Components/
 import { PostPython4, PostPython3, PostPython1, PostPython2, PostScrum, PostMidjourney, PostRevolucionIA } from './Components/Posts'
 import { MicrosoftIgniteAzureML2 } from './Components/posts/Microsoft_IgniteAzureML2'
 import { MainBlog, HeroBanner } from './Components/HeroBanner'
-import './App.css';
 // import {PostMicrosoftIA900} from './Components/posts/Post_IA900_1'
 // import {MicrosoftIgniteAzureML1} from './Components/posts/Microsoft_IgniteAzureML1'
 
 import { Main } from './Pages/Main'
+import { ScrollToTop } from './Components/ScrollTop'
+
+import './App.css';
+import './css/CursorEffect.css';
 
 
-// Función para hacer scroll hasta arriba
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
 
 function App() {  
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const cursorEffect = document.querySelector('.cursor-effect');
+      if (cursorEffect) {
+        cursorEffect.style.left = `${e.clientX}px`;
+        cursorEffect.style.top = `${e.clientY}px`;
+      }
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
       <div className="App">
-        <Header />
-        <ScrollToTop /> 
+      <div className="cursor-effect"></div>
+      <ScrollToTop />
+
+
         <Routes>
           <Route path="/" element={<Main />} /> 
           
@@ -57,7 +69,6 @@ function App() {
           <Route path="/ArchivosPythos" element={<ArchivosPythos />} />
           <Route path="/Prueba" element={<MicrosoftIgniteAzureML2/>} />
         </Routes>
-        <Footer />
       </div>
   );
 }
