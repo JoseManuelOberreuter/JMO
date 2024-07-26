@@ -49,6 +49,7 @@ function App() {
       <div className="cursor-effect"></div>
       <ScrollToTop />
 
+      <Header />
 
         <Routes>
           <Route path="/" element={<Main />} /> 

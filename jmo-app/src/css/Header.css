@@ -1,0 +1,17 @@
+.header-custom {
+    border-bottom: 1px solid;
+    border-color: #b0b0b080; /* Color gris para el borde inferior */
+}
+  
+.nav-link {
+    color: #b0b0b0; /* Color gris para los enlaces */
+}
+  
+.nav-link:hover {
+    color: #ffffff; /* Color blanco al pasar el cursor */
+}
+  
+.nav-link.active {
+    color: #ffffff; /* Color blanco para el enlace activo */
+}
+  
