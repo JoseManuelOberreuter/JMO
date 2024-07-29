@@ -61,7 +61,7 @@ export const HeroBanner = () => {
           Programador <span className="dynamic-text" style={{ color: colors[currentWordIndex] }}>{text}</span>
         </h1>
         <div className="more-info">
-          <p>Únete a nuestro foro, explora tutoriales y mucho más.</p>
+          <p>Explora mi trabajo y trayectoria en tecnología</p>
         </div>
       </div>
     </div>
