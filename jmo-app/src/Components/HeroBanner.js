@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/HeroBanner.css'
 
 // MAIN CONTENT 
@@ -9,28 +9,60 @@ import { Link as ScrollLink } from 'react-scroll';
 import imgPortfolio from './img/portafolio/portafolio.png';
 import imgAbout from './img/portafolio/AboutMe.png';
 
-
+const words = ['FullStack', 'FrontEnd', 'BackEnd'];
+const colors = ['#FF5733', '#33FF57', '#3357FF'];
 
 export const HeroBanner = () => {
-  const [showMore, setShowMore] = useState(false);
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [text, setText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [pause, setPause] = useState(false);
 
-  const handleShowMore = () => {
-    setShowMore(!showMore);
-  };
+  const typingSpeed = 150; // Tiempo en milisegundos
+  const deletingSpeed = 100; // Tiempo en milisegundos
+  const pauseDuration = 1000; // Tiempo en milisegundos
+
+  useEffect(() => {
+    let timer;
+    const word = words[currentWordIndex];
+
+    if (pause) {
+      timer = setTimeout(() => {
+        setPause(false);
+      }, pauseDuration);
+    } else if (isDeleting) {
+      timer = setTimeout(() => {
+        setText(prevText => prevText.slice(0, -1));
+        if (text === '') {
+          setIsDeleting(false);
+          setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+          setPause(true);
+        }
+      }, deletingSpeed);
+    } else {
+      timer = setTimeout(() => {
+        setText(prevText => word.slice(0, prevText.length + 1));
+        if (text === word) {
+          setIsDeleting(true);
+          setPause(true);
+        }
+      }, typingSpeed);
+    }
+
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, pause, currentWordIndex]);
 
   return (
     <div className="hero-banner">
       <div className="content">
-        <h1>Bienvenido a la Comunidad de Programación</h1>
-        <p>Aprende, Colabora y Crea con Nosotros</p>
-        <button onClick={handleShowMore}>
-          {showMore ? 'Mostrar Menos' : 'Mostrar Más'}
-        </button>
-        {showMore && (
-          <div className="more-info">
-            <p>Únete a nuestro foro, explora tutoriales y mucho más.</p>
-          </div>
-        )}
+        <h1>
+          José Manuel Oberreuter
+          <br />
+          Programador <span className="dynamic-text" style={{ color: colors[currentWordIndex] }}>{text}</span>
+        </h1>
+        <div className="more-info">
+          <p>Únete a nuestro foro, explora tutoriales y mucho más.</p>
+        </div>
       </div>
     </div>
   );
