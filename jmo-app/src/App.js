@@ -1,15 +1,8 @@
-// TO DO:
-// - FIX BUG HEADEAR LINKS 
-// - ADD MORE PROYECTS ON PYTHON 
-// - POST NEW POSTS
-// - UPDATE SIDEBAR, ADD LINK MICROSOFT
-
 import React, { useEffect } from 'react';
 import { useLocation , Route, Routes } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { MainPortafolios } from './Components/Portafolios';
 import { MainAboutMe } from './Components/AboutMe';
-import { Footer } from './Components/Footer';
 import { Thanks } from './Components/Thanks';
 import { ArchivosPythos, ArchivosMetodosAgiles, ArchivosIA } from './Components/SideBar'
 import { PostPython4, PostPython3, PostPython1, PostPython2, PostScrum, PostMidjourney, PostRevolucionIA } from './Components/Posts'
@@ -20,6 +13,8 @@ import { MainBlog, HeroBanner } from './Components/HeroBanner'
 
 import { Main } from './Pages/Main'
 import { ScrollToTop } from './Components/ScrollTop'
+import { Footer } from './Components/Footer';
+
 
 import './App.css';
 import './css/CursorEffect.css';
@@ -45,10 +40,9 @@ function App() {
   }, []);
 
   return (
-      <div className="App">
+    <div className="App">
       <div className="cursor-effect"></div>
       <ScrollToTop />
-
       <Header />
 
         <Routes>
@@ -70,7 +64,9 @@ function App() {
           <Route path="/ArchivosPythos" element={<ArchivosPythos />} />
           <Route path="/Prueba" element={<MicrosoftIgniteAzureML2/>} />
         </Routes>
-      </div>
+
+      <Footer />
+    </div>
   );
 }
 

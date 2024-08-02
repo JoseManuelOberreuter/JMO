@@ -14,10 +14,10 @@
 }
 
 .content {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 20px;
   border-radius: 10px;
-  position: relative; /* Necesario para el cursor parpadeante */
+  position: relative; 
 }
 
 .dynamic-text {
