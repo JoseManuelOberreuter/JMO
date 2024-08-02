@@ -17,7 +17,7 @@ import { Footer } from './Components/Footer';
 
 
 import './App.css';
-import './css/CursorEffect.css';
+import './Css/CursorEffect.css';
 
 
 

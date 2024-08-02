@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../css/Header.css'; // Asegúrate de importar el archivo CSS
+import '../Css/Header.css'; 
 
 export const Header = () => {
   const location = useLocation();

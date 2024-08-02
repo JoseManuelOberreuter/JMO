@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../css/HeroBanner.css'
+import '../Css/HeroBanner.css'
 
 // MAIN CONTENT 
 import { PreviewRecentPosts } from "./PreviewPost";
