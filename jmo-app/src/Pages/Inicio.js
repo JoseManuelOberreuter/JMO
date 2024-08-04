@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { HeroBanner } from '../Components/HeroBanner';
 
 
-export const Main = () => {    
+export const Inicio = () => {    
     return (
         <main className=''>
             <HeroBanner />

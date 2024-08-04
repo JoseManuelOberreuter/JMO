@@ -11,7 +11,8 @@ import { MainBlog, HeroBanner } from './Components/HeroBanner'
 // import {PostMicrosoftIA900} from './Components/posts/Post_IA900_1'
 // import {MicrosoftIgniteAzureML1} from './Components/posts/Microsoft_IgniteAzureML1'
 
-import { Main } from './Pages/Main'
+import { Inicio } from './Pages/Inicio'
+import { Contacto } from './Pages/Contacto'
 import { ScrollToTop } from './Components/ScrollTop'
 import { Footer } from './Components/Footer';
 
@@ -46,7 +47,9 @@ function App() {
       <Header />
 
         <Routes>
-          <Route path="/" element={<Main />} /> 
+          <Route path="/" element={<Inicio />} /> 
+
+          <Route path='/contacto' element = {<Contacto />} />
           
           <Route path="/blog" element={<MainBlog />} />
           <Route path="/portfolio" element={<MainPortafolios/>} />

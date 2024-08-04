@@ -15,7 +15,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="lh-1 py-2 mb-2 header-custom">
+    <header className="lh-1 py-3 mb-2 header-custom">
       <div className="container">
         <div className="row flex-nowrap justify-content-between align-items-center">
           <div className="col">
@@ -45,6 +45,15 @@ export const Header = () => {
                   onClick={() => handleLinkClick('/about')}
                 >
                   Acerca de Mí
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/Contacto"
+                  className={`nav-link px-2 fs-5 ${activeLink === '/Contacto' ? 'active' : ''}`}
+                  onClick={() => handleLinkClick('/Contacto')}
+                >
+                  Contactame
                 </Link>
               </li>
             </ul>
