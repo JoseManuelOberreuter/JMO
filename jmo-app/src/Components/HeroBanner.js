@@ -9,8 +9,24 @@ import { Link as ScrollLink } from 'react-scroll';
 import imgPortfolio from './img/portafolio/portafolio.png';
 import imgAbout from './img/portafolio/AboutMe.png';
 
-const words = ['FullStack', 'FrontEnd', 'BackEnd'];
-const colors = ['#FF5733', '#33FF57', '#3357FF'];
+// Funcion para traer las variables de css
+const getCSSVariable = (variableName) => {
+  return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
+};
+
+const words = [ 
+  'Web',
+  'FullStack', 
+  'FrontEnd', 
+  'BackEnd',
+];
+
+const colors = [
+  getCSSVariable('--color-green'),
+  getCSSVariable('--color-pink'),
+  getCSSVariable('--color-mustard'),
+  getCSSVariable('--color-blue'),
+];
 
 export const HeroBanner = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);

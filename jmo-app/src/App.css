@@ -1,9 +1,8 @@
 body {
-  background-color: #000; 
+  background-color: var(--color-dark-grey-); 
 }
 .App {
   width: 90%;
   margin: 0 auto;
   font-family: 'Heebo', sans-serif;
 }
-
