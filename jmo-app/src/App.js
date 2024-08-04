@@ -48,7 +48,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Inicio />} /> 
-
           <Route path='/contacto' element = {<Contacto />} />
           
           <Route path="/blog" element={<MainBlog />} />

@@ -22,6 +22,15 @@ export const Header = () => {
             <ul className="nav justify-content-end">
               <li className="nav-item">
                 <Link
+                  to="/"
+                  className={`nav-link px-2 fs-5 ${activeLink === '/Inicio' ? 'active' : ''}`}
+                  onClick={() => handleLinkClick('/Inicio')}
+                >
+                  Inicio
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
                   to="/blog"
                   className={`nav-link px-2 fs-5 ${activeLink === '/blog' ? 'active' : ''}`}
                   onClick={() => handleLinkClick('/blog')}
