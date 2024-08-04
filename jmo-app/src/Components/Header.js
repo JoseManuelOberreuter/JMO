@@ -15,7 +15,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="lh-1 py-3 mb-2 header-custom">
+    <header className="lh-1 py-3 mb-2 container header-custom ">
       <div className="container">
         <div className="row flex-nowrap justify-content-between align-items-center">
           <div className="col">

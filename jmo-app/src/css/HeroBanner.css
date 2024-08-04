@@ -35,7 +35,7 @@
 /* Estilos para tablet */
 @media (max-width: 768px) {
   .hero-banner {
-    height: auto; /* Ajusta la altura para que se adapte mejor a las tabletas */
+    height: 100vh; 
   }
 
   .content {
@@ -46,7 +46,7 @@
 /* Estilos para dispositivos móviles */
 @media (max-width: 480px) {
   .hero-banner {
-    height: auto; /* Ajusta la altura para que se adapte mejor a los móviles */
+    height: 100vh;
   }
 
   .content {
