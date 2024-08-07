@@ -1,4 +1,4 @@
-.bloqueContenido { 
+.bloquePrincipal { 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -9,8 +9,8 @@
     padding: 100px;
 }
 
-.contenido-izquierda,
-.contenido-derecha {
+.contenido-principal-izquierda,
+.contenido-principal-derecha {
     display: flex;
     justify-content: center; 
     align-items: center; 

@@ -1,6 +1,10 @@
 .footer-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-top: 1px solid;
     border-color: #b0b0b080; 
+    height: 10vh;
 }
 
   

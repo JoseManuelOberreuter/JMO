@@ -1,6 +1,10 @@
 .header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: end;
     border-bottom: 1px solid;
     border-color: var(--color-light-grey); /* Color gris para el borde inferior */
+    height: 10vh;
 }
   
 .nav-link {
