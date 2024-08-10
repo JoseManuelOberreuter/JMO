@@ -15,34 +15,18 @@ import { Inicio } from './Pages/Inicio'
 import { Contacto } from './Pages/Contacto'
 import { ScrollToTop } from './Components/ScrollTop'
 import { Footer } from './Components/Footer';
-
+import { CursorEffect } from './Components/CursorEffect'
 
 import './App.css';
-import './Css/CursorEffect.css';
+
 
 
 
 function App() {  
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const cursorEffect = document.querySelector('.cursor-effect');
-      if (cursorEffect) {
-        cursorEffect.style.left = `${e.clientX}px`;
-        cursorEffect.style.top = `${e.clientY}px`;
-      }
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
   return (
     <div className="App">
-      <div className="cursor-effect"></div>
+      <CursorEffect />
       <ScrollToTop />
       <Header />
 
