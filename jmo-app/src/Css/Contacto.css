@@ -1,17 +1,25 @@
-.contacto-main {   
+.contacto-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
     height: 80vh;
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
+    color: #fff;
 }
 
-.contacto-titulo { 
-    color: #fff
+.contacto-titulo {
+    margin-bottom: 20px; /* Añade espacio entre el título y el formulario */
 }
+
 
 .contacto-form {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
     color: #fff
 }
 
@@ -28,8 +36,18 @@
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
     border-radius: 4px;
+    border: 1px solid #ffff;
+    background-color: #ffff;
+    transition: all 0.5s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-light-blue);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .form-group textarea {
@@ -38,8 +56,11 @@
 }
 
 button {
+    width: 50%;
+    margin: 20px auto; 
+    display: block;
     padding: 10px 15px;
-    background-color: #007BFF;
+    background-color: var(--color-green);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -47,5 +68,6 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--color-green-dark);
 }
+
