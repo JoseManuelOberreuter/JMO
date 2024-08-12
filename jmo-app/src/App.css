@@ -1,9 +1,11 @@
 body {
-  background-color: var(--color-dark-grey); 
-}
+  background: radial-gradient(circle at 50% 50%, #272727, #252525, #232323, #202020, #1e1e1e, #1c1c1c, #1a1a1a, #181818);}
 
 .App {
   width: 100%;
   margin: 0 auto;
   font-family: 'Heebo', sans-serif;
+}
+.color {
+  color: #868686
 }
