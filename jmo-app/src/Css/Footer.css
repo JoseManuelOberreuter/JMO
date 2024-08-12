@@ -7,4 +7,12 @@
     height: 10vh;
 }
 
-  
+.icono-rs {
+    width: 30px; 
+    margin: 0 10px; 
+    transition: all 1s;
+}
+
+.icono-rs:hover{
+    width: 50px; 
+}

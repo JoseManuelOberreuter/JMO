@@ -30,9 +30,10 @@ export const CursorEffect = () => {
       let y = coords.y;
 
       const isOverLink = document.elementFromPoint(x, y)?.tagName.toLowerCase() === 'a';
+      const isOverImg = document.elementFromPoint(x, y)?.tagName.toLowerCase() === 'img';
 
       circleRefs.current.forEach((circle, index) => {
-        if (isOverLink) {
+        if (isOverLink || isOverImg) {
           circle.style.display = 'none';
         } else {
           circle.style.display = 'block';
