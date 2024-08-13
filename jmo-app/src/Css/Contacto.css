@@ -10,21 +10,29 @@
     color: #fff;
 }
 
-.contacto-titulo {
-    margin-bottom: 20px; /* Añade espacio entre el título y el formulario */
+.contacto-card { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    padding: 100px;
+    border: 1px solid var( --color-light-grey);
+    border-radius: 5%;
 }
+
 
 
 .contacto-form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    min-width: 350px;
     margin-top: 20px;
     color: #fff
 }
 
 .form-group {
     margin-bottom: 15px;
+
 }
 
 .form-group label {
@@ -37,8 +45,8 @@
     padding: 8px;
     box-sizing: border-box;
     border-radius: 4px;
-    border: 1px solid #ffff;
-    background-color: #ffff;
+    border: 1px solid var(--color-light-grey);
+    background-color: var(--color-light-grey);
     transition: all 0.5s;
 }
 
@@ -57,7 +65,7 @@
 
 button {
     width: 50%;
-    margin: 20px auto; 
+    margin: auto; 
     display: block;
     padding: 10px 15px;
     background-color: var(--color-green);

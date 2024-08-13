@@ -31,9 +31,11 @@ export const CursorEffect = () => {
 
       const isOverLink = document.elementFromPoint(x, y)?.tagName.toLowerCase() === 'a';
       const isOverImg = document.elementFromPoint(x, y)?.tagName.toLowerCase() === 'img';
+      const isOverInput = document.elementFromPoint(x, y)?.tagName.toLowerCase() === 'input';
+      const isOverTextArea= document.elementFromPoint(x, y)?.tagName.toLowerCase() === 'textarea';
 
       circleRefs.current.forEach((circle, index) => {
-        if (isOverLink || isOverImg) {
+        if (isOverLink || isOverImg || isOverInput || isOverTextArea) {
           circle.style.display = 'none';
         } else {
           circle.style.display = 'block';

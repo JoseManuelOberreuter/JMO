@@ -30,8 +30,8 @@ export const Contacto = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [pause, setPause] = useState(false);
   
-    const typingSpeed = 150; // Tiempo en milisegundos
-    const deletingSpeed = 100; // Tiempo en milisegundos
+    const typingSpeed = 75; // Tiempo en milisegundos (150 / 2)
+    const deletingSpeed = 100; // Tiempo en milisegundos (100 / 2)
     const pauseDuration = 1000; // Tiempo en milisegundos
   
     useEffect(() => {
@@ -66,9 +66,11 @@ export const Contacto = () => {
   
     return (
         <div className='contacto-main'>
-            <h2 className='contacto-titulo'>Contactame para</h2>
-            <h2><span className="dynamic-text" style={{ color: colors[currentWordIndex] }}>{text}</span></h2>
-            <FormContacto />
+            <div className='contacto-card'>
+                <h2 className='contacto-titulo'>Contactame para:</h2>
+                <h2 className='contacto-titulo'><span className="dynamic-text" style={{ color: colors[currentWordIndex] }}>{text}</span></h2>
+                <FormContacto />
+            </div>
         </div>
     );
 };
