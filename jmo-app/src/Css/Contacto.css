@@ -15,9 +15,11 @@
     flex-direction: column;
     justify-content: center; /* Centra verticalmente */
     align-items: center;     /* Centra horizontalmente */
-    padding: 100px;
+    padding: 50px;
+    margin: 100px;
     border: 1px solid var( --color-light-grey);
     border-radius: 5%;
+    height: 100%;
 }
 
 
