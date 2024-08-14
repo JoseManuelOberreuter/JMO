@@ -31,7 +31,7 @@ const colors = [
 ];
 
 export const HeroBanner = () => {
-  const typingSpeed = 150; // Tiempo en milisegundos
+  const typingSpeed = 75; // Tiempo en milisegundos
   const deletingSpeed = 100; // Tiempo en milisegundos
   const pauseDuration = 1000; // Tiempo en milisegundos
 

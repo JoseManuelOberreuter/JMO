@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useLocation , Route, Routes } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { MainPortafolios } from './Components/Portafolios';
-import { MainAboutMe } from './Components/AboutMe';
 import { Thanks } from './Components/Thanks';
 import { ArchivosPythos, ArchivosMetodosAgiles, ArchivosIA } from './Components/SideBar'
 import { PostPython4, PostPython3, PostPython1, PostPython2, PostScrum, PostMidjourney, PostRevolucionIA } from './Components/Posts'
@@ -13,9 +12,11 @@ import { MainBlog, HeroBanner } from './Components/HeroBanner'
 
 import { Inicio } from './Pages/Inicio'
 import { Contacto } from './Pages/Contacto'
+import { AboutMe } from './Pages/AboutMe'
 import { ScrollToTop } from './Components/ScrollTop'
 import { Footer } from './Components/Footer';
 import { CursorEffect } from './Components/CursorEffect'
+
 
 import './App.css';
 
@@ -33,10 +34,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Inicio />} /> 
           <Route path='/contacto' element = {<Contacto />} />
+          <Route path="/about" element={<AboutMe/>} />
+
           
           <Route path="/blog" element={<MainBlog />} />
           <Route path="/portfolio" element={<MainPortafolios/>} />
-          <Route path="/about" element={<MainAboutMe/>} />
           <Route path="/Thanks" element={<Thanks/>} />
           <Route path="/PostRevolucionIA" element={<PostRevolucionIA/>} />
           <Route path="/PostScrum" element={<PostScrum/>} />

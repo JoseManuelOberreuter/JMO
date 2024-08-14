@@ -1,0 +1,17 @@
+.carousel {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+.carousel-cell {
+    width: 100%; /* o ajusta según tus necesidades */
+    height: 78vh; /* ajusta la altura según lo que necesites */
+    background: var(--color-black);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px;
+}
