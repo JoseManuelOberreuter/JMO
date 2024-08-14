@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../Css/Contacto.css';
 
 import { FormContacto } from '../Components/Form'
+import { useTypewriterEffect } from '../Components/TextEffect'
+
 
 // Funcion para traer las variables de css
 const getCSSVariable = (variableName) => {
@@ -24,46 +26,13 @@ const colors = [
   
 
 export const Contacto = () => {
-
-    const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [text, setText] = useState('');
-    const [isDeleting, setIsDeleting] = useState(false);
-    const [pause, setPause] = useState(false);
   
     const typingSpeed = 75; // Tiempo en milisegundos (150 / 2)
     const deletingSpeed = 100; // Tiempo en milisegundos (100 / 2)
     const pauseDuration = 1000; // Tiempo en milisegundos
-  
-    useEffect(() => {
-      let timer;
-      const word = words[currentWordIndex];
-  
-      if (pause) {
-        timer = setTimeout(() => {
-          setPause(false);
-        }, pauseDuration);
-      } else if (isDeleting) {
-        timer = setTimeout(() => {
-          setText(prevText => prevText.slice(0, -1));
-          if (text === '') {
-            setIsDeleting(false);
-            setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-            setPause(true);
-          }
-        }, deletingSpeed);
-      } else {
-        timer = setTimeout(() => {
-          setText(prevText => word.slice(0, prevText.length + 1));
-          if (text === word) {
-            setIsDeleting(true);
-            setPause(true);
-          }
-        }, typingSpeed);
-      }
-  
-      return () => clearTimeout(timer);
-    }, [text, isDeleting, pause, currentWordIndex]);
-  
+
+    const { text, currentWordIndex } = useTypewriterEffect(words, typingSpeed, deletingSpeed, pauseDuration);
+
     return (
         <div className='contacto-main'>
             <div className='contacto-card'>
