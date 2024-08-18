@@ -1,53 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
 
 import dataScreen from './img/portafolio/data_screen.png'
 import houseBeach from './img/portafolio/house_beach.png'
 import kinePaula from './img/portafolio/kinepaula.png'
 
 
-// TO DO:
-// 
 
-export const MainPortafolios = () => {
-  return (
-    <main>
-      <section className="py-5 text-center container">
-        <div className="row py-lg-5">
-          <div className="col-lg-6 col-md-8 mx-auto">
-            <h1 className="fw-light">Bienvenidos a mi portafolio</h1>
-            <p className="lead text-body-secondary">
-              Bienvenidos a mi portafolio de tecnología e informática, donde podrán conocer más acerca de mis habilidades, experiencia y pasiones en el mundo del desarrollo web y la tecnología.
-            </p>
-            <p>
-              <ScrollLink to="form-footer" smooth={true} duration={500} className="btn btn-primary my-2 mx-2">Contactarme</ScrollLink>
-              <Link to="/about" className="btn btn-secondary my-2 mx-2">Acerca de mí</Link>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div className="album py-5 mb-5">
-        <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-
-          <CardPortafolios1 />
-          <CardPortafolios2 />
-          <CardPortafolios3 />
-
-
-          </div>
-        </div>
-      </div>
-
-    </main>
-  );
-};
-
-
-const CardPortafolios1 = () => {
+export const ProyectPortfolio1 = () => {
   const projectLink = "https://josemanueloberreuter.github.io/Binance_API/";
 
   return (
@@ -79,7 +38,7 @@ const CardPortafolios1 = () => {
 };
 
 
-const CardPortafolios2 = () => {
+export const ProyectPortfolio2 = () => {
   const projectLink = "https://josemanueloberreuter.github.io/Webapp_kinenesiologia/index.html";
 
   return (
@@ -111,7 +70,7 @@ const CardPortafolios2 = () => {
 
 
 
-const CardPortafolios3 = () => {
+export const ProyectPortfolio3 = () => {
   const projectLink = "https://josemanueloberreuter.github.io/Arquitectos/";
 
   return (

@@ -1,0 +1,16 @@
+/* Estilos personalizados */
+.carousel-cell {
+    width: 100%; 
+    margin: 0 auto; 
+  }
+  
+  .card {
+    max-width: 300px; /* Limita el ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta */
+  }
+  
+  .card-img-top {
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que se recorte si es necesario */
+  }
+  
