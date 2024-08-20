@@ -1,5 +1,6 @@
 body {
-  background: radial-gradient(circle at 50% 50%, #272727, #252525, #232323, #202020, #1e1e1e, #1c1c1c, #1a1a1a, #181818);}
+  background: radial-gradient(circle at 50% 50%, #272727, #252525, #232323, #202020, #1e1e1e, #1c1c1c, #1a1a1a, #181818);
+}
 
 .App {
   width: 100%;
@@ -8,4 +9,25 @@ body {
 }
 .color {
   color: #868686
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--color-dark-grey); /* Fondo del track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-soft-black); /* Color del pulgar */
+  border-radius: 10px;
+  border: 3px solid var(--color-dark-grey); /* Bordes para un efecto de separación */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black); /* Color de fondo del track */
+  border-radius: 10px;
+}
+
+/* Hover en el pulgar */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-grey); /* Color del pulgar al pasar el cursor */
 }
