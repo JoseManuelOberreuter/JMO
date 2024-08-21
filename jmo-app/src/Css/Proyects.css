@@ -1,0 +1,77 @@
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: var(--color-back);
+    border-radius: 10px;
+    height: 300px; /* Altura reducida para pantallas más pequeñas */
+    width: 100%; 
+    transition: transform 0.3s ease;
+}
+
+.card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+}
+
+.card-overlay {
+    padding: 10px; /* Reducción del padding para pantallas pequeñas */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 1.5rem; /* Tamaño de fuente reducido para pantallas pequeñas */
+    margin-bottom: 0.5rem;
+    color: white;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 1rem; /* Tamaño de fuente reducido para pantallas pequeñas */
+    color: white;
+    text-align: center;
+    padding: 0 10px; /* Reducción del padding para pantallas pequeñas */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+    .card {
+        height: 250px; /* Altura más reducida en móviles */
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño para el título en móviles */
+    }
+
+    .card-description {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño para la descripción en móviles */
+    }
+
+    .card-overlay {
+        padding: 5px; /* Padding más pequeño en móviles */
+    }
+}
