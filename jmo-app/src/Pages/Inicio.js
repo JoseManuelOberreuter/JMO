@@ -1,17 +1,11 @@
-import React, { useState, useEffect, useRef  } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-
+import React from 'react';
 import { HeroBanner } from '../Components/HeroBanner';
-import { BloquePrincipal } from '../Components/BloquePrincipal';
-import { BloqueSecundario } from '../Components/BloqueSecundario';
 
 
 export const Inicio = () => {    
     return (
-        <main className=''>
+        <main>
             <HeroBanner />
-            {/* <BloquePrincipal />
-            <BloqueSecundario /> */}
         </main>
     )
 } 
