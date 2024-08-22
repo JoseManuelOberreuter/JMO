@@ -5,44 +5,70 @@ import '../Css/Header.css';
 export const Header = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState('/');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setActiveLink(location.pathname);
   }, [location.pathname]);
 
-  const handleLinkClick = (path) => {
-    setActiveLink(path);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
     <header className="container header-custom">
-        <ul className="nav">
-          <li className="nav-item">
-            <Link to="/" className='nav-link px-2 fs-5' >
-              Inicio
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/blog" className='nav-link px-2 fs-5' >
-              Blog
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/portfolio" className='nav-link px-2 fs-5' >
-              Portafolio
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className='nav-link px-2 fs-5' >
-              Acerca de Mí
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/Contacto" className='nav-link px-2 fs-5' >
-              Contactame
-            </Link>
-          </li>
-        </ul>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul className={`nav ${menuOpen ? 'show' : ''}`}>
+        <li className="nav-item">
+          <Link 
+            to="/" 
+            className={`nav-link px-2 fs-5 ${activeLink === '/' ? 'active' : ''}`}
+            onClick={toggleMenu}
+          >
+            Inicio
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link 
+            to="/blog" 
+            className={`nav-link px-2 fs-5 ${activeLink === '/blog' ? 'active' : ''}`}
+            onClick={toggleMenu}
+          >
+            Blog
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link 
+            to="/portfolio" 
+            className={`nav-link px-2 fs-5 ${activeLink === '/portfolio' ? 'active' : ''}`}
+            onClick={toggleMenu}
+          >
+            Portafolio
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link 
+            to="/about" 
+            className={`nav-link px-2 fs-5 ${activeLink === '/about' ? 'active' : ''}`}
+            onClick={toggleMenu}
+          >
+            Acerca de Mí
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link 
+            to="/contacto" 
+            className={`nav-link px-2 fs-5 ${activeLink === '/contacto' ? 'active' : ''}`}
+            onClick={toggleMenu}
+          >
+            Contactame
+          </Link>
+        </li>
+      </ul>
     </header>
   );
 };
