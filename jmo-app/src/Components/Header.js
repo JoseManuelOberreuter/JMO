@@ -27,7 +27,7 @@ export const Header = () => {
           <Link 
             to="/" 
             className={`nav-link px-2 fs-5 ${activeLink === '/' ? 'active' : ''}`}
-            onClick={toggleMenu}
+            onClick={() => setMenuOpen(false)}
           >
             Inicio
           </Link>
@@ -36,7 +36,7 @@ export const Header = () => {
           <Link 
             to="/blog" 
             className={`nav-link px-2 fs-5 ${activeLink === '/blog' ? 'active' : ''}`}
-            onClick={toggleMenu}
+            onClick={() => setMenuOpen(false)}
           >
             Blog
           </Link>
@@ -45,7 +45,7 @@ export const Header = () => {
           <Link 
             to="/portfolio" 
             className={`nav-link px-2 fs-5 ${activeLink === '/portfolio' ? 'active' : ''}`}
-            onClick={toggleMenu}
+            onClick={() => setMenuOpen(false)}
           >
             Portafolio
           </Link>
@@ -54,7 +54,7 @@ export const Header = () => {
           <Link 
             to="/about" 
             className={`nav-link px-2 fs-5 ${activeLink === '/about' ? 'active' : ''}`}
-            onClick={toggleMenu}
+            onClick={() => setMenuOpen(false)}
           >
             Acerca de Mí
           </Link>
@@ -63,7 +63,7 @@ export const Header = () => {
           <Link 
             to="/contacto" 
             className={`nav-link px-2 fs-5 ${activeLink === '/contacto' ? 'active' : ''}`}
-            onClick={toggleMenu}
+            onClick={() => setMenuOpen(false)}
           >
             Contactame
           </Link>

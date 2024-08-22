@@ -1,70 +1,72 @@
 .header-custom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid;
-    border-color: var(--color-light-grey);
-    height: 10vh;
-    padding: 0 20px;
-    position: relative;
-    z-index: 9999999;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: var(--color-light-grey);
+  height: 10vh;
+  padding: 0 20px;
+  position: relative;
+  z-index: 99999;
+}
+
+.nav {
+  display: flex;
+  margin: auto;
+  gap: 10px;
   
+}
+
+.nav-link {
+  color: var(--color-light-grey);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  color: #ffffff;
+}
+
+.menu-icon {
+  display: none; /* Escondemos el menú hamburguesa en pantallas grandes */
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-light-grey);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
   .nav {
-    display: flex;
-    gap: 10px;
+    display: none; /* Ocultar el menú de navegación por defecto */
+    flex-direction: column;
+    width: 100%;
     height: 80vh;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background-color: var(--color-black);
   }
-  
+
+  .nav.show {
+    display: flex; /* Mostrar el menú cuando se haga clic en el ícono */
+  }
+
   .nav-link {
-    color: var(--color-light-grey);
-    text-decoration: none;
-    font-size: 1rem;
+    padding: 15px 20px;
+    font-size: 1.2rem;
   }
-  
-  .nav-link:hover {
-    color: #ffffff;
-  }
-  
-  .nav-link.active {
-    color: #ffffff;
-  }
-  
+
   .menu-icon {
-    display: none;
-    cursor: pointer;
+    display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
   }
-  
-  .menu-icon div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--color-light-grey);
-    margin: 5px 0;
-    transition: 0.4s;
-  }
-  
-  @media (max-width: 768px) {
-    .nav {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 10vh;
-      left: 0;
-      background-color: var(--color-black);
-    }
-  
-    .nav.show {
-      display: flex;
-    }
-  
-    .nav-link {
-      padding: 15px 20px;
-      font-size: 1.2rem;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  }
-  
+}
