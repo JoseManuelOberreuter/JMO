@@ -10,3 +10,7 @@
   z-index: 99999999; 
   transition: transform 0.1s ease-out; 
 }
+
+.circle.shrink {
+  transform: scale(0.5); /* Tamaño reducido cuando el cursor está sobre un enlace, imagen, input o textarea */
+}
