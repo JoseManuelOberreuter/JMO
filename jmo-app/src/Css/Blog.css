@@ -90,3 +90,12 @@
     color: var(--color-light-blue);
 }
 
+.blog-post-btn {
+    background-color: var(--color-light-grey);
+    transition: background-color 0.25s;
+
+}
+
+.blog-post-btn:hover {
+    background-color: var(--color-dark-grey);
+}

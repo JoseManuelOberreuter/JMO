@@ -3,8 +3,7 @@
 
 
 import { Sidebar } from './SideBar';
-import { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 
 
 // Imagenes portada 
@@ -15,8 +14,6 @@ import imgPython1 from './img/articles/portada_python.png'
 import imgScrum from './img/articles/scrum_blog.png'
 import imgMidjourney from './img/articles/mj_portada_art.png'
 import imgIa from './img/articles/ia_cyber.png'
-
-
 
 
 // Imagenes post midjourney
@@ -30,6 +27,62 @@ import mj_ejemplo1 from './img/articles/mj_img_ejemplo1.png'
 import mj_ejemplo2 from './img/articles/mj_img_ejemplo2.png'
 import mj_ejemplo3 from './img/articles/mj_img_ejemplo3.png'
 import mj_ejemplo4 from './img/articles/mj_img_ejemplo4.png'
+
+import '../Css/Blog.css'
+
+
+// Componente de Post reutilizable
+export const Post = ({ colorClass, title, subtitle, content, imageSrc, links }) => {
+  const [showFullContent, setShowFullContent] = useState(false);
+
+  const toggleContent = () => {
+    setShowFullContent(!showFullContent);
+  };
+
+  const paragraphsToShow = showFullContent ? content : content.slice(0, 2);
+
+  return (
+    <div className={`blog-post ${colorClass} p-4 p-md-4 mb-5 rounded`}>
+      <div className="col d-flex flex-column position-static">
+        <h3 className="mb-0 h4">{title}</h3>
+        <h5 className="mb-1">{subtitle}</h5>
+        <br />
+        {imageSrc && <img src={imageSrc} alt={title} className="img-fluid rounded mb-3" />}
+        
+        {Array.isArray(paragraphsToShow) ? (
+          paragraphsToShow.map((paragraph, index) => (
+            <p key={index} className="card-text mb-auto">
+              {paragraph}
+              <br /><br />
+            </p>
+          ))
+        ) : (
+          <p className="card-text mb-auto">{paragraphsToShow}</p>
+        )}
+        
+        {showFullContent && links && links.length > 0 && (
+          <ul className="mt-3">
+            {links.map((link, index) => (
+              <li key={index}>
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                  {link.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {content.length > 2 && (
+          <button onClick={toggleContent} className="blog-post-btn">
+            {showFullContent ? 'Mostrar menos' : 'Seguir leyendo'}
+          </button>
+        )}
+
+
+      </div>
+    </div>
+  );
+};
 
 
 
