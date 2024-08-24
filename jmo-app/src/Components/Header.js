@@ -34,15 +34,6 @@ export const Header = () => {
         </li>
         <li className="nav-item">
           <Link 
-            to="/blog" 
-            className={`nav-link px-2 fs-5 ${activeLink === '/blog' ? 'active' : ''}`}
-            onClick={() => setMenuOpen(false)}
-          >
-            Blog
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link 
             to="/portfolio" 
             className={`nav-link px-2 fs-5 ${activeLink === '/portfolio' ? 'active' : ''}`}
             onClick={() => setMenuOpen(false)}
