@@ -19,7 +19,7 @@ export const FormContacto = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='contacto-form'>
+        <form onSubmit={handleSubmit} action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST" className='contacto-form'>
             <div className='form-group'>
                 <label htmlFor='name'>Nombre:</label>
                 <input 
@@ -52,6 +52,7 @@ export const FormContacto = () => {
                     required 
                 />
             </div>
+            <input type="hidden" name="_subject" value="Nuevo mensaje JMO"></input>
             <button type='submit'>Enviar</button>
         </form>
     );
