@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4c21976.css",
-    "main.js": "/static/js/main.0dc1108d.js",
-    "static/media/video_arquitectura.mp4": "/static/media/video_arquitectura.dcf6cf031fabf459dcfc.mp4",
-    "static/media/video_kinesiologia.mp4": "/static/media/video_kinesiologia.2cdb945288c794ee0cc6.mp4",
-    "static/media/video_api_bianance.mp4": "/static/media/video_api_bianance.11affa40980f05abe8cd.mp4",
-    "static/media/certificado_az900.jpg": "/static/media/certificado_az900.5541052d7546876ba2d4.jpg",
-    "static/media/yo.jpg": "/static/media/yo.7982ce42b7300b779b66.jpg",
-    "static/media/fbicogrey.ico": "/static/media/fbicogrey.d3f231fb921d60e1169f.ico",
-    "static/media/giticogrey.ico": "/static/media/giticogrey.252e90a44f37be566be9.ico",
-    "static/media/instaicogrey.ico": "/static/media/instaicogrey.5bb3b9b116cb9c45b969.ico",
-    "static/media/linkicogrey.ico": "/static/media/linkicogrey.db6c09f7ef84f5b7fe55.ico",
-    "static/media/twitericogrey.ico": "/static/media/twitericogrey.412d9ddb4d165f76e256.ico",
-    "index.html": "/index.html",
-    "main.d4c21976.css.map": "/static/css/main.d4c21976.css.map",
-    "main.0dc1108d.js.map": "/static/js/main.0dc1108d.js.map"
+    "main.css": "/JMO/static/css/main.d4c21976.css",
+    "main.js": "/JMO/static/js/main.dd371a1e.js",
+    "static/media/video_arquitectura.mp4": "/JMO/static/media/video_arquitectura.dcf6cf031fabf459dcfc.mp4",
+    "static/media/video_kinesiologia.mp4": "/JMO/static/media/video_kinesiologia.2cdb945288c794ee0cc6.mp4",
+    "static/media/video_api_bianance.mp4": "/JMO/static/media/video_api_bianance.11affa40980f05abe8cd.mp4",
+    "static/media/certificado_az900.jpg": "/JMO/static/media/certificado_az900.5541052d7546876ba2d4.jpg",
+    "static/media/yo.jpg": "/JMO/static/media/yo.7982ce42b7300b779b66.jpg",
+    "static/media/fbicogrey.ico": "/JMO/static/media/fbicogrey.d3f231fb921d60e1169f.ico",
+    "static/media/giticogrey.ico": "/JMO/static/media/giticogrey.252e90a44f37be566be9.ico",
+    "static/media/instaicogrey.ico": "/JMO/static/media/instaicogrey.5bb3b9b116cb9c45b969.ico",
+    "static/media/linkicogrey.ico": "/JMO/static/media/linkicogrey.db6c09f7ef84f5b7fe55.ico",
+    "static/media/twitericogrey.ico": "/JMO/static/media/twitericogrey.412d9ddb4d165f76e256.ico",
+    "index.html": "/JMO/index.html",
+    "main.d4c21976.css.map": "/JMO/static/css/main.d4c21976.css.map",
+    "main.dd371a1e.js.map": "/JMO/static/js/main.dd371a1e.js.map"
   },
   "entrypoints": [
     "static/css/main.d4c21976.css",
-    "static/js/main.0dc1108d.js"
+    "static/js/main.dd371a1e.js"
   ]
 }
