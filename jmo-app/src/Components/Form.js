@@ -16,10 +16,32 @@ export const FormContacto = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form data:', formData);
+
+        // Crear un formulario virtual y enviar los datos
+        const form = document.createElement('form');
+        form.action = "https://formsubmit.co/jose.manuel.oberreuter@gmail.com";
+        form.method = "POST";
+
+        for (const key in formData) {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = formData[key];
+            form.appendChild(input);
+        }
+
+        const subjectInput = document.createElement('input');
+        subjectInput.type = 'hidden';
+        subjectInput.name = '_subject';
+        subjectInput.value = 'Nuevo mensaje JMO';
+        form.appendChild(subjectInput);
+
+        document.body.appendChild(form);
+        form.submit();
     };
 
     return (
-        <form onSubmit={handleSubmit} action="https://formsubmit.co/jose.manuel.oberreuter@gmail.com" method="POST" className='contacto-form'>
+        <form onSubmit={handleSubmit} className='contacto-form'>
             <div className='form-group'>
                 <label htmlFor='name'>Nombre:</label>
                 <input 
@@ -52,7 +74,6 @@ export const FormContacto = () => {
                     required 
                 />
             </div>
-            <input type="hidden" name="_subject" value="Nuevo mensaje JMO"></input>
             <button type='submit'>Enviar</button>
         </form>
     );
