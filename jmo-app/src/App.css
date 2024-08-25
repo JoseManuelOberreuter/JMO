@@ -13,11 +13,10 @@ body {
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: var(--color-dark-grey); /* Fondo del track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-soft-black); /* Color del pulgar */
+  background-color: var(--color-dark-grey); /* Color del pulgar */
   border-radius: 10px;
   border: 3px solid var(--color-dark-grey); /* Bordes para un efecto de separación */
 }
@@ -25,9 +24,4 @@ body {
 ::-webkit-scrollbar-track {
   background: var(--color-black); /* Color de fondo del track */
   border-radius: 10px;
-}
-
-/* Hover en el pulgar */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-light-grey); /* Color del pulgar al pasar el cursor */
 }
