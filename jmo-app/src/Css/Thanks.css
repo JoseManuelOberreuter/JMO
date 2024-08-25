@@ -1,0 +1,15 @@
+.thanks-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    padding: 0 15px;    
+}
+
+.thanks-title{
+    font-size: 30px;
+    background: linear-gradient(90deg, var(--color-green), var(--color-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

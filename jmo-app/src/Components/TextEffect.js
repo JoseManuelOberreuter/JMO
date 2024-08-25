@@ -34,7 +34,7 @@ export const useTypewriterEffect = (words, typingSpeed, deletingSpeed, pauseDura
       }
   
       return () => clearTimeout(timer);
-    }, [text, isDeleting, pause, currentWordIndex]);
+    });
   
     return { text, currentWordIndex };
   };

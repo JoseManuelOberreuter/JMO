@@ -31,6 +31,7 @@ function App() {
           <Route path='/contacto' element = {<Contacto />} />
           <Route path="/about" element={<AboutMe/>} />
           <Route path="/portfolio" element={<Portfolio/>} />          
+          <Route path="/thanks" element={<Thanks/>} />          
 
         </Routes>
 
