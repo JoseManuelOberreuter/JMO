@@ -1,0 +1,35 @@
+.aboutme-container {
+    overflow-y: auto; 
+    height: 76vh;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+    .aboutme-container {
+        height: auto;
+        width: 100%; 
+        margin: 1vh auto; 
+    }
+}
+
+.item-certificate-container {
+    padding: 2rem;
+}
+
+.text-section {
+    text-align: end;
+}
+
+.certificado-img {
+    max-width: 100%;
+    height: auto;
+    /* Se eliminan los estilos de tamaño fijo y márgenes innecesarios */
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--color-blue), var(--color-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
