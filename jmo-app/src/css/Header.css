@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid;
-  border-color: var(--color-light-grey);
+  border-color: var(--color-white);
   height: 10vh;
   padding: 0 20px;
   position: relative;
@@ -18,13 +18,13 @@
 }
 
 .nav-link {
-  color: var(--color-light-grey);
+  color: var(--color-white);
   text-decoration: none;
   font-size: 1rem;
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: var(--color-light-grey);
 }
 
 .nav-link.active {

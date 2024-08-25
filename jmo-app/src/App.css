@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(circle at 50% 50%, #272727, #252525, #232323, #202020, #1e1e1e, #1c1c1c, #1a1a1a, #181818);
+  background: radial-gradient(circle, var(--color-dark-grey) 0%, var(--color-black) 100%);
 }
 
 .App {

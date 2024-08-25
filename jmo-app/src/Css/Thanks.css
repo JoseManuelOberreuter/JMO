@@ -8,8 +8,9 @@
 }
 
 .thanks-title{
-    font-size: 30px;
+    font-size: 3px;
     background: linear-gradient(90deg, var(--color-green), var(--color-yellow));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
