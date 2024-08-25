@@ -1,84 +1,96 @@
+
 .contacto-main {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;     /* Centra horizontalmente */
-    height: 80vh;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100%;
     color: #fff;
 }
 
-.contacto-card { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;     /* Centra horizontalmente */
-    padding: 50px;
-    margin: 100px;
-    border: 1px solid var( --color-light-grey);
-    border-radius: 5%;
-    height: 100%;
+.contacto-card {
+    background-color: var(--color-dark-grey);
+    border: 1px solid var(--color-light-grey);
+    border-radius: 8px;
+    padding: 20px;
+    width: 60vh;
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
+.contacto-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
+.dynamic-text {
+    font-weight: bold;
+}
 
 .contacto-form {
     display: flex;
     flex-direction: column;
-    min-width: 350px;
+    gap: 15px;
     margin-top: 20px;
-    color: #fff
-}
-
-.form-group {
-    margin-bottom: 15px;
-
 }
 
 .form-group label {
     margin-bottom: 5px;
+    display: block;
+    text-align: left;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+    padding: 10px;
     border-radius: 4px;
     border: 1px solid var(--color-light-grey);
     background-color: var(--color-light-grey);
-    transition: all 0.5s;
+    color: var(--color-dark-grey);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border: 1px solid var(--color-blue);
+    border-color: var(--color-blue);
     background-color: var(--color-light-blue);
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .form-group textarea {
-    resize: vertical;
-    height: 100px;
     resize: none;
 }
 
 button {
-    width: 50%;
-    margin: auto; 
-    display: block;
-    padding: 10px 15px;
+    padding: 10px;
     background-color: var(--color-green);
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 button:hover {
-    background-color: var(--color-green-dark);
+    background-color: darken(var(--color-green), 10%);
 }
 
+@media (max-width: 600px) {
+    .contacto-titulo {
+        font-size: 1.2rem;
+    }
+
+    .contacto-card {
+        padding: 15px;
+    }
+
+    .contacto-form {
+        gap: 10px;
+    }
+}
