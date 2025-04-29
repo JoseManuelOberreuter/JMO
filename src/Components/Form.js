@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../Css/Contacto.css';
 
 const FormContacto = () => {
+    const form = useRef();
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
+        from_name: '',
+        from_email: '',
+        phone: '',
         message: ''
     });
     
@@ -14,14 +17,18 @@ const FormContacto = () => {
     const validateForm = () => {
         const newErrors = {};
         
-        if (!formData.name.trim()) {
-            newErrors.name = 'El nombre es requerido';
+        if (!formData.from_name.trim()) {
+            newErrors.from_name = 'El nombre es requerido';
         }
         
-        if (!formData.email.trim()) {
-            newErrors.email = 'El email es requerido';
-        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            newErrors.email = 'Por favor ingresa un email válido';
+        if (!formData.from_email.trim()) {
+            newErrors.from_email = 'El email es requerido';
+        } else if (!/\S+@\S+\.\S+/.test(formData.from_email)) {
+            newErrors.from_email = 'Por favor ingresa un email válido';
+        }
+
+        if (!formData.phone.trim()) {
+            newErrors.phone = 'El teléfono es requerido';
         }
         
         if (!formData.message.trim()) {
@@ -57,54 +64,79 @@ const FormContacto = () => {
         setSubmitStatus('sending');
         
         try {
-            // Here you would typically send the form data to your backend
-            // For now, we'll simulate an API call
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
-            setSubmitStatus('success');
-            setFormData({ name: '', email: '', message: '' });
-            
-            // Reset success message after 5 seconds
-            setTimeout(() => {
-                setSubmitStatus('');
-            }, 5000);
+            // Verificar que las variables de entorno estén disponibles
+            if (!process.env.REACT_APP_EMAILJS_SERVICE_ID || !process.env.REACT_APP_EMAILJS_TEMPLATE_ID || !process.env.REACT_APP_EMAILJS_PUBLIC_KEY) {
+                throw new Error('Faltan credenciales de EmailJS. Por favor, verifica que las variables de entorno estén configuradas correctamente.');
+            }
+
+            const result = await emailjs.sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                form.current,
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            );
+
+            console.log('EmailJS Response:', result); // Para debugging
+
+            if (result.text === 'OK') {
+                setSubmitStatus('success');
+                setFormData({ from_name: '', from_email: '', phone: '', message: '' });
+            } else {
+                throw new Error('Error al enviar el mensaje');
+            }
             
         } catch (error) {
+            console.error('Error detallado:', error);
             setSubmitStatus('error');
-            setTimeout(() => {
-                setSubmitStatus('');
-            }, 5000);
         }
     };
 
+    const clearStatus = () => {
+        setSubmitStatus('');
+    };
+
     return (
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form ref={form} className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-                <label htmlFor="name">Nombre</label>
+                <label htmlFor="from_name">Nombre</label>
                 <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="from_name"
+                    name="from_name"
+                    value={formData.from_name}
                     onChange={handleChange}
-                    className={errors.name ? 'error' : ''}
+                    className={errors.from_name ? 'error' : ''}
                     placeholder="Tu nombre"
                 />
-                {errors.name && <span className="error-message">{errors.name}</span>}
+                {errors.from_name && <span className="error-message">{errors.from_name}</span>}
             </div>
 
             <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="from_email">Email</label>
                 <input
                     type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
+                    id="from_email"
+                    name="from_email"
+                    value={formData.from_email}
                     onChange={handleChange}
-                    className={errors.email ? 'error' : ''}
+                    className={errors.from_email ? 'error' : ''}
                     placeholder="tu@email.com"
                 />
-                {errors.email && <span className="error-message">{errors.email}</span>}
+                {errors.from_email && <span className="error-message">{errors.from_email}</span>}
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="phone">Teléfono</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className={errors.phone ? 'error' : ''}
+                    placeholder="Tu número de teléfono"
+                />
+                {errors.phone && <span className="error-message">{errors.phone}</span>}
             </div>
 
             <div className="form-group">
@@ -132,12 +164,28 @@ const FormContacto = () => {
             {submitStatus === 'success' && (
                 <div className="form-status success">
                     ¡Mensaje enviado con éxito! Te responderé pronto.
+                    <button 
+                        type="button" 
+                        onClick={clearStatus}
+                        className="close-status-btn"
+                        aria-label="Cerrar mensaje"
+                    >
+                        ×
+                    </button>
                 </div>
             )}
             
             {submitStatus === 'error' && (
                 <div className="form-status error">
                     Hubo un error al enviar el mensaje. Por favor intenta nuevamente.
+                    <button 
+                        type="button" 
+                        onClick={clearStatus}
+                        className="close-status-btn"
+                        aria-label="Cerrar mensaje"
+                    >
+                        ×
+                    </button>
                 </div>
             )}
         </form>
