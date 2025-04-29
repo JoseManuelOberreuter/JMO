@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { Thanks } from './Components/Thanks';
+import { WhatsAppButton } from './Components/WhatsAppButton';
 
 import { Inicio } from './Pages/Inicio'
 import { Contacto } from './Pages/Contacto'
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <ScrollToTop />
       <Header />
+      <WhatsAppButton />
 
       <Routes>
         <Route path="/" element={<Inicio />} /> 
