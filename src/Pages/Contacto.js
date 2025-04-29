@@ -1,45 +1,51 @@
 import React from 'react';
+import FormContacto from '../Components/Form';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import '../Css/Contacto.css';
 
-import { FormContacto } from '../Components/Form'
-import { useTypewriterEffect } from '../Components/TextEffect'
-
-
-// Funcion para traer las variables de css
-const getCSSVariable = (variableName) => {
-    return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
-};
-  
-const words = [ 
-    'Cualquier consulta',
-    'Programar una reunión', 
-    'Compartir tus opiniones', 
-    'Colaborar en proyectos',
-];
-  
-const colors = [
-    getCSSVariable('--color-green'),
-    getCSSVariable('--color-pink'),
-    getCSSVariable('--color-mustard'),
-    getCSSVariable('--color-blue'),
-];
-  
-
 export const Contacto = () => {
-  
-    const typingSpeed = 75; // Tiempo en milisegundos (150 / 2)
-    const deletingSpeed = 100; // Tiempo en milisegundos (100 / 2)
-    const pauseDuration = 1000; // Tiempo en milisegundos
-
-    const { text, currentWordIndex } = useTypewriterEffect(words, typingSpeed, deletingSpeed, pauseDuration);
-
     return (
-        <div className='contacto-main'>
-            <div className='contacto-card'>
-                <h2 className='contacto-titulo'>Contactame para:</h2>
-                <h2 className='contacto-titulo'><span className="dynamic-text" style={{ color: colors[currentWordIndex] }}>{text}</span></h2>
+        <main className="contacto-main">
+            <div className="contacto-card">
+                <h1 className="contacto-titulo">¡Hablemos!</h1>
+                <p className="contacto-subtitulo">
+                    Estoy siempre interesado en nuevos proyectos y oportunidades.
+                    No dudes en contactarme para cualquier consulta.
+                </p>
+                
                 <FormContacto />
+                
+                <div className="contact-info">
+                    <h3>También puedes encontrarme en:</h3>
+                    <div className="social-links">
+                        <a 
+                            href="https://github.com/yourusername" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="social-link"
+                            aria-label="GitHub Profile"
+                        >
+                            <FaGithub />
+                        </a>
+                        <a 
+                            href="https://linkedin.com/in/yourusername" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="social-link"
+                            aria-label="LinkedIn Profile"
+                        >
+                            <FaLinkedin />
+                        </a>
+                        <a 
+                            href="mailto:your.email@example.com"
+                            className="social-link"
+                            aria-label="Email Contact"
+                        >
+                            <FaEnvelope />
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
     );
 };

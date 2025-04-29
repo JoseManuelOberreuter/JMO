@@ -1,67 +1,159 @@
 /* HeroBanner.css */
 .hero-banner {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+  padding: 6rem 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(3, 7, 18, 0.9) 100%);
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px; /* Space for fixed header */
 }
 
-.content {
-  padding: 20px;
-  border-radius: 10px;
-  position: relative; 
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.5) 0%, rgba(3, 7, 18, 0.7) 100%);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.hero-subtitle {
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .dynamic-text {
-  display: inline;
-  border-right: 2px solid #ffffff; /* Color del cursor parpadeante */
-  white-space: nowrap;
-  overflow: hidden;
-  animation: blink-caret 0.75s step-end infinite;
+  font-weight: 600;
 }
 
-.more-info {
-  margin-top: 20px;
-  animation: fadeIn 0.5s ease-in-out;
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
 }
 
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 
-/* Estilos para tablet */
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
 @media (max-width: 768px) {
   .hero-banner {
-    height: 80vh; 
+    padding: 4rem 0;
+    margin-top: 60px;
   }
 
-  .content {
-    padding: 15px;
-  }
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 480px) {
-  .hero-banner {
-    height: 80vh;
+  .hero-title {
+    font-size: 2.5rem;
   }
 
-  .content {
-    padding: 10px;
+  .hero-content {
+    padding: 0 1rem;
   }
 
-  h1 {
-    font-size: 1.5rem;
+  .hero-cta {
+    flex-direction: column;
   }
 
-  p {
-    font-size: 1rem;
-  }
-
-  .more-info {
-    font-size: 0.9rem;
+  .hero-stats {
+    grid-template-columns: 1fr;
   }
 }

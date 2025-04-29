@@ -13,6 +13,8 @@ const projectData = [
     altText: "Data Screen",
     link: "https://josemanueloberreuter.github.io/Binance_API/",
     date: "Agosto 2023",
+    category: "Aplicación",
+    technologies: ["React", "API", "Chart.js", "WebSocket"],
   },
   {
     id: 2,
@@ -22,6 +24,8 @@ const projectData = [
     altText: "Kine Paula",
     link: "https://josemanueloberreuter.github.io/Webapp_kinenesiologia/index.html",
     date: "Julio 2023",
+    category: "Sitio Web",
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
   },
   {
     id: 3,
@@ -31,35 +35,48 @@ const projectData = [
     altText: "House Beach",
     link: "https://josemanueloberreuter.github.io/Arquitectos/",
     date: "Enero 2023",
+    category: "Sitio Web",
+    technologies: ["HTML", "CSS", "JavaScript", "Formularios"],
   },
 ];
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="block mb-5">
-      <a href={project.link} className="project-card" target="_blank" rel="noreferrer">
-        <div className="card shadow-sm">
-          <video
-            className="card-video"
-            src={project.videoSrc}
-            autoPlay
-            loop
-            muted
-          ></video>
-          <div className="card-overlay">
-            <h3 className="card-title">{project.title}</h3>
-            <p className="card-description">{project.description}</p>
-          </div>
+    <article className="project-card">
+      <div className="card-video">
+        <video
+          src={project.videoSrc}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+      </div>
+      <div className="card-content">
+        <span className="project-category">{project.category}</span>
+        <h3 className="project-title">{project.title}</h3>
+        <p className="project-description">{project.description}</p>
+        <div className="project-technologies">
+          {project.technologies.map((tech, index) => (
+            <span key={index} className="technology-tag">{tech}</span>
+          ))}
         </div>
-      </a>
-    </div>
+        <span className="project-date">{project.date}</span>
+      </div>
+      <a 
+        href={project.link} 
+        className="project-link" 
+        target="_blank" 
+        rel="noreferrer"
+        aria-label={`Ver proyecto ${project.title}`}
+      />
+    </article>
   );
 };
 
-
 export const ProyectPortfolio = () => {
   return (
-    <div className="block">
+    <div className="projects-grid">
       {projectData.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}

@@ -5,35 +5,27 @@ import { Thanks } from './Components/Thanks';
 
 import { Inicio } from './Pages/Inicio'
 import { Contacto } from './Pages/Contacto'
-import { AboutMe } from './Pages/AboutMe'
+import { Experience } from './Pages/Experience'
 import { Portfolio } from './Pages/Portfolio'
 
 import { ScrollToTop } from './Components/ScrollTop'
 import { Footer } from './Components/Footer';
-import { CursorEffect } from './Components/CursorEffect'
-
 
 import './App.css';
 
-
-
-
 function App() {  
-
   return (
     <div className="App">
-      <CursorEffect />
       <ScrollToTop />
       <Header />
 
-        <Routes>
-          <Route path="/" element={<Inicio />} /> 
-          <Route path='/contacto' element = {<Contacto />} />
-          <Route path="/about" element={<AboutMe/>} />
-          <Route path="/portfolio" element={<Portfolio/>} />          
-          <Route path="/thanks" element={<Thanks/>} />          
-
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Inicio />} /> 
+        <Route path='/contacto' element={<Contacto />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/portfolio" element={<Portfolio />} />          
+        <Route path="/thanks" element={<Thanks />} />          
+      </Routes>
 
       <Footer />
     </div>
