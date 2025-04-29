@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Css/Portfolio.css';
 import { ProyectPortfolio } from '../Components/ProyectPortfolio';
 
@@ -19,7 +20,7 @@ export const Portfolio = () => {
       <div className="portfolio-cta">
         <h2>¿Listo para comenzar tu proyecto?</h2>
         <p>Contáctame para discutir cómo puedo ayudarte a hacer realidad tus ideas</p>
-        <a href="/contacto" className="btn-primary">Solicitar Presupuesto</a>
+        <Link to="/contacto" className="btn-primary">Solicitar Presupuesto</Link>
       </div>
     </div>
   );

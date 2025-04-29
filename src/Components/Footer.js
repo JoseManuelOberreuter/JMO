@@ -4,7 +4,6 @@ import icofb from './img/ico/fbicogrey.ico'
 import icogit from './img/ico/giticogrey.ico'
 import icolink from './img/ico/linkicogrey.ico'
 import icoig from './img/ico/instaicogrey.ico'
-import icotw from './img/ico/twitericogrey.ico'
 import '../Css/Footer.css';
 
 export function Footer() {
