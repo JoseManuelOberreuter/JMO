@@ -56,6 +56,7 @@ export const Contacto = () => {
                         </a>
                         <a 
                             href="mailto:jmo.programador@gmail.com"
+                            
                             className="social-link"
                             aria-label="Email Contact"
                         >
