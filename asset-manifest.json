@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JMO/static/css/main.433fb53a.css",
-    "main.js": "/JMO/static/js/main.7c4daa4f.js",
+    "main.css": "/JMO/static/css/main.3890a9e4.css",
+    "main.js": "/JMO/static/js/main.b696bd4c.js",
     "static/media/video_arquitectura.mp4": "/JMO/static/media/video_arquitectura.dcf6cf031fabf459dcfc.mp4",
     "static/media/video_kinesiologia.mp4": "/JMO/static/media/video_kinesiologia.2cdb945288c794ee0cc6.mp4",
     "static/media/video_api_bianance.mp4": "/JMO/static/media/video_api_bianance.11affa40980f05abe8cd.mp4",
@@ -10,11 +10,11 @@
     "static/media/instaicogrey.ico": "/JMO/static/media/instaicogrey.5bb3b9b116cb9c45b969.ico",
     "static/media/linkicogrey.ico": "/JMO/static/media/linkicogrey.db6c09f7ef84f5b7fe55.ico",
     "index.html": "/JMO/index.html",
-    "main.433fb53a.css.map": "/JMO/static/css/main.433fb53a.css.map",
-    "main.7c4daa4f.js.map": "/JMO/static/js/main.7c4daa4f.js.map"
+    "main.3890a9e4.css.map": "/JMO/static/css/main.3890a9e4.css.map",
+    "main.b696bd4c.js.map": "/JMO/static/js/main.b696bd4c.js.map"
   },
   "entrypoints": [
-    "static/css/main.433fb53a.css",
-    "static/js/main.7c4daa4f.js"
+    "static/css/main.3890a9e4.css",
+    "static/js/main.b696bd4c.js"
   ]
 }
