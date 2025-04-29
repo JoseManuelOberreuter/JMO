@@ -12,6 +12,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-darkest);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .container {
@@ -19,6 +20,13 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
 }
 
 a {
@@ -54,6 +62,20 @@ ul, ol {
   width: 100%;
   margin: 0 auto;
   font-family: 'Heebo', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .App {
+    padding-top: 0; /* Eliminamos el padding-top excesivo */
+  }
+  
+  main {
+    margin-top: 60px; /* Agregamos margen solo al contenido principal */
+  }
 }
 
 .color {
@@ -61,13 +83,13 @@ ul, ol {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-dark);
   border-radius: 10px;
-  border: 3px solid var(--color-darkest);
+  border: 2px solid var(--color-darkest);
 }
 
 ::-webkit-scrollbar-track {
@@ -88,4 +110,42 @@ ul, ol {
 }
 a, button, [role="button"] {
     cursor: pointer;
+}
+
+/* Estilos para mejorar la legibilidad en móviles */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Ajustes para el botón de WhatsApp en móviles */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .whatsapp-icon {
+    font-size: 28px;
+  }
 }
