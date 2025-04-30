@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 4rem 0;
+  padding: 8rem 0 4rem 0;
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(3, 7, 18, 0.9) 100%);
   position: relative;
   overflow: hidden;
@@ -137,8 +137,8 @@
 
 @media (max-width: 768px) {
   .hero-banner {
-    padding: 2rem 0;
-    min-height: calc(100vh - 60px); /* Ajustamos para el header fijo */
+    padding: 6rem 0 2rem 0;
+    min-height: calc(100vh - 60px);
     margin-top: 0;
   }
 
