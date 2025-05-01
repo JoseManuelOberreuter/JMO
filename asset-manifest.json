@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JMO/static/css/main.059b86c8.css",
-    "main.js": "/JMO/static/js/main.32b65ffd.js",
+    "main.css": "/JMO/static/css/main.dcc504c5.css",
+    "main.js": "/JMO/static/js/main.058e9367.js",
     "static/media/video_arquitectura.mp4": "/JMO/static/media/video_arquitectura.dcf6cf031fabf459dcfc.mp4",
     "static/media/video_kinesiologia.mp4": "/JMO/static/media/video_kinesiologia.2cdb945288c794ee0cc6.mp4",
     "static/media/video_api_bianance.mp4": "/JMO/static/media/video_api_bianance.11affa40980f05abe8cd.mp4",
@@ -11,11 +11,11 @@
     "static/media/instaicogrey.ico": "/JMO/static/media/instaicogrey.5bb3b9b116cb9c45b969.ico",
     "static/media/linkicogrey.ico": "/JMO/static/media/linkicogrey.db6c09f7ef84f5b7fe55.ico",
     "index.html": "/JMO/index.html",
-    "main.059b86c8.css.map": "/JMO/static/css/main.059b86c8.css.map",
-    "main.32b65ffd.js.map": "/JMO/static/js/main.32b65ffd.js.map"
+    "main.dcc504c5.css.map": "/JMO/static/css/main.dcc504c5.css.map",
+    "main.058e9367.js.map": "/JMO/static/js/main.058e9367.js.map"
   },
   "entrypoints": [
-    "static/css/main.059b86c8.css",
-    "static/js/main.32b65ffd.js"
+    "static/css/main.dcc504c5.css",
+    "static/js/main.058e9367.js"
   ]
 }
