@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Button } from './Button';
 import '../Css/Proyects.css';
 
 export const CTASection = ({ 
@@ -30,8 +30,8 @@ export const CTASection = ({
           ))}
         </div>
         <div className="cta-buttons">
-          <Link to={primaryButtonLink} className="btn-primary">{primaryButtonText}</Link>
-          <Link to={secondaryButtonLink} className="btn-secondary">{secondaryButtonText}</Link>
+          <Button to={primaryButtonLink} variant="primary" className="btn-pulse">{primaryButtonText}</Button>
+          <Button to={secondaryButtonLink} variant="secondary">{secondaryButtonText}</Button>
         </div>
       </div>
     </section>

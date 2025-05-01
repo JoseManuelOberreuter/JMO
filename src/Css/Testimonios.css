@@ -1,8 +1,6 @@
 .testimonios-section {
-  padding: 4rem 0;
   background-color: var(--color-darker);
   position: relative;
-  margin: 2rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../Css/HeroBanner.css'
 import { useTypewriterEffect } from './TextEffect'
+import { Button } from './Button';
 
 // Funcion para traer las variables de css
 const getCSSVariable = (variableName) => {
@@ -46,12 +46,12 @@ export const HeroBanner = () => {
             Transformo tus ideas en realidad con código limpio y diseño moderno.
           </p>
           <div className="hero-cta">
-            <Link to="/contacto" className="btn-primary">
+            <Button to="/contacto" variant="primary" className="btn-pulse">
               Solicitar Presupuesto
-            </Link>
-            <Link to="/portfolio" className="btn-secondary">
+            </Button>
+            <Button to="/portfolio" variant="secondary">
               Ver Proyectos
-            </Link>
+            </Button>
           </div>
         </div>
         <div className="hero-stats">

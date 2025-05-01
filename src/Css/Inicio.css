@@ -1,0 +1,53 @@
+/* Estilos para la página de inicio */
+
+/* Contenedor principal */
+main {
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 4rem; /* Añadir espacio en la parte inferior */
+}
+
+/* Espaciado uniforme entre secciones */
+.section-container {
+  margin-bottom: 4rem; /* Espaciado uniforme entre secciones */
+}
+
+/* Quita el margen del último componente */
+.section-container:last-child {
+  margin-bottom: 0;
+  padding-bottom: 2rem; /* Añadir espacio adicional al último componente */
+}
+
+/* Asegura que todas las secciones tengan un padding vertical uniforme */
+.section-container > div,
+.section-container > section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Excepción para el HeroBanner que tiene su propio diseño */
+.section-container .hero-banner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 3rem;
+  }
+
+  .section-container {
+    margin-bottom: 3rem; /* Espaciado reducido en dispositivos móviles */
+  }
+  
+  .section-container:last-child {
+    padding-bottom: 1.5rem; /* Espacio adicional reducido en móviles */
+  }
+  
+  .section-container > div,
+  .section-container > section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+} 

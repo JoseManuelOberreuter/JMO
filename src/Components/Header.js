@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Button } from './Button';
 import '../Css/Header.css'; 
 
 export const Header = () => {
@@ -36,6 +37,11 @@ export const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [menuOpen]);
 
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
   return (
     <header className={`header-custom ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
@@ -55,10 +61,7 @@ export const Header = () => {
               <Link 
                 to="/" 
                 className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
-                onClick={() => {
-                  setMenuOpen(false);
-                  document.body.style.overflow = 'auto';
-                }}
+                onClick={handleLinkClick}
               >
                 Inicio
               </Link>
@@ -67,10 +70,7 @@ export const Header = () => {
               <Link 
                 to="/portfolio" 
                 className={`nav-link ${activeLink === '/portfolio' ? 'active' : ''}`}
-                onClick={() => {
-                  setMenuOpen(false);
-                  document.body.style.overflow = 'auto';
-                }}
+                onClick={handleLinkClick}
               >
                 Portafolio
               </Link>
@@ -79,10 +79,7 @@ export const Header = () => {
               <Link 
                 to="/experience" 
                 className={`nav-link ${activeLink === '/experience' ? 'active' : ''}`}
-                onClick={() => {
-                  setMenuOpen(false);
-                  document.body.style.overflow = 'auto';
-                }}
+                onClick={handleLinkClick}
               >
                 Experiencia
               </Link>
@@ -91,25 +88,20 @@ export const Header = () => {
               <Link 
                 to="/contacto" 
                 className={`nav-link ${activeLink === '/contacto' ? 'active' : ''}`}
-                onClick={() => {
-                  setMenuOpen(false);
-                  document.body.style.overflow = 'auto';
-                }}
+                onClick={handleLinkClick}
               >
                 Contacto
               </Link>
             </li>
             <li className="nav-item cta-button">
-              <Link 
+              <Button 
                 to="/contacto" 
-                className="btn-primary"
-                onClick={() => {
-                  setMenuOpen(false);
-                  document.body.style.overflow = 'auto';
-                }}
+                variant="primary"
+                className="btn-pulse"
+                onClick={handleLinkClick}
               >
                 Solicitar Presupuesto
-              </Link>
+              </Button>
             </li>
           </ul>
         </div>

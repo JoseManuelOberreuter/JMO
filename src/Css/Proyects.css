@@ -158,7 +158,6 @@
 
 /* Estilos para la sección CTA en la página de inicio */
 .cta-section {
-  padding: var(--spacing-xl) 0;
   background-color: var(--color-darkest);
   background-image: linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
   border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -244,47 +243,6 @@
   max-width: 600px;
 }
 
-.cta-buttons .btn-primary,
-.cta-buttons .btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 180px;
-  padding: 12px 24px;
-  border-radius: var(--border-radius-md);
-  font-size: var(--font-size-base);
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.cta-buttons .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border: 2px solid var(--color-primary);
-  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
-}
-
-.cta-buttons .btn-primary:hover {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(59, 130, 246, 0.3);
-}
-
-.cta-buttons .btn-secondary {
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
-
-.cta-buttons .btn-secondary:hover {
-  background-color: rgba(var(--color-primary-rgb), 0.1);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
-}
-
 @media (max-width: 768px) {
   .cta-title {
     font-size: 2rem;
@@ -303,10 +261,5 @@
     flex-direction: column;
     gap: var(--spacing-md);
     max-width: 300px;
-  }
-  
-  .cta-buttons .btn-primary,
-  .cta-buttons .btn-secondary {
-    width: 100%;
   }
 }

@@ -1,0 +1,123 @@
+/* Estilos del botón base */
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Botón primario */
+.btn-primary {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(var(--color-primary-rgb), 0.6);
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(30deg);
+  animation: btnShine 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes btnShine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  20% {
+    left: 100%;
+    opacity: 0.6;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Efecto pulsante para el botón de cotización */
+.btn-pulse {
+  animation: btnPulse 10s infinite;
+}
+
+@keyframes btnPulse {
+  0%, 80% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.4);
+  }
+  85% {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(var(--color-primary-rgb), 0.7);
+  }
+  90% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.4);
+  }
+  95% {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(var(--color-primary-rgb), 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.4);
+  }
+}
+
+/* Ajuste para que el hover no interfiera con la animación */
+.btn-pulse:hover {
+  animation: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(var(--color-primary-rgb), 0.6);
+}
+
+/* Botón secundario */
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-primary);
+  backdrop-filter: blur(5px);
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  border-color: transparent;
+}
+
+/* Botón deshabilitado */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+} 
