@@ -19,13 +19,13 @@ code {
   --color-soft-black: #272727;
   --color-dark-grey: #27225e;
   --color-light-grey: #868686;
-  --color-pink: #BA86A1;
-  --color-purple: #8b2089;
-  --color-yellow: #DBD700;
-  --color-mustard: #CCA700;
-  --color-orange: #CE9178;
-  --color-light-blue: #9CDCFE;
-  --color-blue: #569CD6;
-  --color-green: #4EC990;
-  --color-dark-green: #42a174;
+  --color-pink: #FF00FF; /* Neon magenta */
+  --color-purple: #9D00FF; /* Electric purple */
+  --color-yellow: #FFFF00; /* Neon yellow */
+  --color-mustard: #FFD100; /* Bright electric yellow */
+  --color-orange: #FF6B00; /* Neon orange */
+  --color-light-blue: #00F5FF; /* Cyan electric blue */
+  --color-blue: #00BFFF; /* Electric blue */
+  --color-green: #00FF84; /* Neon green */
+  --color-dark-green: #00CC6A; /* Electric green */
 }

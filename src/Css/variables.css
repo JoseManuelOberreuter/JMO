@@ -1,18 +1,20 @@
 :root {
   /* Colors */
-  --color-primary: #3b82f6;
-  --color-primary-rgb: 59, 130, 246;
-  --color-primary-dark: #2563eb;
+  --color-primary: #00BFFF; /* Electric/neon blue */
+  --color-primary-rgb: 0, 191, 255;
+  --color-primary-dark: #0080FF; /* Deeper electric blue */
   --color-text: #f3f4f6;
   --color-text-light: #9ca3af;
   --color-white: #ffffff;
   --color-dark: #111827;
   --color-darker: #0f172a;
   --color-darkest: #030712;
-  --color-green: #10b981;
-  --color-pink: #ec4899;
-  --color-mustard: #f59e0b;
-  --color-blue: #3b82f6;
+  --color-green: #00FF84; /* Bright neon green */
+  --color-pink: #FF00FF; /* Neon purple/magenta */
+  --color-mustard: #FFFF00; /* Neon yellow */
+  --color-blue: #00F5FF; /* Cyan neon blue */
+  --color-purple: #9D00FF; /* Electric purple */
+  --color-red: #FF0055; /* Neon red */
   
   /* Spacing */
   --spacing-xs: 0.25rem;
