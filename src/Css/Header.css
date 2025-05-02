@@ -116,7 +116,7 @@
 @media (max-width: 768px) {
   .header-custom {
     padding: 0;
-    height: 10vh; /* Maintain consistent height on mobile */
+    height: 60px; /* Fixed pixel height instead of vh for mobile */
   }
 
   .menu-icon {

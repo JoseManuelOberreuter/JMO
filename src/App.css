@@ -72,10 +72,7 @@ ul, ol {
   .App {
     padding-top: 0; /* Eliminamos el padding-top excesivo */
   }
-  
-  main {
-    margin-top: 60px; /* Agregamos margen solo al contenido principal */
-  }
+
 }
 
 .color {
