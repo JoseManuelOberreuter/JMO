@@ -8,31 +8,49 @@
   text-align: center;
   margin-bottom: 6rem;
   padding: 0 1rem;
+  background: linear-gradient(135deg, 
+    var(--color-darkest) 0%,
+    rgba(0, 191, 255, 0.1) 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 0 6rem;
+}
+
+.portfolio-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at top right,
+    rgba(0, 191, 255, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
 }
 
 .portfolio-title {
   font-size: 4rem;
-  font-weight: 700;
-  color: var(--color-white);
+  font-weight: 800;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: var(--color-white);
   position: relative;
   display: inline-block;
 }
 
+.accent-text {
+  color: var(--color-blue);
+}
+
 .portfolio-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: var(--color-primary);
-  border-radius: 2px;
+  display: none;
 }
 
 .portfolio-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--color-text-light);
   max-width: 700px;
   margin: 2rem auto 0;
@@ -58,7 +76,7 @@
   background: var(--color-darker);
   border-radius: 30px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 5rem auto;
   position: relative;
   overflow: hidden;
 }
@@ -70,8 +88,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, var(--color-primary) 0%, transparent 100%);
-  opacity: 0.1;
+  background: linear-gradient(45deg, var(--color-blue) 0%, var(--color-purple) 100%);
+  opacity: 0.15;
 }
 
 .portfolio-cta h2 {
@@ -93,7 +111,7 @@
 .portfolio-cta .btn-primary {
   display: inline-block;
   padding: 1.2rem 3rem;
-  background: var(--color-primary);
+  background: var(--color-blue);
   color: var(--color-white);
   border-radius: 50px;
   font-weight: 600;
@@ -106,7 +124,8 @@
 
 .portfolio-cta .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 245, 255, 0.4);
+  background: var(--color-light-blue);
 }
 
 .portfolio-cta .btn-primary::after {
@@ -132,14 +151,16 @@
 
   .portfolio-header {
     margin-bottom: 4rem;
+    padding: 6rem 0 4rem;
   }
 
   .portfolio-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .portfolio-subtitle {
     font-size: 1.1rem;
+    max-width: 100%;
   }
 
   .portfolio-cta {
@@ -156,6 +177,16 @@
 
   .portfolio-cta .btn-primary {
     padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-title {
+    font-size: 2rem;
+  }
+
+  .portfolio-subtitle {
     font-size: 1rem;
   }
 }

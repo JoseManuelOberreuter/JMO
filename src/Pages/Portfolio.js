@@ -7,7 +7,10 @@ export const Portfolio = () => {
   return (
     <div className="portfolio-page">
       <div className="portfolio-header">
-        <h1 className="portfolio-title">Mis Proyectos Destacados</h1>
+        <h1 className="portfolio-title">
+          Mis Proyectos 
+          <span className="accent-text"> Destacados</span>
+        </h1>
         <p className="portfolio-subtitle">
           Explora mis proyectos más recientes y descubre cómo puedo ayudarte a crear tu próxima solución digital
         </p>

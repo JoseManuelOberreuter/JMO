@@ -16,8 +16,8 @@
 .project-card:hover {
     transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.05);
-    border-color: var(--color-primary);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--color-blue);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 245, 255, 0.15);
 }
 
 .card-video {
@@ -52,15 +52,15 @@
 
 .project-category {
     display: inline-block;
-    background: rgba(var(--color-primary-rgb), 0.1);
-    color: var(--color-primary);
+    background: rgba(0, 191, 255, 0.1);
+    color: var(--color-blue);
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    border: 1px solid rgba(var(--color-primary-rgb), 0.2);
+    border: 1px solid rgba(0, 191, 255, 0.2);
     align-self: flex-start;
 }
 
@@ -97,8 +97,9 @@
 }
 
 .project-card:hover .technology-tag {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 245, 255, 0.08);
+    border-color: rgba(0, 245, 255, 0.2);
+    color: var(--color-white);
 }
 
 .project-date {
@@ -159,9 +160,11 @@
 /* Estilos para la sección CTA en la página de inicio */
 .cta-section {
   background-color: var(--color-darkest);
-  background-image: linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+  background-image: linear-gradient(to bottom right, rgba(0, 191, 255, 0.05), rgba(0, 255, 132, 0.05));
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 5rem 0;
+  margin: 3rem 0;
 }
 
 .cta-section .container {
@@ -176,7 +179,7 @@
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: var(--spacing-lg);
-  background: linear-gradient(to right, var(--color-primary), var(--color-green));
+  background: linear-gradient(to right, var(--color-blue), var(--color-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -212,7 +215,7 @@
 .feature-item:hover {
   transform: translateY(-3px);
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(var(--color-primary-rgb), 0.2);
+  border-color: rgba(0, 191, 255, 0.2);
 }
 
 .feature-icon {
@@ -221,7 +224,7 @@
   justify-content: center;
   width: 24px;
   height: 24px;
-  background: var(--color-primary);
+  background: var(--color-blue);
   color: var(--color-white);
   border-radius: 50%;
   margin-right: var(--spacing-md);
@@ -261,5 +264,10 @@
     flex-direction: column;
     gap: var(--spacing-md);
     max-width: 300px;
+  }
+  
+  .cta-section {
+    padding: 4rem 1rem;
+    margin: 2rem 0;
   }
 }
