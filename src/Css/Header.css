@@ -40,6 +40,76 @@
 .logo a {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.05);
+}
+
+.header-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.logo a:hover .header-logo {
+  box-shadow: 0 0 10px var(--color-primary);
+  transform: rotate(10deg);
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, var(--color-blue), #4287f5, #1a56cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.logo a:hover .logo-text {
+  background: linear-gradient(45deg, #1a56cc, var(--color-blue), #4287f5, #1a56cc);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+  text-shadow: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo-text::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #1a56cc, var(--color-blue));
+  transition: width 0.3s ease;
+}
+
+.logo a:hover .logo-text::after {
+  width: 100%;
 }
 
 .nav {
@@ -156,6 +226,15 @@
   }
 
   .logo {
+    font-size: 1.2rem;
+  }
+  
+  .header-logo {
+    height: 32px;
+    width: 32px;
+  }
+  
+  .logo-text {
     font-size: 1.2rem;
   }
 }

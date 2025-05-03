@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import icofb from './img/ico/fbicogrey.ico'
-import icogit from './img/ico/giticogrey.ico'
-import icolink from './img/ico/linkicogrey.ico'
-import icoig from './img/ico/instaicogrey.ico'
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import '../Css/Footer.css';
 
 export function Footer() {
@@ -41,16 +38,16 @@ export function Footer() {
             <h3 className="footer-title">Redes Sociales</h3>
             <div className="social-links">
               <a target="_blank" rel="noreferrer" href="https://github.com/JoseManuelOberreuter">
-                <img className="icono-rs" src={icogit} alt="GitHub Icon" />
+                <FaGithub className="icono-rs" />
               </a>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/">
-                <img className="icono-rs" src={icolink} alt="Linkedin Icon" />
+                <FaLinkedin className="icono-rs" />
               </a>
               <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jmo.developer/">
-                <img className="icono-rs" src={icoig} alt="Instagram Icon" />
+                <FaInstagram className="icono-rs" />
               </a>
               <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100083188934596">
-                <img className="icono-rs" src={icofb} alt="Facebook Icon" />
+                <FaFacebook className="icono-rs" />
               </a>
             </div>
           </div>

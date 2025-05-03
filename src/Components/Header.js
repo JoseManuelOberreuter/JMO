@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from './Button';
-import '../Css/Header.css'; 
+import '../Css/Header.css';
+import logo from '../Assets/logo.png';
 
 export const Header = () => {
   const location = useLocation();
@@ -47,7 +48,10 @@ export const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <Link to="/">JMO</Link>
+            <Link to="/">
+              <img src={logo} alt="JMO Logo" className="header-logo" />
+              <span className="logo-text">JMO</span>
+            </Link>
           </div>
           
           <div className={`menu-icon ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>

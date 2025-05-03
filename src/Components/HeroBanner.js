@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Css/HeroBanner.css'
-import { useTypewriterEffect } from './TextEffect'
+import { useTypewriterEffect } from './TextEffect';
 import { Button } from './Button';
 
 // Funcion para traer las variables de css
@@ -8,37 +8,28 @@ const getCSSVariable = (variableName) => {
   return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
 };
 
-const words = [ 
-  'Web',
-  'FullStack', 
-  'FrontEnd', 
-  'BackEnd',
-];
-
-const colors = [
-  getCSSVariable('--color-green'),
-  getCSSVariable('--color-pink'),
-  getCSSVariable('--color-mustard'),
-  getCSSVariable('--color-blue'),
-  getCSSVariable('--color-primary'),
-];
+// Define the names for the typewriter effect
+const nameWords = ['JMO', 'José Manuel Oberreuter'];
 
 export const HeroBanner = () => {
-  const typingSpeed = 75;
-  const deletingSpeed = 100;
-  const pauseDuration = 1000;
-
-  const { text, currentWordIndex } = useTypewriterEffect(words, typingSpeed, deletingSpeed, pauseDuration);
+  const fullStackColor = getCSSVariable('--color-pink'); // Using the color that was associated with 'FullStack'
+  
+  // Configure typewriter effect for the name
+  const typingSpeed = 100;
+  const deletingSpeed = 70;
+  const pauseDuration = 1500;
+  
+  const { text: nameText } = useTypewriterEffect(nameWords, typingSpeed, deletingSpeed, pauseDuration);
 
   return (
     <div className="hero-banner">
       <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            José Manuel Oberreuter
+            <span className="dynamic-text">{nameText}</span>
             <br />
             <span className="hero-subtitle">
-              Desarrollador <span className="dynamic-text" style={{ color: colors[currentWordIndex] }}>{text}</span>
+              Desarrollador <span style={{ color: fullStackColor }}>Fullstack</span>
             </span>
           </h1>
           <p className="hero-description">

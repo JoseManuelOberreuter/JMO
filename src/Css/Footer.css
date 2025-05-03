@@ -60,12 +60,13 @@
 .footer-section .icono-rs {
   width: 24px;
   height: 24px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #b0b0b0;
 }
 
 .footer-section .icono-rs:hover {
   transform: scale(1.2);
-  filter: brightness(1.2);
+  color: var(--color-primary);
 }
 
 .footer-bottom {
