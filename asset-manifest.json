@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/JMO/static/css/main.dc03324e.css",
-    "main.js": "/JMO/static/js/main.5cac1291.js",
+    "main.css": "/JMO/static/css/main.6ce2c022.css",
+    "main.js": "/JMO/static/js/main.b88de5c5.js",
     "static/media/video_arquitectura.mp4": "/JMO/static/media/video_arquitectura.dcf6cf031fabf459dcfc.mp4",
     "static/media/video_kinesiologia.mp4": "/JMO/static/media/video_kinesiologia.2cdb945288c794ee0cc6.mp4",
     "static/media/video_api_bianance.mp4": "/JMO/static/media/video_api_bianance.11affa40980f05abe8cd.mp4",
     "static/media/video_demoledoracrrb.mp4": "/JMO/static/media/video_demoledoracrrb.5401a7e7b08822f7068f.mp4",
-    "static/media/fbicogrey.ico": "/JMO/static/media/fbicogrey.d3f231fb921d60e1169f.ico",
-    "static/media/giticogrey.ico": "/JMO/static/media/giticogrey.252e90a44f37be566be9.ico",
-    "static/media/instaicogrey.ico": "/JMO/static/media/instaicogrey.5bb3b9b116cb9c45b969.ico",
-    "static/media/linkicogrey.ico": "/JMO/static/media/linkicogrey.db6c09f7ef84f5b7fe55.ico",
+    "static/media/logo.png": "/JMO/static/media/logo.2ee15157b1c8314de5fe.png",
     "index.html": "/JMO/index.html",
-    "main.dc03324e.css.map": "/JMO/static/css/main.dc03324e.css.map",
-    "main.5cac1291.js.map": "/JMO/static/js/main.5cac1291.js.map"
+    "main.6ce2c022.css.map": "/JMO/static/css/main.6ce2c022.css.map",
+    "main.b88de5c5.js.map": "/JMO/static/js/main.b88de5c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc03324e.css",
-    "static/js/main.5cac1291.js"
+    "static/css/main.6ce2c022.css",
+    "static/js/main.b88de5c5.js"
   ]
 }
