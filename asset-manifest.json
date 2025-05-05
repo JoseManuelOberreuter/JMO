@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/JMO/static/css/main.6ce2c022.css",
-    "main.js": "/JMO/static/js/main.b88de5c5.js",
-    "static/media/video_arquitectura.mp4": "/JMO/static/media/video_arquitectura.dcf6cf031fabf459dcfc.mp4",
-    "static/media/video_kinesiologia.mp4": "/JMO/static/media/video_kinesiologia.2cdb945288c794ee0cc6.mp4",
-    "static/media/video_api_bianance.mp4": "/JMO/static/media/video_api_bianance.11affa40980f05abe8cd.mp4",
-    "static/media/video_demoledoracrrb.mp4": "/JMO/static/media/video_demoledoracrrb.5401a7e7b08822f7068f.mp4",
-    "static/media/logo.png": "/JMO/static/media/logo.2ee15157b1c8314de5fe.png",
-    "index.html": "/JMO/index.html",
-    "main.6ce2c022.css.map": "/JMO/static/css/main.6ce2c022.css.map",
-    "main.b88de5c5.js.map": "/JMO/static/js/main.b88de5c5.js.map"
+    "main.css": "/static/css/main.6ce2c022.css",
+    "main.js": "/static/js/main.57c7f178.js",
+    "static/media/video_arquitectura.mp4": "/static/media/video_arquitectura.dcf6cf031fabf459dcfc.mp4",
+    "static/media/video_kinesiologia.mp4": "/static/media/video_kinesiologia.2cdb945288c794ee0cc6.mp4",
+    "static/media/video_api_bianance.mp4": "/static/media/video_api_bianance.11affa40980f05abe8cd.mp4",
+    "static/media/video_demoledoracrrb.mp4": "/static/media/video_demoledoracrrb.5401a7e7b08822f7068f.mp4",
+    "static/media/logo.png": "/static/media/logo.2ee15157b1c8314de5fe.png",
+    "index.html": "/index.html",
+    "main.6ce2c022.css.map": "/static/css/main.6ce2c022.css.map",
+    "main.57c7f178.js.map": "/static/js/main.57c7f178.js.map"
   },
   "entrypoints": [
     "static/css/main.6ce2c022.css",
-    "static/js/main.b88de5c5.js"
+    "static/js/main.57c7f178.js"
   ]
 }
