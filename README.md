@@ -1,10 +1,10 @@
 # José Manuel Oberreuter (JMO) 👋
 
-[![Website](https://img.shields.io/badge/Website-Visita%20mi%20página-blue)](https://josemanueloberreuter.github.io/JMO/)
+[![Website](https://img.shields.io/badge/Website-Visita%20mi%20página-blue)](https://jmocode.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/josemanueloberreuter/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-lightgrey)](https://github.com/josemanueloberreuter)
 
-Bienvenido a mi repositorio personal. Este espacio alberga [mi página web](https://josemanueloberreuter.github.io/JMO/), donde comparto mi blog de programación, portafolio personal y más información sobre mi trayectoria profesional.
+Bienvenido a mi repositorio personal. Este espacio alberga [mi página web](https://jmocode.com/), donde comparto mi blog de programación, portafolio personal y más información sobre mi trayectoria profesional.
 
 ## 🚀 Acerca de Mí
 
@@ -67,7 +67,7 @@ Proyectos destacados que demuestran mis habilidades en:
 ¡Me encantaría conectarme contigo! Puedes encontrarme en:
 - [LinkedIn](https://www.linkedin.com/in/josemanueloberreuter/)
 - [GitHub](https://github.com/josemanueloberreuter)
-- [Mi Página Web](https://josemanueloberreuter.github.io/JMO/)
+- [Mi Página Web](https://jmocode.com/)
 
 ---
 
