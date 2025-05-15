@@ -173,10 +173,11 @@
   .hero-banner {
     padding: 0;
     min-height: 100vh;
+    height: auto;
     margin-top: 60px;
     background: linear-gradient(to bottom, rgba(15, 23, 42, 0.95) 0%, rgba(3, 7, 18, 0.98) 100%);
     position: relative;
-    overflow-y: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
@@ -190,18 +191,27 @@
     flex-direction: column;
     flex: 1;
     position: relative;
+    overflow: visible;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: auto;
   }
 
   .hero-text {
     text-align: center;
     width: 100%;
-    max-width: 400px;
-    padding: 0 1.5rem;
-    margin: auto;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 100%;
+    padding: 2rem 1.5rem;
+    margin: 0;
+    margin-top: 3rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
   }
 
   .hero-title {
@@ -274,9 +284,10 @@
     gap: 0.75rem;
     width: 100%;
     padding: 1.5rem;
-    position: absolute;
-    top: 85vh; /* Cambiado de 100vh a 85vh para reducir el espacio en blanco */
+    position: relative;
+    top: 0;
     left: 0;
+    margin-top: auto;
   }
 
   .stat-item {
