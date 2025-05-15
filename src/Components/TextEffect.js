@@ -13,28 +13,31 @@ export const useTypewriterEffect = (words, typingSpeed, deletingSpeed, pauseDura
       if (pause) {
         timer = setTimeout(() => {
           setPause(false);
+          if (isDeleting) {
+            setIsDeleting(false);
+            setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+          } else {
+            setIsDeleting(true);
+          }
         }, pauseDuration);
       } else if (isDeleting) {
         timer = setTimeout(() => {
           setText(prevText => prevText.slice(0, -1));
-          if (text === '') {
-            setIsDeleting(false);
-            setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+          if (text.length === 0) {
             setPause(true);
           }
         }, deletingSpeed);
       } else {
         timer = setTimeout(() => {
           setText(prevText => word.slice(0, prevText.length + 1));
-          if (text === word) {
-            setIsDeleting(true);
+          if (text.length === word.length) {
             setPause(true);
           }
         }, typingSpeed);
       }
   
       return () => clearTimeout(timer);
-    });
+    }, [text, currentWordIndex, isDeleting, pause, words, typingSpeed, deletingSpeed, pauseDuration]);
   
     return { text, currentWordIndex };
   };
