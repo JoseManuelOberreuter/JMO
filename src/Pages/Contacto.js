@@ -19,62 +19,67 @@ export const Contacto = () => {
             </Helmet>
             <main className="contacto-main">
                 <div className="contacto-card">
-                    <h1 className="contacto-titulo">¡Hablemos de tu Proyecto Web!</h1>
-                    <p className="contacto-subtitulo">
-                        ¿Buscas un desarrollador web profesional para tu proyecto? 
-                        Estoy aquí para ayudarte a crear una presencia online exitosa. 
-                        Contáctame para una consulta gratuita y convierte tus ideas en realidad.
-                    </p>
-                    
-                    <FormContacto />
-                    
-                    <div className="contact-info">
-                        <h3>También puedes encontrarme en:</h3>
-                        <div className="social-links">
-                            <a 
-                                href="https://github.com/JoseManuelOberreuter" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="social-link"
-                                aria-label="GitHub Profile"
-                            >
-                                <FaGithub />
-                            </a>
-                            <a 
-                                href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="social-link"
-                                aria-label="LinkedIn Profile"
-                            >
-                                <FaLinkedin />
-                            </a>
-                            <a 
-                                href="https://www.facebook.com/profile.php?id=100083188934596"
-                                target="_blank"
-                                rel="noopener noreferrer" 
-                                className="social-link"
-                                aria-label="Facebook Profile"
-                            >
-                                <FaFacebook />
-                            </a>
-                            <a
-                                href="https://www.instagram.com/jmo.developer/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="social-link"
-                                aria-label="Instagram Profile"
-                            >
-                                <FaInstagram />
-                            </a>
-                            <a 
-                                href="mailto:jmo.programador@gmail.com"
-                                className="social-link"
-                                aria-label="Email Contact"
-                            >
-                                <FaEnvelope />
-                            </a>
+                    <div className="contacto-content">
+                        <h1 className="contacto-titulo">¡Hablemos de tu Proyecto Web!</h1>
+                        <p className="contacto-subtitulo">
+                            ¿Buscas un desarrollador web profesional para tu proyecto? 
+                            Estoy aquí para ayudarte a crear una presencia online exitosa. 
+                            Contáctame para una consulta gratuita y convierte tus ideas en realidad.
+                        </p>
+                        
+                        <div className="contact-info">
+                            <h3>También puedes encontrarme en:</h3>
+                            <div className="social-links">
+                                <a 
+                                    href="https://github.com/JoseManuelOberreuter" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="social-link"
+                                    aria-label="GitHub Profile"
+                                >
+                                    <FaGithub />
+                                </a>
+                                <a 
+                                    href="https://www.linkedin.com/in/jos%C3%A9-manuel-oberreuter-492835225/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="social-link"
+                                    aria-label="LinkedIn Profile"
+                                >
+                                    <FaLinkedin />
+                                </a>
+                                <a 
+                                    href="https://www.facebook.com/profile.php?id=100083188934596"
+                                    target="_blank"
+                                    rel="noopener noreferrer" 
+                                    className="social-link"
+                                    aria-label="Facebook Profile"
+                                >
+                                    <FaFacebook />
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/jmo.developer/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="social-link"
+                                    aria-label="Instagram Profile"
+                                >
+                                    <FaInstagram />
+                                </a>
+                                <a 
+                                    href="mailto:jmo.programador@gmail.com"
+                                    className="social-link"
+                                    aria-label="Email Contact"
+                                >
+                                    <FaEnvelope />
+                                </a>
+                            </div>
                         </div>
+                    </div>
+
+                    <div className="contacto-form-section">
+                        <h2>Solicita una consulta gratuita</h2>
+                        <FormContacto />
                     </div>
                 </div>
             </main>
