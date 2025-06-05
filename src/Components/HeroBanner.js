@@ -1,67 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import '../Css/HeroBanner.css'
-import { useTypewriterEffect } from './TextEffect';
+import React from 'react';
+import '../Css/HeroBanner.css';
 import { Button } from './Button';
+import logo from '../Assets/logo.png';
 import { Helmet } from 'react-helmet';
 
-// Funcion para traer las variables de css
-const getCSSVariable = (variableName) => {
-  return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
-};
-  
-// Define the names for the typewriter effect
-const nameWords = ['JMO', 'José Manuel Oberreuter'];
-
 export const HeroBanner = () => {
-  const fullStackColor = getCSSVariable('--color-pink'); // Using the color that was associated with 'FullStack'
-  const [cursorVisible, setCursorVisible] = useState(true);
-  
-  // Configure typewriter effect for the name
-  const typingSpeed = 100;
-  const deletingSpeed = 70;
-  const pauseDuration = 1500;
-  
-  const { text: nameText } = useTypewriterEffect(nameWords, typingSpeed, deletingSpeed, pauseDuration);
-
-  // Blinking cursor effect
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setCursorVisible(prev => !prev);
-    }, 500);
-    
-    return () => clearInterval(cursorInterval);
-  }, []);
-
-  // Calculate height based on the longest word
-  const longestWord = nameWords.reduce((a, b) => a.length > b.length ? a : b, '');
-  
-  // Style for hero title container to maintain consistent height
-  const heroTitleStyle = {
-    height: '3.5rem', // Fixed height that accommodates the largest text
-    display: 'flex',
-    alignItems: 'center'
-  };
-
-  // Style for text container 
-  const titleContainerStyle = {
-    height: '100%',
-    display: 'inline-flex',
-    alignItems: 'center',
-    position: 'relative'
-  };
-
-  // Dynamic text styles
-  const dynamicTextStyle = {
-    display: 'inline-block'
-  };
-
-  // Cursor styles
-  const cursorStyle = {
-    display: 'inline-block',
-    opacity: cursorVisible ? 1 : 0,
-    marginLeft: '2px'
-  };
-
   return (
     <>
       <Helmet>
@@ -75,44 +18,53 @@ export const HeroBanner = () => {
         <meta name="twitter:description" content="Creo experiencias digitales únicas y soluciones web personalizadas para tu negocio." />
       </Helmet>
       <section className="hero-banner" aria-label="Presentación principal">
-        <div className="hero-content">
-          <header className="hero-text">
-            <h1 className="hero-title" style={heroTitleStyle}>
-              <div style={titleContainerStyle}>
-                <span style={dynamicTextStyle} className="dynamic-text">{nameText}</span>
-                <span className="cursor-effect" style={cursorStyle}>|</span>
-              </div>
-            </h1>
-            <h2 className="hero-subtitle">
-              Desarrollador <span style={{ color: fullStackColor }}>Fullstack</span>
-            </h2>
-            <p className="hero-description">
-              Creo experiencias digitales únicas y soluciones web personalizadas para tu negocio.
-              Transformo tus ideas en realidad con código limpio y diseño moderno.
+        <div className="hero-content hero-banner-flex">
+          {/* Columna izquierda: texto */}
+          <div className="hero-text hero-banner-left">
+            <h1 className="hero-title" style={{marginBottom: '0.5rem'}}>Hola! Soy</h1>
+            <h2 className="hero-title" style={{fontSize: '2.5rem', fontWeight: 700, marginBottom: '0.5rem'}}>José Manuel Oberreuter</h2>
+            <h3 className="hero-subtitle" style={{letterSpacing: '1px', color: 'var(--color-pink)', fontWeight: 600, marginBottom: '1.2rem'}}>DESARROLLADOR WEB FULLSTACK</h3>
+            <p className="hero-description" style={{maxWidth: 500}}>
+              Estudiante de Ingeniería Informática y programador enfocado al Desarrollo Web Fullstack. Como persona amante a los desafíos intuitivos y estéticamente agradables, busco crear proyectos que brinden la mejor experiencia para el usuario.
             </p>
-            <div className="hero-cta">
-              <Button to="/contacto" variant="primary" className="btn-pulse" aria-label="Solicitar presupuesto">
-                Solicitar Presupuesto
+            <div className="hero-cta" style={{gap: '1rem', marginTop: '2rem'}}>
+              <Button 
+                to="/portfolio" 
+                variant="secondary" 
+                aria-label="Ver Portafolio" 
+                style={{minWidth: 150}}
+              >
+                VER PORTAFOLIO
               </Button>
-              <Button to="/portfolio" variant="secondary" aria-label="Ver proyectos">
-                Ver Proyectos
+              <Button 
+                to="/contacto" 
+                variant="primary" 
+                className="btn-pulse"
+                aria-label="Solicitar Presupuesto" 
+                style={{minWidth: 150}}
+              >
+                SOLICITAR PRESUPUESTO
               </Button>
             </div>
-          </header>
-          <aside className="hero-stats">
-            <div className="stat-item">
-              <span className="stat-number" aria-label="Más de 5 proyectos completados">5+</span>
-              <span className="stat-label">Proyectos Completados</span>
+          </div>
+          {/* Columna derecha: imagen */}
+          <div className="hero-banner-right">
+            <div className="hero-banner-img-bg">
+              <img 
+                src={logo} 
+                alt="Logo JMO" 
+                className="hero-banner-img" 
+                style={{
+                  width: '220px', 
+                  height: '220px', 
+                  objectFit: 'contain',
+                  borderRadius: '50%',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(5px)'
+                }} 
+              />
             </div>
-            <div className="stat-item">
-              <span className="stat-number" aria-label="100 por ciento de clientes satisfechos">100%</span>
-              <span className="stat-label">Clientes Satisfechos</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number" aria-label="Más de 3 años de experiencia">3+</span>
-              <span className="stat-label">Años de Experiencia</span>
-            </div>
-          </aside>
+          </div>
         </div>
       </section>
     </>
